@@ -195,7 +195,7 @@ class ContactService {
     }
     sendEmail(obj) {
         console.log(obj);
-        return this.http.post('http://limitless-citadel-69513.herokuapp.com/sendmail', obj);
+        return this.http.post(' https://limitless-citadel-69513.herokuapp.com/sendmail', obj);
     }
 }
 ContactService.ɵfac = function ContactService_Factory(t) { return new (t || ContactService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"])); };
