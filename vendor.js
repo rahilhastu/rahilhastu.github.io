@@ -1,5463 +1,5 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["vendor"],{
 
-/***/ "./node_modules/@agm/core/__ivy_ngcc__/fesm2015/agm-core.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/@agm/core/__ivy_ngcc__/fesm2015/agm-core.js ***!
-  \******************************************************************/
-/*! exports provided: AgmBicyclingLayer, AgmCircle, AgmCoreModule, AgmDataLayer, AgmFitBounds, AgmGeocoder, AgmInfoWindow, AgmKmlLayer, AgmMap, AgmMarker, AgmPolygon, AgmPolyline, AgmPolylineIcon, AgmPolylinePoint, AgmRectangle, AgmTransitLayer, CircleManager, ControlPosition, DataLayerManager, FitBoundsAccessor, GeocoderLocationType, GeocoderStatus, GoogleMapsAPIWrapper, GoogleMapsScriptProtocol, InfoWindowManager, KmlLayerManager, LAZY_MAPS_API_CONFIG, LayerManager, LazyMapsAPILoader, MapTypeId, MapsAPILoader, MarkerManager, NoOpMapsAPILoader, PolygonManager, PolylineManager, RectangleManager, ScaleControlStyle, ZoomControlStyle, ɵa, ɵb, ɵc, ɵd, ɵe */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AgmBicyclingLayer", function() { return AgmBicyclingLayer; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AgmCircle", function() { return AgmCircle; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AgmCoreModule", function() { return AgmCoreModule; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AgmDataLayer", function() { return AgmDataLayer; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AgmFitBounds", function() { return AgmFitBounds; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AgmGeocoder", function() { return AgmGeocoder; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AgmInfoWindow", function() { return AgmInfoWindow; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AgmKmlLayer", function() { return AgmKmlLayer; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AgmMap", function() { return AgmMap; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AgmMarker", function() { return AgmMarker; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AgmPolygon", function() { return AgmPolygon; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AgmPolyline", function() { return AgmPolyline; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AgmPolylineIcon", function() { return AgmPolylineIcon; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AgmPolylinePoint", function() { return AgmPolylinePoint; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AgmRectangle", function() { return AgmRectangle; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AgmTransitLayer", function() { return AgmTransitLayer; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CircleManager", function() { return CircleManager; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ControlPosition", function() { return ControlPosition; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DataLayerManager", function() { return DataLayerManager; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FitBoundsAccessor", function() { return FitBoundsAccessor; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GeocoderLocationType", function() { return GeocoderLocationType; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GeocoderStatus", function() { return GeocoderStatus; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GoogleMapsAPIWrapper", function() { return GoogleMapsAPIWrapper; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GoogleMapsScriptProtocol", function() { return GoogleMapsScriptProtocol; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InfoWindowManager", function() { return InfoWindowManager; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "KmlLayerManager", function() { return KmlLayerManager; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LAZY_MAPS_API_CONFIG", function() { return LAZY_MAPS_API_CONFIG; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LayerManager", function() { return LayerManager; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LazyMapsAPILoader", function() { return LazyMapsAPILoader; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MapTypeId", function() { return MapTypeId; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MapsAPILoader", function() { return MapsAPILoader; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MarkerManager", function() { return MarkerManager; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NoOpMapsAPILoader", function() { return NoOpMapsAPILoader; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PolygonManager", function() { return PolygonManager; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PolylineManager", function() { return PolylineManager; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RectangleManager", function() { return RectangleManager; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ScaleControlStyle", function() { return ScaleControlStyle; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ZoomControlStyle", function() { return ZoomControlStyle; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵa", function() { return FitBoundsService; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵb", function() { return coreDirectives; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵc", function() { return WindowRef; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵd", function() { return DocumentRef; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵe", function() { return BROWSER_GLOBALS_PROVIDERS; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/@agm/core/node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-
-
-
-
-
-
-
-
-const _c0 = ["*"];
-let MapsAPILoader = class MapsAPILoader {
-};
-MapsAPILoader.ɵfac = function MapsAPILoader_Factory(t) { return new (t || MapsAPILoader)(); };
-MapsAPILoader.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: MapsAPILoader, factory: function (t) { return MapsAPILoader.ɵfac(t); } });
-
-/**
- * Wrapper class that handles the communication with the Google Maps Javascript
- * API v3
- */
-let GoogleMapsAPIWrapper = class GoogleMapsAPIWrapper {
-    constructor(_loader, _zone) {
-        this._loader = _loader;
-        this._zone = _zone;
-        this._map =
-            new Promise((resolve) => { this._mapResolver = resolve; });
-    }
-    createMap(el, mapOptions) {
-        return this._zone.runOutsideAngular(() => {
-            return this._loader.load().then(() => {
-                const map = new google.maps.Map(el, mapOptions);
-                this._mapResolver(map);
-                return;
-            });
-        });
-    }
-    setMapOptions(options) {
-        return this._zone.runOutsideAngular(() => {
-            this._map.then((m) => { m.setOptions(options); });
-        });
-    }
-    /**
-     * Creates a google map marker with the map context
-     */
-    createMarker(options = {}, addToMap = true) {
-        return this._zone.runOutsideAngular(() => {
-            return this._map.then((map) => {
-                if (addToMap) {
-                    options.map = map;
-                }
-                return new google.maps.Marker(options);
-            });
-        });
-    }
-    createInfoWindow(options) {
-        return this._zone.runOutsideAngular(() => {
-            return this._map.then(() => { return new google.maps.InfoWindow(options); });
-        });
-    }
-    /**
-     * Creates a google.map.Circle for the current map.
-     */
-    createCircle(options) {
-        return this._zone.runOutsideAngular(() => {
-            return this._map.then((map) => {
-                if (typeof options.strokePosition === 'string') {
-                    options.strokePosition = google.maps.StrokePosition[options.strokePosition];
-                }
-                options.map = map;
-                return new google.maps.Circle(options);
-            });
-        });
-    }
-    /**
-     * Creates a google.map.Rectangle for the current map.
-     */
-    createRectangle(options) {
-        return this._zone.runOutsideAngular(() => {
-            return this._map.then((map) => {
-                options.map = map;
-                return new google.maps.Rectangle(options);
-            });
-        });
-    }
-    createPolyline(options) {
-        return this._zone.runOutsideAngular(() => {
-            return this.getNativeMap().then((map) => {
-                let line = new google.maps.Polyline(options);
-                line.setMap(map);
-                return line;
-            });
-        });
-    }
-    createPolygon(options) {
-        return this._zone.runOutsideAngular(() => {
-            return this.getNativeMap().then((map) => {
-                let polygon = new google.maps.Polygon(options);
-                polygon.setMap(map);
-                return polygon;
-            });
-        });
-    }
-    /**
-     * Creates a new google.map.Data layer for the current map
-     */
-    createDataLayer(options) {
-        return this._zone.runOutsideAngular(() => {
-            return this._map.then(m => {
-                let data = new google.maps.Data(options);
-                data.setMap(m);
-                return data;
-            });
-        });
-    }
-    /**
-     * Creates a TransitLayer instance for a map
-     * @param {TransitLayerOptions} options - used for setting layer options
-     * @returns {Promise<TransitLayer>} a new transit layer object
-     */
-    createTransitLayer(options) {
-        return this._zone.runOutsideAngular(() => {
-            return this._map.then((map) => {
-                let newLayer = new google.maps.TransitLayer();
-                newLayer.setMap(options.visible ? map : null);
-                return newLayer;
-            });
-        });
-    }
-    /**
-     * Creates a BicyclingLayer instance for a map
-     * @param {BicyclingLayerOptions} options - used for setting layer options
-     * @returns {Promise<BicyclingLayer>} a new bicycling layer object
-     */
-    createBicyclingLayer(options) {
-        return this._zone.runOutsideAngular(() => {
-            return this._map.then((map) => {
-                let newLayer = new google.maps.BicyclingLayer();
-                newLayer.setMap(options.visible ? map : null);
-                return newLayer;
-            });
-        });
-    }
-    /**
-     * Determines if given coordinates are insite a Polygon path.
-     */
-    containsLocation(latLng, polygon) {
-        return google.maps.geometry.poly.containsLocation(latLng, polygon);
-    }
-    subscribeToMapEvent(eventName) {
-        return new rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"]((observer) => {
-            this._map.then((m) => {
-                m.addListener(eventName, (arg) => { this._zone.run(() => observer.next(arg)); });
-            });
-        });
-    }
-    clearInstanceListeners() {
-        return this._zone.runOutsideAngular(() => {
-            this._map.then((map) => {
-                google.maps.event.clearInstanceListeners(map);
-            });
-        });
-    }
-    setCenter(latLng) {
-        return this._zone.runOutsideAngular(() => {
-            return this._map.then((map) => map.setCenter(latLng));
-        });
-    }
-    getZoom() {
-        return this._zone.runOutsideAngular(() => {
-            return this._map.then((map) => map.getZoom());
-        });
-    }
-    getBounds() {
-        return this._zone.runOutsideAngular(() => {
-            return this._map.then((map) => map.getBounds());
-        });
-    }
-    getMapTypeId() {
-        return this._zone.runOutsideAngular(() => {
-            return this._map.then((map) => map.getMapTypeId());
-        });
-    }
-    setZoom(zoom) {
-        return this._zone.runOutsideAngular(() => {
-            return this._map.then((map) => map.setZoom(zoom));
-        });
-    }
-    getCenter() {
-        return this._zone.runOutsideAngular(() => {
-            return this._map.then((map) => map.getCenter());
-        });
-    }
-    panTo(latLng) {
-        return this._zone.runOutsideAngular(() => {
-            return this._map.then((map) => map.panTo(latLng));
-        });
-    }
-    panBy(x, y) {
-        return this._zone.runOutsideAngular(() => {
-            return this._map.then((map) => map.panBy(x, y));
-        });
-    }
-    fitBounds(latLng, padding) {
-        return this._zone.runOutsideAngular(() => {
-            return this._map.then((map) => map.fitBounds(latLng, padding));
-        });
-    }
-    panToBounds(latLng, padding) {
-        return this._zone.runOutsideAngular(() => {
-            return this._map.then((map) => map.panToBounds(latLng, padding));
-        });
-    }
-    /**
-     * Returns the native Google Maps Map instance. Be careful when using this instance directly.
-     */
-    getNativeMap() { return this._map; }
-    /**
-     * Triggers the given event name on the map instance.
-     */
-    triggerMapEvent(eventName) {
-        return this._map.then((m) => google.maps.event.trigger(m, eventName));
-    }
-};
-GoogleMapsAPIWrapper.ɵfac = function GoogleMapsAPIWrapper_Factory(t) { return new (t || GoogleMapsAPIWrapper)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](MapsAPILoader), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"])); };
-GoogleMapsAPIWrapper.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: GoogleMapsAPIWrapper, factory: function (t) { return GoogleMapsAPIWrapper.ɵfac(t); } });
-GoogleMapsAPIWrapper.ctorParameters = () => [
-    { type: MapsAPILoader },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] }
-];
-GoogleMapsAPIWrapper = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [MapsAPILoader, _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"]])
-], GoogleMapsAPIWrapper);
-
-/**
- * This class manages Transit and Bicycling Layers for a Google Map instance.
- */
-let LayerManager = class LayerManager {
-    constructor(_wrapper) {
-        this._wrapper = _wrapper;
-        this._layers = new Map();
-    }
-    /**
-     * Adds a transit layer to a map instance.
-     * @param {AgmTransitLayer} layer - a TransitLayer object
-     * @param {TransitLayerOptions} options - TransitLayerOptions options
-     * @returns void
-     */
-    addTransitLayer(layer, options) {
-        const newLayer = this._wrapper.createTransitLayer(options);
-        this._layers.set(layer, newLayer);
-    }
-    /**
-     * Adds a bicycling layer to a map instance.
-     * @param {AgmBicyclingLayer} layer - a bicycling layer object
-     * @param {BicyclingLayerOptions} options - BicyclingLayer options
-     * @returns void
-     */
-    addBicyclingLayer(layer, options) {
-        const newLayer = this._wrapper.createBicyclingLayer(options);
-        this._layers.set(layer, newLayer);
-    }
-    /**
-     * Deletes a map layer
-     * @param {AgmTransitLayer|AgmBicyclingLayer} layer - the layer to delete
-     * @returns  Promise<void>
-     */
-    deleteLayer(layer) {
-        return this._layers.get(layer).then(currentLayer => {
-            currentLayer.setMap(null);
-            this._layers.delete(layer);
-        });
-    }
-    /**
-     * Hide/Show a google map layer
-     * @param { AgmTransitLayer|AgmBicyclingLayer} layer - the layer to hide/show
-     * @param {TransitLayerOptions|BicyclingLayerOptions} options - used to set visibility of the layer
-     * @returns Promise<void>
-     */
-    toggleLayerVisibility(layer, options) {
-        return this._layers.get(layer).then(currentLayer => {
-            if (!options.visible) {
-                currentLayer.setMap(null);
-                return;
-            }
-            else {
-                return this._wrapper.getNativeMap().then((map) => {
-                    currentLayer.setMap(map);
-                });
-            }
-        });
-    }
-};
-LayerManager.ɵfac = function LayerManager_Factory(t) { return new (t || LayerManager)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](GoogleMapsAPIWrapper)); };
-LayerManager.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: LayerManager, factory: function (t) { return LayerManager.ɵfac(t); } });
-LayerManager.ctorParameters = () => [
-    { type: GoogleMapsAPIWrapper }
-];
-LayerManager = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [GoogleMapsAPIWrapper])
-], LayerManager);
-
-let layerId = 0;
-/*
- * This directive adds a bicycling layer to a google map instance
- * <agm-bicycling-layer [visible]="true|false"> <agm-bicycling-layer>
- * */
-let AgmBicyclingLayer = class AgmBicyclingLayer {
-    constructor(_manager) {
-        this._manager = _manager;
-        this._addedToManager = false;
-        this._id = (layerId++).toString();
-        /**
-         * Hide/show bicycling layer
-         */
-        this.visible = true;
-    }
-    ngOnInit() {
-        if (this._addedToManager) {
-            return;
-        }
-        this._manager.addBicyclingLayer(this, { visible: this.visible });
-        this._addedToManager = true;
-    }
-    ngOnChanges(changes) {
-        if (!this._addedToManager) {
-            return;
-        }
-        if (changes['visible'] != null) {
-            this._manager.toggleLayerVisibility(this, { visible: changes['visible'].currentValue });
-        }
-    }
-    /** @internal */
-    id() { return this._id; }
-    /** @internal */
-    toString() { return `AgmBicyclingLayer-${this._id.toString()}`; }
-    /** @internal */
-    ngOnDestroy() {
-        this._manager.deleteLayer(this);
-    }
-};
-AgmBicyclingLayer.ɵfac = function AgmBicyclingLayer_Factory(t) { return new (t || AgmBicyclingLayer)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](LayerManager)); };
-AgmBicyclingLayer.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({ type: AgmBicyclingLayer, selectors: [["agm-bicycling-layer"]], inputs: { visible: "visible" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]] });
-AgmBicyclingLayer.ctorParameters = () => [
-    { type: LayerManager }
-];
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmBicyclingLayer.prototype, "visible", void 0);
-AgmBicyclingLayer = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [LayerManager])
-], AgmBicyclingLayer);
-
-let CircleManager = class CircleManager {
-    constructor(_apiWrapper, _zone) {
-        this._apiWrapper = _apiWrapper;
-        this._zone = _zone;
-        this._circles = new Map();
-    }
-    addCircle(circle) {
-        this._circles.set(circle, this._apiWrapper.createCircle({
-            center: { lat: circle.latitude, lng: circle.longitude },
-            clickable: circle.clickable,
-            draggable: circle.draggable,
-            editable: circle.editable,
-            fillColor: circle.fillColor,
-            fillOpacity: circle.fillOpacity,
-            radius: circle.radius,
-            strokeColor: circle.strokeColor,
-            strokeOpacity: circle.strokeOpacity,
-            strokePosition: circle.strokePosition,
-            strokeWeight: circle.strokeWeight,
-            visible: circle.visible,
-            zIndex: circle.zIndex,
-        }));
-    }
-    /**
-     * Removes the given circle from the map.
-     */
-    removeCircle(circle) {
-        return this._circles.get(circle).then((c) => {
-            c.setMap(null);
-            this._circles.delete(circle);
-        });
-    }
-    setOptions(circle, options) {
-        return this._circles.get(circle).then((c) => {
-            if (typeof options.strokePosition === 'string') {
-                options.strokePosition = google.maps.StrokePosition[options.strokePosition];
-            }
-            c.setOptions(options);
-        });
-    }
-    getBounds(circle) {
-        return this._circles.get(circle).then((c) => c.getBounds());
-    }
-    getCenter(circle) {
-        return this._circles.get(circle).then((c) => c.getCenter());
-    }
-    getRadius(circle) {
-        return this._circles.get(circle).then((c) => c.getRadius());
-    }
-    setCenter(circle) {
-        return this._circles.get(circle).then((c) => { return c.setCenter({ lat: circle.latitude, lng: circle.longitude }); });
-    }
-    setEditable(circle) {
-        return this._circles.get(circle).then((c) => { return c.setEditable(circle.editable); });
-    }
-    setDraggable(circle) {
-        return this._circles.get(circle).then((c) => { return c.setDraggable(circle.draggable); });
-    }
-    setVisible(circle) {
-        return this._circles.get(circle).then((c) => { return c.setVisible(circle.visible); });
-    }
-    setRadius(circle) {
-        return this._circles.get(circle).then((c) => { return c.setRadius(circle.radius); });
-    }
-    getNativeCircle(circle) {
-        return this._circles.get(circle);
-    }
-    createEventObservable(eventName, circle) {
-        return new rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"]((observer) => {
-            let listener = null;
-            this._circles.get(circle).then((c) => {
-                listener = c.addListener(eventName, (e) => this._zone.run(() => observer.next(e)));
-            });
-            return () => {
-                if (listener !== null) {
-                    listener.remove();
-                }
-            };
-        });
-    }
-};
-CircleManager.ɵfac = function CircleManager_Factory(t) { return new (t || CircleManager)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](GoogleMapsAPIWrapper), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"])); };
-CircleManager.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: CircleManager, factory: function (t) { return CircleManager.ɵfac(t); } });
-CircleManager.ctorParameters = () => [
-    { type: GoogleMapsAPIWrapper },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] }
-];
-CircleManager = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [GoogleMapsAPIWrapper, _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"]])
-], CircleManager);
-
-var AgmCircle_1;
-let AgmCircle = AgmCircle_1 = class AgmCircle {
-    constructor(_manager) {
-        this._manager = _manager;
-        /**
-         * Indicates whether this Circle handles mouse events. Defaults to true.
-         */
-        this.clickable = true;
-        /**
-         * If set to true, the user can drag this circle over the map. Defaults to false.
-         */
-        // tslint:disable-next-line:no-input-rename
-        this.draggable = false;
-        /**
-         * If set to true, the user can edit this circle by dragging the control points shown at
-         * the center and around the circumference of the circle. Defaults to false.
-         */
-        this.editable = false;
-        /**
-         * The radius in meters on the Earth's surface.
-         */
-        this.radius = 0;
-        /**
-         * The stroke position. Defaults to CENTER.
-         * This property is not supported on Internet Explorer 8 and earlier.
-         */
-        this.strokePosition = 'CENTER';
-        /**
-         * The stroke width in pixels.
-         */
-        this.strokeWeight = 0;
-        /**
-         * Whether this circle is visible on the map. Defaults to true.
-         */
-        this.visible = true;
-        /**
-         * This event is fired when the circle's center is changed.
-         */
-        this.centerChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event emitter gets emitted when the user clicks on the circle.
-         */
-        this.circleClick = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event emitter gets emitted when the user clicks on the circle.
-         */
-        this.circleDblClick = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is repeatedly fired while the user drags the circle.
-         */
-        this.drag = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the user stops dragging the circle.
-         */
-        this.dragEnd = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the user starts dragging the circle.
-         */
-        this.dragStart = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the DOM mousedown event is fired on the circle.
-         */
-        this.mouseDown = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the DOM mousemove event is fired on the circle.
-         */
-        this.mouseMove = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired on circle mouseout.
-         */
-        this.mouseOut = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired on circle mouseover.
-         */
-        this.mouseOver = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the DOM mouseup event is fired on the circle.
-         */
-        this.mouseUp = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the circle's radius is changed.
-         */
-        this.radiusChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the circle is right-clicked on.
-         */
-        this.rightClick = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        this._circleAddedToManager = false;
-        this._eventSubscriptions = [];
-    }
-    /** @internal */
-    ngOnInit() {
-        this._manager.addCircle(this);
-        this._circleAddedToManager = true;
-        this._registerEventListeners();
-    }
-    /** @internal */
-    ngOnChanges(changes) {
-        if (!this._circleAddedToManager) {
-            return;
-        }
-        if (changes['latitude'] || changes['longitude']) {
-            this._manager.setCenter(this);
-        }
-        if (changes['editable']) {
-            this._manager.setEditable(this);
-        }
-        if (changes['draggable']) {
-            this._manager.setDraggable(this);
-        }
-        if (changes['visible']) {
-            this._manager.setVisible(this);
-        }
-        if (changes['radius']) {
-            this._manager.setRadius(this);
-        }
-        this._updateCircleOptionsChanges(changes);
-    }
-    _updateCircleOptionsChanges(changes) {
-        let options = {};
-        let optionKeys = Object.keys(changes).filter(k => AgmCircle_1._mapOptions.indexOf(k) !== -1);
-        optionKeys.forEach((k) => { options[k] = changes[k].currentValue; });
-        if (optionKeys.length > 0) {
-            this._manager.setOptions(this, options);
-        }
-    }
-    _registerEventListeners() {
-        let events = new Map();
-        events.set('center_changed', this.centerChange);
-        events.set('click', this.circleClick);
-        events.set('dblclick', this.circleDblClick);
-        events.set('drag', this.drag);
-        events.set('dragend', this.dragEnd);
-        events.set('dragstart', this.dragStart);
-        events.set('mousedown', this.mouseDown);
-        events.set('mousemove', this.mouseMove);
-        events.set('mouseout', this.mouseOut);
-        events.set('mouseover', this.mouseOver);
-        events.set('mouseup', this.mouseUp);
-        events.set('radius_changed', this.radiusChange);
-        events.set('rightclick', this.rightClick);
-        events.forEach((eventEmitter, eventName) => {
-            this._eventSubscriptions.push(this._manager.createEventObservable(eventName, this).subscribe((value) => {
-                switch (eventName) {
-                    case 'radius_changed':
-                        this._manager.getRadius(this).then((radius) => eventEmitter.emit(radius));
-                        break;
-                    case 'center_changed':
-                        this._manager.getCenter(this).then((center) => eventEmitter.emit({ lat: center.lat(), lng: center.lng() }));
-                        break;
-                    default:
-                        eventEmitter.emit({ coords: { lat: value.latLng.lat(), lng: value.latLng.lng() } });
-                }
-            }));
-        });
-    }
-    /** @internal */
-    ngOnDestroy() {
-        this._eventSubscriptions.forEach(function (s) { s.unsubscribe(); });
-        this._eventSubscriptions = null;
-        this._manager.removeCircle(this);
-    }
-    /**
-     * Gets the LatLngBounds of this Circle.
-     */
-    getBounds() { return this._manager.getBounds(this); }
-    getCenter() { return this._manager.getCenter(this); }
-};
-AgmCircle.ɵfac = function AgmCircle_Factory(t) { return new (t || AgmCircle)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](CircleManager)); };
-AgmCircle.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({ type: AgmCircle, selectors: [["agm-circle"]], inputs: { clickable: "clickable", draggable: ["circleDraggable", "draggable"], editable: "editable", radius: "radius", strokePosition: "strokePosition", strokeWeight: "strokeWeight", visible: "visible", latitude: "latitude", longitude: "longitude", fillColor: "fillColor", fillOpacity: "fillOpacity", strokeColor: "strokeColor", strokeOpacity: "strokeOpacity", zIndex: "zIndex" }, outputs: { centerChange: "centerChange", circleClick: "circleClick", circleDblClick: "circleDblClick", drag: "drag", dragEnd: "dragEnd", dragStart: "dragStart", mouseDown: "mouseDown", mouseMove: "mouseMove", mouseOut: "mouseOut", mouseOver: "mouseOver", mouseUp: "mouseUp", radiusChange: "radiusChange", rightClick: "rightClick" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]] });
-AgmCircle._mapOptions = [
-    'fillColor', 'fillOpacity', 'strokeColor', 'strokeOpacity', 'strokePosition', 'strokeWeight',
-    'visible', 'zIndex', 'clickable',
-];
-AgmCircle.ctorParameters = () => [
-    { type: CircleManager }
-];
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmCircle.prototype, "latitude", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmCircle.prototype, "longitude", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmCircle.prototype, "clickable", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])('circleDraggable'),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmCircle.prototype, "draggable", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmCircle.prototype, "editable", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
-], AgmCircle.prototype, "fillColor", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmCircle.prototype, "fillOpacity", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmCircle.prototype, "radius", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
-], AgmCircle.prototype, "strokeColor", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmCircle.prototype, "strokeOpacity", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
-], AgmCircle.prototype, "strokePosition", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmCircle.prototype, "strokeWeight", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmCircle.prototype, "visible", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmCircle.prototype, "zIndex", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmCircle.prototype, "centerChange", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmCircle.prototype, "circleClick", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmCircle.prototype, "circleDblClick", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmCircle.prototype, "drag", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmCircle.prototype, "dragEnd", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmCircle.prototype, "dragStart", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmCircle.prototype, "mouseDown", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmCircle.prototype, "mouseMove", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmCircle.prototype, "mouseOut", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmCircle.prototype, "mouseOver", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmCircle.prototype, "mouseUp", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmCircle.prototype, "radiusChange", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmCircle.prototype, "rightClick", void 0);
-AgmCircle = AgmCircle_1 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [CircleManager])
-], AgmCircle);
-
-/**
- * Manages all Data Layers for a Google Map instance.
- */
-let DataLayerManager = class DataLayerManager {
-    constructor(_wrapper, _zone) {
-        this._wrapper = _wrapper;
-        this._zone = _zone;
-        this._layers = new Map();
-    }
-    /**
-     * Adds a new Data Layer to the map.
-     */
-    addDataLayer(layer) {
-        const newLayer = this._wrapper.createDataLayer({
-            style: layer.style,
-        })
-            .then(d => {
-            if (layer.geoJson) {
-                this.getDataFeatures(d, layer.geoJson).then(features => d.features = features);
-            }
-            return d;
-        });
-        this._layers.set(layer, newLayer);
-    }
-    deleteDataLayer(layer) {
-        this._layers.get(layer).then(l => {
-            l.setMap(null);
-            this._layers.delete(layer);
-        });
-    }
-    updateGeoJson(layer, geoJson) {
-        this._layers.get(layer).then(l => {
-            l.forEach(function (feature) {
-                l.remove(feature);
-                var index = l.features.indexOf(feature, 0);
-                if (index > -1) {
-                    l.features.splice(index, 1);
-                }
-            });
-            this.getDataFeatures(l, geoJson).then(features => l.features = features);
-        });
-    }
-    setDataOptions(layer, options) {
-        this._layers.get(layer).then(l => {
-            l.setControlPosition(options.controlPosition);
-            l.setControls(options.controls);
-            l.setDrawingMode(options.drawingMode);
-            l.setStyle(options.style);
-        });
-    }
-    /**
-     * Creates a Google Maps event listener for the given DataLayer as an Observable
-     */
-    createEventObservable(eventName, layer) {
-        return new rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"]((observer) => {
-            this._layers.get(layer).then((d) => {
-                d.addListener(eventName, (e) => this._zone.run(() => observer.next(e)));
-            });
-        });
-    }
-    /**
-     * Extract features from a geoJson using google.maps Data Class
-     * @param d : google.maps.Data class instance
-     * @param geoJson : url or geojson object
-     */
-    getDataFeatures(d, geoJson) {
-        return new Promise((resolve, reject) => {
-            if (typeof geoJson === 'object') {
-                try {
-                    const features = d.addGeoJson(geoJson);
-                    resolve(features);
-                }
-                catch (e) {
-                    reject(e);
-                }
-            }
-            else if (typeof geoJson === 'string') {
-                d.loadGeoJson(geoJson, null, resolve);
-            }
-            else {
-                reject(`Impossible to extract features from geoJson: wrong argument type`);
-            }
-        });
-    }
-};
-DataLayerManager.ɵfac = function DataLayerManager_Factory(t) { return new (t || DataLayerManager)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](GoogleMapsAPIWrapper), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"])); };
-DataLayerManager.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: DataLayerManager, factory: function (t) { return DataLayerManager.ɵfac(t); } });
-DataLayerManager.ctorParameters = () => [
-    { type: GoogleMapsAPIWrapper },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] }
-];
-DataLayerManager = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [GoogleMapsAPIWrapper, _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"]])
-], DataLayerManager);
-
-var AgmDataLayer_1;
-let layerId$1 = 0;
-/**
- * AgmDataLayer enables the user to add data layers to the map.
- *
- * ### Example
- * ```typescript
- * import { Component } from 'angular2/core';
- * import { AgmMap, AgmDataLayer } from
- * 'angular-google-maps/core';
- *
- * @Component({
- *  selector: 'my-map-cmp',
- *  directives: [AgmMap, AgmDataLayer],
- *  styles: [`
- *    .agm-container {
- *      height: 300px;
- *    }
- * `],
- *  template: `
- * <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
- * 	  <agm-data-layer [geoJson]="geoJsonObject" (layerClick)="clicked($event)" [style]="styleFunc">
- * 	  </agm-data-layer>
- * </agm-map>
- *  `
- * })
- * export class MyMapCmp {
- *   lat: number = -25.274449;
- *   lng: number = 133.775060;
- *   zoom: number = 5;
- *
- * clicked(clickEvent) {
- *    console.log(clickEvent);
- *  }
- *
- *  styleFunc(feature) {
- *    return ({
- *      clickable: false,
- *      fillColor: feature.getProperty('color'),
- *      strokeWeight: 1
- *    });
- *  }
- *
- *  geoJsonObject: Object = {
- *    "type": "FeatureCollection",
- *    "features": [
- *      {
- *        "type": "Feature",
- *        "properties": {
- *          "letter": "G",
- *          "color": "blue",
- *          "rank": "7",
- *          "ascii": "71"
- *        },
- *        "geometry": {
- *          "type": "Polygon",
- *          "coordinates": [
- *            [
- *              [123.61, -22.14], [122.38, -21.73], [121.06, -21.69], [119.66, -22.22], [119.00, -23.40],
- *              [118.65, -24.76], [118.43, -26.07], [118.78, -27.56], [119.22, -28.57], [120.23, -29.49],
- *              [121.77, -29.87], [123.57, -29.64], [124.45, -29.03], [124.71, -27.95], [124.80, -26.70],
- *              [124.80, -25.60], [123.61, -25.64], [122.56, -25.64], [121.72, -25.72], [121.81, -26.62],
- *              [121.86, -26.98], [122.60, -26.90], [123.57, -27.05], [123.57, -27.68], [123.35, -28.18],
- *              [122.51, -28.38], [121.77, -28.26], [121.02, -27.91], [120.49, -27.21], [120.14, -26.50],
- *              [120.10, -25.64], [120.27, -24.52], [120.67, -23.68], [121.72, -23.32], [122.43, -23.48],
- *              [123.04, -24.04], [124.54, -24.28], [124.58, -23.20], [123.61, -22.14]
- *            ]
- *          ]
- *        }
- *      },
- *      {
- *        "type": "Feature",
- *        "properties": {
- *          "letter": "o",
- *          "color": "red",
- *          "rank": "15",
- *          "ascii": "111"
- *        },
- *        "geometry": {
- *          "type": "Polygon",
- *          "coordinates": [
- *            [
- *              [128.84, -25.76], [128.18, -25.60], [127.96, -25.52], [127.88, -25.52], [127.70, -25.60],
- *              [127.26, -25.79], [126.60, -26.11], [126.16, -26.78], [126.12, -27.68], [126.21, -28.42],
- *              [126.69, -29.49], [127.74, -29.80], [128.80, -29.72], [129.41, -29.03], [129.72, -27.95],
- *              [129.68, -27.21], [129.33, -26.23], [128.84, -25.76]
- *            ],
- *            [
- *              [128.45, -27.44], [128.32, -26.94], [127.70, -26.82], [127.35, -27.05], [127.17, -27.80],
- *              [127.57, -28.22], [128.10, -28.42], [128.49, -27.80], [128.45, -27.44]
- *            ]
- *          ]
- *        }
- *      },
- *      {
- *        "type": "Feature",
- *        "properties": {
- *          "letter": "o",
- *          "color": "yellow",
- *          "rank": "15",
- *          "ascii": "111"
- *        },
- *        "geometry": {
- *          "type": "Polygon",
- *          "coordinates": [
- *            [
- *              [131.87, -25.76], [131.35, -26.07], [130.95, -26.78], [130.82, -27.64], [130.86, -28.53],
- *              [131.26, -29.22], [131.92, -29.76], [132.45, -29.87], [133.06, -29.76], [133.72, -29.34],
- *              [134.07, -28.80], [134.20, -27.91], [134.07, -27.21], [133.81, -26.31], [133.37, -25.83],
- *              [132.71, -25.64], [131.87, -25.76]
- *            ],
- *            [
- *              [133.15, -27.17], [132.71, -26.86], [132.09, -26.90], [131.74, -27.56], [131.79, -28.26],
- *              [132.36, -28.45], [132.93, -28.34], [133.15, -27.76], [133.15, -27.17]
- *            ]
- *          ]
- *        }
- *      },
- *      {
- *        "type": "Feature",
- *        "properties": {
- *          "letter": "g",
- *          "color": "blue",
- *          "rank": "7",
- *          "ascii": "103"
- *        },
- *        "geometry": {
- *          "type": "Polygon",
- *          "coordinates": [
- *            [
- *              [138.12, -25.04], [136.84, -25.16], [135.96, -25.36], [135.26, -25.99], [135, -26.90],
- *              [135.04, -27.91], [135.26, -28.88], [136.05, -29.45], [137.02, -29.49], [137.81, -29.49],
- *              [137.94, -29.99], [137.90, -31.20], [137.85, -32.24], [136.88, -32.69], [136.45, -32.36],
- *              [136.27, -31.80], [134.95, -31.84], [135.17, -32.99], [135.52, -33.43], [136.14, -33.76],
- *              [137.06, -33.83], [138.12, -33.65], [138.86, -33.21], [139.30, -32.28], [139.30, -31.24],
- *              [139.30, -30.14], [139.21, -28.96], [139.17, -28.22], [139.08, -27.41], [139.08, -26.47],
- *              [138.99, -25.40], [138.73, -25.00], [138.12, -25.04]
- *            ],
- *            [
- *              [137.50, -26.54], [136.97, -26.47], [136.49, -26.58], [136.31, -27.13], [136.31, -27.72],
- *              [136.58, -27.99], [137.50, -28.03], [137.68, -27.68], [137.59, -26.78], [137.50, -26.54]
- *            ]
- *          ]
- *        }
- *      },
- *      {
- *        "type": "Feature",
- *        "properties": {
- *          "letter": "l",
- *          "color": "green",
- *          "rank": "12",
- *          "ascii": "108"
- *        },
- *        "geometry": {
- *          "type": "Polygon",
- *          "coordinates": [
- *            [
- *              [140.14, -21.04], [140.31, -29.42], [141.67, -29.49], [141.59, -20.92], [140.14, -21.04]
- *            ]
- *          ]
- *        }
- *      },
- *      {
- *        "type": "Feature",
- *        "properties": {
- *          "letter": "e",
- *          "color": "red",
- *          "rank": "5",
- *          "ascii": "101"
- *        },
- *        "geometry": {
- *          "type": "Polygon",
- *          "coordinates": [
- *            [
- *              [144.14, -27.41], [145.67, -27.52], [146.86, -27.09], [146.82, -25.64], [146.25, -25.04],
- *              [145.45, -24.68], [144.66, -24.60], [144.09, -24.76], [143.43, -25.08], [142.99, -25.40],
- *              [142.64, -26.03], [142.64, -27.05], [142.64, -28.26], [143.30, -29.11], [144.18, -29.57],
- *              [145.41, -29.64], [146.46, -29.19], [146.64, -28.72], [146.82, -28.14], [144.84, -28.42],
- *              [144.31, -28.26], [144.14, -27.41]
- *            ],
- *            [
- *              [144.18, -26.39], [144.53, -26.58], [145.19, -26.62], [145.72, -26.35], [145.81, -25.91],
- *              [145.41, -25.68], [144.97, -25.68], [144.49, -25.64], [144, -25.99], [144.18, -26.39]
- *            ]
- *          ]
- *        }
- *      }
- *    ]
- *  };
- * }
- * ```
- */
-let AgmDataLayer = AgmDataLayer_1 = class AgmDataLayer {
-    constructor(_manager) {
-        this._manager = _manager;
-        this._addedToManager = false;
-        this._id = (layerId$1++).toString();
-        this._subscriptions = [];
-        /**
-         * This event is fired when a feature in the layer is clicked.
-         */
-        this.layerClick = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * The geoJson to be displayed
-         */
-        this.geoJson = null;
-    }
-    ngOnInit() {
-        if (this._addedToManager) {
-            return;
-        }
-        this._manager.addDataLayer(this);
-        this._addedToManager = true;
-        this._addEventListeners();
-    }
-    _addEventListeners() {
-        const listeners = [
-            { name: 'click', handler: (ev) => this.layerClick.emit(ev) },
-        ];
-        listeners.forEach((obj) => {
-            const os = this._manager.createEventObservable(obj.name, this).subscribe(obj.handler);
-            this._subscriptions.push(os);
-        });
-    }
-    /** @internal */
-    id() { return this._id; }
-    /** @internal */
-    toString() { return `AgmDataLayer-${this._id.toString()}`; }
-    /** @internal */
-    ngOnDestroy() {
-        this._manager.deleteDataLayer(this);
-        // unsubscribe all registered observable subscriptions
-        this._subscriptions.forEach(s => s.unsubscribe());
-    }
-    /** @internal */
-    ngOnChanges(changes) {
-        if (!this._addedToManager) {
-            return;
-        }
-        var geoJsonChange = changes['geoJson'];
-        if (geoJsonChange) {
-            this._manager.updateGeoJson(this, geoJsonChange.currentValue);
-        }
-        let dataOptions = {};
-        AgmDataLayer_1._dataOptionsAttributes.forEach(k => dataOptions[k] = changes.hasOwnProperty(k) ? changes[k].currentValue : this[k]);
-        this._manager.setDataOptions(this, dataOptions);
-    }
-};
-AgmDataLayer.ɵfac = function AgmDataLayer_Factory(t) { return new (t || AgmDataLayer)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](DataLayerManager)); };
-AgmDataLayer.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({ type: AgmDataLayer, selectors: [["agm-data-layer"]], inputs: { geoJson: "geoJson", style: "style" }, outputs: { layerClick: "layerClick" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]] });
-AgmDataLayer._dataOptionsAttributes = ['style'];
-AgmDataLayer.ctorParameters = () => [
-    { type: DataLayerManager }
-];
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmDataLayer.prototype, "layerClick", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmDataLayer.prototype, "geoJson", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Function)
-], AgmDataLayer.prototype, "style", void 0);
-AgmDataLayer = AgmDataLayer_1 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [DataLayerManager])
-], AgmDataLayer);
-
-/**
- * Class to implement when you what to be able to make it work with the auto fit bounds feature
- * of AGM.
- */
-class FitBoundsAccessor {
-}
-/**
- * The FitBoundsService is responsible for computing the bounds of the a single map.
- */
-let FitBoundsService = class FitBoundsService {
-    constructor(loader) {
-        this._boundsChangeSampleTime$ = new rxjs__WEBPACK_IMPORTED_MODULE_2__["BehaviorSubject"](200);
-        this._includeInBounds$ = new rxjs__WEBPACK_IMPORTED_MODULE_2__["BehaviorSubject"](new Map());
-        this.bounds$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["from"])(loader.load()).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["flatMap"])(() => this._includeInBounds$), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["sample"])(this._boundsChangeSampleTime$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["switchMap"])(time => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["timer"])(0, time)))), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(includeInBounds => this._generateBounds(includeInBounds)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["shareReplay"])(1));
-    }
-    _generateBounds(includeInBounds) {
-        const bounds = new google.maps.LatLngBounds();
-        includeInBounds.forEach(b => bounds.extend(b));
-        return bounds;
-    }
-    addToBounds(latLng) {
-        const id = this._createIdentifier(latLng);
-        if (this._includeInBounds$.value.has(id)) {
-            return;
-        }
-        const map = this._includeInBounds$.value;
-        map.set(id, latLng);
-        this._includeInBounds$.next(map);
-    }
-    removeFromBounds(latLng) {
-        const map = this._includeInBounds$.value;
-        map.delete(this._createIdentifier(latLng));
-        this._includeInBounds$.next(map);
-    }
-    changeFitBoundsChangeSampleTime(timeMs) {
-        this._boundsChangeSampleTime$.next(timeMs);
-    }
-    getBounds$() {
-        return this.bounds$;
-    }
-    _createIdentifier(latLng) {
-        return `${latLng.lat}+${latLng.lng}`;
-    }
-};
-FitBoundsService.ɵfac = function FitBoundsService_Factory(t) { return new (t || FitBoundsService)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](MapsAPILoader)); };
-FitBoundsService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: FitBoundsService, factory: function (t) { return FitBoundsService.ɵfac(t); } });
-FitBoundsService.ctorParameters = () => [
-    { type: MapsAPILoader }
-];
-FitBoundsService = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [MapsAPILoader])
-], FitBoundsService);
-
-/**
- * Adds the given directive to the auto fit bounds feature when the value is true.
- * To make it work with you custom AGM component, you also have to implement the {@link FitBoundsAccessor} abstract class.
- * @example
- * <agm-marker [agmFitBounds]="true"></agm-marker>
- */
-let AgmFitBounds = class AgmFitBounds {
-    constructor(_fitBoundsAccessor, _fitBoundsService) {
-        this._fitBoundsAccessor = _fitBoundsAccessor;
-        this._fitBoundsService = _fitBoundsService;
-        /**
-         * If the value is true, the element gets added to the bounds of the map.
-         * Default: true.
-         */
-        this.agmFitBounds = true;
-        this._destroyed$ = new rxjs__WEBPACK_IMPORTED_MODULE_2__["Subject"]();
-        this._latestFitBoundsDetails = null;
-    }
-    /**
-     * @internal
-     */
-    ngOnChanges() {
-        this._updateBounds();
-    }
-    /**
-     * @internal
-     */
-    ngOnInit() {
-        this._fitBoundsAccessor
-            .getFitBoundsDetails$()
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["distinctUntilChanged"])((x, y) => x.latLng.lat === y.latLng.lat && x.latLng.lng === y.latLng.lng), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["takeUntil"])(this._destroyed$))
-            .subscribe(details => this._updateBounds(details));
-    }
-    /*
-     Either the location changed, or visible status changed.
-     Possible state changes are
-     invisible -> visible
-     visible -> invisible
-     visible -> visible (new location)
-    */
-    _updateBounds(newFitBoundsDetails) {
-        // either visibility will change, or location, so remove the old one anyway
-        if (this._latestFitBoundsDetails) {
-            this._fitBoundsService.removeFromBounds(this._latestFitBoundsDetails.latLng);
-            // don't set latestFitBoundsDetails to null, because we can toggle visibility from
-            // true -> false -> true, in which case we still need old value cached here
-        }
-        if (newFitBoundsDetails) {
-            this._latestFitBoundsDetails = newFitBoundsDetails;
-        }
-        if (!this._latestFitBoundsDetails) {
-            return;
-        }
-        if (this.agmFitBounds === true) {
-            this._fitBoundsService.addToBounds(this._latestFitBoundsDetails.latLng);
-        }
-    }
-    /**
-     * @internal
-     */
-    ngOnDestroy() {
-        this._destroyed$.next();
-        this._destroyed$.complete();
-        if (this._latestFitBoundsDetails !== null) {
-            this._fitBoundsService.removeFromBounds(this._latestFitBoundsDetails.latLng);
-        }
-    }
-};
-AgmFitBounds.ɵfac = function AgmFitBounds_Factory(t) { return new (t || AgmFitBounds)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](FitBoundsAccessor, 2), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](FitBoundsService)); };
-AgmFitBounds.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({ type: AgmFitBounds, selectors: [["", "agmFitBounds", ""]], inputs: { agmFitBounds: "agmFitBounds" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]] });
-AgmFitBounds.ctorParameters = () => [
-    { type: FitBoundsAccessor, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Self"] }] },
-    { type: FitBoundsService }
-];
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmFitBounds.prototype, "agmFitBounds", void 0);
-AgmFitBounds = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Self"])()),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [FitBoundsAccessor,
-        FitBoundsService])
-], AgmFitBounds);
-
-let MarkerManager = class MarkerManager {
-    constructor(_mapsWrapper, _zone) {
-        this._mapsWrapper = _mapsWrapper;
-        this._zone = _zone;
-        this._markers = new Map();
-    }
-    convertAnimation(uiAnim) {
-        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
-            if (uiAnim === null) {
-                return null;
-            }
-            else {
-                return this._mapsWrapper.getNativeMap().then(() => google.maps.Animation[uiAnim]);
-            }
-        });
-    }
-    deleteMarker(marker) {
-        const m = this._markers.get(marker);
-        if (m == null) {
-            // marker already deleted
-            return Promise.resolve();
-        }
-        return m.then((m) => {
-            return this._zone.run(() => {
-                m.setMap(null);
-                this._markers.delete(marker);
-            });
-        });
-    }
-    updateMarkerPosition(marker) {
-        return this._markers.get(marker).then((m) => m.setPosition({ lat: marker.latitude, lng: marker.longitude }));
-    }
-    updateTitle(marker) {
-        return this._markers.get(marker).then((m) => m.setTitle(marker.title));
-    }
-    updateLabel(marker) {
-        return this._markers.get(marker).then((m) => { m.setLabel(marker.label); });
-    }
-    updateDraggable(marker) {
-        return this._markers.get(marker).then((m) => m.setDraggable(marker.draggable));
-    }
-    updateIcon(marker) {
-        return this._markers.get(marker).then((m) => m.setIcon(marker.iconUrl));
-    }
-    updateOpacity(marker) {
-        return this._markers.get(marker).then((m) => m.setOpacity(marker.opacity));
-    }
-    updateVisible(marker) {
-        return this._markers.get(marker).then((m) => m.setVisible(marker.visible));
-    }
-    updateZIndex(marker) {
-        return this._markers.get(marker).then((m) => m.setZIndex(marker.zIndex));
-    }
-    updateClickable(marker) {
-        return this._markers.get(marker).then((m) => m.setClickable(marker.clickable));
-    }
-    updateAnimation(marker) {
-        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
-            const m = yield this._markers.get(marker);
-            m.setAnimation(yield this.convertAnimation(marker.animation));
-        });
-    }
-    addMarker(marker) {
-        const markerPromise = new Promise((resolve) => Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
-            return this._mapsWrapper.createMarker({
-                position: { lat: marker.latitude, lng: marker.longitude },
-                label: marker.label,
-                draggable: marker.draggable,
-                icon: marker.iconUrl,
-                opacity: marker.opacity,
-                visible: marker.visible,
-                zIndex: marker.zIndex,
-                title: marker.title,
-                clickable: marker.clickable,
-                animation: yield this.convertAnimation(marker.animation),
-            }).then(resolve);
-        }));
-        this._markers.set(marker, markerPromise);
-    }
-    getNativeMarker(marker) {
-        return this._markers.get(marker);
-    }
-    createEventObservable(eventName, marker) {
-        return new rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"]((observer) => {
-            this._markers.get(marker).then((m) => {
-                m.addListener(eventName, (e) => this._zone.run(() => observer.next(e)));
-            });
-        });
-    }
-};
-MarkerManager.ɵfac = function MarkerManager_Factory(t) { return new (t || MarkerManager)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](GoogleMapsAPIWrapper), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"])); };
-MarkerManager.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: MarkerManager, factory: function (t) { return MarkerManager.ɵfac(t); } });
-MarkerManager.ctorParameters = () => [
-    { type: GoogleMapsAPIWrapper },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] }
-];
-MarkerManager = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [GoogleMapsAPIWrapper, _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"]])
-], MarkerManager);
-
-let InfoWindowManager = class InfoWindowManager {
-    constructor(_mapsWrapper, _zone, _markerManager) {
-        this._mapsWrapper = _mapsWrapper;
-        this._zone = _zone;
-        this._markerManager = _markerManager;
-        this._infoWindows = new Map();
-    }
-    deleteInfoWindow(infoWindow) {
-        const iWindow = this._infoWindows.get(infoWindow);
-        if (iWindow == null) {
-            // info window already deleted
-            return Promise.resolve();
-        }
-        return iWindow.then((i) => {
-            return this._zone.run(() => {
-                i.close();
-                this._infoWindows.delete(infoWindow);
-            });
-        });
-    }
-    setPosition(infoWindow) {
-        return this._infoWindows.get(infoWindow).then((i) => i.setPosition({
-            lat: infoWindow.latitude,
-            lng: infoWindow.longitude,
-        }));
-    }
-    setZIndex(infoWindow) {
-        return this._infoWindows.get(infoWindow)
-            .then((i) => i.setZIndex(infoWindow.zIndex));
-    }
-    open(infoWindow) {
-        return this._infoWindows.get(infoWindow).then((w) => {
-            if (infoWindow.hostMarker != null) {
-                return this._markerManager.getNativeMarker(infoWindow.hostMarker).then((marker) => {
-                    return this._mapsWrapper.getNativeMap().then((map) => w.open(map, marker));
-                });
-            }
-            return this._mapsWrapper.getNativeMap().then((map) => w.open(map));
-        });
-    }
-    close(infoWindow) {
-        return this._infoWindows.get(infoWindow).then((w) => w.close());
-    }
-    setOptions(infoWindow, options) {
-        return this._infoWindows.get(infoWindow).then((i) => i.setOptions(options));
-    }
-    addInfoWindow(infoWindow) {
-        const options = {
-            content: infoWindow.content,
-            maxWidth: infoWindow.maxWidth,
-            zIndex: infoWindow.zIndex,
-            disableAutoPan: infoWindow.disableAutoPan,
-        };
-        if (typeof infoWindow.latitude === 'number' && typeof infoWindow.longitude === 'number') {
-            options.position = { lat: infoWindow.latitude, lng: infoWindow.longitude };
-        }
-        const infoWindowPromise = this._mapsWrapper.createInfoWindow(options);
-        this._infoWindows.set(infoWindow, infoWindowPromise);
-    }
-    /**
-     * Creates a Google Maps event listener for the given InfoWindow as an Observable
-     */
-    createEventObservable(eventName, infoWindow) {
-        return new rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"]((observer) => {
-            this._infoWindows.get(infoWindow).then((i) => {
-                i.addListener(eventName, (e) => this._zone.run(() => observer.next(e)));
-            });
-        });
-    }
-};
-InfoWindowManager.ɵfac = function InfoWindowManager_Factory(t) { return new (t || InfoWindowManager)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](GoogleMapsAPIWrapper), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](MarkerManager)); };
-InfoWindowManager.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: InfoWindowManager, factory: function (t) { return InfoWindowManager.ɵfac(t); } });
-InfoWindowManager.ctorParameters = () => [
-    { type: GoogleMapsAPIWrapper },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] },
-    { type: MarkerManager }
-];
-InfoWindowManager = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [GoogleMapsAPIWrapper, _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"],
-        MarkerManager])
-], InfoWindowManager);
-
-var AgmInfoWindow_1;
-let infoWindowId = 0;
-/**
- * AgmInfoWindow renders a info window inside a {@link AgmMarker} or standalone.
- *
- * ### Example
- * ```typescript
- * import { Component } from '@angular/core';
- *
- * @Component({
- *  selector: 'my-map-cmp',
- *  styles: [`
- *    .agm-map-container {
- *      height: 300px;
- *    }
- * `],
- *  template: `
- *    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
- *      <agm-marker [latitude]="lat" [longitude]="lng" [label]="'M'">
- *        <agm-info-window [disableAutoPan]="true">
- *          Hi, this is the content of the <strong>info window</strong>
- *        </agm-info-window>
- *      </agm-marker>
- *    </agm-map>
- *  `
- * })
- * ```
- */
-let AgmInfoWindow = AgmInfoWindow_1 = class AgmInfoWindow {
-    constructor(_infoWindowManager, _el) {
-        this._infoWindowManager = _infoWindowManager;
-        this._el = _el;
-        /**
-         * Sets the open state for the InfoWindow. You can also call the open() and close() methods.
-         */
-        this.isOpen = false;
-        /**
-         * Emits an event when the info window is closed.
-         */
-        this.infoWindowClose = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        this._infoWindowAddedToManager = false;
-        this._id = (infoWindowId++).toString();
-    }
-    ngOnInit() {
-        this.content = this._el.nativeElement.querySelector('.agm-info-window-content');
-        this._infoWindowManager.addInfoWindow(this);
-        this._infoWindowAddedToManager = true;
-        this._updateOpenState();
-        this._registerEventListeners();
-    }
-    /** @internal */
-    ngOnChanges(changes) {
-        if (!this._infoWindowAddedToManager) {
-            return;
-        }
-        if ((changes['latitude'] || changes['longitude']) && typeof this.latitude === 'number' &&
-            typeof this.longitude === 'number') {
-            this._infoWindowManager.setPosition(this);
-        }
-        if (changes['zIndex']) {
-            this._infoWindowManager.setZIndex(this);
-        }
-        if (changes['isOpen']) {
-            this._updateOpenState();
-        }
-        this._setInfoWindowOptions(changes);
-    }
-    _registerEventListeners() {
-        this._infoWindowManager.createEventObservable('closeclick', this).subscribe(() => {
-            this.isOpen = false;
-            this.infoWindowClose.emit();
-        });
-    }
-    _updateOpenState() {
-        this.isOpen ? this.open() : this.close();
-    }
-    _setInfoWindowOptions(changes) {
-        let options = {};
-        let optionKeys = Object.keys(changes).filter(k => AgmInfoWindow_1._infoWindowOptionsInputs.indexOf(k) !== -1);
-        optionKeys.forEach((k) => { options[k] = changes[k].currentValue; });
-        this._infoWindowManager.setOptions(this, options);
-    }
-    /**
-     * Opens the info window.
-     */
-    open() { return this._infoWindowManager.open(this); }
-    /**
-     * Closes the info window.
-     */
-    close() {
-        return this._infoWindowManager.close(this).then(() => { this.infoWindowClose.emit(); });
-    }
-    /** @internal */
-    id() { return this._id; }
-    /** @internal */
-    toString() { return 'AgmInfoWindow-' + this._id.toString(); }
-    /** @internal */
-    ngOnDestroy() { this._infoWindowManager.deleteInfoWindow(this); }
-};
-AgmInfoWindow.ɵfac = function AgmInfoWindow_Factory(t) { return new (t || AgmInfoWindow)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](InfoWindowManager), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"])); };
-AgmInfoWindow.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: AgmInfoWindow, selectors: [["agm-info-window"]], inputs: { isOpen: "isOpen", latitude: "latitude", longitude: "longitude", disableAutoPan: "disableAutoPan", zIndex: "zIndex", maxWidth: "maxWidth" }, outputs: { infoWindowClose: "infoWindowClose" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c0, decls: 2, vars: 0, consts: [[1, "agm-info-window-content"]], template: function AgmInfoWindow_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵprojectionDef"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵprojection"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    } }, encapsulation: 2 });
-AgmInfoWindow._infoWindowOptionsInputs = ['disableAutoPan', 'maxWidth'];
-AgmInfoWindow.ctorParameters = () => [
-    { type: InfoWindowManager },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] }
-];
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmInfoWindow.prototype, "latitude", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmInfoWindow.prototype, "longitude", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Boolean)
-], AgmInfoWindow.prototype, "disableAutoPan", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmInfoWindow.prototype, "zIndex", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmInfoWindow.prototype, "maxWidth", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmInfoWindow.prototype, "isOpen", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmInfoWindow.prototype, "infoWindowClose", void 0);
-AgmInfoWindow = AgmInfoWindow_1 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [InfoWindowManager, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"]])
-], AgmInfoWindow);
-
-/**
- * Manages all KML Layers for a Google Map instance.
- */
-let KmlLayerManager = class KmlLayerManager {
-    constructor(_wrapper, _zone) {
-        this._wrapper = _wrapper;
-        this._zone = _zone;
-        this._layers = new Map();
-    }
-    /**
-     * Adds a new KML Layer to the map.
-     */
-    addKmlLayer(layer) {
-        const newLayer = this._wrapper.getNativeMap().then(m => {
-            return new google.maps.KmlLayer({
-                clickable: layer.clickable,
-                map: m,
-                preserveViewport: layer.preserveViewport,
-                screenOverlays: layer.screenOverlays,
-                suppressInfoWindows: layer.suppressInfoWindows,
-                url: layer.url,
-                zIndex: layer.zIndex,
-            });
-        });
-        this._layers.set(layer, newLayer);
-    }
-    setOptions(layer, options) {
-        this._layers.get(layer).then(l => l.setOptions(options));
-    }
-    deleteKmlLayer(layer) {
-        this._layers.get(layer).then(l => {
-            l.setMap(null);
-            this._layers.delete(layer);
-        });
-    }
-    /**
-     * Creates a Google Maps event listener for the given KmlLayer as an Observable
-     */
-    createEventObservable(eventName, layer) {
-        return new rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"]((observer) => {
-            this._layers.get(layer).then((m) => {
-                m.addListener(eventName, (e) => this._zone.run(() => observer.next(e)));
-            });
-        });
-    }
-};
-KmlLayerManager.ɵfac = function KmlLayerManager_Factory(t) { return new (t || KmlLayerManager)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](GoogleMapsAPIWrapper), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"])); };
-KmlLayerManager.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: KmlLayerManager, factory: function (t) { return KmlLayerManager.ɵfac(t); } });
-KmlLayerManager.ctorParameters = () => [
-    { type: GoogleMapsAPIWrapper },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] }
-];
-KmlLayerManager = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [GoogleMapsAPIWrapper, _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"]])
-], KmlLayerManager);
-
-var AgmKmlLayer_1;
-let layerId$2 = 0;
-let AgmKmlLayer = AgmKmlLayer_1 = class AgmKmlLayer {
-    constructor(_manager) {
-        this._manager = _manager;
-        this._addedToManager = false;
-        this._id = (layerId$2++).toString();
-        this._subscriptions = [];
-        /**
-         * If true, the layer receives mouse events. Default value is true.
-         */
-        this.clickable = true;
-        /**
-         * By default, the input map is centered and zoomed to the bounding box of the contents of the
-         * layer.
-         * If this option is set to true, the viewport is left unchanged, unless the map's center and zoom
-         * were never set.
-         */
-        this.preserveViewport = false;
-        /**
-         * Whether to render the screen overlays. Default true.
-         */
-        this.screenOverlays = true;
-        /**
-         * Suppress the rendering of info windows when layer features are clicked.
-         */
-        this.suppressInfoWindows = false;
-        /**
-         * The URL of the KML document to display.
-         */
-        this.url = null;
-        /**
-         * The z-index of the layer.
-         */
-        this.zIndex = null;
-        /**
-         * This event is fired when a feature in the layer is clicked.
-         */
-        this.layerClick = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the KML layers default viewport has changed.
-         */
-        this.defaultViewportChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the KML layer has finished loading.
-         * At this point it is safe to read the status property to determine if the layer loaded
-         * successfully.
-         */
-        this.statusChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-    }
-    ngOnInit() {
-        if (this._addedToManager) {
-            return;
-        }
-        this._manager.addKmlLayer(this);
-        this._addedToManager = true;
-        this._addEventListeners();
-    }
-    ngOnChanges(changes) {
-        if (!this._addedToManager) {
-            return;
-        }
-        this._updatePolygonOptions(changes);
-    }
-    _updatePolygonOptions(changes) {
-        const options = Object.keys(changes)
-            .filter(k => AgmKmlLayer_1._kmlLayerOptions.indexOf(k) !== -1)
-            .reduce((obj, k) => {
-            obj[k] = changes[k].currentValue;
-            return obj;
-        }, {});
-        if (Object.keys(options).length > 0) {
-            this._manager.setOptions(this, options);
-        }
-    }
-    _addEventListeners() {
-        const listeners = [
-            { name: 'click', handler: (ev) => this.layerClick.emit(ev) },
-            { name: 'defaultviewport_changed', handler: () => this.defaultViewportChange.emit() },
-            { name: 'status_changed', handler: () => this.statusChange.emit() },
-        ];
-        listeners.forEach((obj) => {
-            const os = this._manager.createEventObservable(obj.name, this).subscribe(obj.handler);
-            this._subscriptions.push(os);
-        });
-    }
-    /** @internal */
-    id() { return this._id; }
-    /** @internal */
-    toString() { return `AgmKmlLayer-${this._id.toString()}`; }
-    /** @internal */
-    ngOnDestroy() {
-        this._manager.deleteKmlLayer(this);
-        // unsubscribe all registered observable subscriptions
-        this._subscriptions.forEach(s => s.unsubscribe());
-    }
-};
-AgmKmlLayer.ɵfac = function AgmKmlLayer_Factory(t) { return new (t || AgmKmlLayer)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](KmlLayerManager)); };
-AgmKmlLayer.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({ type: AgmKmlLayer, selectors: [["agm-kml-layer"]], inputs: { clickable: "clickable", preserveViewport: "preserveViewport", screenOverlays: "screenOverlays", suppressInfoWindows: "suppressInfoWindows", url: "url", zIndex: "zIndex" }, outputs: { layerClick: "layerClick", defaultViewportChange: "defaultViewportChange", statusChange: "statusChange" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]] });
-AgmKmlLayer._kmlLayerOptions = ['clickable', 'preserveViewport', 'screenOverlays', 'suppressInfoWindows', 'url', 'zIndex'];
-AgmKmlLayer.ctorParameters = () => [
-    { type: KmlLayerManager }
-];
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmKmlLayer.prototype, "clickable", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmKmlLayer.prototype, "preserveViewport", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmKmlLayer.prototype, "screenOverlays", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmKmlLayer.prototype, "suppressInfoWindows", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
-], AgmKmlLayer.prototype, "url", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmKmlLayer.prototype, "zIndex", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmKmlLayer.prototype, "layerClick", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmKmlLayer.prototype, "defaultViewportChange", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmKmlLayer.prototype, "statusChange", void 0);
-AgmKmlLayer = AgmKmlLayer_1 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [KmlLayerManager])
-], AgmKmlLayer);
-
-function createMVCEventObservable(array) {
-    const eventNames = ['insert_at', 'remove_at', 'set_at'];
-    return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["fromEventPattern"])((handler) => eventNames.map(evName => array.addListener(evName, (index, previous) => handler.apply(array, [{ 'newArr': array.getArray(), evName, index, previous }]))), (_handler, evListeners) => evListeners.forEach(evListener => evListener.remove()));
-}
-class MvcArrayMock {
-    constructor() {
-        this.vals = [];
-        this.listeners = {
-            'remove_at': [],
-            'insert_at': [],
-            'set_at': [],
-        };
-    }
-    clear() {
-        for (let i = this.vals.length - 1; i >= 0; i--) {
-            this.removeAt(i);
-        }
-    }
-    getArray() {
-        return [...this.vals];
-    }
-    getAt(i) {
-        return this.vals[i];
-    }
-    getLength() {
-        return this.vals.length;
-    }
-    insertAt(i, elem) {
-        this.vals.splice(i, 0, elem);
-        this.listeners.insert_at.map(listener => listener(i));
-    }
-    pop() {
-        const deleted = this.vals.pop();
-        this.listeners.remove_at.map(listener => listener(this.vals.length, deleted));
-        return deleted;
-    }
-    push(elem) {
-        this.vals.push(elem);
-        this.listeners.insert_at.map(listener => listener(this.vals.length - 1));
-        return this.vals.length;
-    }
-    removeAt(i) {
-        const deleted = this.vals.splice(i, 1)[0];
-        this.listeners.remove_at.map(listener => listener(i, deleted));
-        return deleted;
-    }
-    setAt(i, elem) {
-        const deleted = this.vals[i];
-        this.vals[i] = elem;
-        this.listeners.set_at.map(listener => listener(i, deleted));
-    }
-    forEach(callback) {
-        this.vals.forEach(callback);
-    }
-    addListener(eventName, handler) {
-        const listenerArr = this.listeners[eventName];
-        listenerArr.push(handler);
-        return {
-            remove: () => {
-                listenerArr.splice(listenerArr.indexOf(handler), 1);
-            },
-        };
-    }
-}
-
-let PolygonManager = class PolygonManager {
-    constructor(_mapsWrapper, _zone) {
-        this._mapsWrapper = _mapsWrapper;
-        this._zone = _zone;
-        this._polygons = new Map();
-    }
-    addPolygon(path) {
-        const polygonPromise = this._mapsWrapper.createPolygon({
-            clickable: path.clickable,
-            draggable: path.draggable,
-            editable: path.editable,
-            fillColor: path.fillColor,
-            fillOpacity: path.fillOpacity,
-            geodesic: path.geodesic,
-            paths: path.paths,
-            strokeColor: path.strokeColor,
-            strokeOpacity: path.strokeOpacity,
-            strokeWeight: path.strokeWeight,
-            visible: path.visible,
-            zIndex: path.zIndex,
-        });
-        this._polygons.set(path, polygonPromise);
-    }
-    updatePolygon(polygon) {
-        const m = this._polygons.get(polygon);
-        if (m == null) {
-            return Promise.resolve();
-        }
-        return m.then((l) => this._zone.run(() => { l.setPaths(polygon.paths); }));
-    }
-    setPolygonOptions(path, options) {
-        return this._polygons.get(path).then((l) => { l.setOptions(options); });
-    }
-    deletePolygon(paths) {
-        const m = this._polygons.get(paths);
-        if (m == null) {
-            return Promise.resolve();
-        }
-        return m.then((l) => {
-            return this._zone.run(() => {
-                l.setMap(null);
-                this._polygons.delete(paths);
-            });
-        });
-    }
-    getPath(polygon) {
-        return this._polygons.get(polygon)
-            .then((polygon) => polygon.getPath().getArray());
-    }
-    getPaths(polygon) {
-        return this._polygons.get(polygon)
-            .then((polygon) => polygon.getPaths().getArray().map((p) => p.getArray()));
-    }
-    createEventObservable(eventName, path) {
-        return new rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"]((observer) => {
-            this._polygons.get(path).then((l) => {
-                l.addListener(eventName, (e) => this._zone.run(() => observer.next(e)));
-            });
-        });
-    }
-    createPathEventObservable(agmPolygon) {
-        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
-            const polygon = yield this._polygons.get(agmPolygon);
-            const paths = polygon.getPaths();
-            const pathsChanges$ = createMVCEventObservable(paths);
-            return pathsChanges$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["startWith"])({ newArr: paths.getArray() }), // in order to subscribe to them all
-            Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["switchMap"])(parentMVEvent => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["merge"])(... // rest parameter
-            parentMVEvent.newArr.map((chMVC, index) => createMVCEventObservable(chMVC)
-                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(chMVCEvent => ({ parentMVEvent, chMVCEvent, pathIndex: index })))))
-                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["startWith"])({ parentMVEvent, chMVCEvent: null, pathIndex: null }))), // start the merged ob with an event signinifing change to parent
-            Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["skip"])(1), // skip the manually added event
-            Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(({ parentMVEvent, chMVCEvent, pathIndex }) => {
-                let retVal;
-                if (!chMVCEvent) {
-                    retVal = {
-                        newArr: parentMVEvent.newArr.map(subArr => subArr.getArray().map(latLng => latLng.toJSON())),
-                        eventName: parentMVEvent.evName,
-                        index: parentMVEvent.index,
-                    };
-                    if (parentMVEvent.previous) {
-                        retVal.previous = parentMVEvent.previous.getArray();
-                    }
-                }
-                else {
-                    retVal = {
-                        newArr: parentMVEvent.newArr.map(subArr => subArr.getArray().map(latLng => latLng.toJSON())),
-                        pathIndex,
-                        eventName: chMVCEvent.evName,
-                        index: chMVCEvent.index,
-                    };
-                    if (chMVCEvent.previous) {
-                        retVal.previous = chMVCEvent.previous;
-                    }
-                }
-                return retVal;
-            }));
-        });
-    }
-};
-PolygonManager.ɵfac = function PolygonManager_Factory(t) { return new (t || PolygonManager)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](GoogleMapsAPIWrapper), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"])); };
-PolygonManager.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: PolygonManager, factory: function (t) { return PolygonManager.ɵfac(t); } });
-PolygonManager.ctorParameters = () => [
-    { type: GoogleMapsAPIWrapper },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] }
-];
-PolygonManager = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [GoogleMapsAPIWrapper, _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"]])
-], PolygonManager);
-
-var PolylineManager_1;
-let PolylineManager = PolylineManager_1 = class PolylineManager {
-    constructor(_mapsWrapper, _zone) {
-        this._mapsWrapper = _mapsWrapper;
-        this._zone = _zone;
-        this._polylines = new Map();
-    }
-    static _convertPoints(line) {
-        const path = line._getPoints().map((point) => {
-            return { lat: point.latitude, lng: point.longitude };
-        });
-        return path;
-    }
-    static _convertPath(path) {
-        const symbolPath = google.maps.SymbolPath[path];
-        if (typeof symbolPath === 'number') {
-            return symbolPath;
-        }
-        else {
-            return path;
-        }
-    }
-    static _convertIcons(line) {
-        const icons = line._getIcons().map(agmIcon => ({
-            fixedRotation: agmIcon.fixedRotation,
-            offset: agmIcon.offset,
-            repeat: agmIcon.repeat,
-            icon: {
-                anchor: new google.maps.Point(agmIcon.anchorX, agmIcon.anchorY),
-                fillColor: agmIcon.fillColor,
-                fillOpacity: agmIcon.fillOpacity,
-                path: PolylineManager_1._convertPath(agmIcon.path),
-                rotation: agmIcon.rotation,
-                scale: agmIcon.scale,
-                strokeColor: agmIcon.strokeColor,
-                strokeOpacity: agmIcon.strokeOpacity,
-                strokeWeight: agmIcon.strokeWeight,
-            },
-        }));
-        // prune undefineds;
-        icons.forEach(icon => {
-            Object.entries(icon).forEach(([key, val]) => {
-                if (typeof val === 'undefined') {
-                    delete icon[key];
-                }
-            });
-            if (typeof icon.icon.anchor.x === 'undefined' ||
-                typeof icon.icon.anchor.y === 'undefined') {
-                delete icon.icon.anchor;
-            }
-        });
-        return icons;
-    }
-    addPolyline(line) {
-        const polylinePromise = this._mapsWrapper.getNativeMap()
-            .then(() => [PolylineManager_1._convertPoints(line),
-            PolylineManager_1._convertIcons(line)])
-            .then(([path, icons]) => this._mapsWrapper.createPolyline({
-            clickable: line.clickable,
-            draggable: line.draggable,
-            editable: line.editable,
-            geodesic: line.geodesic,
-            strokeColor: line.strokeColor,
-            strokeOpacity: line.strokeOpacity,
-            strokeWeight: line.strokeWeight,
-            visible: line.visible,
-            zIndex: line.zIndex,
-            path: path,
-            icons: icons,
-        }));
-        this._polylines.set(line, polylinePromise);
-    }
-    updatePolylinePoints(line) {
-        const path = PolylineManager_1._convertPoints(line);
-        const m = this._polylines.get(line);
-        if (m == null) {
-            return Promise.resolve();
-        }
-        return m.then((l) => { return this._zone.run(() => { l.setPath(path); }); });
-    }
-    updateIconSequences(line) {
-        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
-            yield this._mapsWrapper.getNativeMap();
-            const icons = PolylineManager_1._convertIcons(line);
-            const m = this._polylines.get(line);
-            if (m == null) {
-                return;
-            }
-            return m.then(l => this._zone.run(() => l.setOptions({ icons: icons })));
-        });
-    }
-    setPolylineOptions(line, options) {
-        return this._polylines.get(line).then((l) => { l.setOptions(options); });
-    }
-    deletePolyline(line) {
-        const m = this._polylines.get(line);
-        if (m == null) {
-            return Promise.resolve();
-        }
-        return m.then((l) => {
-            return this._zone.run(() => {
-                l.setMap(null);
-                this._polylines.delete(line);
-            });
-        });
-    }
-    getMVCPath(agmPolyline) {
-        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
-            const polyline = yield this._polylines.get(agmPolyline);
-            return polyline.getPath();
-        });
-    }
-    getPath(agmPolyline) {
-        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
-            return (yield this.getMVCPath(agmPolyline)).getArray();
-        });
-    }
-    createEventObservable(eventName, line) {
-        return new rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"]((observer) => {
-            this._polylines.get(line).then((l) => {
-                l.addListener(eventName, (e) => this._zone.run(() => observer.next(e)));
-            });
-        });
-    }
-    createPathEventObservable(line) {
-        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
-            const mvcPath = yield this.getMVCPath(line);
-            return createMVCEventObservable(mvcPath);
-        });
-    }
-};
-PolylineManager.ɵfac = function PolylineManager_Factory(t) { return new (t || PolylineManager)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](GoogleMapsAPIWrapper), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"])); };
-PolylineManager.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: PolylineManager, factory: function (t) { return PolylineManager.ɵfac(t); } });
-PolylineManager.ctorParameters = () => [
-    { type: GoogleMapsAPIWrapper },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] }
-];
-PolylineManager = PolylineManager_1 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [GoogleMapsAPIWrapper, _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"]])
-], PolylineManager);
-
-let RectangleManager = class RectangleManager {
-    constructor(_apiWrapper, _zone) {
-        this._apiWrapper = _apiWrapper;
-        this._zone = _zone;
-        this._rectangles = new Map();
-    }
-    addRectangle(rectangle) {
-        this._rectangles.set(rectangle, this._apiWrapper.createRectangle({
-            bounds: {
-                north: rectangle.north,
-                east: rectangle.east,
-                south: rectangle.south,
-                west: rectangle.west,
-            },
-            clickable: rectangle.clickable,
-            draggable: rectangle.draggable,
-            editable: rectangle.editable,
-            fillColor: rectangle.fillColor,
-            fillOpacity: rectangle.fillOpacity,
-            strokeColor: rectangle.strokeColor,
-            strokeOpacity: rectangle.strokeOpacity,
-            strokePosition: rectangle.strokePosition,
-            strokeWeight: rectangle.strokeWeight,
-            visible: rectangle.visible,
-            zIndex: rectangle.zIndex,
-        }));
-    }
-    /**
-     * Removes the given rectangle from the map.
-     */
-    removeRectangle(rectangle) {
-        return this._rectangles.get(rectangle).then((r) => {
-            r.setMap(null);
-            this._rectangles.delete(rectangle);
-        });
-    }
-    setOptions(rectangle, options) {
-        return this._rectangles.get(rectangle).then((r) => r.setOptions(options));
-    }
-    getBounds(rectangle) {
-        return this._rectangles.get(rectangle).then((r) => r.getBounds());
-    }
-    setBounds(rectangle) {
-        return this._rectangles.get(rectangle).then((r) => {
-            return r.setBounds({
-                north: rectangle.north,
-                east: rectangle.east,
-                south: rectangle.south,
-                west: rectangle.west,
-            });
-        });
-    }
-    setEditable(rectangle) {
-        return this._rectangles.get(rectangle).then((r) => {
-            return r.setEditable(rectangle.editable);
-        });
-    }
-    setDraggable(rectangle) {
-        return this._rectangles.get(rectangle).then((r) => {
-            return r.setDraggable(rectangle.draggable);
-        });
-    }
-    setVisible(rectangle) {
-        return this._rectangles.get(rectangle).then((r) => {
-            return r.setVisible(rectangle.visible);
-        });
-    }
-    createEventObservable(eventName, rectangle) {
-        return rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"].create((observer) => {
-            let listener = null;
-            this._rectangles.get(rectangle).then((r) => {
-                listener = r.addListener(eventName, (e) => this._zone.run(() => observer.next(e)));
-            });
-            return () => {
-                if (listener !== null) {
-                    listener.remove();
-                }
-            };
-        });
-    }
-};
-RectangleManager.ɵfac = function RectangleManager_Factory(t) { return new (t || RectangleManager)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](GoogleMapsAPIWrapper), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"])); };
-RectangleManager.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: RectangleManager, factory: function (t) { return RectangleManager.ɵfac(t); } });
-RectangleManager.ctorParameters = () => [
-    { type: GoogleMapsAPIWrapper },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] }
-];
-RectangleManager = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [GoogleMapsAPIWrapper, _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"]])
-], RectangleManager);
-
-var AgmMap_1;
-/**
- * AgmMap renders a Google Map.
- * **Important note**: To be able see a map in the browser, you have to define a height for the
- * element `agm-map`.
- *
- * ### Example
- * ```typescript
- * import { Component } from '@angular/core';
- *
- * @Component({
- *  selector: 'my-map-cmp',
- *  styles: [`
- *    agm-map {
- *      height: 300px;
- *    }
- * `],
- *  template: `
- *    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
- *    </agm-map>
- *  `
- * })
- * ```
- */
-let AgmMap = AgmMap_1 = class AgmMap {
-    constructor(_elem, _mapsWrapper, _platformId, _fitBoundsService, _zone) {
-        this._elem = _elem;
-        this._mapsWrapper = _mapsWrapper;
-        this._platformId = _platformId;
-        this._fitBoundsService = _fitBoundsService;
-        this._zone = _zone;
-        /**
-         * The longitude that defines the center of the map.
-         */
-        this.longitude = 0;
-        /**
-         * The latitude that defines the center of the map.
-         */
-        this.latitude = 0;
-        /**
-         * The zoom level of the map. The default zoom level is 8.
-         */
-        this.zoom = 8;
-        /**
-         * Enables/disables if map is draggable.
-         */
-        // tslint:disable-next-line:no-input-rename
-        this.draggable = true;
-        /**
-         * Enables/disables zoom and center on double click. Enabled by default.
-         */
-        this.disableDoubleClickZoom = false;
-        /**
-         * Enables/disables all default UI of the Google map. Please note: When the map is created, this
-         * value cannot get updated.
-         */
-        this.disableDefaultUI = false;
-        /**
-         * If false, disables scrollwheel zooming on the map. The scrollwheel is enabled by default.
-         */
-        this.scrollwheel = true;
-        /**
-         * If false, prevents the map from being controlled by the keyboard. Keyboard shortcuts are
-         * enabled by default.
-         */
-        this.keyboardShortcuts = true;
-        /**
-         * Styles to apply to each of the default map types. Note that for Satellite/Hybrid and Terrain
-         * modes, these styles will only apply to labels and geometry.
-         */
-        this.styles = [];
-        /**
-         * When true and the latitude and/or longitude values changes, the Google Maps panTo method is
-         * used to
-         * center the map. See: https://developers.google.com/maps/documentation/javascript/reference#Map
-         */
-        this.usePanning = false;
-        /**
-         * Sets the viewport to contain the given bounds.
-         * If this option to `true`, the bounds get automatically computed from all elements that use the {@link AgmFitBounds} directive.
-         */
-        this.fitBounds = false;
-        /**
-         * The initial enabled/disabled state of the Scale control. This is disabled by default.
-         */
-        this.scaleControl = false;
-        /**
-         * The initial enabled/disabled state of the Map type control.
-         */
-        this.mapTypeControl = false;
-        /**
-         * The initial enabled/disabled state of the Pan control.
-         */
-        this.panControl = false;
-        /**
-         * The initial enabled/disabled state of the Rotate control.
-         */
-        this.rotateControl = false;
-        /**
-         * The initial enabled/disabled state of the Fullscreen control.
-         */
-        this.fullscreenControl = false;
-        /**
-         * The map mapTypeId. Defaults to 'roadmap'.
-         */
-        this.mapTypeId = 'roadmap';
-        /**
-         * When false, map icons are not clickable. A map icon represents a point of interest,
-         * also known as a POI. By default map icons are clickable.
-         */
-        this.clickableIcons = true;
-        /**
-         * A map icon represents a point of interest, also known as a POI.
-         * When map icons are clickable by default, an info window is displayed.
-         * When this property is set to false, the info window will not be shown but the click event
-         * will still fire
-         */
-        this.showDefaultInfoWindow = true;
-        /**
-         * This setting controls how gestures on the map are handled.
-         * Allowed values:
-         * - 'cooperative' (Two-finger touch gestures pan and zoom the map. One-finger touch gestures are not handled by the map.)
-         * - 'greedy'      (All touch gestures pan or zoom the map.)
-         * - 'none'        (The map cannot be panned or zoomed by user gestures.)
-         * - 'auto'        [default] (Gesture handling is either cooperative or greedy, depending on whether the page is scrollable or not.
-         */
-        this.gestureHandling = 'auto';
-        /**
-         * Controls the automatic switching behavior for the angle of incidence of
-         * the map. The only allowed values are 0 and 45. The value 0 causes the map
-         * to always use a 0° overhead view regardless of the zoom level and
-         * viewport. The value 45 causes the tilt angle to automatically switch to
-         * 45 whenever 45° imagery is available for the current zoom level and
-         * viewport, and switch back to 0 whenever 45° imagery is not available
-         * (this is the default behavior). 45° imagery is only available for
-         * satellite and hybrid map types, within some locations, and at some zoom
-         * levels. Note: getTilt returns the current tilt angle, not the value
-         * specified by this option. Because getTilt and this option refer to
-         * different things, do not bind() the tilt property; doing so may yield
-         * unpredictable effects. (Default of AGM is 0 (disabled). Enable it with value 45.)
-         */
-        this.tilt = 0;
-        this._observableSubscriptions = [];
-        /**
-         * This event emitter gets emitted when the user clicks on the map (but not when they click on a
-         * marker or infoWindow).
-         */
-        this.mapClick = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event emitter gets emitted when the user right-clicks on the map (but not when they click
-         * on a marker or infoWindow).
-         */
-        this.mapRightClick = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event emitter gets emitted when the user double-clicks on the map (but not when they click
-         * on a marker or infoWindow).
-         */
-        this.mapDblClick = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event emitter is fired when the map center changes.
-         */
-        this.centerChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the viewport bounds have changed.
-         */
-        this.boundsChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the mapTypeId property changes.
-         */
-        this.mapTypeIdChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the map becomes idle after panning or zooming.
-         */
-        this.idle = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the zoom level has changed.
-         */
-        this.zoomChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the google map is fully initialized.
-         * You get the google.maps.Map instance as a result of this EventEmitter.
-         */
-        this.mapReady = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the visible tiles have finished loading.
-         */
-        this.tilesLoaded = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-    }
-    /** @internal */
-    ngOnInit() {
-        if (Object(_angular_common__WEBPACK_IMPORTED_MODULE_4__["isPlatformServer"])(this._platformId)) {
-            // The code is running on the server, do nothing
-            return;
-        }
-        // todo: this should be solved with a new component and a viewChild decorator
-        const container = this._elem.nativeElement.querySelector('.agm-map-container-inner');
-        this._initMapInstance(container);
-    }
-    _initMapInstance(el) {
-        this._mapsWrapper.createMap(el, {
-            center: { lat: this.latitude || 0, lng: this.longitude || 0 },
-            zoom: this.zoom,
-            minZoom: this.minZoom,
-            maxZoom: this.maxZoom,
-            controlSize: this.controlSize,
-            disableDefaultUI: this.disableDefaultUI,
-            disableDoubleClickZoom: this.disableDoubleClickZoom,
-            scrollwheel: this.scrollwheel,
-            backgroundColor: this.backgroundColor,
-            draggable: this.draggable,
-            draggableCursor: this.draggableCursor,
-            draggingCursor: this.draggingCursor,
-            keyboardShortcuts: this.keyboardShortcuts,
-            styles: this.styles,
-            zoomControl: this.zoomControl,
-            zoomControlOptions: this.zoomControlOptions,
-            streetViewControl: this.streetViewControl,
-            streetViewControlOptions: this.streetViewControlOptions,
-            scaleControl: this.scaleControl,
-            scaleControlOptions: this.scaleControlOptions,
-            mapTypeControl: this.mapTypeControl,
-            mapTypeControlOptions: this.mapTypeControlOptions,
-            panControl: this.panControl,
-            panControlOptions: this.panControlOptions,
-            rotateControl: this.rotateControl,
-            rotateControlOptions: this.rotateControlOptions,
-            fullscreenControl: this.fullscreenControl,
-            fullscreenControlOptions: this.fullscreenControlOptions,
-            mapTypeId: this.mapTypeId,
-            clickableIcons: this.clickableIcons,
-            gestureHandling: this.gestureHandling,
-            tilt: this.tilt,
-            restriction: this.restriction,
-        })
-            .then(() => this._mapsWrapper.getNativeMap())
-            .then(map => this.mapReady.emit(map));
-        // register event listeners
-        this._handleMapCenterChange();
-        this._handleMapZoomChange();
-        this._handleMapMouseEvents();
-        this._handleBoundsChange();
-        this._handleMapTypeIdChange();
-        this._handleTilesLoadedEvent();
-        this._handleIdleEvent();
-    }
-    /** @internal */
-    ngOnDestroy() {
-        // unsubscribe all registered observable subscriptions
-        this._observableSubscriptions.forEach((s) => s.unsubscribe());
-        // remove all listeners from the map instance
-        this._mapsWrapper.clearInstanceListeners();
-        if (this._fitBoundsSubscription) {
-            this._fitBoundsSubscription.unsubscribe();
-        }
-    }
-    /* @internal */
-    ngOnChanges(changes) {
-        this._updateMapOptionsChanges(changes);
-        this._updatePosition(changes);
-    }
-    _updateMapOptionsChanges(changes) {
-        let options = {};
-        let optionKeys = Object.keys(changes).filter(k => AgmMap_1._mapOptionsAttributes.indexOf(k) !== -1);
-        optionKeys.forEach((k) => { options[k] = changes[k].currentValue; });
-        this._mapsWrapper.setMapOptions(options);
-    }
-    /**
-     * Triggers a resize event on the google map instance.
-     * When recenter is true, the of the google map gets called with the current lat/lng values or fitBounds value to recenter the map.
-     * Returns a promise that gets resolved after the event was triggered.
-     */
-    triggerResize(recenter = true) {
-        // Note: When we would trigger the resize event and show the map in the same turn (which is a
-        // common case for triggering a resize event), then the resize event would not
-        // work (to show the map), so we trigger the event in a timeout.
-        return new Promise((resolve) => {
-            setTimeout(() => {
-                return this._mapsWrapper.triggerMapEvent('resize').then(() => {
-                    if (recenter) {
-                        this.fitBounds != null ? this._fitBounds() : this._setCenter();
-                    }
-                    resolve();
-                });
-            });
-        });
-    }
-    _updatePosition(changes) {
-        if (changes['latitude'] == null && changes['longitude'] == null &&
-            !changes['fitBounds']) {
-            // no position update needed
-            return;
-        }
-        // we prefer fitBounds in changes
-        if ('fitBounds' in changes) {
-            this._fitBounds();
-            return;
-        }
-        if (typeof this.latitude !== 'number' || typeof this.longitude !== 'number') {
-            return;
-        }
-        this._setCenter();
-    }
-    _setCenter() {
-        let newCenter = {
-            lat: this.latitude,
-            lng: this.longitude,
-        };
-        if (this.usePanning) {
-            this._mapsWrapper.panTo(newCenter);
-        }
-        else {
-            this._mapsWrapper.setCenter(newCenter);
-        }
-    }
-    _fitBounds() {
-        switch (this.fitBounds) {
-            case true:
-                this._subscribeToFitBoundsUpdates();
-                break;
-            case false:
-                if (this._fitBoundsSubscription) {
-                    this._fitBoundsSubscription.unsubscribe();
-                }
-                break;
-            default:
-                this._updateBounds(this.fitBounds, this.fitBoundsPadding);
-        }
-    }
-    _subscribeToFitBoundsUpdates() {
-        this._zone.runOutsideAngular(() => {
-            this._fitBoundsSubscription = this._fitBoundsService.getBounds$().subscribe(b => {
-                this._zone.run(() => this._updateBounds(b, this.fitBoundsPadding));
-            });
-        });
-    }
-    _updateBounds(bounds, padding) {
-        if (!bounds) {
-            return;
-        }
-        if (this._isLatLngBoundsLiteral(bounds) && typeof google !== 'undefined' && google && google.maps && google.maps.LatLngBounds) {
-            const newBounds = new google.maps.LatLngBounds();
-            newBounds.union(bounds);
-            bounds = newBounds;
-        }
-        if (this.usePanning) {
-            this._mapsWrapper.panToBounds(bounds, padding);
-            return;
-        }
-        this._mapsWrapper.fitBounds(bounds, padding);
-    }
-    _isLatLngBoundsLiteral(bounds) {
-        return bounds != null && bounds.extend === undefined;
-    }
-    _handleMapCenterChange() {
-        const s = this._mapsWrapper.subscribeToMapEvent('center_changed').subscribe(() => {
-            this._mapsWrapper.getCenter().then((center) => {
-                this.latitude = center.lat();
-                this.longitude = center.lng();
-                this.centerChange.emit({ lat: this.latitude, lng: this.longitude });
-            });
-        });
-        this._observableSubscriptions.push(s);
-    }
-    _handleBoundsChange() {
-        const s = this._mapsWrapper.subscribeToMapEvent('bounds_changed').subscribe(() => {
-            this._mapsWrapper.getBounds().then((bounds) => { this.boundsChange.emit(bounds); });
-        });
-        this._observableSubscriptions.push(s);
-    }
-    _handleMapTypeIdChange() {
-        const s = this._mapsWrapper.subscribeToMapEvent('maptypeid_changed').subscribe(() => {
-            this._mapsWrapper.getMapTypeId().then((mapTypeId) => { this.mapTypeIdChange.emit(mapTypeId); });
-        });
-        this._observableSubscriptions.push(s);
-    }
-    _handleMapZoomChange() {
-        const s = this._mapsWrapper.subscribeToMapEvent('zoom_changed').subscribe(() => {
-            this._mapsWrapper.getZoom().then((z) => {
-                this.zoom = z;
-                this.zoomChange.emit(z);
-            });
-        });
-        this._observableSubscriptions.push(s);
-    }
-    _handleIdleEvent() {
-        const s = this._mapsWrapper.subscribeToMapEvent('idle').subscribe(() => { this.idle.emit(void 0); });
-        this._observableSubscriptions.push(s);
-    }
-    _handleTilesLoadedEvent() {
-        const s = this._mapsWrapper.subscribeToMapEvent('tilesloaded').subscribe(() => this.tilesLoaded.emit(void 0));
-        this._observableSubscriptions.push(s);
-    }
-    _handleMapMouseEvents() {
-        const events = [
-            { name: 'click', emitter: this.mapClick },
-            { name: 'rightclick', emitter: this.mapRightClick },
-            { name: 'dblclick', emitter: this.mapDblClick },
-        ];
-        events.forEach((e) => {
-            const s = this._mapsWrapper.subscribeToMapEvent(e.name).subscribe((event) => {
-                let value = {
-                    coords: {
-                        lat: event.latLng.lat(),
-                        lng: event.latLng.lng(),
-                    },
-                    placeId: event.placeId,
-                };
-                // the placeId will be undefined in case the event was not an IconMouseEvent (google types)
-                if (value.placeId && !this.showDefaultInfoWindow) {
-                    event.stop();
-                }
-                e.emitter.emit(value);
-            });
-            this._observableSubscriptions.push(s);
-        });
-    }
-};
-AgmMap.ɵfac = function AgmMap_Factory(t) { return new (t || AgmMap)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](GoogleMapsAPIWrapper), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["PLATFORM_ID"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](FitBoundsService), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"])); };
-AgmMap.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: AgmMap, selectors: [["agm-map"]], hostVars: 2, hostBindings: function AgmMap_HostBindings(rf, ctx) { if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("sebm-google-map-container", true);
-    } }, inputs: { longitude: "longitude", latitude: "latitude", zoom: "zoom", draggable: ["mapDraggable", "draggable"], disableDoubleClickZoom: "disableDoubleClickZoom", disableDefaultUI: "disableDefaultUI", scrollwheel: "scrollwheel", keyboardShortcuts: "keyboardShortcuts", styles: "styles", usePanning: "usePanning", fitBounds: "fitBounds", scaleControl: "scaleControl", mapTypeControl: "mapTypeControl", panControl: "panControl", rotateControl: "rotateControl", fullscreenControl: "fullscreenControl", mapTypeId: "mapTypeId", clickableIcons: "clickableIcons", showDefaultInfoWindow: "showDefaultInfoWindow", gestureHandling: "gestureHandling", tilt: "tilt", minZoom: "minZoom", maxZoom: "maxZoom", controlSize: "controlSize", backgroundColor: "backgroundColor", draggableCursor: "draggableCursor", draggingCursor: "draggingCursor", zoomControl: "zoomControl", zoomControlOptions: "zoomControlOptions", streetViewControl: "streetViewControl", streetViewControlOptions: "streetViewControlOptions", fitBoundsPadding: "fitBoundsPadding", scaleControlOptions: "scaleControlOptions", mapTypeControlOptions: "mapTypeControlOptions", panControlOptions: "panControlOptions", rotateControlOptions: "rotateControlOptions", fullscreenControlOptions: "fullscreenControlOptions", restriction: "restriction" }, outputs: { mapClick: "mapClick", mapRightClick: "mapRightClick", mapDblClick: "mapDblClick", centerChange: "centerChange", boundsChange: "boundsChange", mapTypeIdChange: "mapTypeIdChange", idle: "idle", zoomChange: "zoomChange", mapReady: "mapReady", tilesLoaded: "tilesLoaded" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵProvidersFeature"]([
-            CircleManager,
-            DataLayerManager,
-            DataLayerManager,
-            FitBoundsService,
-            GoogleMapsAPIWrapper,
-            InfoWindowManager,
-            KmlLayerManager,
-            LayerManager,
-            MarkerManager,
-            PolygonManager,
-            PolylineManager,
-            RectangleManager,
-        ]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c0, decls: 3, vars: 0, consts: [[1, "agm-map-container-inner", "sebm-google-map-container-inner"], [1, "agm-map-content"]], template: function AgmMap_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵprojectionDef"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵprojection"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    } }, styles: [".agm-map-container-inner[_ngcontent-%COMP%] {\n      width: inherit;\n      height: inherit;\n    }\n    .agm-map-content[_ngcontent-%COMP%] {\n      display:none;\n    }"] });
-/**
- * Map option attributes that can change over time
- */
-AgmMap._mapOptionsAttributes = [
-    'disableDoubleClickZoom', 'scrollwheel', 'draggable', 'draggableCursor', 'draggingCursor',
-    'keyboardShortcuts', 'zoomControl', 'zoomControlOptions', 'styles', 'streetViewControl',
-    'streetViewControlOptions', 'zoom', 'mapTypeControl', 'mapTypeControlOptions', 'minZoom',
-    'maxZoom', 'panControl', 'panControlOptions', 'rotateControl', 'rotateControlOptions',
-    'fullscreenControl', 'fullscreenControlOptions', 'scaleControl', 'scaleControlOptions',
-    'mapTypeId', 'clickableIcons', 'gestureHandling', 'tilt', 'restriction',
-];
-AgmMap.ctorParameters = () => [
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] },
-    { type: GoogleMapsAPIWrapper },
-    { type: Object, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["PLATFORM_ID"],] }] },
-    { type: FitBoundsService },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] }
-];
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMap.prototype, "longitude", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMap.prototype, "latitude", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMap.prototype, "zoom", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmMap.prototype, "minZoom", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmMap.prototype, "maxZoom", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmMap.prototype, "controlSize", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])('mapDraggable'),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMap.prototype, "draggable", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMap.prototype, "disableDoubleClickZoom", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMap.prototype, "disableDefaultUI", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMap.prototype, "scrollwheel", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
-], AgmMap.prototype, "backgroundColor", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
-], AgmMap.prototype, "draggableCursor", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
-], AgmMap.prototype, "draggingCursor", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMap.prototype, "keyboardShortcuts", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Boolean)
-], AgmMap.prototype, "zoomControl", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMap.prototype, "zoomControlOptions", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Array)
-], AgmMap.prototype, "styles", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMap.prototype, "usePanning", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Boolean)
-], AgmMap.prototype, "streetViewControl", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMap.prototype, "streetViewControlOptions", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMap.prototype, "fitBounds", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMap.prototype, "fitBoundsPadding", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMap.prototype, "scaleControl", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMap.prototype, "scaleControlOptions", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMap.prototype, "mapTypeControl", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMap.prototype, "mapTypeControlOptions", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMap.prototype, "panControl", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMap.prototype, "panControlOptions", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMap.prototype, "rotateControl", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMap.prototype, "rotateControlOptions", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMap.prototype, "fullscreenControl", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMap.prototype, "fullscreenControlOptions", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
-], AgmMap.prototype, "mapTypeId", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMap.prototype, "clickableIcons", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMap.prototype, "showDefaultInfoWindow", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
-], AgmMap.prototype, "gestureHandling", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMap.prototype, "tilt", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMap.prototype, "restriction", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmMap.prototype, "mapClick", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmMap.prototype, "mapRightClick", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmMap.prototype, "mapDblClick", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmMap.prototype, "centerChange", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmMap.prototype, "boundsChange", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmMap.prototype, "mapTypeIdChange", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmMap.prototype, "idle", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmMap.prototype, "zoomChange", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmMap.prototype, "mapReady", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmMap.prototype, "tilesLoaded", void 0);
-AgmMap = AgmMap_1 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(2, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_core__WEBPACK_IMPORTED_MODULE_1__["PLATFORM_ID"])),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"],
-        GoogleMapsAPIWrapper,
-        Object,
-        FitBoundsService,
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"]])
-], AgmMap);
-
-var AgmMarker_1;
-let markerId = 0;
-/**
- * AgmMarker renders a map marker inside a {@link AgmMap}.
- *
- * ### Example
- * ```typescript
- * import { Component } from '@angular/core';
- *
- * @Component({
- *  selector: 'my-map-cmp',
- *  styles: [`
- *    .agm-map-container {
- *      height: 300px;
- *    }
- * `],
- *  template: `
- *    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
- *      <agm-marker [latitude]="lat" [longitude]="lng" [label]="'M'">
- *      </agm-marker>
- *    </agm-map>
- *  `
- * })
- * ```
- */
-let AgmMarker = AgmMarker_1 = class AgmMarker {
-    constructor(_markerManager) {
-        this._markerManager = _markerManager;
-        /**
-         * If true, the marker can be dragged. Default value is false.
-         */
-        // tslint:disable-next-line:no-input-rename
-        this.draggable = false;
-        /**
-         * If true, the marker is visible
-         */
-        this.visible = true;
-        /**
-         * Whether to automatically open the child info window when the marker is clicked.
-         */
-        this.openInfoWindow = true;
-        /**
-         * The marker's opacity between 0.0 and 1.0.
-         */
-        this.opacity = 1;
-        /**
-         * All markers are displayed on the map in order of their zIndex, with higher values displaying in
-         * front of markers with lower values. By default, markers are displayed according to their
-         * vertical position on screen, with lower markers appearing in front of markers further up the
-         * screen.
-         */
-        this.zIndex = 1;
-        /**
-         * If true, the marker can be clicked. Default value is true.
-         */
-        // tslint:disable-next-line:no-input-rename
-        this.clickable = true;
-        /**
-         * This event is fired when the marker's animation property changes.
-         *
-         * @memberof AgmMarker
-         */
-        this.animationChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event emitter gets emitted when the user clicks on the marker.
-         */
-        this.markerClick = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event emitter gets emitted when the user clicks twice on the marker.
-         */
-        this.markerDblClick = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the user rightclicks on the marker.
-         */
-        this.markerRightClick = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the user starts dragging the marker.
-         */
-        this.dragStart = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is repeatedly fired while the user drags the marker.
-         */
-        this.drag = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the user stops dragging the marker.
-         */
-        this.dragEnd = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the user mouses over the marker.
-         */
-        this.mouseOver = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the user mouses outside the marker.
-         */
-        this.mouseOut = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /** @internal */
-        this.infoWindow = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["QueryList"]();
-        this._markerAddedToManger = false;
-        this._observableSubscriptions = [];
-        this._fitBoundsDetails$ = new rxjs__WEBPACK_IMPORTED_MODULE_2__["ReplaySubject"](1);
-        this._id = (markerId++).toString();
-    }
-    /* @internal */
-    ngAfterContentInit() {
-        this.handleInfoWindowUpdate();
-        this.infoWindow.changes.subscribe(() => this.handleInfoWindowUpdate());
-    }
-    handleInfoWindowUpdate() {
-        if (this.infoWindow.length > 1) {
-            throw new Error('Expected no more than one info window.');
-        }
-        this.infoWindow.forEach(marker => {
-            marker.hostMarker = this;
-        });
-    }
-    /** @internal */
-    ngOnChanges(changes) {
-        if (typeof this.latitude === 'string') {
-            this.latitude = Number(this.latitude);
-        }
-        if (typeof this.longitude === 'string') {
-            this.longitude = Number(this.longitude);
-        }
-        if (typeof this.latitude !== 'number' || typeof this.longitude !== 'number') {
-            return;
-        }
-        if (!this._markerAddedToManger) {
-            this._markerManager.addMarker(this);
-            this._updateFitBoundsDetails();
-            this._markerAddedToManger = true;
-            this._addEventListeners();
-            return;
-        }
-        if (changes['latitude'] || changes['longitude']) {
-            this._markerManager.updateMarkerPosition(this);
-            this._updateFitBoundsDetails();
-        }
-        if (changes['title']) {
-            this._markerManager.updateTitle(this);
-        }
-        if (changes['label']) {
-            this._markerManager.updateLabel(this);
-        }
-        if (changes['draggable']) {
-            this._markerManager.updateDraggable(this);
-        }
-        if (changes['iconUrl']) {
-            this._markerManager.updateIcon(this);
-        }
-        if (changes['opacity']) {
-            this._markerManager.updateOpacity(this);
-        }
-        if (changes['visible']) {
-            this._markerManager.updateVisible(this);
-        }
-        if (changes['zIndex']) {
-            this._markerManager.updateZIndex(this);
-        }
-        if (changes['clickable']) {
-            this._markerManager.updateClickable(this);
-        }
-        if (changes['animation']) {
-            this._markerManager.updateAnimation(this);
-        }
-    }
-    /** @internal */
-    getFitBoundsDetails$() {
-        return this._fitBoundsDetails$.asObservable();
-    }
-    _updateFitBoundsDetails() {
-        this._fitBoundsDetails$.next({ latLng: { lat: this.latitude, lng: this.longitude } });
-    }
-    _addEventListeners() {
-        const cs = this._markerManager.createEventObservable('click', this).subscribe(() => {
-            if (this.openInfoWindow) {
-                this.infoWindow.forEach(infoWindow => infoWindow.open());
-            }
-            this.markerClick.emit(this);
-        });
-        this._observableSubscriptions.push(cs);
-        const dcs = this._markerManager.createEventObservable('dblclick', this).subscribe(() => {
-            this.markerDblClick.emit(null);
-        });
-        this._observableSubscriptions.push(dcs);
-        const rc = this._markerManager.createEventObservable('rightclick', this).subscribe(() => {
-            this.markerRightClick.emit(null);
-        });
-        this._observableSubscriptions.push(rc);
-        const ds = this._markerManager.createEventObservable('dragstart', this)
-            .subscribe((e) => {
-            this.dragStart.emit({ coords: { lat: e.latLng.lat(), lng: e.latLng.lng() } });
-        });
-        this._observableSubscriptions.push(ds);
-        const d = this._markerManager.createEventObservable('drag', this)
-            .subscribe((e) => {
-            this.drag.emit({ coords: { lat: e.latLng.lat(), lng: e.latLng.lng() } });
-        });
-        this._observableSubscriptions.push(d);
-        const de = this._markerManager.createEventObservable('dragend', this)
-            .subscribe((e) => {
-            this.dragEnd.emit({ coords: { lat: e.latLng.lat(), lng: e.latLng.lng() } });
-        });
-        this._observableSubscriptions.push(de);
-        const mover = this._markerManager.createEventObservable('mouseover', this)
-            .subscribe((e) => {
-            this.mouseOver.emit({ coords: { lat: e.latLng.lat(), lng: e.latLng.lng() } });
-        });
-        this._observableSubscriptions.push(mover);
-        const mout = this._markerManager.createEventObservable('mouseout', this)
-            .subscribe((e) => {
-            this.mouseOut.emit({ coords: { lat: e.latLng.lat(), lng: e.latLng.lng() } });
-        });
-        this._observableSubscriptions.push(mout);
-        const anChng = this._markerManager.createEventObservable('animation_changed', this)
-            .subscribe(() => {
-            this.animationChange.emit(this.animation);
-        });
-        this._observableSubscriptions.push(anChng);
-    }
-    /** @internal */
-    id() { return this._id; }
-    /** @internal */
-    toString() { return 'AgmMarker-' + this._id.toString(); }
-    /** @internal */
-    ngOnDestroy() {
-        this._markerManager.deleteMarker(this);
-        // unsubscribe all registered observable subscriptions
-        this._observableSubscriptions.forEach((s) => s.unsubscribe());
-    }
-};
-AgmMarker.ɵfac = function AgmMarker_Factory(t) { return new (t || AgmMarker)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](MarkerManager)); };
-AgmMarker.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({ type: AgmMarker, selectors: [["agm-marker"]], contentQueries: function AgmMarker_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵcontentQuery"](dirIndex, AgmInfoWindow, false);
-    } if (rf & 2) {
-        var _t;
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵloadQuery"]()) && (ctx.infoWindow = _t);
-    } }, inputs: { latitude: "latitude", longitude: "longitude", title: "title", label: "label", draggable: ["markerDraggable", "draggable"], iconUrl: "iconUrl", openInfoWindow: "openInfoWindow", opacity: "opacity", visible: "visible", zIndex: "zIndex", animation: "animation", clickable: ["markerClickable", "clickable"] }, outputs: { markerClick: "markerClick", dragStart: "dragStart", drag: "drag", dragEnd: "dragEnd", mouseOver: "mouseOver", mouseOut: "mouseOut", animationChange: "animationChange", markerDblClick: "markerDblClick", markerRightClick: "markerRightClick" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵProvidersFeature"]([
-            { provide: FitBoundsAccessor, useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(() => AgmMarker_1) },
-        ]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]] });
-AgmMarker.ctorParameters = () => [
-    { type: MarkerManager }
-];
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmMarker.prototype, "latitude", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmMarker.prototype, "longitude", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
-], AgmMarker.prototype, "title", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMarker.prototype, "label", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])('markerDraggable'),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMarker.prototype, "draggable", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
-], AgmMarker.prototype, "iconUrl", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMarker.prototype, "visible", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMarker.prototype, "openInfoWindow", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMarker.prototype, "opacity", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMarker.prototype, "zIndex", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])('markerClickable'),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMarker.prototype, "clickable", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
-], AgmMarker.prototype, "animation", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmMarker.prototype, "animationChange", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmMarker.prototype, "markerClick", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmMarker.prototype, "markerDblClick", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmMarker.prototype, "markerRightClick", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmMarker.prototype, "dragStart", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmMarker.prototype, "drag", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmMarker.prototype, "dragEnd", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmMarker.prototype, "mouseOver", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmMarker.prototype, "mouseOut", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ContentChildren"])(AgmInfoWindow),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["QueryList"])
-], AgmMarker.prototype, "infoWindow", void 0);
-AgmMarker = AgmMarker_1 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [MarkerManager])
-], AgmMarker);
-
-var AgmPolygon_1;
-/**
- * AgmPolygon renders a polygon on a {@link AgmMap}
- *
- * ### Example
- * ```typescript
- * import { Component } from '@angular/core';
- *
- * @Component({
- *  selector: 'my-map-cmp',
- *  styles: [`
- *    agm-map {
- *      height: 300px;
- *    }
- * `],
- *  template: `
- *    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
- *      <agm-polygon [paths]="paths">
- *      </agm-polygon>
- *    </agm-map>
- *  `
- * })
- * export class MyMapCmp {
- *   lat: number = 0;
- *   lng: number = 0;
- *   zoom: number = 10;
- *   paths: Array<LatLngLiteral> = [
- *     { lat: 0,  lng: 10 },
- *     { lat: 0,  lng: 20 },
- *     { lat: 10, lng: 20 },
- *     { lat: 10, lng: 10 },
- *     { lat: 0,  lng: 10 }
- *   ]
- *   // Nesting paths will create a hole where they overlap;
- *   nestedPaths: Array<Array<LatLngLiteral>> = [[
- *     { lat: 0,  lng: 10 },
- *     { lat: 0,  lng: 20 },
- *     { lat: 10, lng: 20 },
- *     { lat: 10, lng: 10 },
- *     { lat: 0,  lng: 10 }
- *   ], [
- *     { lat: 0, lng: 15 },
- *     { lat: 0, lng: 20 },
- *     { lat: 5, lng: 20 },
- *     { lat: 5, lng: 15 },
- *     { lat: 0, lng: 15 }
- *   ]]
- * }
- * ```
- */
-let AgmPolygon = AgmPolygon_1 = class AgmPolygon {
-    constructor(_polygonManager) {
-        this._polygonManager = _polygonManager;
-        /**
-         * Indicates whether this Polygon handles mouse events. Defaults to true.
-         */
-        this.clickable = true;
-        /**
-         * If set to true, the user can drag this shape over the map. The geodesic
-         * property defines the mode of dragging. Defaults to false.
-         */
-        // tslint:disable-next-line:no-input-rename
-        this.draggable = false;
-        /**
-         * If set to true, the user can edit this shape by dragging the control
-         * points shown at the vertices and on each segment. Defaults to false.
-         */
-        this.editable = false;
-        /**
-         * When true, edges of the polygon are interpreted as geodesic and will
-         * follow the curvature of the Earth. When false, edges of the polygon are
-         * rendered as straight lines in screen space. Note that the shape of a
-         * geodesic polygon may appear to change when dragged, as the dimensions
-         * are maintained relative to the surface of the earth. Defaults to false.
-         */
-        this.geodesic = false;
-        /**
-         * The ordered sequence of coordinates that designates a closed loop.
-         * Unlike polylines, a polygon may consist of one or more paths.
-         *  As a result, the paths property may specify one or more arrays of
-         * LatLng coordinates. Paths are closed automatically; do not repeat the
-         * first vertex of the path as the last vertex. Simple polygons may be
-         * defined using a single array of LatLngs. More complex polygons may
-         * specify an array of arrays. Any simple arrays are converted into Arrays.
-         * Inserting or removing LatLngs from the Array will automatically update
-         * the polygon on the map.
-         */
-        this.paths = [];
-        /**
-         * This event is fired when the DOM click event is fired on the Polygon.
-         */
-        this.polyClick = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the DOM dblclick event is fired on the Polygon.
-         */
-        this.polyDblClick = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is repeatedly fired while the user drags the polygon.
-         */
-        this.polyDrag = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the user stops dragging the polygon.
-         */
-        this.polyDragEnd = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the user starts dragging the polygon.
-         */
-        this.polyDragStart = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the DOM mousedown event is fired on the Polygon.
-         */
-        this.polyMouseDown = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the DOM mousemove event is fired on the Polygon.
-         */
-        this.polyMouseMove = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired on Polygon mouseout.
-         */
-        this.polyMouseOut = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired on Polygon mouseover.
-         */
-        this.polyMouseOver = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired whe the DOM mouseup event is fired on the Polygon
-         */
-        this.polyMouseUp = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the Polygon is right-clicked on.
-         */
-        this.polyRightClick = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired after Polygon first path changes.
-         */
-        this.polyPathsChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        this._polygonAddedToManager = false;
-        this._subscriptions = [];
-    }
-    /** @internal */
-    ngAfterContentInit() {
-        if (!this._polygonAddedToManager) {
-            this._init();
-        }
-    }
-    ngOnChanges(changes) {
-        if (!this._polygonAddedToManager) {
-            this._init();
-            return;
-        }
-        this._polygonManager.setPolygonOptions(this, this._updatePolygonOptions(changes));
-    }
-    _init() {
-        this._polygonManager.addPolygon(this);
-        this._polygonAddedToManager = true;
-        this._addEventListeners();
-    }
-    _addEventListeners() {
-        const handlers = [
-            { name: 'click', handler: (ev) => this.polyClick.emit(ev) },
-            { name: 'dblclick', handler: (ev) => this.polyDblClick.emit(ev) },
-            { name: 'drag', handler: (ev) => this.polyDrag.emit(ev) },
-            { name: 'dragend', handler: (ev) => this.polyDragEnd.emit(ev) },
-            { name: 'dragstart', handler: (ev) => this.polyDragStart.emit(ev) },
-            { name: 'mousedown', handler: (ev) => this.polyMouseDown.emit(ev) },
-            { name: 'mousemove', handler: (ev) => this.polyMouseMove.emit(ev) },
-            { name: 'mouseout', handler: (ev) => this.polyMouseOut.emit(ev) },
-            { name: 'mouseover', handler: (ev) => this.polyMouseOver.emit(ev) },
-            { name: 'mouseup', handler: (ev) => this.polyMouseUp.emit(ev) },
-            { name: 'rightclick', handler: (ev) => this.polyRightClick.emit(ev) },
-        ];
-        handlers.forEach((obj) => {
-            const os = this._polygonManager.createEventObservable(obj.name, this).subscribe(obj.handler);
-            this._subscriptions.push(os);
-        });
-        this._polygonManager.createPathEventObservable(this)
-            .then(paths$ => {
-            const os = paths$.subscribe(pathEvent => this.polyPathsChange.emit(pathEvent));
-            this._subscriptions.push(os);
-        });
-    }
-    _updatePolygonOptions(changes) {
-        return Object.keys(changes)
-            .filter(k => AgmPolygon_1._polygonOptionsAttributes.indexOf(k) !== -1)
-            .reduce((obj, k) => {
-            obj[k] = changes[k].currentValue;
-            return obj;
-        }, {});
-    }
-    /** @internal */
-    id() { return this._id; }
-    /** @internal */
-    ngOnDestroy() {
-        this._polygonManager.deletePolygon(this);
-        // unsubscribe all registered observable subscriptions
-        this._subscriptions.forEach((s) => s.unsubscribe());
-    }
-    getPath() {
-        return this._polygonManager.getPath(this);
-    }
-    getPaths() {
-        return this._polygonManager.getPaths(this);
-    }
-};
-AgmPolygon.ɵfac = function AgmPolygon_Factory(t) { return new (t || AgmPolygon)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](PolygonManager)); };
-AgmPolygon.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({ type: AgmPolygon, selectors: [["agm-polygon"]], inputs: { clickable: "clickable", draggable: ["polyDraggable", "draggable"], editable: "editable", geodesic: "geodesic", paths: "paths", fillColor: "fillColor", fillOpacity: "fillOpacity", strokeColor: "strokeColor", strokeOpacity: "strokeOpacity", strokeWeight: "strokeWeight", visible: "visible", zIndex: "zIndex" }, outputs: { polyClick: "polyClick", polyDblClick: "polyDblClick", polyDrag: "polyDrag", polyDragEnd: "polyDragEnd", polyDragStart: "polyDragStart", polyMouseDown: "polyMouseDown", polyMouseMove: "polyMouseMove", polyMouseOut: "polyMouseOut", polyMouseOver: "polyMouseOver", polyMouseUp: "polyMouseUp", polyRightClick: "polyRightClick", polyPathsChange: "polyPathsChange" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]] });
-AgmPolygon._polygonOptionsAttributes = [
-    'clickable', 'draggable', 'editable', 'fillColor', 'fillOpacity', 'geodesic', 'icon', 'map',
-    'paths', 'strokeColor', 'strokeOpacity', 'strokeWeight', 'visible', 'zIndex', 'draggable',
-    'editable', 'visible',
-];
-AgmPolygon.ctorParameters = () => [
-    { type: PolygonManager }
-];
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmPolygon.prototype, "clickable", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])('polyDraggable'),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmPolygon.prototype, "draggable", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmPolygon.prototype, "editable", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
-], AgmPolygon.prototype, "fillColor", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmPolygon.prototype, "fillOpacity", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmPolygon.prototype, "geodesic", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Array)
-], AgmPolygon.prototype, "paths", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
-], AgmPolygon.prototype, "strokeColor", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmPolygon.prototype, "strokeOpacity", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmPolygon.prototype, "strokeWeight", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Boolean)
-], AgmPolygon.prototype, "visible", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmPolygon.prototype, "zIndex", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmPolygon.prototype, "polyClick", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmPolygon.prototype, "polyDblClick", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmPolygon.prototype, "polyDrag", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmPolygon.prototype, "polyDragEnd", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmPolygon.prototype, "polyDragStart", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmPolygon.prototype, "polyMouseDown", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmPolygon.prototype, "polyMouseMove", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmPolygon.prototype, "polyMouseOut", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmPolygon.prototype, "polyMouseOver", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmPolygon.prototype, "polyMouseUp", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmPolygon.prototype, "polyRightClick", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmPolygon.prototype, "polyPathsChange", void 0);
-AgmPolygon = AgmPolygon_1 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [PolygonManager])
-], AgmPolygon);
-
-/**
- * AgmPolylineIcon enables to add polyline sequences to add arrows, circle,
- * or custom icons either along the entire line, or in a specific part of it.
- * See https://developers.google.com/maps/documentation/javascript/shapes#polyline_customize
- *
- * ### Example
- * ```html
- *    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
- *      <agm-polyline>
- *          <agm-icon-sequence [fixedRotation]="true" [path]="'FORWARD_OPEN_ARROW'">
- *          </agm-icon-sequence>
- *      </agm-polyline>
- *    </agm-map>
- * ```
- *
- * @export
- * @class AgmPolylineIcon
- */
-let AgmPolylineIcon = class AgmPolylineIcon {
-    ngOnInit() {
-        if (this.path == null) {
-            throw new Error('Icon Sequence path is required');
-        }
-    }
-};
-AgmPolylineIcon.ɵfac = function AgmPolylineIcon_Factory(t) { return new (t || AgmPolylineIcon)(); };
-AgmPolylineIcon.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({ type: AgmPolylineIcon, selectors: [["agm-icon-sequence"]], inputs: { fixedRotation: "fixedRotation", offset: "offset", repeat: "repeat", anchorX: "anchorX", anchorY: "anchorY", fillColor: "fillColor", fillOpacity: "fillOpacity", path: "path", rotation: "rotation", scale: "scale", strokeColor: "strokeColor", strokeOpacity: "strokeOpacity", strokeWeight: "strokeWeight" } });
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Boolean)
-], AgmPolylineIcon.prototype, "fixedRotation", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
-], AgmPolylineIcon.prototype, "offset", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
-], AgmPolylineIcon.prototype, "repeat", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmPolylineIcon.prototype, "anchorX", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmPolylineIcon.prototype, "anchorY", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
-], AgmPolylineIcon.prototype, "fillColor", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmPolylineIcon.prototype, "fillOpacity", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
-], AgmPolylineIcon.prototype, "path", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmPolylineIcon.prototype, "rotation", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmPolylineIcon.prototype, "scale", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
-], AgmPolylineIcon.prototype, "strokeColor", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmPolylineIcon.prototype, "strokeOpacity", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmPolylineIcon.prototype, "strokeWeight", void 0);
-
-var AgmPolylinePoint_1;
-/**
- * AgmPolylinePoint represents one element of a polyline within a  {@link
- * AgmPolyline}
- */
-let AgmPolylinePoint = AgmPolylinePoint_1 = class AgmPolylinePoint {
-    constructor() {
-        /**
-         * This event emitter gets emitted when the position of the point changed.
-         */
-        this.positionChanged = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-    }
-    ngOnChanges(changes) {
-        if (changes['latitude'] || changes['longitude']) {
-            const position = {
-                lat: changes['latitude'] ? changes['latitude'].currentValue : this.latitude,
-                lng: changes['longitude'] ? changes['longitude'].currentValue : this.longitude,
-            };
-            this.positionChanged.emit(position);
-        }
-    }
-    /** @internal */
-    getFitBoundsDetails$() {
-        return this.positionChanged.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["startWith"])({ lat: this.latitude, lng: this.longitude }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(position => ({ latLng: position })));
-    }
-};
-AgmPolylinePoint.ɵfac = function AgmPolylinePoint_Factory(t) { return new (t || AgmPolylinePoint)(); };
-AgmPolylinePoint.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({ type: AgmPolylinePoint, selectors: [["agm-polyline-point"]], inputs: { latitude: "latitude", longitude: "longitude" }, outputs: { positionChanged: "positionChanged" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵProvidersFeature"]([
-            { provide: FitBoundsAccessor, useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(() => AgmPolylinePoint_1) },
-        ]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]] });
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmPolylinePoint.prototype, "latitude", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmPolylinePoint.prototype, "longitude", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmPolylinePoint.prototype, "positionChanged", void 0);
-AgmPolylinePoint = AgmPolylinePoint_1 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [])
-], AgmPolylinePoint);
-
-var AgmPolyline_1;
-let polylineId = 0;
-/**
- * AgmPolyline renders a polyline on a {@link AgmMap}
- *
- * ### Example
- * ```typescript
- * import { Component } from '@angular/core';
- *
- * @Component({
- *  selector: 'my-map-cmp',
- *  styles: [`
- *    .agm-map-container {
- *      height: 300px;
- *    }
- * `],
- *  template: `
- *    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
- *      <agm-polyline>
- *          <agm-polyline-point [latitude]="latA" [longitude]="lngA">
- *          </agm-polyline-point>
- *          <agm-polyline-point [latitude]="latB" [longitude]="lngB">
- *          </agm-polyline-point>
- *      </agm-polyline>
- *    </agm-map>
- *  `
- * })
- * ```
- */
-let AgmPolyline = AgmPolyline_1 = class AgmPolyline {
-    constructor(_polylineManager) {
-        this._polylineManager = _polylineManager;
-        /**
-         * Indicates whether this Polyline handles mouse events. Defaults to true.
-         */
-        this.clickable = true;
-        /**
-         * If set to true, the user can drag this shape over the map. The geodesic property defines the
-         * mode of dragging. Defaults to false.
-         */
-        // tslint:disable-next-line:no-input-rename
-        this.draggable = false;
-        /**
-         * If set to true, the user can edit this shape by dragging the control points shown at the
-         * vertices and on each segment. Defaults to false.
-         */
-        this.editable = false;
-        /**
-         * When true, edges of the polygon are interpreted as geodesic and will follow the curvature of
-         * the Earth. When false, edges of the polygon are rendered as straight lines in screen space.
-         * Note that the shape of a geodesic polygon may appear to change when dragged, as the dimensions
-         * are maintained relative to the surface of the earth. Defaults to false.
-         */
-        this.geodesic = false;
-        /**
-         * Whether this polyline is visible on the map. Defaults to true.
-         */
-        this.visible = true;
-        /**
-         * This event is fired when the DOM click event is fired on the Polyline.
-         */
-        this.lineClick = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the DOM dblclick event is fired on the Polyline.
-         */
-        this.lineDblClick = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is repeatedly fired while the user drags the polyline.
-         */
-        this.lineDrag = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the user stops dragging the polyline.
-         */
-        this.lineDragEnd = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the user starts dragging the polyline.
-         */
-        this.lineDragStart = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the DOM mousedown event is fired on the Polyline.
-         */
-        this.lineMouseDown = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the DOM mousemove event is fired on the Polyline.
-         */
-        this.lineMouseMove = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired on Polyline mouseout.
-         */
-        this.lineMouseOut = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired on Polyline mouseover.
-         */
-        this.lineMouseOver = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired whe the DOM mouseup event is fired on the Polyline
-         */
-        this.lineMouseUp = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the Polyline is right-clicked on.
-         */
-        this.lineRightClick = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired after Polyline's path changes.
-         */
-        this.polyPathChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        this._polylineAddedToManager = false;
-        this._subscriptions = [];
-        this._id = (polylineId++).toString();
-    }
-    /** @internal */
-    ngAfterContentInit() {
-        if (this.points.length) {
-            this.points.forEach((point) => {
-                const s = point.positionChanged.subscribe(() => { this._polylineManager.updatePolylinePoints(this); });
-                this._subscriptions.push(s);
-            });
-        }
-        if (!this._polylineAddedToManager) {
-            this._init();
-        }
-        const pointSub = this.points.changes.subscribe(() => this._polylineManager.updatePolylinePoints(this));
-        this._subscriptions.push(pointSub);
-        this._polylineManager.updatePolylinePoints(this);
-        const iconSub = this.iconSequences.changes.subscribe(() => this._polylineManager.updateIconSequences(this));
-        this._subscriptions.push(iconSub);
-    }
-    ngOnChanges(changes) {
-        if (!this._polylineAddedToManager) {
-            this._init();
-            return;
-        }
-        let options = {};
-        const optionKeys = Object.keys(changes).filter(k => AgmPolyline_1._polylineOptionsAttributes.indexOf(k) !== -1);
-        optionKeys.forEach(k => options[k] = changes[k].currentValue);
-        this._polylineManager.setPolylineOptions(this, options);
-    }
-    getPath() {
-        return this._polylineManager.getPath(this);
-    }
-    _init() {
-        this._polylineManager.addPolyline(this);
-        this._polylineAddedToManager = true;
-        this._addEventListeners();
-    }
-    _addEventListeners() {
-        const handlers = [
-            { name: 'click', handler: (ev) => this.lineClick.emit(ev) },
-            { name: 'dblclick', handler: (ev) => this.lineDblClick.emit(ev) },
-            { name: 'drag', handler: (ev) => this.lineDrag.emit(ev) },
-            { name: 'dragend', handler: (ev) => this.lineDragEnd.emit(ev) },
-            { name: 'dragstart', handler: (ev) => this.lineDragStart.emit(ev) },
-            { name: 'mousedown', handler: (ev) => this.lineMouseDown.emit(ev) },
-            { name: 'mousemove', handler: (ev) => this.lineMouseMove.emit(ev) },
-            { name: 'mouseout', handler: (ev) => this.lineMouseOut.emit(ev) },
-            { name: 'mouseover', handler: (ev) => this.lineMouseOver.emit(ev) },
-            { name: 'mouseup', handler: (ev) => this.lineMouseUp.emit(ev) },
-            { name: 'rightclick', handler: (ev) => this.lineRightClick.emit(ev) },
-        ];
-        handlers.forEach((obj) => {
-            const os = this._polylineManager.createEventObservable(obj.name, this).subscribe(obj.handler);
-            this._subscriptions.push(os);
-        });
-        this._polylineManager.createPathEventObservable(this).then((ob$) => {
-            const os = ob$.subscribe(pathEvent => this.polyPathChange.emit(pathEvent));
-            this._subscriptions.push(os);
-        });
-    }
-    /** @internal */
-    _getPoints() {
-        if (this.points) {
-            return this.points.toArray();
-        }
-        return [];
-    }
-    _getIcons() {
-        if (this.iconSequences) {
-            return this.iconSequences.toArray();
-        }
-        return [];
-    }
-    /** @internal */
-    id() { return this._id; }
-    /** @internal */
-    ngOnDestroy() {
-        this._polylineManager.deletePolyline(this);
-        // unsubscribe all registered observable subscriptions
-        this._subscriptions.forEach((s) => s.unsubscribe());
-    }
-};
-AgmPolyline.ɵfac = function AgmPolyline_Factory(t) { return new (t || AgmPolyline)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](PolylineManager)); };
-AgmPolyline.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({ type: AgmPolyline, selectors: [["agm-polyline"]], contentQueries: function AgmPolyline_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵcontentQuery"](dirIndex, AgmPolylinePoint, false);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵcontentQuery"](dirIndex, AgmPolylineIcon, false);
-    } if (rf & 2) {
-        var _t;
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵloadQuery"]()) && (ctx.points = _t);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵloadQuery"]()) && (ctx.iconSequences = _t);
-    } }, inputs: { clickable: "clickable", draggable: ["polylineDraggable", "draggable"], editable: "editable", geodesic: "geodesic", visible: "visible", strokeColor: "strokeColor", strokeOpacity: "strokeOpacity", strokeWeight: "strokeWeight", zIndex: "zIndex" }, outputs: { lineClick: "lineClick", lineDblClick: "lineDblClick", lineDrag: "lineDrag", lineDragEnd: "lineDragEnd", lineDragStart: "lineDragStart", lineMouseDown: "lineMouseDown", lineMouseMove: "lineMouseMove", lineMouseOut: "lineMouseOut", lineMouseOver: "lineMouseOver", lineMouseUp: "lineMouseUp", lineRightClick: "lineRightClick", polyPathChange: "polyPathChange" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]] });
-AgmPolyline._polylineOptionsAttributes = [
-    'draggable', 'editable', 'visible', 'geodesic', 'strokeColor', 'strokeOpacity', 'strokeWeight',
-    'zIndex',
-];
-AgmPolyline.ctorParameters = () => [
-    { type: PolylineManager }
-];
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmPolyline.prototype, "clickable", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])('polylineDraggable'),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmPolyline.prototype, "draggable", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmPolyline.prototype, "editable", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmPolyline.prototype, "geodesic", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
-], AgmPolyline.prototype, "strokeColor", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmPolyline.prototype, "strokeOpacity", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmPolyline.prototype, "strokeWeight", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmPolyline.prototype, "visible", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmPolyline.prototype, "zIndex", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmPolyline.prototype, "lineClick", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmPolyline.prototype, "lineDblClick", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmPolyline.prototype, "lineDrag", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmPolyline.prototype, "lineDragEnd", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmPolyline.prototype, "lineDragStart", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmPolyline.prototype, "lineMouseDown", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmPolyline.prototype, "lineMouseMove", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmPolyline.prototype, "lineMouseOut", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmPolyline.prototype, "lineMouseOver", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmPolyline.prototype, "lineMouseUp", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmPolyline.prototype, "lineRightClick", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmPolyline.prototype, "polyPathChange", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ContentChildren"])(AgmPolylinePoint),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["QueryList"])
-], AgmPolyline.prototype, "points", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ContentChildren"])(AgmPolylineIcon),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["QueryList"])
-], AgmPolyline.prototype, "iconSequences", void 0);
-AgmPolyline = AgmPolyline_1 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [PolylineManager])
-], AgmPolyline);
-
-var AgmRectangle_1;
-let AgmRectangle = AgmRectangle_1 = class AgmRectangle {
-    constructor(_manager) {
-        this._manager = _manager;
-        /**
-         * Indicates whether this Rectangle handles mouse events. Defaults to true.
-         */
-        this.clickable = true;
-        /**
-         * If set to true, the user can drag this rectangle over the map. Defaults to false.
-         */
-        // tslint:disable-next-line:no-input-rename
-        this.draggable = false;
-        /**
-         * If set to true, the user can edit this rectangle by dragging the control points shown at
-         * the center and around the circumference of the rectangle. Defaults to false.
-         */
-        this.editable = false;
-        /**
-         * The stroke position. Defaults to CENTER.
-         * This property is not supported on Internet Explorer 8 and earlier.
-         */
-        this.strokePosition = 'CENTER';
-        /**
-         * The stroke width in pixels.
-         */
-        this.strokeWeight = 0;
-        /**
-         * Whether this rectangle is visible on the map. Defaults to true.
-         */
-        this.visible = true;
-        /**
-         * This event is fired when the rectangle's is changed.
-         */
-        this.boundsChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event emitter gets emitted when the user clicks on the rectangle.
-         */
-        this.rectangleClick = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event emitter gets emitted when the user clicks on the rectangle.
-         */
-        this.rectangleDblClick = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is repeatedly fired while the user drags the rectangle.
-         */
-        this.drag = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the user stops dragging the rectangle.
-         */
-        this.dragEnd = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the user starts dragging the rectangle.
-         */
-        this.dragStart = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the DOM mousedown event is fired on the rectangle.
-         */
-        this.mouseDown = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the DOM mousemove event is fired on the rectangle.
-         */
-        this.mouseMove = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired on rectangle mouseout.
-         */
-        this.mouseOut = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired on rectangle mouseover.
-         */
-        this.mouseOver = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the DOM mouseup event is fired on the rectangle.
-         */
-        this.mouseUp = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        /**
-         * This event is fired when the rectangle is right-clicked on.
-         */
-        this.rightClick = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        this._rectangleAddedToManager = false;
-        this._eventSubscriptions = [];
-    }
-    /** @internal */
-    ngOnInit() {
-        this._manager.addRectangle(this);
-        this._rectangleAddedToManager = true;
-        this._registerEventListeners();
-    }
-    /** @internal */
-    ngOnChanges(changes) {
-        if (!this._rectangleAddedToManager) {
-            return;
-        }
-        if (changes['north'] ||
-            changes['east'] ||
-            changes['south'] ||
-            changes['west']) {
-            this._manager.setBounds(this);
-        }
-        if (changes['editable']) {
-            this._manager.setEditable(this);
-        }
-        if (changes['draggable']) {
-            this._manager.setDraggable(this);
-        }
-        if (changes['visible']) {
-            this._manager.setVisible(this);
-        }
-        this._updateRectangleOptionsChanges(changes);
-    }
-    _updateRectangleOptionsChanges(changes) {
-        let options = {};
-        let optionKeys = Object.keys(changes).filter(k => AgmRectangle_1._mapOptions.indexOf(k) !== -1);
-        optionKeys.forEach(k => {
-            options[k] = changes[k].currentValue;
-        });
-        if (optionKeys.length > 0) {
-            this._manager.setOptions(this, options);
-        }
-    }
-    _registerEventListeners() {
-        let events = new Map();
-        events.set('bounds_changed', this.boundsChange);
-        events.set('click', this.rectangleClick);
-        events.set('dblclick', this.rectangleDblClick);
-        events.set('drag', this.drag);
-        events.set('dragend', this.dragEnd);
-        events.set('dragStart', this.dragStart);
-        events.set('mousedown', this.mouseDown);
-        events.set('mousemove', this.mouseMove);
-        events.set('mouseout', this.mouseOut);
-        events.set('mouseover', this.mouseOver);
-        events.set('mouseup', this.mouseUp);
-        events.set('rightclick', this.rightClick);
-        events.forEach((eventEmitter, eventName) => {
-            this._eventSubscriptions.push(this._manager
-                .createEventObservable(eventName, this)
-                .subscribe(value => {
-                switch (eventName) {
-                    case 'bounds_changed':
-                        this._manager.getBounds(this).then(bounds => eventEmitter.emit({
-                            north: bounds.getNorthEast().lat(),
-                            east: bounds.getNorthEast().lng(),
-                            south: bounds.getSouthWest().lat(),
-                            west: bounds.getSouthWest().lng(),
-                        }));
-                        break;
-                    default:
-                        eventEmitter.emit({
-                            coords: { lat: value.latLng.lat(), lng: value.latLng.lng() },
-                        });
-                }
-            }));
-        });
-    }
-    /** @internal */
-    ngOnDestroy() {
-        this._eventSubscriptions.forEach(function (s) {
-            s.unsubscribe();
-        });
-        this._eventSubscriptions = null;
-        this._manager.removeRectangle(this);
-    }
-    /**
-     * Gets the LatLngBounds of this Rectangle.
-     */
-    getBounds() {
-        return this._manager.getBounds(this);
-    }
-};
-AgmRectangle.ɵfac = function AgmRectangle_Factory(t) { return new (t || AgmRectangle)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](RectangleManager)); };
-AgmRectangle.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({ type: AgmRectangle, selectors: [["agm-rectangle"]], inputs: { clickable: "clickable", draggable: ["rectangleDraggable", "draggable"], editable: "editable", strokePosition: "strokePosition", strokeWeight: "strokeWeight", visible: "visible", north: "north", east: "east", south: "south", west: "west", fillColor: "fillColor", fillOpacity: "fillOpacity", strokeColor: "strokeColor", strokeOpacity: "strokeOpacity", zIndex: "zIndex" }, outputs: { boundsChange: "boundsChange", rectangleClick: "rectangleClick", rectangleDblClick: "rectangleDblClick", drag: "drag", dragEnd: "dragEnd", dragStart: "dragStart", mouseDown: "mouseDown", mouseMove: "mouseMove", mouseOut: "mouseOut", mouseOver: "mouseOver", mouseUp: "mouseUp", rightClick: "rightClick" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]] });
-AgmRectangle._mapOptions = [
-    'fillColor',
-    'fillOpacity',
-    'strokeColor',
-    'strokeOpacity',
-    'strokePosition',
-    'strokeWeight',
-    'visible',
-    'zIndex',
-    'clickable',
-];
-AgmRectangle.ctorParameters = () => [
-    { type: RectangleManager }
-];
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmRectangle.prototype, "north", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmRectangle.prototype, "east", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmRectangle.prototype, "south", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmRectangle.prototype, "west", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmRectangle.prototype, "clickable", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])('rectangleDraggable'),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmRectangle.prototype, "draggable", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmRectangle.prototype, "editable", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
-], AgmRectangle.prototype, "fillColor", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmRectangle.prototype, "fillOpacity", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
-], AgmRectangle.prototype, "strokeColor", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmRectangle.prototype, "strokeOpacity", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
-], AgmRectangle.prototype, "strokePosition", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmRectangle.prototype, "strokeWeight", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmRectangle.prototype, "visible", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
-], AgmRectangle.prototype, "zIndex", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmRectangle.prototype, "boundsChange", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmRectangle.prototype, "rectangleClick", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmRectangle.prototype, "rectangleDblClick", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmRectangle.prototype, "drag", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmRectangle.prototype, "dragEnd", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmRectangle.prototype, "dragStart", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmRectangle.prototype, "mouseDown", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmRectangle.prototype, "mouseMove", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmRectangle.prototype, "mouseOut", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmRectangle.prototype, "mouseOver", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmRectangle.prototype, "mouseUp", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
-], AgmRectangle.prototype, "rightClick", void 0);
-AgmRectangle = AgmRectangle_1 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [RectangleManager])
-], AgmRectangle);
-
-let layerId$3 = 0;
-/*
- * This directive adds a transit layer to a google map instance
- * <agm-transit-layer [visible]="true|false"> <agm-transit-layer>
- * */
-let AgmTransitLayer = class AgmTransitLayer {
-    constructor(_manager) {
-        this._manager = _manager;
-        this._addedToManager = false;
-        this._id = (layerId$3++).toString();
-        /**
-         * Hide/show transit layer
-         */
-        this.visible = true;
-    }
-    ngOnInit() {
-        if (this._addedToManager) {
-            return;
-        }
-        this._manager.addTransitLayer(this, { visible: this.visible });
-        this._addedToManager = true;
-    }
-    ngOnChanges(changes) {
-        if (!this._addedToManager) {
-            return;
-        }
-        if (changes['visible'] != null) {
-            this._manager.toggleLayerVisibility(this, { visible: changes['visible'].currentValue });
-        }
-    }
-    /** @internal */
-    id() { return this._id; }
-    /** @internal */
-    toString() { return `AgmTransitLayer-${this._id.toString()}`; }
-    /** @internal */
-    ngOnDestroy() {
-        this._manager.deleteLayer(this);
-    }
-};
-AgmTransitLayer.ɵfac = function AgmTransitLayer_Factory(t) { return new (t || AgmTransitLayer)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](LayerManager)); };
-AgmTransitLayer.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({ type: AgmTransitLayer, selectors: [["agm-transit-layer"]], inputs: { visible: "visible" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]] });
-AgmTransitLayer.ctorParameters = () => [
-    { type: LayerManager }
-];
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], AgmTransitLayer.prototype, "visible", void 0);
-AgmTransitLayer = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [LayerManager])
-], AgmTransitLayer);
-
-var google$1;
-var SymbolPath;
-(function (SymbolPath) {
-    SymbolPath[SymbolPath["BACKWARD_CLOSED_ARROW"] = 3] = "BACKWARD_CLOSED_ARROW";
-    SymbolPath[SymbolPath["BACKWARD_OPEN_ARROW"] = 4] = "BACKWARD_OPEN_ARROW";
-    SymbolPath[SymbolPath["CIRCLE"] = 0] = "CIRCLE";
-    SymbolPath[SymbolPath["FORWARD_CLOSED_ARROW"] = 1] = "FORWARD_CLOSED_ARROW";
-    SymbolPath[SymbolPath["FORWARD_OPEN_ARROW"] = 2] = "FORWARD_OPEN_ARROW";
-})(SymbolPath || (SymbolPath = {}));
-/**
- * Identifiers used to specify the placement of controls on the map. Controls are
- * positioned relative to other controls in the same layout position. Controls that
- * are added first are positioned closer to the edge of the map.
- */
-var ControlPosition;
-(function (ControlPosition) {
-    ControlPosition[ControlPosition["RIGHT_BOTTOM"] = 0] = "RIGHT_BOTTOM";
-    ControlPosition[ControlPosition["TOP_LEFT"] = 1] = "TOP_LEFT";
-    ControlPosition[ControlPosition["TOP_CENTER"] = 2] = "TOP_CENTER";
-    ControlPosition[ControlPosition["TOP_RIGHT"] = 3] = "TOP_RIGHT";
-    ControlPosition[ControlPosition["LEFT_CENTER"] = 4] = "LEFT_CENTER";
-    ControlPosition[ControlPosition["LEFT_TOP"] = 5] = "LEFT_TOP";
-    ControlPosition[ControlPosition["LEFT_BOTTOM"] = 6] = "LEFT_BOTTOM";
-    ControlPosition[ControlPosition["RIGHT_TOP"] = 7] = "RIGHT_TOP";
-    ControlPosition[ControlPosition["RIGHT_CENTER"] = 8] = "RIGHT_CENTER";
-    ControlPosition[ControlPosition["BOTTOM_RIGHT"] = 9] = "BOTTOM_RIGHT";
-    ControlPosition[ControlPosition["BOTTOM_LEFT"] = 10] = "BOTTOM_LEFT";
-    ControlPosition[ControlPosition["BOTTOM_CENTER"] = 11] = "BOTTOM_CENTER";
-})(ControlPosition || (ControlPosition = {}));
-var MapTypeId;
-(function (MapTypeId) {
-    /** This map type displays a transparent layer of major streets on satellite images. */
-    MapTypeId[MapTypeId["HYBRID"] = 0] = "HYBRID";
-    /** This map type displays a normal street map. */
-    MapTypeId[MapTypeId["ROADMAP"] = 1] = "ROADMAP";
-    /** This map type displays satellite images. */
-    MapTypeId[MapTypeId["SATELLITE"] = 2] = "SATELLITE";
-    /** This map type displays maps with physical features such as terrain and vegetation. */
-    MapTypeId[MapTypeId["TERRAIN"] = 3] = "TERRAIN";
-})(MapTypeId || (MapTypeId = {}));
-var MapTypeControlStyle;
-(function (MapTypeControlStyle) {
-    MapTypeControlStyle[MapTypeControlStyle["DEFAULT"] = 0] = "DEFAULT";
-    MapTypeControlStyle[MapTypeControlStyle["DROPDOWN_MENU"] = 2] = "DROPDOWN_MENU";
-    MapTypeControlStyle[MapTypeControlStyle["HORIZONTAL_BAR"] = 1] = "HORIZONTAL_BAR";
-})(MapTypeControlStyle || (MapTypeControlStyle = {}));
-var ScaleControlStyle;
-(function (ScaleControlStyle) {
-    ScaleControlStyle[ScaleControlStyle["DEFAULT"] = 0] = "DEFAULT";
-})(ScaleControlStyle || (ScaleControlStyle = {}));
-var ZoomControlStyle;
-(function (ZoomControlStyle) {
-    ZoomControlStyle[ZoomControlStyle["DEFAULT"] = 0] = "DEFAULT";
-    ZoomControlStyle[ZoomControlStyle["LARGE"] = 1] = "LARGE";
-    ZoomControlStyle[ZoomControlStyle["SMALL"] = 2] = "SMALL";
-})(ZoomControlStyle || (ZoomControlStyle = {}));
-var GeocoderLocationType;
-(function (GeocoderLocationType) {
-    GeocoderLocationType["APPROXIMATE"] = "APPROXIMATE";
-    GeocoderLocationType["GEOMETRIC_CENTER"] = "GEOMETRIC_CENTER";
-    GeocoderLocationType["RANGE_INTERPOLATED"] = "RANGE_INTERPOLATED";
-    GeocoderLocationType["ROOFTOP"] = "ROOFTOP";
-})(GeocoderLocationType || (GeocoderLocationType = {}));
-var GeocoderStatus;
-(function (GeocoderStatus) {
-    GeocoderStatus["ERROR"] = "ERROR";
-    GeocoderStatus["INVALID_REQUEST"] = "INVALID_REQUEST";
-    GeocoderStatus["OK"] = "OK";
-    GeocoderStatus["OVER_QUERY_LIMIT"] = "OVER_QUERY_LIMIT";
-    GeocoderStatus["REQUEST_DENIED"] = "REQUEST_DENIED";
-    GeocoderStatus["UNKNOWN_ERROR"] = "UNKNOWN_ERROR";
-    GeocoderStatus["ZERO_RESULTS"] = "ZERO_RESULTS";
-})(GeocoderStatus || (GeocoderStatus = {}));
-
-let AgmGeocoder = class AgmGeocoder {
-    constructor(loader) {
-        const connectableGeocoder$ = new rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"](subscriber => {
-            loader.load().then(() => subscriber.next());
-        })
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(() => this._createGeocoder()), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["multicast"])(new rxjs__WEBPACK_IMPORTED_MODULE_2__["ReplaySubject"](1)));
-        connectableGeocoder$.connect(); // ignore the subscription
-        // since we will remain subscribed till application exits
-        this.geocoder$ = connectableGeocoder$;
-    }
-    geocode(request) {
-        return this.geocoder$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["switchMap"])((geocoder) => this._getGoogleResults(geocoder, request)));
-    }
-    _getGoogleResults(geocoder, request) {
-        const geocodeObservable = Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["bindCallback"])(geocoder.geocode);
-        return geocodeObservable(request).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["switchMap"])(([results, status]) => {
-            if (status === GeocoderStatus.OK) {
-                return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(results);
-            }
-            return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["throwError"])(status);
-        }));
-    }
-    _createGeocoder() {
-        return new google.maps.Geocoder();
-    }
-};
-AgmGeocoder.ɵfac = function AgmGeocoder_Factory(t) { return new (t || AgmGeocoder)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](MapsAPILoader)); };
-AgmGeocoder.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: AgmGeocoder, factory: function (t) { return AgmGeocoder.ɵfac(t); }, providedIn: 'root' });
-AgmGeocoder.ctorParameters = () => [
-    { type: MapsAPILoader }
-];
-AgmGeocoder.ngInjectableDef = Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"])({ factory: function AgmGeocoder_Factory() { return new AgmGeocoder(Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"])(MapsAPILoader)); }, token: AgmGeocoder, providedIn: "root" });
-AgmGeocoder = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [MapsAPILoader])
-], AgmGeocoder);
-
-class WindowRef {
-    getNativeWindow() { return window; }
-}
-class DocumentRef {
-    getNativeDocument() { return document; }
-}
-const BROWSER_GLOBALS_PROVIDERS = [WindowRef, DocumentRef];
-
-var GoogleMapsScriptProtocol;
-(function (GoogleMapsScriptProtocol) {
-    GoogleMapsScriptProtocol[GoogleMapsScriptProtocol["HTTP"] = 1] = "HTTP";
-    GoogleMapsScriptProtocol[GoogleMapsScriptProtocol["HTTPS"] = 2] = "HTTPS";
-    GoogleMapsScriptProtocol[GoogleMapsScriptProtocol["AUTO"] = 3] = "AUTO";
-})(GoogleMapsScriptProtocol || (GoogleMapsScriptProtocol = {}));
-/**
- * Token for the config of the LazyMapsAPILoader. Please provide an object of type {@link
- * LazyMapsAPILoaderConfig}.
- */
-const LAZY_MAPS_API_CONFIG = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["InjectionToken"]('angular-google-maps LAZY_MAPS_API_CONFIG');
-let LazyMapsAPILoader = class LazyMapsAPILoader extends MapsAPILoader {
-    constructor(config = null, w, d, localeId) {
-        super();
-        this.localeId = localeId;
-        this._SCRIPT_ID = 'agmGoogleMapsApiScript';
-        this.callbackName = `agmLazyMapsAPILoader`;
-        this._config = config || {};
-        this._windowRef = w;
-        this._documentRef = d;
-    }
-    load() {
-        const window = this._windowRef.getNativeWindow();
-        if (window.google && window.google.maps) {
-            // Google maps already loaded on the page.
-            return Promise.resolve();
-        }
-        if (this._scriptLoadingPromise) {
-            return this._scriptLoadingPromise;
-        }
-        // this can happen in HMR situations or Stackblitz.io editors.
-        const scriptOnPage = this._documentRef.getNativeDocument().getElementById(this._SCRIPT_ID);
-        if (scriptOnPage) {
-            this._assignScriptLoadingPromise(scriptOnPage);
-            return this._scriptLoadingPromise;
-        }
-        const script = this._documentRef.getNativeDocument().createElement('script');
-        script.type = 'text/javascript';
-        script.async = true;
-        script.defer = true;
-        script.id = this._SCRIPT_ID;
-        script.src = this._getScriptSrc(this.callbackName);
-        this._assignScriptLoadingPromise(script);
-        this._documentRef.getNativeDocument().body.appendChild(script);
-        return this._scriptLoadingPromise;
-    }
-    _assignScriptLoadingPromise(scriptElem) {
-        this._scriptLoadingPromise = new Promise((resolve, reject) => {
-            this._windowRef.getNativeWindow()[this.callbackName] = () => {
-                resolve();
-            };
-            scriptElem.onerror = (error) => {
-                reject(error);
-            };
-        });
-    }
-    _getScriptSrc(callbackName) {
-        let protocolType = (this._config && this._config.protocol) || GoogleMapsScriptProtocol.HTTPS;
-        let protocol;
-        switch (protocolType) {
-            case GoogleMapsScriptProtocol.AUTO:
-                protocol = '';
-                break;
-            case GoogleMapsScriptProtocol.HTTP:
-                protocol = 'http:';
-                break;
-            case GoogleMapsScriptProtocol.HTTPS:
-                protocol = 'https:';
-                break;
-        }
-        const hostAndPath = this._config.hostAndPath || 'maps.googleapis.com/maps/api/js';
-        const queryParams = {
-            v: this._config.apiVersion || 'quarterly',
-            callback: callbackName,
-            key: this._config.apiKey,
-            client: this._config.clientId,
-            channel: this._config.channel,
-            libraries: this._config.libraries,
-            region: this._config.region,
-            language: this._config.language || this.localeId !== 'en-US' ? this.localeId : null,
-        };
-        const params = Object.keys(queryParams)
-            .filter((k) => queryParams[k] != null)
-            .filter((k) => {
-            // remove empty arrays
-            return !Array.isArray(queryParams[k]) ||
-                (Array.isArray(queryParams[k]) && queryParams[k].length > 0);
-        })
-            .map((k) => {
-            // join arrays as comma seperated strings
-            let i = queryParams[k];
-            if (Array.isArray(i)) {
-                return { key: k, value: i.join(',') };
-            }
-            return { key: k, value: queryParams[k] };
-        })
-            .map((entry) => {
-            return `${entry.key}=${entry.value}`;
-        })
-            .join('&');
-        return `${protocol}//${hostAndPath}?${params}`;
-    }
-};
-LazyMapsAPILoader.ɵfac = function LazyMapsAPILoader_Factory(t) { return new (t || LazyMapsAPILoader)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](LAZY_MAPS_API_CONFIG, 8), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](WindowRef), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](DocumentRef), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["LOCALE_ID"])); };
-LazyMapsAPILoader.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: LazyMapsAPILoader, factory: function (t) { return LazyMapsAPILoader.ɵfac(t); } });
-LazyMapsAPILoader.ctorParameters = () => [
-    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [LAZY_MAPS_API_CONFIG,] }] },
-    { type: WindowRef },
-    { type: DocumentRef },
-    { type: String, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["LOCALE_ID"],] }] }
-];
-LazyMapsAPILoader = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"])()), Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(LAZY_MAPS_API_CONFIG)),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(3, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_core__WEBPACK_IMPORTED_MODULE_1__["LOCALE_ID"])),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [Object, WindowRef, DocumentRef, String])
-], LazyMapsAPILoader);
-
-/**
- * When using the NoOpMapsAPILoader, the Google Maps API must be added to the page via a `<script>`
- * Tag.
- * It's important that the Google Maps API script gets loaded first on the page.
- */
-class NoOpMapsAPILoader {
-    load() {
-        if (!window.google || !window.google.maps) {
-            throw new Error('Google Maps API not loaded on page. Make sure window.google.maps is available!');
-        }
-        return Promise.resolve();
-    }
-}
-
-// exported map types
-
-var AgmCoreModule_1;
-/**
- * @internal
- */
-function coreDirectives() {
-    return [
-        AgmBicyclingLayer,
-        AgmCircle,
-        AgmDataLayer,
-        AgmFitBounds,
-        AgmInfoWindow,
-        AgmKmlLayer,
-        AgmMap,
-        AgmMarker,
-        AgmPolygon,
-        AgmPolyline,
-        AgmPolylineIcon,
-        AgmPolylinePoint,
-        AgmRectangle,
-        AgmTransitLayer,
-    ];
-}
-/**
- * The angular-google-maps core module. Contains all Directives/Services/Pipes
- * of the core module. Please use `AgmCoreModule.forRoot()` in your app module.
- */
-let AgmCoreModule = AgmCoreModule_1 = class AgmCoreModule {
-    /**
-     * Please use this method when you register the module at the root level.
-     */
-    static forRoot(lazyMapsAPILoaderConfig) {
-        return {
-            ngModule: AgmCoreModule_1,
-            providers: [
-                ...BROWSER_GLOBALS_PROVIDERS, { provide: MapsAPILoader, useClass: LazyMapsAPILoader },
-                { provide: LAZY_MAPS_API_CONFIG, useValue: lazyMapsAPILoaderConfig },
-            ],
-        };
-    }
-};
-AgmCoreModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: AgmCoreModule });
-AgmCoreModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function AgmCoreModule_Factory(t) { return new (t || AgmCoreModule)(); } });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](MapsAPILoader, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"]
-    }], null, null); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](GoogleMapsAPIWrapper, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"]
-    }], function () { return [{ type: MapsAPILoader }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] }]; }, null); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](LayerManager, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"]
-    }], function () { return [{ type: GoogleMapsAPIWrapper }]; }, null); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AgmBicyclingLayer, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"],
-        args: [{
-                selector: 'agm-bicycling-layer'
-            }]
-    }], function () { return [{ type: LayerManager }]; }, { visible: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](CircleManager, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"]
-    }], function () { return [{ type: GoogleMapsAPIWrapper }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] }]; }, null); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AgmCircle, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"],
-        args: [{
-                selector: 'agm-circle'
-            }]
-    }], function () { return [{ type: CircleManager }]; }, { clickable: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], draggable: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"],
-            args: ['circleDraggable']
-        }], editable: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], radius: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], strokePosition: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], strokeWeight: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], visible: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], centerChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], circleClick: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], circleDblClick: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], drag: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], dragEnd: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], dragStart: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], mouseDown: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], mouseMove: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], mouseOut: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], mouseOver: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], mouseUp: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], radiusChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], rightClick: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], latitude: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], longitude: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], fillColor: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], fillOpacity: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], strokeColor: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], strokeOpacity: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], zIndex: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](DataLayerManager, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"]
-    }], function () { return [{ type: GoogleMapsAPIWrapper }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] }]; }, null); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AgmDataLayer, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"],
-        args: [{
-                selector: 'agm-data-layer'
-            }]
-    }], function () { return [{ type: DataLayerManager }]; }, { layerClick: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], geoJson: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], style: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](FitBoundsService, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"]
-    }], function () { return [{ type: MapsAPILoader }]; }, null); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AgmFitBounds, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"],
-        args: [{
-                selector: '[agmFitBounds]'
-            }]
-    }], function () { return [{ type: FitBoundsAccessor, decorators: [{
-                type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Self"]
-            }] }, { type: FitBoundsService }]; }, { agmFitBounds: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](MarkerManager, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"]
-    }], function () { return [{ type: GoogleMapsAPIWrapper }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] }]; }, null); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](InfoWindowManager, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"]
-    }], function () { return [{ type: GoogleMapsAPIWrapper }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] }, { type: MarkerManager }]; }, null); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AgmInfoWindow, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"],
-        args: [{
-                selector: 'agm-info-window',
-                template: `<div class='agm-info-window-content'>
-      <ng-content></ng-content>
-    </div>
-  `
-            }]
-    }], function () { return [{ type: InfoWindowManager }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] }]; }, { isOpen: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], infoWindowClose: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], latitude: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], longitude: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], disableAutoPan: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], zIndex: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], maxWidth: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](KmlLayerManager, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"]
-    }], function () { return [{ type: GoogleMapsAPIWrapper }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] }]; }, null); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AgmKmlLayer, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"],
-        args: [{
-                selector: 'agm-kml-layer'
-            }]
-    }], function () { return [{ type: KmlLayerManager }]; }, { clickable: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], preserveViewport: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], screenOverlays: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], suppressInfoWindows: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], url: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], zIndex: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], layerClick: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], defaultViewportChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], statusChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](PolygonManager, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"]
-    }], function () { return [{ type: GoogleMapsAPIWrapper }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] }]; }, null); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](PolylineManager, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"]
-    }], function () { return [{ type: GoogleMapsAPIWrapper }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] }]; }, null); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](RectangleManager, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"]
-    }], function () { return [{ type: GoogleMapsAPIWrapper }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] }]; }, null); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AgmMap, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"],
-        args: [{
-                selector: 'agm-map',
-                providers: [
-                    CircleManager,
-                    DataLayerManager,
-                    DataLayerManager,
-                    FitBoundsService,
-                    GoogleMapsAPIWrapper,
-                    InfoWindowManager,
-                    KmlLayerManager,
-                    LayerManager,
-                    MarkerManager,
-                    PolygonManager,
-                    PolylineManager,
-                    RectangleManager,
-                ],
-                host: {
-                    // todo: deprecated - we will remove it with the next version
-                    '[class.sebm-google-map-container]': 'true'
-                },
-                template: `
-              <div class='agm-map-container-inner sebm-google-map-container-inner'></div>
-              <div class='agm-map-content'>
-                <ng-content></ng-content>
-              </div>
-  `,
-                styles: [`
-    .agm-map-container-inner {
-      width: inherit;
-      height: inherit;
-    }
-    .agm-map-content {
-      display:none;
-    }
-  `]
-            }]
-    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] }, { type: GoogleMapsAPIWrapper }, { type: Object, decorators: [{
-                type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"],
-                args: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["PLATFORM_ID"]]
-            }] }, { type: FitBoundsService }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] }]; }, { longitude: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], latitude: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], zoom: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], draggable: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"],
-            args: ['mapDraggable']
-        }], disableDoubleClickZoom: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], disableDefaultUI: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], scrollwheel: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], keyboardShortcuts: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], styles: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], usePanning: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], fitBounds: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], scaleControl: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], mapTypeControl: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], panControl: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], rotateControl: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], fullscreenControl: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], mapTypeId: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], clickableIcons: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], showDefaultInfoWindow: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], gestureHandling: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], tilt: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], mapClick: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], mapRightClick: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], mapDblClick: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], centerChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], boundsChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], mapTypeIdChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], idle: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], zoomChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], mapReady: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], tilesLoaded: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], minZoom: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], maxZoom: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], controlSize: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], backgroundColor: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], draggableCursor: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], draggingCursor: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], zoomControl: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], zoomControlOptions: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], streetViewControl: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], streetViewControlOptions: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], fitBoundsPadding: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], scaleControlOptions: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], mapTypeControlOptions: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], panControlOptions: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], rotateControlOptions: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], fullscreenControlOptions: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], restriction: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AgmMarker, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"],
-        args: [{
-                selector: 'agm-marker',
-                providers: [
-                    { provide: FitBoundsAccessor, useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(() => AgmMarker_1) },
-                ],
-                inputs: [
-                    'latitude', 'longitude', 'title', 'label', 'draggable: markerDraggable', 'iconUrl',
-                    'openInfoWindow', 'opacity', 'visible', 'zIndex', 'animation',
-                ],
-                outputs: ['markerClick', 'dragStart', 'drag', 'dragEnd', 'mouseOver', 'mouseOut']
-            }]
-    }], function () { return [{ type: MarkerManager }]; }, { draggable: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"],
-            args: ['markerDraggable']
-        }], visible: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], openInfoWindow: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], opacity: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], zIndex: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], clickable: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"],
-            args: ['markerClickable']
-        }], animationChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], markerClick: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], markerDblClick: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], markerRightClick: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], dragStart: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], drag: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], dragEnd: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], mouseOver: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], mouseOut: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], infoWindow: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ContentChildren"],
-            args: [AgmInfoWindow]
-        }], latitude: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], longitude: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], title: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], label: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], iconUrl: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], animation: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AgmPolygon, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"],
-        args: [{
-                selector: 'agm-polygon'
-            }]
-    }], function () { return [{ type: PolygonManager }]; }, { clickable: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], draggable: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"],
-            args: ['polyDraggable']
-        }], editable: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], geodesic: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], paths: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], polyClick: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], polyDblClick: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], polyDrag: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], polyDragEnd: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], polyDragStart: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], polyMouseDown: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], polyMouseMove: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], polyMouseOut: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], polyMouseOver: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], polyMouseUp: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], polyRightClick: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], polyPathsChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], fillColor: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], fillOpacity: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], strokeColor: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], strokeOpacity: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], strokeWeight: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], visible: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], zIndex: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AgmPolylineIcon, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"],
-        args: [{ selector: 'agm-polyline agm-icon-sequence' }]
-    }], null, { fixedRotation: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], offset: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], repeat: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], anchorX: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], anchorY: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], fillColor: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], fillOpacity: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], path: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], rotation: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], scale: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], strokeColor: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], strokeOpacity: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], strokeWeight: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AgmPolylinePoint, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"],
-        args: [{
-                selector: 'agm-polyline-point',
-                providers: [
-                    { provide: FitBoundsAccessor, useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(() => AgmPolylinePoint_1) },
-                ]
-            }]
-    }], function () { return []; }, { positionChanged: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], latitude: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], longitude: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AgmPolyline, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"],
-        args: [{
-                selector: 'agm-polyline'
-            }]
-    }], function () { return [{ type: PolylineManager }]; }, { clickable: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], draggable: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"],
-            args: ['polylineDraggable']
-        }], editable: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], geodesic: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], visible: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], lineClick: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], lineDblClick: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], lineDrag: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], lineDragEnd: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], lineDragStart: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], lineMouseDown: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], lineMouseMove: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], lineMouseOut: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], lineMouseOver: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], lineMouseUp: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], lineRightClick: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], polyPathChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], strokeColor: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], strokeOpacity: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], strokeWeight: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], zIndex: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], points: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ContentChildren"],
-            args: [AgmPolylinePoint]
-        }], iconSequences: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ContentChildren"],
-            args: [AgmPolylineIcon]
-        }] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AgmRectangle, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"],
-        args: [{
-                selector: 'agm-rectangle'
-            }]
-    }], function () { return [{ type: RectangleManager }]; }, { clickable: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], draggable: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"],
-            args: ['rectangleDraggable']
-        }], editable: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], strokePosition: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], strokeWeight: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], visible: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], boundsChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], rectangleClick: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], rectangleDblClick: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], drag: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], dragEnd: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], dragStart: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], mouseDown: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], mouseMove: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], mouseOut: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], mouseOver: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], mouseUp: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], rightClick: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], north: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], east: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], south: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], west: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], fillColor: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], fillOpacity: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], strokeColor: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], strokeOpacity: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], zIndex: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AgmTransitLayer, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"],
-        args: [{
-                selector: 'agm-transit-layer'
-            }]
-    }], function () { return [{ type: LayerManager }]; }, { visible: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AgmGeocoder, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"],
-        args: [{ providedIn: 'root' }]
-    }], function () { return [{ type: MapsAPILoader }]; }, null); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](LazyMapsAPILoader, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"]
-    }], function () { return [{ type: undefined, decorators: [{
-                type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"]
-            }, {
-                type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"],
-                args: [LAZY_MAPS_API_CONFIG]
-            }] }, { type: WindowRef }, { type: DocumentRef }, { type: String, decorators: [{
-                type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"],
-                args: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["LOCALE_ID"]]
-            }] }]; }, null); })();
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AgmCoreModule, { declarations: [AgmBicyclingLayer, AgmCircle, AgmDataLayer, AgmFitBounds, AgmInfoWindow, AgmKmlLayer, AgmMap, AgmMarker, AgmPolygon, AgmPolyline, AgmPolylineIcon, AgmPolylinePoint, AgmRectangle, AgmTransitLayer], exports: [AgmBicyclingLayer, AgmCircle, AgmDataLayer, AgmFitBounds, AgmInfoWindow, AgmKmlLayer, AgmMap, AgmMarker, AgmPolygon, AgmPolyline, AgmPolylineIcon, AgmPolylinePoint, AgmRectangle, AgmTransitLayer] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AgmCoreModule, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
-        args: [{ declarations: coreDirectives(), exports: coreDirectives() }]
-    }], null, null); })();
-
-// main modules
-
-/**
- * Generated bundle index. Do not edit.
- */
-
-
-
-//# sourceMappingURL=agm-core.js.map
-
-/***/ }),
-
-/***/ "./node_modules/@agm/core/node_modules/tslib/tslib.es6.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/@agm/core/node_modules/tslib/tslib.es6.js ***!
-  \****************************************************************/
-/*! exports provided: __extends, __assign, __rest, __decorate, __param, __metadata, __awaiter, __generator, __createBinding, __exportStar, __values, __read, __spread, __spreadArrays, __await, __asyncGenerator, __asyncDelegator, __asyncValues, __makeTemplateObject, __importStar, __importDefault, __classPrivateFieldGet, __classPrivateFieldSet */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__extends", function() { return __extends; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__assign", function() { return __assign; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__rest", function() { return __rest; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__decorate", function() { return __decorate; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__param", function() { return __param; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__metadata", function() { return __metadata; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__awaiter", function() { return __awaiter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__generator", function() { return __generator; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__createBinding", function() { return __createBinding; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__exportStar", function() { return __exportStar; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__values", function() { return __values; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__read", function() { return __read; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spread", function() { return __spread; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spreadArrays", function() { return __spreadArrays; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__await", function() { return __await; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncGenerator", function() { return __asyncGenerator; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncDelegator", function() { return __asyncDelegator; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncValues", function() { return __asyncValues; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__makeTemplateObject", function() { return __makeTemplateObject; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importStar", function() { return __importStar; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importDefault", function() { return __importDefault; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__classPrivateFieldGet", function() { return __classPrivateFieldGet; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__classPrivateFieldSet", function() { return __classPrivateFieldSet; });
-/*! *****************************************************************************
-Copyright (c) Microsoft Corporation.
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */
-/* global Reflect, Promise */
-
-var extendStatics = function(d, b) {
-    extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return extendStatics(d, b);
-};
-
-function __extends(d, b) {
-    extendStatics(d, b);
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-}
-
-var __assign = function() {
-    __assign = Object.assign || function __assign(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-        }
-        return t;
-    }
-    return __assign.apply(this, arguments);
-}
-
-function __rest(s, e) {
-    var t = {};
-    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-        t[p] = s[p];
-    if (s != null && typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-                t[p[i]] = s[p[i]];
-        }
-    return t;
-}
-
-function __decorate(decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-}
-
-function __param(paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-}
-
-function __metadata(metadataKey, metadataValue) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
-}
-
-function __awaiter(thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-}
-
-function __generator(thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [op[0] & 2, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-}
-
-function __createBinding(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}
-
-function __exportStar(m, exports) {
-    for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) exports[p] = m[p];
-}
-
-function __values(o) {
-    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
-    if (m) return m.call(o);
-    if (o && typeof o.length === "number") return {
-        next: function () {
-            if (o && i >= o.length) o = void 0;
-            return { value: o && o[i++], done: !o };
-        }
-    };
-    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
-}
-
-function __read(o, n) {
-    var m = typeof Symbol === "function" && o[Symbol.iterator];
-    if (!m) return o;
-    var i = m.call(o), r, ar = [], e;
-    try {
-        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
-    }
-    catch (error) { e = { error: error }; }
-    finally {
-        try {
-            if (r && !r.done && (m = i["return"])) m.call(i);
-        }
-        finally { if (e) throw e.error; }
-    }
-    return ar;
-}
-
-function __spread() {
-    for (var ar = [], i = 0; i < arguments.length; i++)
-        ar = ar.concat(__read(arguments[i]));
-    return ar;
-}
-
-function __spreadArrays() {
-    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
-    for (var r = Array(s), k = 0, i = 0; i < il; i++)
-        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
-            r[k] = a[j];
-    return r;
-};
-
-function __await(v) {
-    return this instanceof __await ? (this.v = v, this) : new __await(v);
-}
-
-function __asyncGenerator(thisArg, _arguments, generator) {
-    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-    var g = generator.apply(thisArg, _arguments || []), i, q = [];
-    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
-    function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
-    function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
-    function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
-    function fulfill(value) { resume("next", value); }
-    function reject(value) { resume("throw", value); }
-    function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
-}
-
-function __asyncDelegator(o) {
-    var i, p;
-    return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
-    function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
-}
-
-function __asyncValues(o) {
-    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-    var m = o[Symbol.asyncIterator], i;
-    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
-    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
-    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
-}
-
-function __makeTemplateObject(cooked, raw) {
-    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
-    return cooked;
-};
-
-function __importStar(mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result.default = mod;
-    return result;
-}
-
-function __importDefault(mod) {
-    return (mod && mod.__esModule) ? mod : { default: mod };
-}
-
-function __classPrivateFieldGet(receiver, privateMap) {
-    if (!privateMap.has(receiver)) {
-        throw new TypeError("attempted to get private field on non-instance");
-    }
-    return privateMap.get(receiver);
-}
-
-function __classPrivateFieldSet(receiver, privateMap, value) {
-    if (!privateMap.has(receiver)) {
-        throw new TypeError("attempted to set private field on non-instance");
-    }
-    privateMap.set(receiver, value);
-    return value;
-}
-
-
-/***/ }),
-
 /***/ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js":
 /*!**********************************************************************!*\
   !*** ./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js ***!
@@ -5561,7 +103,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵsetRootDomAdapter", function() { return setRootDomAdapter; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
 /**
- * @license Angular v10.0.1
+ * @license Angular v10.0.14
  * (c) 2010-2020 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -5906,16 +448,20 @@ const APP_BASE_HREF = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["InjectionT
  * browser's URL.
  *
  * If you're using `PathLocationStrategy`, you must provide a {@link APP_BASE_HREF}
- * or add a base element to the document. This URL prefix that will be preserved
- * when generating and recognizing URLs.
+ * or add a `<base href>` element to the document.
  *
- * For instance, if you provide an `APP_BASE_HREF` of `'/my/app'` and call
+ * For instance, if you provide an `APP_BASE_HREF` of `'/my/app/'` and call
+ * `location.go('/foo')`, the browser's URL will become
+ * `example.com/my/app/foo`. To ensure all relative URIs resolve correctly,
+ * the `<base href>` and/or `APP_BASE_HREF` should end with a `/`.
+ *
+ * Similarly, if you add `<base href='/my/app/'/>` to the document and call
  * `location.go('/foo')`, the browser's URL will become
  * `example.com/my/app/foo`.
  *
- * Similarly, if you add `<base href='/my/app'/>` to the document and call
- * `location.go('/foo')`, the browser's URL will become
- * `example.com/my/app/foo`.
+ * Note that when using `PathLocationStrategy`, neither the query nor
+ * the fragment in the `<base href>` will be preserved, as outlined
+ * by the [RFC](https://tools.ietf.org/html/rfc3986#section-5.2.2).
  *
  * @usageNotes
  *
@@ -8706,7 +3252,7 @@ class NgForOf {
      * rather than the identity of the object itself.
      *
      * The function receives two inputs,
-     * the iteration index and the node object ID.
+     * the iteration index and the associated node data.
      */
     set ngForTrackBy(fn) {
         if (Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["isDevMode"])() && fn != null && typeof fn !== 'function') {
@@ -8723,7 +3269,7 @@ class NgForOf {
     }
     /**
      * A reference to the template that is stamped out for each item in the iterable.
-     * @see [template reference variable](guide/template-syntax#template-reference-variables--var-)
+     * @see [template reference variable](guide/template-reference-variables)
      */
     set ngForTemplate(value) {
         // TODO(TS2.1): make TemplateRef<Partial<NgForRowOf<T>>> once we move to TS v2.1
@@ -8934,7 +3480,7 @@ function getTypeName(type) {
  *
  * The conditional displays the data only if `userStream` returns a value,
  * so you don't need to use the
- * [safe-navigation-operator](guide/template-syntax#safe-navigation-operator) (`?.`)
+ * [safe-navigation-operator](guide/template-expression-operators#safe-navigation-operator) (`?.`)
  * to guard against null values when accessing properties.
  * You can display an alternative template while waiting for the data.
  *
@@ -10840,7 +5386,7 @@ function isPlatformWorkerUi(platformId) {
 /**
  * @publicApi
  */
-const VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["Version"]('10.0.1');
+const VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["Version"]('10.0.14');
 
 /**
  * @license
@@ -10893,7 +5439,7 @@ class BrowserViewportScroller {
      * @returns The position in screen coordinates.
      */
     getScrollPosition() {
-        if (this.supportScrollRestoration()) {
+        if (this.supportsScrolling()) {
             return [this.window.scrollX, this.window.scrollY];
         }
         else {
@@ -10905,7 +5451,7 @@ class BrowserViewportScroller {
      * @param position The new position in screen coordinates.
      */
     scrollToPosition(position) {
-        if (this.supportScrollRestoration()) {
+        if (this.supportsScrolling()) {
             this.window.scrollTo(position[0], position[1]);
         }
     }
@@ -10914,29 +5460,10 @@ class BrowserViewportScroller {
      * @param anchor The ID of the anchor element.
      */
     scrollToAnchor(anchor) {
-        if (this.supportScrollRestoration()) {
-            // Escape anything passed to `querySelector` as it can throw errors and stop the application
-            // from working if invalid values are passed.
-            if (this.window.CSS && this.window.CSS.escape) {
-                anchor = this.window.CSS.escape(anchor);
-            }
-            else {
-                anchor = anchor.replace(/(\"|\'\ |:|\.|\[|\]|,|=)/g, '\\$1');
-            }
-            try {
-                const elSelectedById = this.document.querySelector(`#${anchor}`);
-                if (elSelectedById) {
-                    this.scrollToElement(elSelectedById);
-                    return;
-                }
-                const elSelectedByName = this.document.querySelector(`[name='${anchor}']`);
-                if (elSelectedByName) {
-                    this.scrollToElement(elSelectedByName);
-                    return;
-                }
-            }
-            catch (e) {
-                this.errorHandler.handleError(e);
+        if (this.supportsScrolling()) {
+            const elSelected = this.document.getElementById(anchor) || this.document.getElementsByName(anchor)[0];
+            if (elSelected) {
+                this.scrollToElement(elSelected);
             }
         }
     }
@@ -10968,12 +5495,32 @@ class BrowserViewportScroller {
      */
     supportScrollRestoration() {
         try {
-            return !!this.window && !!this.window.scrollTo;
+            if (!this.window || !this.window.scrollTo) {
+                return false;
+            }
+            // The `scrollRestoration` property could be on the `history` instance or its prototype.
+            const scrollRestorationDescriptor = getScrollRestorationProperty(this.window.history) ||
+                getScrollRestorationProperty(Object.getPrototypeOf(this.window.history));
+            // We can write to the `scrollRestoration` property if it is a writable data field or it has a
+            // setter function.
+            return !!scrollRestorationDescriptor &&
+                !!(scrollRestorationDescriptor.writable || scrollRestorationDescriptor.set);
         }
         catch (_a) {
             return false;
         }
     }
+    supportsScrolling() {
+        try {
+            return !!this.window.scrollTo;
+        }
+        catch (_a) {
+            return false;
+        }
+    }
+}
+function getScrollRestorationProperty(obj) {
+    return Object.getOwnPropertyDescriptor(obj, 'scrollRestoration');
 }
 /**
  * Provides an empty implementation of the viewport scroller. This will
@@ -11083,7 +5630,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
 /**
- * @license Angular v10.0.1
+ * @license Angular v10.0.14
  * (c) 2010-2020 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -13227,11 +7774,284 @@ HttpClientJsonpModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵde
 
 /***/ }),
 
+/***/ "./node_modules/@angular/compiler/src/util.js":
+/*!****************************************************!*\
+  !*** ./node_modules/@angular/compiler/src/util.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+(function (factory) {
+    if ( true && typeof module.exports === "object") {
+        var v = factory(__webpack_require__("./node_modules/@angular/compiler/src sync recursive"), exports);
+        if (v !== undefined) module.exports = v;
+    }
+    else if (true) {
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+    }
+})(function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    exports.partitionArray = exports.newArray = exports.global = exports.Version = exports.isPromise = exports.resolveForwardRef = exports.stringify = exports.utf8Encode = exports.escapeRegExp = exports.getParseErrors = exports.isSyntaxError = exports.syntaxError = exports.error = exports.SyncAsync = exports.ValueTransformer = exports.noUndefined = exports.isDefined = exports.visitValue = exports.splitAtPeriod = exports.splitAtColon = exports.dashCaseToCamelCase = void 0;
+    var DASH_CASE_REGEXP = /-+([a-z0-9])/g;
+    function dashCaseToCamelCase(input) {
+        return input.replace(DASH_CASE_REGEXP, function () {
+            var m = [];
+            for (var _i = 0; _i < arguments.length; _i++) {
+                m[_i] = arguments[_i];
+            }
+            return m[1].toUpperCase();
+        });
+    }
+    exports.dashCaseToCamelCase = dashCaseToCamelCase;
+    function splitAtColon(input, defaultValues) {
+        return _splitAt(input, ':', defaultValues);
+    }
+    exports.splitAtColon = splitAtColon;
+    function splitAtPeriod(input, defaultValues) {
+        return _splitAt(input, '.', defaultValues);
+    }
+    exports.splitAtPeriod = splitAtPeriod;
+    function _splitAt(input, character, defaultValues) {
+        var characterIndex = input.indexOf(character);
+        if (characterIndex == -1)
+            return defaultValues;
+        return [input.slice(0, characterIndex).trim(), input.slice(characterIndex + 1).trim()];
+    }
+    function visitValue(value, visitor, context) {
+        if (Array.isArray(value)) {
+            return visitor.visitArray(value, context);
+        }
+        if (isStrictStringMap(value)) {
+            return visitor.visitStringMap(value, context);
+        }
+        if (value == null || typeof value == 'string' || typeof value == 'number' ||
+            typeof value == 'boolean') {
+            return visitor.visitPrimitive(value, context);
+        }
+        return visitor.visitOther(value, context);
+    }
+    exports.visitValue = visitValue;
+    function isDefined(val) {
+        return val !== null && val !== undefined;
+    }
+    exports.isDefined = isDefined;
+    function noUndefined(val) {
+        return val === undefined ? null : val;
+    }
+    exports.noUndefined = noUndefined;
+    var ValueTransformer = /** @class */ (function () {
+        function ValueTransformer() {
+        }
+        ValueTransformer.prototype.visitArray = function (arr, context) {
+            var _this = this;
+            return arr.map(function (value) { return visitValue(value, _this, context); });
+        };
+        ValueTransformer.prototype.visitStringMap = function (map, context) {
+            var _this = this;
+            var result = {};
+            Object.keys(map).forEach(function (key) {
+                result[key] = visitValue(map[key], _this, context);
+            });
+            return result;
+        };
+        ValueTransformer.prototype.visitPrimitive = function (value, context) {
+            return value;
+        };
+        ValueTransformer.prototype.visitOther = function (value, context) {
+            return value;
+        };
+        return ValueTransformer;
+    }());
+    exports.ValueTransformer = ValueTransformer;
+    exports.SyncAsync = {
+        assertSync: function (value) {
+            if (isPromise(value)) {
+                throw new Error("Illegal state: value cannot be a promise");
+            }
+            return value;
+        },
+        then: function (value, cb) {
+            return isPromise(value) ? value.then(cb) : cb(value);
+        },
+        all: function (syncAsyncValues) {
+            return syncAsyncValues.some(isPromise) ? Promise.all(syncAsyncValues) : syncAsyncValues;
+        }
+    };
+    function error(msg) {
+        throw new Error("Internal Error: " + msg);
+    }
+    exports.error = error;
+    function syntaxError(msg, parseErrors) {
+        var error = Error(msg);
+        error[ERROR_SYNTAX_ERROR] = true;
+        if (parseErrors)
+            error[ERROR_PARSE_ERRORS] = parseErrors;
+        return error;
+    }
+    exports.syntaxError = syntaxError;
+    var ERROR_SYNTAX_ERROR = 'ngSyntaxError';
+    var ERROR_PARSE_ERRORS = 'ngParseErrors';
+    function isSyntaxError(error) {
+        return error[ERROR_SYNTAX_ERROR];
+    }
+    exports.isSyntaxError = isSyntaxError;
+    function getParseErrors(error) {
+        return error[ERROR_PARSE_ERRORS] || [];
+    }
+    exports.getParseErrors = getParseErrors;
+    // Escape characters that have a special meaning in Regular Expressions
+    function escapeRegExp(s) {
+        return s.replace(/([.*+?^=!:${}()|[\]\/\\])/g, '\\$1');
+    }
+    exports.escapeRegExp = escapeRegExp;
+    var STRING_MAP_PROTO = Object.getPrototypeOf({});
+    function isStrictStringMap(obj) {
+        return typeof obj === 'object' && obj !== null && Object.getPrototypeOf(obj) === STRING_MAP_PROTO;
+    }
+    function utf8Encode(str) {
+        var encoded = '';
+        for (var index = 0; index < str.length; index++) {
+            var codePoint = str.charCodeAt(index);
+            // decode surrogate
+            // see https://mathiasbynens.be/notes/javascript-encoding#surrogate-formulae
+            if (codePoint >= 0xd800 && codePoint <= 0xdbff && str.length > (index + 1)) {
+                var low = str.charCodeAt(index + 1);
+                if (low >= 0xdc00 && low <= 0xdfff) {
+                    index++;
+                    codePoint = ((codePoint - 0xd800) << 10) + low - 0xdc00 + 0x10000;
+                }
+            }
+            if (codePoint <= 0x7f) {
+                encoded += String.fromCharCode(codePoint);
+            }
+            else if (codePoint <= 0x7ff) {
+                encoded += String.fromCharCode(((codePoint >> 6) & 0x1F) | 0xc0, (codePoint & 0x3f) | 0x80);
+            }
+            else if (codePoint <= 0xffff) {
+                encoded += String.fromCharCode((codePoint >> 12) | 0xe0, ((codePoint >> 6) & 0x3f) | 0x80, (codePoint & 0x3f) | 0x80);
+            }
+            else if (codePoint <= 0x1fffff) {
+                encoded += String.fromCharCode(((codePoint >> 18) & 0x07) | 0xf0, ((codePoint >> 12) & 0x3f) | 0x80, ((codePoint >> 6) & 0x3f) | 0x80, (codePoint & 0x3f) | 0x80);
+            }
+        }
+        return encoded;
+    }
+    exports.utf8Encode = utf8Encode;
+    function stringify(token) {
+        if (typeof token === 'string') {
+            return token;
+        }
+        if (Array.isArray(token)) {
+            return '[' + token.map(stringify).join(', ') + ']';
+        }
+        if (token == null) {
+            return '' + token;
+        }
+        if (token.overriddenName) {
+            return "" + token.overriddenName;
+        }
+        if (token.name) {
+            return "" + token.name;
+        }
+        if (!token.toString) {
+            return 'object';
+        }
+        // WARNING: do not try to `JSON.stringify(token)` here
+        // see https://github.com/angular/angular/issues/23440
+        var res = token.toString();
+        if (res == null) {
+            return '' + res;
+        }
+        var newLineIndex = res.indexOf('\n');
+        return newLineIndex === -1 ? res : res.substring(0, newLineIndex);
+    }
+    exports.stringify = stringify;
+    /**
+     * Lazily retrieves the reference value from a forwardRef.
+     */
+    function resolveForwardRef(type) {
+        if (typeof type === 'function' && type.hasOwnProperty('__forward_ref__')) {
+            return type();
+        }
+        else {
+            return type;
+        }
+    }
+    exports.resolveForwardRef = resolveForwardRef;
+    /**
+     * Determine if the argument is shaped like a Promise
+     */
+    function isPromise(obj) {
+        // allow any Promise/A+ compliant thenable.
+        // It's up to the caller to ensure that obj.then conforms to the spec
+        return !!obj && typeof obj.then === 'function';
+    }
+    exports.isPromise = isPromise;
+    var Version = /** @class */ (function () {
+        function Version(full) {
+            this.full = full;
+            var splits = full.split('.');
+            this.major = splits[0];
+            this.minor = splits[1];
+            this.patch = splits.slice(2).join('.');
+        }
+        return Version;
+    }());
+    exports.Version = Version;
+    var __window = typeof window !== 'undefined' && window;
+    var __self = typeof self !== 'undefined' && typeof WorkerGlobalScope !== 'undefined' &&
+        self instanceof WorkerGlobalScope && self;
+    var __global = typeof global !== 'undefined' && global;
+    // Check __global first, because in Node tests both __global and __window may be defined and _global
+    // should be __global in that case.
+    var _global = __global || __window || __self;
+    exports.global = _global;
+    function newArray(size, value) {
+        var list = [];
+        for (var i = 0; i < size; i++) {
+            list.push(value);
+        }
+        return list;
+    }
+    exports.newArray = newArray;
+    /**
+     * Partitions a given array into 2 arrays, based on a boolean value returned by the condition
+     * function.
+     *
+     * @param arr Input array that should be partitioned
+     * @param conditionFn Condition function that is called for each item in a given array and returns a
+     * boolean value.
+     */
+    function partitionArray(arr, conditionFn) {
+        var truthy = [];
+        var falsy = [];
+        arr.forEach(function (item) {
+            (conditionFn(item) ? truthy : falsy).push(item);
+        });
+        return [truthy, falsy];
+    }
+    exports.partitionArray = partitionArray;
+});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidXRpbC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uLy4uL3BhY2thZ2VzL2NvbXBpbGVyL3NyYy91dGlsLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7R0FNRzs7Ozs7Ozs7Ozs7OztJQU9ILElBQU0sZ0JBQWdCLEdBQUcsZUFBZSxDQUFDO0lBRXpDLFNBQWdCLG1CQUFtQixDQUFDLEtBQWE7UUFDL0MsT0FBTyxLQUFLLENBQUMsT0FBTyxDQUFDLGdCQUFnQixFQUFFO1lBQUMsV0FBVztpQkFBWCxVQUFXLEVBQVgscUJBQVcsRUFBWCxJQUFXO2dCQUFYLHNCQUFXOztZQUFLLE9BQUEsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLFdBQVcsRUFBRTtRQUFsQixDQUFrQixDQUFDLENBQUM7SUFDOUUsQ0FBQztJQUZELGtEQUVDO0lBRUQsU0FBZ0IsWUFBWSxDQUFDLEtBQWEsRUFBRSxhQUF1QjtRQUNqRSxPQUFPLFFBQVEsQ0FBQyxLQUFLLEVBQUUsR0FBRyxFQUFFLGFBQWEsQ0FBQyxDQUFDO0lBQzdDLENBQUM7SUFGRCxvQ0FFQztJQUVELFNBQWdCLGFBQWEsQ0FBQyxLQUFhLEVBQUUsYUFBdUI7UUFDbEUsT0FBTyxRQUFRLENBQUMsS0FBSyxFQUFFLEdBQUcsRUFBRSxhQUFhLENBQUMsQ0FBQztJQUM3QyxDQUFDO0lBRkQsc0NBRUM7SUFFRCxTQUFTLFFBQVEsQ0FBQyxLQUFhLEVBQUUsU0FBaUIsRUFBRSxhQUF1QjtRQUN6RSxJQUFNLGNBQWMsR0FBRyxLQUFLLENBQUMsT0FBTyxDQUFDLFNBQVMsQ0FBQyxDQUFDO1FBQ2hELElBQUksY0FBYyxJQUFJLENBQUMsQ0FBQztZQUFFLE9BQU8sYUFBYSxDQUFDO1FBQy9DLE9BQU8sQ0FBQyxLQUFLLENBQUMsS0FBSyxDQUFDLENBQUMsRUFBRSxjQUFjLENBQUMsQ0FBQyxJQUFJLEVBQUUsRUFBRSxLQUFLLENBQUMsS0FBSyxDQUFDLGNBQWMsR0FBRyxDQUFDLENBQUMsQ0FBQyxJQUFJLEVBQUUsQ0FBQyxDQUFDO0lBQ3pGLENBQUM7SUFFRCxTQUFnQixVQUFVLENBQUMsS0FBVSxFQUFFLE9BQXFCLEVBQUUsT0FBWTtRQUN4RSxJQUFJLEtBQUssQ0FBQyxPQUFPLENBQUMsS0FBSyxDQUFDLEVBQUU7WUFDeEIsT0FBTyxPQUFPLENBQUMsVUFBVSxDQUFRLEtBQUssRUFBRSxPQUFPLENBQUMsQ0FBQztTQUNsRDtRQUVELElBQUksaUJBQWlCLENBQUMsS0FBSyxDQUFDLEVBQUU7WUFDNUIsT0FBTyxPQUFPLENBQUMsY0FBYyxDQUF1QixLQUFLLEVBQUUsT0FBTyxDQUFDLENBQUM7U0FDckU7UUFFRCxJQUFJLEtBQUssSUFBSSxJQUFJLElBQUksT0FBTyxLQUFLLElBQUksUUFBUSxJQUFJLE9BQU8sS0FBSyxJQUFJLFFBQVE7WUFDckUsT0FBTyxLQUFLLElBQUksU0FBUyxFQUFFO1lBQzdCLE9BQU8sT0FBTyxDQUFDLGNBQWMsQ0FBQyxLQUFLLEVBQUUsT0FBTyxDQUFDLENBQUM7U0FDL0M7UUFFRCxPQUFPLE9BQU8sQ0FBQyxVQUFVLENBQUMsS0FBSyxFQUFFLE9BQU8sQ0FBQyxDQUFDO0lBQzVDLENBQUM7SUFmRCxnQ0FlQztJQUVELFNBQWdCLFNBQVMsQ0FBQyxHQUFRO1FBQ2hDLE9BQU8sR0FBRyxLQUFLLElBQUksSUFBSSxHQUFHLEtBQUssU0FBUyxDQUFDO0lBQzNDLENBQUM7SUFGRCw4QkFFQztJQUVELFNBQWdCLFdBQVcsQ0FBSSxHQUFnQjtRQUM3QyxPQUFPLEdBQUcsS0FBSyxTQUFTLENBQUMsQ0FBQyxDQUFDLElBQUssQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDO0lBQ3pDLENBQUM7SUFGRCxrQ0FFQztJQVNEO1FBQUE7UUFpQkEsQ0FBQztRQWhCQyxxQ0FBVSxHQUFWLFVBQVcsR0FBVSxFQUFFLE9BQVk7WUFBbkMsaUJBRUM7WUFEQyxPQUFPLEdBQUcsQ0FBQyxHQUFHLENBQUMsVUFBQSxLQUFLLElBQUksT0FBQSxVQUFVLENBQUMsS0FBSyxFQUFFLEtBQUksRUFBRSxPQUFPLENBQUMsRUFBaEMsQ0FBZ0MsQ0FBQyxDQUFDO1FBQzVELENBQUM7UUFDRCx5Q0FBYyxHQUFkLFVBQWUsR0FBeUIsRUFBRSxPQUFZO1lBQXRELGlCQU1DO1lBTEMsSUFBTSxNQUFNLEdBQXlCLEVBQUUsQ0FBQztZQUN4QyxNQUFNLENBQUMsSUFBSSxDQUFDLEdBQUcsQ0FBQyxDQUFDLE9BQU8sQ0FBQyxVQUFBLEdBQUc7Z0JBQzFCLE1BQU0sQ0FBQyxHQUFHLENBQUMsR0FBRyxVQUFVLENBQUMsR0FBRyxDQUFDLEdBQUcsQ0FBQyxFQUFFLEtBQUksRUFBRSxPQUFPLENBQUMsQ0FBQztZQUNwRCxDQUFDLENBQUMsQ0FBQztZQUNILE9BQU8sTUFBTSxDQUFDO1FBQ2hCLENBQUM7UUFDRCx5Q0FBYyxHQUFkLFVBQWUsS0FBVSxFQUFFLE9BQVk7WUFDckMsT0FBTyxLQUFLLENBQUM7UUFDZixDQUFDO1FBQ0QscUNBQVUsR0FBVixVQUFXLEtBQVUsRUFBRSxPQUFZO1lBQ2pDLE9BQU8sS0FBSyxDQUFDO1FBQ2YsQ0FBQztRQUNILHVCQUFDO0lBQUQsQ0FBQyxBQWpCRCxJQWlCQztJQWpCWSw0Q0FBZ0I7SUFxQmhCLFFBQUEsU0FBUyxHQUFHO1FBQ3ZCLFVBQVUsRUFBRSxVQUFJLEtBQW1CO1lBQ2pDLElBQUksU0FBUyxDQUFDLEtBQUssQ0FBQyxFQUFFO2dCQUNwQixNQUFNLElBQUksS0FBSyxDQUFDLDBDQUEwQyxDQUFDLENBQUM7YUFDN0Q7WUFDRCxPQUFPLEtBQUssQ0FBQztRQUNmLENBQUM7UUFDRCxJQUFJLEVBQUUsVUFBTyxLQUFtQixFQUFFLEVBQThDO1lBRTFFLE9BQU8sU0FBUyxDQUFDLEtBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQyxLQUFLLENBQUMsSUFBSSxDQUFDLEVBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxFQUFFLENBQUMsS0FBSyxDQUFDLENBQUM7UUFDdkQsQ0FBQztRQUNMLEdBQUcsRUFBRSxVQUFJLGVBQStCO1lBQ3RDLE9BQU8sZUFBZSxDQUFDLElBQUksQ0FBQyxTQUFTLENBQUMsQ0FBQyxDQUFDLENBQUMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxlQUFlLENBQUMsQ0FBQyxDQUFDLENBQUMsZUFBc0IsQ0FBQztRQUNqRyxDQUFDO0tBQ0YsQ0FBQztJQUVGLFNBQWdCLEtBQUssQ0FBQyxHQUFXO1FBQy9CLE1BQU0sSUFBSSxLQUFLLENBQUMscUJBQW1CLEdBQUssQ0FBQyxDQUFDO0lBQzVDLENBQUM7SUFGRCxzQkFFQztJQUVELFNBQWdCLFdBQVcsQ0FBQyxHQUFXLEVBQUUsV0FBMEI7UUFDakUsSUFBTSxLQUFLLEdBQUcsS0FBSyxDQUFDLEdBQUcsQ0FBQyxDQUFDO1FBQ3hCLEtBQWEsQ0FBQyxrQkFBa0IsQ0FBQyxHQUFHLElBQUksQ0FBQztRQUMxQyxJQUFJLFdBQVc7WUFBRyxLQUFhLENBQUMsa0JBQWtCLENBQUMsR0FBRyxXQUFXLENBQUM7UUFDbEUsT0FBTyxLQUFLLENBQUM7SUFDZixDQUFDO0lBTEQsa0NBS0M7SUFFRCxJQUFNLGtCQUFrQixHQUFHLGVBQWUsQ0FBQztJQUMzQyxJQUFNLGtCQUFrQixHQUFHLGVBQWUsQ0FBQztJQUUzQyxTQUFnQixhQUFhLENBQUMsS0FBWTtRQUN4QyxPQUFRLEtBQWEsQ0FBQyxrQkFBa0IsQ0FBQyxDQUFDO0lBQzVDLENBQUM7SUFGRCxzQ0FFQztJQUVELFNBQWdCLGNBQWMsQ0FBQyxLQUFZO1FBQ3pDLE9BQVEsS0FBYSxDQUFDLGtCQUFrQixDQUFDLElBQUksRUFBRSxDQUFDO0lBQ2xELENBQUM7SUFGRCx3Q0FFQztJQUVELHVFQUF1RTtJQUN2RSxTQUFnQixZQUFZLENBQUMsQ0FBUztRQUNwQyxPQUFPLENBQUMsQ0FBQyxPQUFPLENBQUMsNEJBQTRCLEVBQUUsTUFBTSxDQUFDLENBQUM7SUFDekQsQ0FBQztJQUZELG9DQUVDO0lBRUQsSUFBTSxnQkFBZ0IsR0FBRyxNQUFNLENBQUMsY0FBYyxDQUFDLEVBQUUsQ0FBQyxDQUFDO0lBQ25ELFNBQVMsaUJBQWlCLENBQUMsR0FBUTtRQUNqQyxPQUFPLE9BQU8sR0FBRyxLQUFLLFFBQVEsSUFBSSxHQUFHLEtBQUssSUFBSSxJQUFJLE1BQU0sQ0FBQyxjQUFjLENBQUMsR0FBRyxDQUFDLEtBQUssZ0JBQWdCLENBQUM7SUFDcEcsQ0FBQztJQUVELFNBQWdCLFVBQVUsQ0FBQyxHQUFXO1FBQ3BDLElBQUksT0FBTyxHQUFHLEVBQUUsQ0FBQztRQUNqQixLQUFLLElBQUksS0FBSyxHQUFHLENBQUMsRUFBRSxLQUFLLEdBQUcsR0FBRyxDQUFDLE1BQU0sRUFBRSxLQUFLLEVBQUUsRUFBRTtZQUMvQyxJQUFJLFNBQVMsR0FBRyxHQUFHLENBQUMsVUFBVSxDQUFDLEtBQUssQ0FBQyxDQUFDO1lBRXRDLG1CQUFtQjtZQUNuQiw0RUFBNEU7WUFDNUUsSUFBSSxTQUFTLElBQUksTUFBTSxJQUFJLFNBQVMsSUFBSSxNQUFNLElBQUksR0FBRyxDQUFDLE1BQU0sR0FBRyxDQUFDLEtBQUssR0FBRyxDQUFDLENBQUMsRUFBRTtnQkFDMUUsSUFBTSxHQUFHLEdBQUcsR0FBRyxDQUFDLFVBQVUsQ0FBQyxLQUFLLEdBQUcsQ0FBQyxDQUFDLENBQUM7Z0JBQ3RDLElBQUksR0FBRyxJQUFJLE1BQU0sSUFBSSxHQUFHLElBQUksTUFBTSxFQUFFO29CQUNsQyxLQUFLLEVBQUUsQ0FBQztvQkFDUixTQUFTLEdBQUcsQ0FBQyxDQUFDLFNBQVMsR0FBRyxNQUFNLENBQUMsSUFBSSxFQUFFLENBQUMsR0FBRyxHQUFHLEdBQUcsTUFBTSxHQUFHLE9BQU8sQ0FBQztpQkFDbkU7YUFDRjtZQUVELElBQUksU0FBUyxJQUFJLElBQUksRUFBRTtnQkFDckIsT0FBTyxJQUFJLE1BQU0sQ0FBQyxZQUFZLENBQUMsU0FBUyxDQUFDLENBQUM7YUFDM0M7aUJBQU0sSUFBSSxTQUFTLElBQUksS0FBSyxFQUFFO2dCQUM3QixPQUFPLElBQUksTUFBTSxDQUFDLFlBQVksQ0FBQyxDQUFDLENBQUMsU0FBUyxJQUFJLENBQUMsQ0FBQyxHQUFHLElBQUksQ0FBQyxHQUFHLElBQUksRUFBRSxDQUFDLFNBQVMsR0FBRyxJQUFJLENBQUMsR0FBRyxJQUFJLENBQUMsQ0FBQzthQUM3RjtpQkFBTSxJQUFJLFNBQVMsSUFBSSxNQUFNLEVBQUU7Z0JBQzlCLE9BQU8sSUFBSSxNQUFNLENBQUMsWUFBWSxDQUMxQixDQUFDLFNBQVMsSUFBSSxFQUFFLENBQUMsR0FBRyxJQUFJLEVBQUUsQ0FBQyxDQUFDLFNBQVMsSUFBSSxDQUFDLENBQUMsR0FBRyxJQUFJLENBQUMsR0FBRyxJQUFJLEVBQUUsQ0FBQyxTQUFTLEdBQUcsSUFBSSxDQUFDLEdBQUcsSUFBSSxDQUFDLENBQUM7YUFDNUY7aUJBQU0sSUFBSSxTQUFTLElBQUksUUFBUSxFQUFFO2dCQUNoQyxPQUFPLElBQUksTUFBTSxDQUFDLFlBQVksQ0FDMUIsQ0FBQyxDQUFDLFNBQVMsSUFBSSxFQUFFLENBQUMsR0FBRyxJQUFJLENBQUMsR0FBRyxJQUFJLEVBQUUsQ0FBQyxDQUFDLFNBQVMsSUFBSSxFQUFFLENBQUMsR0FBRyxJQUFJLENBQUMsR0FBRyxJQUFJLEVBQ3BFLENBQUMsQ0FBQyxTQUFTLElBQUksQ0FBQyxDQUFDLEdBQUcsSUFBSSxDQUFDLEdBQUcsSUFBSSxFQUFFLENBQUMsU0FBUyxHQUFHLElBQUksQ0FBQyxHQUFHLElBQUksQ0FBQyxDQUFDO2FBQ2xFO1NBQ0Y7UUFFRCxPQUFPLE9BQU8sQ0FBQztJQUNqQixDQUFDO0lBOUJELGdDQThCQztJQVNELFNBQWdCLFNBQVMsQ0FBQyxLQUFVO1FBQ2xDLElBQUksT0FBTyxLQUFLLEtBQUssUUFBUSxFQUFFO1lBQzdCLE9BQU8sS0FBSyxDQUFDO1NBQ2Q7UUFFRCxJQUFJLEtBQUssQ0FBQyxPQUFPLENBQUMsS0FBSyxDQUFDLEVBQUU7WUFDeEIsT0FBTyxHQUFHLEdBQUcsS0FBSyxDQUFDLEdBQUcsQ0FBQyxTQUFTLENBQUMsQ0FBQyxJQUFJLENBQUMsSUFBSSxDQUFDLEdBQUcsR0FBRyxDQUFDO1NBQ3BEO1FBRUQsSUFBSSxLQUFLLElBQUksSUFBSSxFQUFFO1lBQ2pCLE9BQU8sRUFBRSxHQUFHLEtBQUssQ0FBQztTQUNuQjtRQUVELElBQUksS0FBSyxDQUFDLGNBQWMsRUFBRTtZQUN4QixPQUFPLEtBQUcsS0FBSyxDQUFDLGNBQWdCLENBQUM7U0FDbEM7UUFFRCxJQUFJLEtBQUssQ0FBQyxJQUFJLEVBQUU7WUFDZCxPQUFPLEtBQUcsS0FBSyxDQUFDLElBQU0sQ0FBQztTQUN4QjtRQUVELElBQUksQ0FBQyxLQUFLLENBQUMsUUFBUSxFQUFFO1lBQ25CLE9BQU8sUUFBUSxDQUFDO1NBQ2pCO1FBRUQsc0RBQXNEO1FBQ3RELHNEQUFzRDtRQUN0RCxJQUFNLEdBQUcsR0FBRyxLQUFLLENBQUMsUUFBUSxFQUFFLENBQUM7UUFFN0IsSUFBSSxHQUFHLElBQUksSUFBSSxFQUFFO1lBQ2YsT0FBTyxFQUFFLEdBQUcsR0FBRyxDQUFDO1NBQ2pCO1FBRUQsSUFBTSxZQUFZLEdBQUcsR0FBRyxDQUFDLE9BQU8sQ0FBQyxJQUFJLENBQUMsQ0FBQztRQUN2QyxPQUFPLFlBQVksS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsU0FBUyxDQUFDLENBQUMsRUFBRSxZQUFZLENBQUMsQ0FBQztJQUNwRSxDQUFDO0lBbkNELDhCQW1DQztJQUVEOztPQUVHO0lBQ0gsU0FBZ0IsaUJBQWlCLENBQUMsSUFBUztRQUN6QyxJQUFJLE9BQU8sSUFBSSxLQUFLLFVBQVUsSUFBSSxJQUFJLENBQUMsY0FBYyxDQUFDLGlCQUFpQixDQUFDLEVBQUU7WUFDeEUsT0FBTyxJQUFJLEVBQUUsQ0FBQztTQUNmO2FBQU07WUFDTCxPQUFPLElBQUksQ0FBQztTQUNiO0lBQ0gsQ0FBQztJQU5ELDhDQU1DO0lBRUQ7O09BRUc7SUFDSCxTQUFnQixTQUFTLENBQVUsR0FBUTtRQUN6QywyQ0FBMkM7UUFDM0MscUVBQXFFO1FBQ3JFLE9BQU8sQ0FBQyxDQUFDLEdBQUcsSUFBSSxPQUFPLEdBQUcsQ0FBQyxJQUFJLEtBQUssVUFBVSxDQUFDO0lBQ2pELENBQUM7SUFKRCw4QkFJQztJQUVEO1FBS0UsaUJBQW1CLElBQVk7WUFBWixTQUFJLEdBQUosSUFBSSxDQUFRO1lBQzdCLElBQU0sTUFBTSxHQUFHLElBQUksQ0FBQyxLQUFLLENBQUMsR0FBRyxDQUFDLENBQUM7WUFDL0IsSUFBSSxDQUFDLEtBQUssR0FBRyxNQUFNLENBQUMsQ0FBQyxDQUFDLENBQUM7WUFDdkIsSUFBSSxDQUFDLEtBQUssR0FBRyxNQUFNLENBQUMsQ0FBQyxDQUFDLENBQUM7WUFDdkIsSUFBSSxDQUFDLEtBQUssR0FBRyxNQUFNLENBQUMsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxHQUFHLENBQUMsQ0FBQztRQUN6QyxDQUFDO1FBQ0gsY0FBQztJQUFELENBQUMsQUFYRCxJQVdDO0lBWFksMEJBQU87SUF3QnBCLElBQU0sUUFBUSxHQUFHLE9BQU8sTUFBTSxLQUFLLFdBQVcsSUFBSSxNQUFNLENBQUM7SUFDekQsSUFBTSxNQUFNLEdBQUcsT0FBTyxJQUFJLEtBQUssV0FBVyxJQUFJLE9BQU8saUJBQWlCLEtBQUssV0FBVztRQUNsRixJQUFJLFlBQVksaUJBQWlCLElBQUksSUFBSSxDQUFDO0lBQzlDLElBQU0sUUFBUSxHQUFHLE9BQU8sTUFBTSxLQUFLLFdBQVcsSUFBSSxNQUFNLENBQUM7SUFFekQsb0dBQW9HO0lBQ3BHLG1DQUFtQztJQUNuQyxJQUFNLE9BQU8sR0FBMEIsUUFBUSxJQUFJLFFBQVEsSUFBSSxNQUFNLENBQUM7SUFDbkQseUJBQU07SUFJekIsU0FBZ0IsUUFBUSxDQUFJLElBQVksRUFBRSxLQUFTO1FBQ2pELElBQU0sSUFBSSxHQUFRLEVBQUUsQ0FBQztRQUNyQixLQUFLLElBQUksQ0FBQyxHQUFHLENBQUMsRUFBRSxDQUFDLEdBQUcsSUFBSSxFQUFFLENBQUMsRUFBRSxFQUFFO1lBQzdCLElBQUksQ0FBQyxJQUFJLENBQUMsS0FBTSxDQUFDLENBQUM7U0FDbkI7UUFDRCxPQUFPLElBQUksQ0FBQztJQUNkLENBQUM7SUFORCw0QkFNQztJQUVEOzs7Ozs7O09BT0c7SUFDSCxTQUFnQixjQUFjLENBQzFCLEdBQVEsRUFBRSxXQUErQztRQUMzRCxJQUFNLE1BQU0sR0FBUSxFQUFFLENBQUM7UUFDdkIsSUFBTSxLQUFLLEdBQVEsRUFBRSxDQUFDO1FBQ3RCLEdBQUcsQ0FBQyxPQUFPLENBQUMsVUFBQSxJQUFJO1lBQ2QsQ0FBQyxXQUFXLENBQUMsSUFBSSxDQUFDLENBQUMsQ0FBQyxDQUFDLE1BQU0sQ0FBQyxDQUFDLENBQUMsS0FBSyxDQUFDLENBQUMsSUFBSSxDQUFDLElBQUksQ0FBQyxDQUFDO1FBQ2xELENBQUMsQ0FBQyxDQUFDO1FBQ0gsT0FBTyxDQUFDLE1BQU0sRUFBRSxLQUFLLENBQUMsQ0FBQztJQUN6QixDQUFDO0lBUkQsd0NBUUMiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIEBsaWNlbnNlXG4gKiBDb3B5cmlnaHQgR29vZ2xlIExMQyBBbGwgUmlnaHRzIFJlc2VydmVkLlxuICpcbiAqIFVzZSBvZiB0aGlzIHNvdXJjZSBjb2RlIGlzIGdvdmVybmVkIGJ5IGFuIE1JVC1zdHlsZSBsaWNlbnNlIHRoYXQgY2FuIGJlXG4gKiBmb3VuZCBpbiB0aGUgTElDRU5TRSBmaWxlIGF0IGh0dHBzOi8vYW5ndWxhci5pby9saWNlbnNlXG4gKi9cblxuaW1wb3J0IHtDb25zdGFudFBvb2x9IGZyb20gJy4vY29uc3RhbnRfcG9vbCc7XG5cbmltcG9ydCAqIGFzIG8gZnJvbSAnLi9vdXRwdXQvb3V0cHV0X2FzdCc7XG5pbXBvcnQge1BhcnNlRXJyb3J9IGZyb20gJy4vcGFyc2VfdXRpbCc7XG5cbmNvbnN0IERBU0hfQ0FTRV9SRUdFWFAgPSAvLSsoW2EtejAtOV0pL2c7XG5cbmV4cG9ydCBmdW5jdGlvbiBkYXNoQ2FzZVRvQ2FtZWxDYXNlKGlucHV0OiBzdHJpbmcpOiBzdHJpbmcge1xuICByZXR1cm4gaW5wdXQucmVwbGFjZShEQVNIX0NBU0VfUkVHRVhQLCAoLi4ubTogYW55W10pID0+IG1bMV0udG9VcHBlckNhc2UoKSk7XG59XG5cbmV4cG9ydCBmdW5jdGlvbiBzcGxpdEF0Q29sb24oaW5wdXQ6IHN0cmluZywgZGVmYXVsdFZhbHVlczogc3RyaW5nW10pOiBzdHJpbmdbXSB7XG4gIHJldHVybiBfc3BsaXRBdChpbnB1dCwgJzonLCBkZWZhdWx0VmFsdWVzKTtcbn1cblxuZXhwb3J0IGZ1bmN0aW9uIHNwbGl0QXRQZXJpb2QoaW5wdXQ6IHN0cmluZywgZGVmYXVsdFZhbHVlczogc3RyaW5nW10pOiBzdHJpbmdbXSB7XG4gIHJldHVybiBfc3BsaXRBdChpbnB1dCwgJy4nLCBkZWZhdWx0VmFsdWVzKTtcbn1cblxuZnVuY3Rpb24gX3NwbGl0QXQoaW5wdXQ6IHN0cmluZywgY2hhcmFjdGVyOiBzdHJpbmcsIGRlZmF1bHRWYWx1ZXM6IHN0cmluZ1tdKTogc3RyaW5nW10ge1xuICBjb25zdCBjaGFyYWN0ZXJJbmRleCA9IGlucHV0LmluZGV4T2YoY2hhcmFjdGVyKTtcbiAgaWYgKGNoYXJhY3RlckluZGV4ID09IC0xKSByZXR1cm4gZGVmYXVsdFZhbHVlcztcbiAgcmV0dXJuIFtpbnB1dC5zbGljZSgwLCBjaGFyYWN0ZXJJbmRleCkudHJpbSgpLCBpbnB1dC5zbGljZShjaGFyYWN0ZXJJbmRleCArIDEpLnRyaW0oKV07XG59XG5cbmV4cG9ydCBmdW5jdGlvbiB2aXNpdFZhbHVlKHZhbHVlOiBhbnksIHZpc2l0b3I6IFZhbHVlVmlzaXRvciwgY29udGV4dDogYW55KTogYW55IHtcbiAgaWYgKEFycmF5LmlzQXJyYXkodmFsdWUpKSB7XG4gICAgcmV0dXJuIHZpc2l0b3IudmlzaXRBcnJheSg8YW55W10+dmFsdWUsIGNvbnRleHQpO1xuICB9XG5cbiAgaWYgKGlzU3RyaWN0U3RyaW5nTWFwKHZhbHVlKSkge1xuICAgIHJldHVybiB2aXNpdG9yLnZpc2l0U3RyaW5nTWFwKDx7W2tleTogc3RyaW5nXTogYW55fT52YWx1ZSwgY29udGV4dCk7XG4gIH1cblxuICBpZiAodmFsdWUgPT0gbnVsbCB8fCB0eXBlb2YgdmFsdWUgPT0gJ3N0cmluZycgfHwgdHlwZW9mIHZhbHVlID09ICdudW1iZXInIHx8XG4gICAgICB0eXBlb2YgdmFsdWUgPT0gJ2Jvb2xlYW4nKSB7XG4gICAgcmV0dXJuIHZpc2l0b3IudmlzaXRQcmltaXRpdmUodmFsdWUsIGNvbnRleHQpO1xuICB9XG5cbiAgcmV0dXJuIHZpc2l0b3IudmlzaXRPdGhlcih2YWx1ZSwgY29udGV4dCk7XG59XG5cbmV4cG9ydCBmdW5jdGlvbiBpc0RlZmluZWQodmFsOiBhbnkpOiBib29sZWFuIHtcbiAgcmV0dXJuIHZhbCAhPT0gbnVsbCAmJiB2YWwgIT09IHVuZGVmaW5lZDtcbn1cblxuZXhwb3J0IGZ1bmN0aW9uIG5vVW5kZWZpbmVkPFQ+KHZhbDogVHx1bmRlZmluZWQpOiBUIHtcbiAgcmV0dXJuIHZhbCA9PT0gdW5kZWZpbmVkID8gbnVsbCEgOiB2YWw7XG59XG5cbmV4cG9ydCBpbnRlcmZhY2UgVmFsdWVWaXNpdG9yIHtcbiAgdmlzaXRBcnJheShhcnI6IGFueVtdLCBjb250ZXh0OiBhbnkpOiBhbnk7XG4gIHZpc2l0U3RyaW5nTWFwKG1hcDoge1trZXk6IHN0cmluZ106IGFueX0sIGNvbnRleHQ6IGFueSk6IGFueTtcbiAgdmlzaXRQcmltaXRpdmUodmFsdWU6IGFueSwgY29udGV4dDogYW55KTogYW55O1xuICB2aXNpdE90aGVyKHZhbHVlOiBhbnksIGNvbnRleHQ6IGFueSk6IGFueTtcbn1cblxuZXhwb3J0IGNsYXNzIFZhbHVlVHJhbnNmb3JtZXIgaW1wbGVtZW50cyBWYWx1ZVZpc2l0b3Ige1xuICB2aXNpdEFycmF5KGFycjogYW55W10sIGNvbnRleHQ6IGFueSk6IGFueSB7XG4gICAgcmV0dXJuIGFyci5tYXAodmFsdWUgPT4gdmlzaXRWYWx1ZSh2YWx1ZSwgdGhpcywgY29udGV4dCkpO1xuICB9XG4gIHZpc2l0U3RyaW5nTWFwKG1hcDoge1trZXk6IHN0cmluZ106IGFueX0sIGNvbnRleHQ6IGFueSk6IGFueSB7XG4gICAgY29uc3QgcmVzdWx0OiB7W2tleTogc3RyaW5nXTogYW55fSA9IHt9O1xuICAgIE9iamVjdC5rZXlzKG1hcCkuZm9yRWFjaChrZXkgPT4ge1xuICAgICAgcmVzdWx0W2tleV0gPSB2aXNpdFZhbHVlKG1hcFtrZXldLCB0aGlzLCBjb250ZXh0KTtcbiAgICB9KTtcbiAgICByZXR1cm4gcmVzdWx0O1xuICB9XG4gIHZpc2l0UHJpbWl0aXZlKHZhbHVlOiBhbnksIGNvbnRleHQ6IGFueSk6IGFueSB7XG4gICAgcmV0dXJuIHZhbHVlO1xuICB9XG4gIHZpc2l0T3RoZXIodmFsdWU6IGFueSwgY29udGV4dDogYW55KTogYW55IHtcbiAgICByZXR1cm4gdmFsdWU7XG4gIH1cbn1cblxuZXhwb3J0IHR5cGUgU3luY0FzeW5jPFQ+ID0gVHxQcm9taXNlPFQ+O1xuXG5leHBvcnQgY29uc3QgU3luY0FzeW5jID0ge1xuICBhc3NlcnRTeW5jOiA8VD4odmFsdWU6IFN5bmNBc3luYzxUPik6IFQgPT4ge1xuICAgIGlmIChpc1Byb21pc2UodmFsdWUpKSB7XG4gICAgICB0aHJvdyBuZXcgRXJyb3IoYElsbGVnYWwgc3RhdGU6IHZhbHVlIGNhbm5vdCBiZSBhIHByb21pc2VgKTtcbiAgICB9XG4gICAgcmV0dXJuIHZhbHVlO1xuICB9LFxuICB0aGVuOiA8VCwgUj4odmFsdWU6IFN5bmNBc3luYzxUPiwgY2I6ICh2YWx1ZTogVCkgPT4gUiB8IFByb21pc2U8Uj58IFN5bmNBc3luYzxSPik6XG4gICAgICBTeW5jQXN5bmM8Uj4gPT4ge1xuICAgICAgICByZXR1cm4gaXNQcm9taXNlKHZhbHVlKSA/IHZhbHVlLnRoZW4oY2IpIDogY2IodmFsdWUpO1xuICAgICAgfSxcbiAgYWxsOiA8VD4oc3luY0FzeW5jVmFsdWVzOiBTeW5jQXN5bmM8VD5bXSk6IFN5bmNBc3luYzxUW10+ID0+IHtcbiAgICByZXR1cm4gc3luY0FzeW5jVmFsdWVzLnNvbWUoaXNQcm9taXNlKSA/IFByb21pc2UuYWxsKHN5bmNBc3luY1ZhbHVlcykgOiBzeW5jQXN5bmNWYWx1ZXMgYXMgVFtdO1xuICB9XG59O1xuXG5leHBvcnQgZnVuY3Rpb24gZXJyb3IobXNnOiBzdHJpbmcpOiBuZXZlciB7XG4gIHRocm93IG5ldyBFcnJvcihgSW50ZXJuYWwgRXJyb3I6ICR7bXNnfWApO1xufVxuXG5leHBvcnQgZnVuY3Rpb24gc3ludGF4RXJyb3IobXNnOiBzdHJpbmcsIHBhcnNlRXJyb3JzPzogUGFyc2VFcnJvcltdKTogRXJyb3Ige1xuICBjb25zdCBlcnJvciA9IEVycm9yKG1zZyk7XG4gIChlcnJvciBhcyBhbnkpW0VSUk9SX1NZTlRBWF9FUlJPUl0gPSB0cnVlO1xuICBpZiAocGFyc2VFcnJvcnMpIChlcnJvciBhcyBhbnkpW0VSUk9SX1BBUlNFX0VSUk9SU10gPSBwYXJzZUVycm9ycztcbiAgcmV0dXJuIGVycm9yO1xufVxuXG5jb25zdCBFUlJPUl9TWU5UQVhfRVJST1IgPSAnbmdTeW50YXhFcnJvcic7XG5jb25zdCBFUlJPUl9QQVJTRV9FUlJPUlMgPSAnbmdQYXJzZUVycm9ycyc7XG5cbmV4cG9ydCBmdW5jdGlvbiBpc1N5bnRheEVycm9yKGVycm9yOiBFcnJvcik6IGJvb2xlYW4ge1xuICByZXR1cm4gKGVycm9yIGFzIGFueSlbRVJST1JfU1lOVEFYX0VSUk9SXTtcbn1cblxuZXhwb3J0IGZ1bmN0aW9uIGdldFBhcnNlRXJyb3JzKGVycm9yOiBFcnJvcik6IFBhcnNlRXJyb3JbXSB7XG4gIHJldHVybiAoZXJyb3IgYXMgYW55KVtFUlJPUl9QQVJTRV9FUlJPUlNdIHx8IFtdO1xufVxuXG4vLyBFc2NhcGUgY2hhcmFjdGVycyB0aGF0IGhhdmUgYSBzcGVjaWFsIG1lYW5pbmcgaW4gUmVndWxhciBFeHByZXNzaW9uc1xuZXhwb3J0IGZ1bmN0aW9uIGVzY2FwZVJlZ0V4cChzOiBzdHJpbmcpOiBzdHJpbmcge1xuICByZXR1cm4gcy5yZXBsYWNlKC8oWy4qKz9ePSE6JHt9KCl8W1xcXVxcL1xcXFxdKS9nLCAnXFxcXCQxJyk7XG59XG5cbmNvbnN0IFNUUklOR19NQVBfUFJPVE8gPSBPYmplY3QuZ2V0UHJvdG90eXBlT2Yoe30pO1xuZnVuY3Rpb24gaXNTdHJpY3RTdHJpbmdNYXAob2JqOiBhbnkpOiBib29sZWFuIHtcbiAgcmV0dXJuIHR5cGVvZiBvYmogPT09ICdvYmplY3QnICYmIG9iaiAhPT0gbnVsbCAmJiBPYmplY3QuZ2V0UHJvdG90eXBlT2Yob2JqKSA9PT0gU1RSSU5HX01BUF9QUk9UTztcbn1cblxuZXhwb3J0IGZ1bmN0aW9uIHV0ZjhFbmNvZGUoc3RyOiBzdHJpbmcpOiBzdHJpbmcge1xuICBsZXQgZW5jb2RlZCA9ICcnO1xuICBmb3IgKGxldCBpbmRleCA9IDA7IGluZGV4IDwgc3RyLmxlbmd0aDsgaW5kZXgrKykge1xuICAgIGxldCBjb2RlUG9pbnQgPSBzdHIuY2hhckNvZGVBdChpbmRleCk7XG5cbiAgICAvLyBkZWNvZGUgc3Vycm9nYXRlXG4gICAgLy8gc2VlIGh0dHBzOi8vbWF0aGlhc2J5bmVucy5iZS9ub3Rlcy9qYXZhc2NyaXB0LWVuY29kaW5nI3N1cnJvZ2F0ZS1mb3JtdWxhZVxuICAgIGlmIChjb2RlUG9pbnQgPj0gMHhkODAwICYmIGNvZGVQb2ludCA8PSAweGRiZmYgJiYgc3RyLmxlbmd0aCA+IChpbmRleCArIDEpKSB7XG4gICAgICBjb25zdCBsb3cgPSBzdHIuY2hhckNvZGVBdChpbmRleCArIDEpO1xuICAgICAgaWYgKGxvdyA+PSAweGRjMDAgJiYgbG93IDw9IDB4ZGZmZikge1xuICAgICAgICBpbmRleCsrO1xuICAgICAgICBjb2RlUG9pbnQgPSAoKGNvZGVQb2ludCAtIDB4ZDgwMCkgPDwgMTApICsgbG93IC0gMHhkYzAwICsgMHgxMDAwMDtcbiAgICAgIH1cbiAgICB9XG5cbiAgICBpZiAoY29kZVBvaW50IDw9IDB4N2YpIHtcbiAgICAgIGVuY29kZWQgKz0gU3RyaW5nLmZyb21DaGFyQ29kZShjb2RlUG9pbnQpO1xuICAgIH0gZWxzZSBpZiAoY29kZVBvaW50IDw9IDB4N2ZmKSB7XG4gICAgICBlbmNvZGVkICs9IFN0cmluZy5mcm9tQ2hhckNvZGUoKChjb2RlUG9pbnQgPj4gNikgJiAweDFGKSB8IDB4YzAsIChjb2RlUG9pbnQgJiAweDNmKSB8IDB4ODApO1xuICAgIH0gZWxzZSBpZiAoY29kZVBvaW50IDw9IDB4ZmZmZikge1xuICAgICAgZW5jb2RlZCArPSBTdHJpbmcuZnJvbUNoYXJDb2RlKFxuICAgICAgICAgIChjb2RlUG9pbnQgPj4gMTIpIHwgMHhlMCwgKChjb2RlUG9pbnQgPj4gNikgJiAweDNmKSB8IDB4ODAsIChjb2RlUG9pbnQgJiAweDNmKSB8IDB4ODApO1xuICAgIH0gZWxzZSBpZiAoY29kZVBvaW50IDw9IDB4MWZmZmZmKSB7XG4gICAgICBlbmNvZGVkICs9IFN0cmluZy5mcm9tQ2hhckNvZGUoXG4gICAgICAgICAgKChjb2RlUG9pbnQgPj4gMTgpICYgMHgwNykgfCAweGYwLCAoKGNvZGVQb2ludCA+PiAxMikgJiAweDNmKSB8IDB4ODAsXG4gICAgICAgICAgKChjb2RlUG9pbnQgPj4gNikgJiAweDNmKSB8IDB4ODAsIChjb2RlUG9pbnQgJiAweDNmKSB8IDB4ODApO1xuICAgIH1cbiAgfVxuXG4gIHJldHVybiBlbmNvZGVkO1xufVxuXG5leHBvcnQgaW50ZXJmYWNlIE91dHB1dENvbnRleHQge1xuICBnZW5GaWxlUGF0aDogc3RyaW5nO1xuICBzdGF0ZW1lbnRzOiBvLlN0YXRlbWVudFtdO1xuICBjb25zdGFudFBvb2w6IENvbnN0YW50UG9vbDtcbiAgaW1wb3J0RXhwcihyZWZlcmVuY2U6IGFueSwgdHlwZVBhcmFtcz86IG8uVHlwZVtdfG51bGwsIHVzZVN1bW1hcmllcz86IGJvb2xlYW4pOiBvLkV4cHJlc3Npb247XG59XG5cbmV4cG9ydCBmdW5jdGlvbiBzdHJpbmdpZnkodG9rZW46IGFueSk6IHN0cmluZyB7XG4gIGlmICh0eXBlb2YgdG9rZW4gPT09ICdzdHJpbmcnKSB7XG4gICAgcmV0dXJuIHRva2VuO1xuICB9XG5cbiAgaWYgKEFycmF5LmlzQXJyYXkodG9rZW4pKSB7XG4gICAgcmV0dXJuICdbJyArIHRva2VuLm1hcChzdHJpbmdpZnkpLmpvaW4oJywgJykgKyAnXSc7XG4gIH1cblxuICBpZiAodG9rZW4gPT0gbnVsbCkge1xuICAgIHJldHVybiAnJyArIHRva2VuO1xuICB9XG5cbiAgaWYgKHRva2VuLm92ZXJyaWRkZW5OYW1lKSB7XG4gICAgcmV0dXJuIGAke3Rva2VuLm92ZXJyaWRkZW5OYW1lfWA7XG4gIH1cblxuICBpZiAodG9rZW4ubmFtZSkge1xuICAgIHJldHVybiBgJHt0b2tlbi5uYW1lfWA7XG4gIH1cblxuICBpZiAoIXRva2VuLnRvU3RyaW5nKSB7XG4gICAgcmV0dXJuICdvYmplY3QnO1xuICB9XG5cbiAgLy8gV0FSTklORzogZG8gbm90IHRyeSB0byBgSlNPTi5zdHJpbmdpZnkodG9rZW4pYCBoZXJlXG4gIC8vIHNlZSBodHRwczovL2dpdGh1Yi5jb20vYW5ndWxhci9hbmd1bGFyL2lzc3Vlcy8yMzQ0MFxuICBjb25zdCByZXMgPSB0b2tlbi50b1N0cmluZygpO1xuXG4gIGlmIChyZXMgPT0gbnVsbCkge1xuICAgIHJldHVybiAnJyArIHJlcztcbiAgfVxuXG4gIGNvbnN0IG5ld0xpbmVJbmRleCA9IHJlcy5pbmRleE9mKCdcXG4nKTtcbiAgcmV0dXJuIG5ld0xpbmVJbmRleCA9PT0gLTEgPyByZXMgOiByZXMuc3Vic3RyaW5nKDAsIG5ld0xpbmVJbmRleCk7XG59XG5cbi8qKlxuICogTGF6aWx5IHJldHJpZXZlcyB0aGUgcmVmZXJlbmNlIHZhbHVlIGZyb20gYSBmb3J3YXJkUmVmLlxuICovXG5leHBvcnQgZnVuY3Rpb24gcmVzb2x2ZUZvcndhcmRSZWYodHlwZTogYW55KTogYW55IHtcbiAgaWYgKHR5cGVvZiB0eXBlID09PSAnZnVuY3Rpb24nICYmIHR5cGUuaGFzT3duUHJvcGVydHkoJ19fZm9yd2FyZF9yZWZfXycpKSB7XG4gICAgcmV0dXJuIHR5cGUoKTtcbiAgfSBlbHNlIHtcbiAgICByZXR1cm4gdHlwZTtcbiAgfVxufVxuXG4vKipcbiAqIERldGVybWluZSBpZiB0aGUgYXJndW1lbnQgaXMgc2hhcGVkIGxpa2UgYSBQcm9taXNlXG4gKi9cbmV4cG9ydCBmdW5jdGlvbiBpc1Byb21pc2U8VCA9IGFueT4ob2JqOiBhbnkpOiBvYmogaXMgUHJvbWlzZTxUPiB7XG4gIC8vIGFsbG93IGFueSBQcm9taXNlL0ErIGNvbXBsaWFudCB0aGVuYWJsZS5cbiAgLy8gSXQncyB1cCB0byB0aGUgY2FsbGVyIHRvIGVuc3VyZSB0aGF0IG9iai50aGVuIGNvbmZvcm1zIHRvIHRoZSBzcGVjXG4gIHJldHVybiAhIW9iaiAmJiB0eXBlb2Ygb2JqLnRoZW4gPT09ICdmdW5jdGlvbic7XG59XG5cbmV4cG9ydCBjbGFzcyBWZXJzaW9uIHtcbiAgcHVibGljIHJlYWRvbmx5IG1ham9yOiBzdHJpbmc7XG4gIHB1YmxpYyByZWFkb25seSBtaW5vcjogc3RyaW5nO1xuICBwdWJsaWMgcmVhZG9ubHkgcGF0Y2g6IHN0cmluZztcblxuICBjb25zdHJ1Y3RvcihwdWJsaWMgZnVsbDogc3RyaW5nKSB7XG4gICAgY29uc3Qgc3BsaXRzID0gZnVsbC5zcGxpdCgnLicpO1xuICAgIHRoaXMubWFqb3IgPSBzcGxpdHNbMF07XG4gICAgdGhpcy5taW5vciA9IHNwbGl0c1sxXTtcbiAgICB0aGlzLnBhdGNoID0gc3BsaXRzLnNsaWNlKDIpLmpvaW4oJy4nKTtcbiAgfVxufVxuXG5leHBvcnQgaW50ZXJmYWNlIENvbnNvbGUge1xuICBsb2cobWVzc2FnZTogc3RyaW5nKTogdm9pZDtcbiAgd2FybihtZXNzYWdlOiBzdHJpbmcpOiB2b2lkO1xufVxuXG5cbmRlY2xhcmUgdmFyIFdvcmtlckdsb2JhbFNjb3BlOiBhbnk7XG4vLyBDb21tb25KUyAvIE5vZGUgaGF2ZSBnbG9iYWwgY29udGV4dCBleHBvc2VkIGFzIFwiZ2xvYmFsXCIgdmFyaWFibGUuXG4vLyBXZSBkb24ndCB3YW50IHRvIGluY2x1ZGUgdGhlIHdob2xlIG5vZGUuZC50cyB0aGlzIHRoaXMgY29tcGlsYXRpb24gdW5pdCBzbyB3ZSdsbCBqdXN0IGZha2Vcbi8vIHRoZSBnbG9iYWwgXCJnbG9iYWxcIiB2YXIgZm9yIG5vdy5cbmRlY2xhcmUgdmFyIGdsb2JhbDogYW55O1xuY29uc3QgX193aW5kb3cgPSB0eXBlb2Ygd2luZG93ICE9PSAndW5kZWZpbmVkJyAmJiB3aW5kb3c7XG5jb25zdCBfX3NlbGYgPSB0eXBlb2Ygc2VsZiAhPT0gJ3VuZGVmaW5lZCcgJiYgdHlwZW9mIFdvcmtlckdsb2JhbFNjb3BlICE9PSAndW5kZWZpbmVkJyAmJlxuICAgIHNlbGYgaW5zdGFuY2VvZiBXb3JrZXJHbG9iYWxTY29wZSAmJiBzZWxmO1xuY29uc3QgX19nbG9iYWwgPSB0eXBlb2YgZ2xvYmFsICE9PSAndW5kZWZpbmVkJyAmJiBnbG9iYWw7XG5cbi8vIENoZWNrIF9fZ2xvYmFsIGZpcnN0LCBiZWNhdXNlIGluIE5vZGUgdGVzdHMgYm90aCBfX2dsb2JhbCBhbmQgX193aW5kb3cgbWF5IGJlIGRlZmluZWQgYW5kIF9nbG9iYWxcbi8vIHNob3VsZCBiZSBfX2dsb2JhbCBpbiB0aGF0IGNhc2UuXG5jb25zdCBfZ2xvYmFsOiB7W25hbWU6IHN0cmluZ106IGFueX0gPSBfX2dsb2JhbCB8fCBfX3dpbmRvdyB8fCBfX3NlbGY7XG5leHBvcnQge19nbG9iYWwgYXMgZ2xvYmFsfTtcblxuZXhwb3J0IGZ1bmN0aW9uIG5ld0FycmF5PFQgPSBhbnk+KHNpemU6IG51bWJlcik6IFRbXTtcbmV4cG9ydCBmdW5jdGlvbiBuZXdBcnJheTxUPihzaXplOiBudW1iZXIsIHZhbHVlOiBUKTogVFtdO1xuZXhwb3J0IGZ1bmN0aW9uIG5ld0FycmF5PFQ+KHNpemU6IG51bWJlciwgdmFsdWU/OiBUKTogVFtdIHtcbiAgY29uc3QgbGlzdDogVFtdID0gW107XG4gIGZvciAobGV0IGkgPSAwOyBpIDwgc2l6ZTsgaSsrKSB7XG4gICAgbGlzdC5wdXNoKHZhbHVlISk7XG4gIH1cbiAgcmV0dXJuIGxpc3Q7XG59XG5cbi8qKlxuICogUGFydGl0aW9ucyBhIGdpdmVuIGFycmF5IGludG8gMiBhcnJheXMsIGJhc2VkIG9uIGEgYm9vbGVhbiB2YWx1ZSByZXR1cm5lZCBieSB0aGUgY29uZGl0aW9uXG4gKiBmdW5jdGlvbi5cbiAqXG4gKiBAcGFyYW0gYXJyIElucHV0IGFycmF5IHRoYXQgc2hvdWxkIGJlIHBhcnRpdGlvbmVkXG4gKiBAcGFyYW0gY29uZGl0aW9uRm4gQ29uZGl0aW9uIGZ1bmN0aW9uIHRoYXQgaXMgY2FsbGVkIGZvciBlYWNoIGl0ZW0gaW4gYSBnaXZlbiBhcnJheSBhbmQgcmV0dXJucyBhXG4gKiBib29sZWFuIHZhbHVlLlxuICovXG5leHBvcnQgZnVuY3Rpb24gcGFydGl0aW9uQXJyYXk8VD4oXG4gICAgYXJyOiBUW10sIGNvbmRpdGlvbkZuOiA8SyBleHRlbmRzIFQ+KHZhbHVlOiBLKSA9PiBib29sZWFuKTogW1RbXSwgVFtdXSB7XG4gIGNvbnN0IHRydXRoeTogVFtdID0gW107XG4gIGNvbnN0IGZhbHN5OiBUW10gPSBbXTtcbiAgYXJyLmZvckVhY2goaXRlbSA9PiB7XG4gICAgKGNvbmRpdGlvbkZuKGl0ZW0pID8gdHJ1dGh5IDogZmFsc3kpLnB1c2goaXRlbSk7XG4gIH0pO1xuICByZXR1cm4gW3RydXRoeSwgZmFsc3ldO1xufVxuIl19
+
+/***/ }),
+
 /***/ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js":
 /*!******************************************************************!*\
   !*** ./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js ***!
   \******************************************************************/
-/*! exports provided: ANALYZE_FOR_ENTRY_COMPONENTS, APP_BOOTSTRAP_LISTENER, APP_ID, APP_INITIALIZER, ApplicationInitStatus, ApplicationModule, ApplicationRef, Attribute, COMPILER_OPTIONS, CUSTOM_ELEMENTS_SCHEMA, ChangeDetectionStrategy, ChangeDetectorRef, Compiler, CompilerFactory, Component, ComponentFactory, ComponentFactoryResolver, ComponentRef, ContentChild, ContentChildren, DEFAULT_CURRENCY_CODE, DebugElement, DebugEventListener, DebugNode, DefaultIterableDiffer, Directive, ElementRef, EmbeddedViewRef, ErrorHandler, EventEmitter, Host, HostBinding, HostListener, INJECTOR, Inject, InjectFlags, Injectable, InjectionToken, Injector, Input, IterableDiffers, KeyValueDiffers, LOCALE_ID, MissingTranslationStrategy, ModuleWithComponentFactories, NO_ERRORS_SCHEMA, NgModule, NgModuleFactory, NgModuleFactoryLoader, NgModuleRef, NgProbeToken, NgZone, Optional, Output, PACKAGE_ROOT_URL, PLATFORM_ID, PLATFORM_INITIALIZER, Pipe, PlatformRef, Query, QueryList, ReflectiveInjector, ReflectiveKey, Renderer2, RendererFactory2, RendererStyleFlags2, ResolvedReflectiveFactory, Sanitizer, SecurityContext, Self, SimpleChange, SkipSelf, SystemJsNgModuleLoader, SystemJsNgModuleLoaderConfig, TRANSLATIONS, TRANSLATIONS_FORMAT, TemplateRef, Testability, TestabilityRegistry, Type, VERSION, Version, ViewChild, ViewChildren, ViewContainerRef, ViewEncapsulation, ViewRef, WrappedValue, asNativeElements, assertPlatform, createPlatform, createPlatformFactory, defineInjectable, destroyPlatform, enableProdMode, forwardRef, getDebugNode, getModuleFactory, getPlatform, inject, isDevMode, platformCore, resolveForwardRef, setTestabilityGetter, ɵ0, ɵ1, ɵALLOW_MULTIPLE_PLATFORMS, ɵAPP_ID_RANDOM_PROVIDER, ɵChangeDetectorStatus, ɵCodegenComponentFactoryResolver, ɵCompiler_compileModuleAndAllComponentsAsync__POST_R3__, ɵCompiler_compileModuleAndAllComponentsSync__POST_R3__, ɵCompiler_compileModuleAsync__POST_R3__, ɵCompiler_compileModuleSync__POST_R3__, ɵComponentFactory, ɵConsole, ɵDEFAULT_LOCALE_ID, ɵEMPTY_ARRAY, ɵEMPTY_MAP, ɵINJECTOR_IMPL__POST_R3__, ɵINJECTOR_SCOPE, ɵLifecycleHooksFeature, ɵLocaleDataIndex, ɵNG_COMP_DEF, ɵNG_DIR_DEF, ɵNG_ELEMENT_ID, ɵNG_INJ_DEF, ɵNG_MOD_DEF, ɵNG_PIPE_DEF, ɵNG_PROV_DEF, ɵNOT_FOUND_CHECK_ONLY_ELEMENT_INJECTOR, ɵNO_CHANGE, ɵNgModuleFactory, ɵNoopNgZone, ɵReflectionCapabilities, ɵRender3ComponentFactory, ɵRender3ComponentRef, ɵRender3NgModuleRef, ɵSWITCH_CHANGE_DETECTOR_REF_FACTORY__POST_R3__, ɵSWITCH_COMPILE_COMPONENT__POST_R3__, ɵSWITCH_COMPILE_DIRECTIVE__POST_R3__, ɵSWITCH_COMPILE_INJECTABLE__POST_R3__, ɵSWITCH_COMPILE_NGMODULE__POST_R3__, ɵSWITCH_COMPILE_PIPE__POST_R3__, ɵSWITCH_ELEMENT_REF_FACTORY__POST_R3__, ɵSWITCH_IVY_ENABLED__POST_R3__, ɵSWITCH_RENDERER2_FACTORY__POST_R3__, ɵSWITCH_TEMPLATE_REF_FACTORY__POST_R3__, ɵSWITCH_VIEW_CONTAINER_REF_FACTORY__POST_R3__, ɵ_sanitizeHtml, ɵ_sanitizeUrl, ɵallowSanitizationBypassAndThrow, ɵand, ɵangular_packages_core_core_a, ɵangular_packages_core_core_b, ɵangular_packages_core_core_ba, ɵangular_packages_core_core_bb, ɵangular_packages_core_core_bc, ɵangular_packages_core_core_bd, ɵangular_packages_core_core_bf, ɵangular_packages_core_core_bg, ɵangular_packages_core_core_bh, ɵangular_packages_core_core_bi, ɵangular_packages_core_core_bj, ɵangular_packages_core_core_bk, ɵangular_packages_core_core_bl, ɵangular_packages_core_core_bm, ɵangular_packages_core_core_bn, ɵangular_packages_core_core_bp, ɵangular_packages_core_core_bq, ɵangular_packages_core_core_c, ɵangular_packages_core_core_d, ɵangular_packages_core_core_e, ɵangular_packages_core_core_f, ɵangular_packages_core_core_g, ɵangular_packages_core_core_h, ɵangular_packages_core_core_i, ɵangular_packages_core_core_j, ɵangular_packages_core_core_k, ɵangular_packages_core_core_l, ɵangular_packages_core_core_m, ɵangular_packages_core_core_n, ɵangular_packages_core_core_o, ɵangular_packages_core_core_p, ɵangular_packages_core_core_q, ɵangular_packages_core_core_r, ɵangular_packages_core_core_s, ɵangular_packages_core_core_t, ɵangular_packages_core_core_u, ɵangular_packages_core_core_v, ɵangular_packages_core_core_w, ɵangular_packages_core_core_x, ɵangular_packages_core_core_y, ɵangular_packages_core_core_z, ɵbypassSanitizationTrustHtml, ɵbypassSanitizationTrustResourceUrl, ɵbypassSanitizationTrustScript, ɵbypassSanitizationTrustStyle, ɵbypassSanitizationTrustUrl, ɵccf, ɵclearOverrides, ɵclearResolutionOfComponentResourcesQueue, ɵcmf, ɵcompileComponent, ɵcompileDirective, ɵcompileNgModule, ɵcompileNgModuleDefs, ɵcompileNgModuleFactory__POST_R3__, ɵcompilePipe, ɵcreateInjector, ɵcrt, ɵdefaultIterableDiffers, ɵdefaultKeyValueDiffers, ɵdetectChanges, ɵdevModeEqual, ɵdid, ɵeld, ɵfindLocaleData, ɵflushModuleScopingQueueAsMuchAsPossible, ɵgetComponentViewDefinitionFactory, ɵgetDebugNodeR2, ɵgetDebugNode__POST_R3__, ɵgetDirectives, ɵgetHostElement, ɵgetInjectableDef, ɵgetLContext, ɵgetLocaleCurrencyCode, ɵgetLocalePluralCase, ɵgetModuleFactory__POST_R3__, ɵgetSanitizationBypassType, ɵglobal, ɵinitServicesIfNeeded, ɵinlineInterpolate, ɵinterpolate, ɵisBoundToModule__POST_R3__, ɵisDefaultChangeDetectionStrategy, ɵisListLikeIterable, ɵisObservable, ɵisPromise, ɵivyEnabled, ɵmakeDecorator, ɵmarkDirty, ɵmod, ɵmpd, ɵncd, ɵnov, ɵoverrideComponentView, ɵoverrideProvider, ɵpad, ɵpatchComponentDefWithScope, ɵpid, ɵpod, ɵppd, ɵprd, ɵpublishDefaultGlobalUtils, ɵpublishGlobalUtil, ɵqud, ɵregisterLocaleData, ɵregisterModuleFactory, ɵregisterNgModuleType, ɵrenderComponent, ɵresetCompiledComponents, ɵresetJitOptions, ɵresolveComponentResources, ɵsetClassMetadata, ɵsetCurrentInjector, ɵsetDocument, ɵsetLocaleId, ɵstore, ɵstringify, ɵted, ɵtransitiveScopesFor, ɵunregisterLocaleData, ɵunv, ɵunwrapSafeValue, ɵvid, ɵwhenRendered, ɵɵCopyDefinitionFeature, ɵɵInheritDefinitionFeature, ɵɵNgOnChangesFeature, ɵɵProvidersFeature, ɵɵadvance, ɵɵattribute, ɵɵattributeInterpolate1, ɵɵattributeInterpolate2, ɵɵattributeInterpolate3, ɵɵattributeInterpolate4, ɵɵattributeInterpolate5, ɵɵattributeInterpolate6, ɵɵattributeInterpolate7, ɵɵattributeInterpolate8, ɵɵattributeInterpolateV, ɵɵclassMap, ɵɵclassMapInterpolate1, ɵɵclassMapInterpolate2, ɵɵclassMapInterpolate3, ɵɵclassMapInterpolate4, ɵɵclassMapInterpolate5, ɵɵclassMapInterpolate6, ɵɵclassMapInterpolate7, ɵɵclassMapInterpolate8, ɵɵclassMapInterpolateV, ɵɵclassProp, ɵɵcomponentHostSyntheticListener, ɵɵcontentQuery, ɵɵdefineComponent, ɵɵdefineDirective, ɵɵdefineInjectable, ɵɵdefineInjector, ɵɵdefineNgModule, ɵɵdefinePipe, ɵɵdirectiveInject, ɵɵdisableBindings, ɵɵelement, ɵɵelementContainer, ɵɵelementContainerEnd, ɵɵelementContainerStart, ɵɵelementEnd, ɵɵelementStart, ɵɵenableBindings, ɵɵgetCurrentView, ɵɵgetFactoryOf, ɵɵgetInheritedFactory, ɵɵhostProperty, ɵɵi18n, ɵɵi18nApply, ɵɵi18nAttributes, ɵɵi18nEnd, ɵɵi18nExp, ɵɵi18nPostprocess, ɵɵi18nStart, ɵɵinject, ɵɵinjectAttribute, ɵɵinjectPipeChangeDetectorRef, ɵɵinvalidFactory, ɵɵinvalidFactoryDep, ɵɵlistener, ɵɵloadQuery, ɵɵnamespaceHTML, ɵɵnamespaceMathML, ɵɵnamespaceSVG, ɵɵnextContext, ɵɵpipe, ɵɵpipeBind1, ɵɵpipeBind2, ɵɵpipeBind3, ɵɵpipeBind4, ɵɵpipeBindV, ɵɵprojection, ɵɵprojectionDef, ɵɵproperty, ɵɵpropertyInterpolate, ɵɵpropertyInterpolate1, ɵɵpropertyInterpolate2, ɵɵpropertyInterpolate3, ɵɵpropertyInterpolate4, ɵɵpropertyInterpolate5, ɵɵpropertyInterpolate6, ɵɵpropertyInterpolate7, ɵɵpropertyInterpolate8, ɵɵpropertyInterpolateV, ɵɵpureFunction0, ɵɵpureFunction1, ɵɵpureFunction2, ɵɵpureFunction3, ɵɵpureFunction4, ɵɵpureFunction5, ɵɵpureFunction6, ɵɵpureFunction7, ɵɵpureFunction8, ɵɵpureFunctionV, ɵɵqueryRefresh, ɵɵreference, ɵɵresolveBody, ɵɵresolveDocument, ɵɵresolveWindow, ɵɵrestoreView, ɵɵsanitizeHtml, ɵɵsanitizeResourceUrl, ɵɵsanitizeScript, ɵɵsanitizeStyle, ɵɵsanitizeUrl, ɵɵsanitizeUrlOrResourceUrl, ɵɵselect, ɵɵsetComponentScope, ɵɵsetNgModuleScope, ɵɵstaticContentQuery, ɵɵstaticViewQuery, ɵɵstyleMap, ɵɵstyleMapInterpolate1, ɵɵstyleMapInterpolate2, ɵɵstyleMapInterpolate3, ɵɵstyleMapInterpolate4, ɵɵstyleMapInterpolate5, ɵɵstyleMapInterpolate6, ɵɵstyleMapInterpolate7, ɵɵstyleMapInterpolate8, ɵɵstyleMapInterpolateV, ɵɵstyleProp, ɵɵstylePropInterpolate1, ɵɵstylePropInterpolate2, ɵɵstylePropInterpolate3, ɵɵstylePropInterpolate4, ɵɵstylePropInterpolate5, ɵɵstylePropInterpolate6, ɵɵstylePropInterpolate7, ɵɵstylePropInterpolate8, ɵɵstylePropInterpolateV, ɵɵtemplate, ɵɵtemplateRefExtractor, ɵɵtext, ɵɵtextInterpolate, ɵɵtextInterpolate1, ɵɵtextInterpolate2, ɵɵtextInterpolate3, ɵɵtextInterpolate4, ɵɵtextInterpolate5, ɵɵtextInterpolate6, ɵɵtextInterpolate7, ɵɵtextInterpolate8, ɵɵtextInterpolateV, ɵɵupdateSyntheticHostBinding, ɵɵviewQuery */
+/*! exports provided: ANALYZE_FOR_ENTRY_COMPONENTS, APP_BOOTSTRAP_LISTENER, APP_ID, APP_INITIALIZER, ApplicationInitStatus, ApplicationModule, ApplicationRef, Attribute, COMPILER_OPTIONS, CUSTOM_ELEMENTS_SCHEMA, ChangeDetectionStrategy, ChangeDetectorRef, Compiler, CompilerFactory, Component, ComponentFactory, ComponentFactoryResolver, ComponentRef, ContentChild, ContentChildren, DEFAULT_CURRENCY_CODE, DebugElement, DebugEventListener, DebugNode, DefaultIterableDiffer, Directive, ElementRef, EmbeddedViewRef, ErrorHandler, EventEmitter, Host, HostBinding, HostListener, INJECTOR, Inject, InjectFlags, Injectable, InjectionToken, Injector, Input, IterableDiffers, KeyValueDiffers, LOCALE_ID, MissingTranslationStrategy, ModuleWithComponentFactories, NO_ERRORS_SCHEMA, NgModule, NgModuleFactory, NgModuleFactoryLoader, NgModuleRef, NgProbeToken, NgZone, Optional, Output, PACKAGE_ROOT_URL, PLATFORM_ID, PLATFORM_INITIALIZER, Pipe, PlatformRef, Query, QueryList, ReflectiveInjector, ReflectiveKey, Renderer2, RendererFactory2, RendererStyleFlags2, ResolvedReflectiveFactory, Sanitizer, SecurityContext, Self, SimpleChange, SkipSelf, SystemJsNgModuleLoader, SystemJsNgModuleLoaderConfig, TRANSLATIONS, TRANSLATIONS_FORMAT, TemplateRef, Testability, TestabilityRegistry, Type, VERSION, Version, ViewChild, ViewChildren, ViewContainerRef, ViewEncapsulation, ViewRef, WrappedValue, asNativeElements, assertPlatform, createPlatform, createPlatformFactory, defineInjectable, destroyPlatform, enableProdMode, forwardRef, getDebugNode, getModuleFactory, getPlatform, inject, isDevMode, platformCore, resolveForwardRef, setTestabilityGetter, ɵ0, ɵ1, ɵALLOW_MULTIPLE_PLATFORMS, ɵAPP_ID_RANDOM_PROVIDER, ɵChangeDetectorStatus, ɵCodegenComponentFactoryResolver, ɵCompiler_compileModuleAndAllComponentsAsync__POST_R3__, ɵCompiler_compileModuleAndAllComponentsSync__POST_R3__, ɵCompiler_compileModuleAsync__POST_R3__, ɵCompiler_compileModuleSync__POST_R3__, ɵComponentFactory, ɵConsole, ɵDEFAULT_LOCALE_ID, ɵEMPTY_ARRAY, ɵEMPTY_MAP, ɵINJECTOR_IMPL__POST_R3__, ɵINJECTOR_SCOPE, ɵLifecycleHooksFeature, ɵLocaleDataIndex, ɵNG_COMP_DEF, ɵNG_DIR_DEF, ɵNG_ELEMENT_ID, ɵNG_INJ_DEF, ɵNG_MOD_DEF, ɵNG_PIPE_DEF, ɵNG_PROV_DEF, ɵNOT_FOUND_CHECK_ONLY_ELEMENT_INJECTOR, ɵNO_CHANGE, ɵNgModuleFactory, ɵNoopNgZone, ɵReflectionCapabilities, ɵRender3ComponentFactory, ɵRender3ComponentRef, ɵRender3NgModuleRef, ɵSWITCH_CHANGE_DETECTOR_REF_FACTORY__POST_R3__, ɵSWITCH_COMPILE_COMPONENT__POST_R3__, ɵSWITCH_COMPILE_DIRECTIVE__POST_R3__, ɵSWITCH_COMPILE_INJECTABLE__POST_R3__, ɵSWITCH_COMPILE_NGMODULE__POST_R3__, ɵSWITCH_COMPILE_PIPE__POST_R3__, ɵSWITCH_ELEMENT_REF_FACTORY__POST_R3__, ɵSWITCH_IVY_ENABLED__POST_R3__, ɵSWITCH_RENDERER2_FACTORY__POST_R3__, ɵSWITCH_TEMPLATE_REF_FACTORY__POST_R3__, ɵSWITCH_VIEW_CONTAINER_REF_FACTORY__POST_R3__, ɵ_sanitizeHtml, ɵ_sanitizeUrl, ɵallowSanitizationBypassAndThrow, ɵand, ɵangular_packages_core_core_a, ɵangular_packages_core_core_b, ɵangular_packages_core_core_ba, ɵangular_packages_core_core_bb, ɵangular_packages_core_core_bc, ɵangular_packages_core_core_bd, ɵangular_packages_core_core_be, ɵangular_packages_core_core_bg, ɵangular_packages_core_core_bh, ɵangular_packages_core_core_bi, ɵangular_packages_core_core_bj, ɵangular_packages_core_core_bk, ɵangular_packages_core_core_bl, ɵangular_packages_core_core_bm, ɵangular_packages_core_core_bn, ɵangular_packages_core_core_bo, ɵangular_packages_core_core_bq, ɵangular_packages_core_core_br, ɵangular_packages_core_core_c, ɵangular_packages_core_core_d, ɵangular_packages_core_core_e, ɵangular_packages_core_core_f, ɵangular_packages_core_core_g, ɵangular_packages_core_core_h, ɵangular_packages_core_core_i, ɵangular_packages_core_core_j, ɵangular_packages_core_core_k, ɵangular_packages_core_core_l, ɵangular_packages_core_core_m, ɵangular_packages_core_core_n, ɵangular_packages_core_core_o, ɵangular_packages_core_core_p, ɵangular_packages_core_core_q, ɵangular_packages_core_core_r, ɵangular_packages_core_core_s, ɵangular_packages_core_core_t, ɵangular_packages_core_core_u, ɵangular_packages_core_core_v, ɵangular_packages_core_core_w, ɵangular_packages_core_core_x, ɵangular_packages_core_core_y, ɵangular_packages_core_core_z, ɵbypassSanitizationTrustHtml, ɵbypassSanitizationTrustResourceUrl, ɵbypassSanitizationTrustScript, ɵbypassSanitizationTrustStyle, ɵbypassSanitizationTrustUrl, ɵccf, ɵclearOverrides, ɵclearResolutionOfComponentResourcesQueue, ɵcmf, ɵcompileComponent, ɵcompileDirective, ɵcompileNgModule, ɵcompileNgModuleDefs, ɵcompileNgModuleFactory__POST_R3__, ɵcompilePipe, ɵcreateInjector, ɵcrt, ɵdefaultIterableDiffers, ɵdefaultKeyValueDiffers, ɵdetectChanges, ɵdevModeEqual, ɵdid, ɵeld, ɵfindLocaleData, ɵflushModuleScopingQueueAsMuchAsPossible, ɵgetComponentViewDefinitionFactory, ɵgetDebugNodeR2, ɵgetDebugNode__POST_R3__, ɵgetDirectives, ɵgetHostElement, ɵgetInjectableDef, ɵgetLContext, ɵgetLocaleCurrencyCode, ɵgetLocalePluralCase, ɵgetModuleFactory__POST_R3__, ɵgetSanitizationBypassType, ɵglobal, ɵinitServicesIfNeeded, ɵinlineInterpolate, ɵinterpolate, ɵisBoundToModule__POST_R3__, ɵisDefaultChangeDetectionStrategy, ɵisListLikeIterable, ɵisObservable, ɵisPromise, ɵivyEnabled, ɵmakeDecorator, ɵmarkDirty, ɵmod, ɵmpd, ɵncd, ɵnoSideEffects, ɵnov, ɵoverrideComponentView, ɵoverrideProvider, ɵpad, ɵpatchComponentDefWithScope, ɵpid, ɵpod, ɵppd, ɵprd, ɵpublishDefaultGlobalUtils, ɵpublishGlobalUtil, ɵqud, ɵregisterLocaleData, ɵregisterModuleFactory, ɵregisterNgModuleType, ɵrenderComponent, ɵresetCompiledComponents, ɵresetJitOptions, ɵresolveComponentResources, ɵsetClassMetadata, ɵsetCurrentInjector, ɵsetDocument, ɵsetLocaleId, ɵstore, ɵstringify, ɵted, ɵtransitiveScopesFor, ɵunregisterLocaleData, ɵunv, ɵunwrapSafeValue, ɵvid, ɵwhenRendered, ɵɵCopyDefinitionFeature, ɵɵInheritDefinitionFeature, ɵɵNgOnChangesFeature, ɵɵProvidersFeature, ɵɵadvance, ɵɵattribute, ɵɵattributeInterpolate1, ɵɵattributeInterpolate2, ɵɵattributeInterpolate3, ɵɵattributeInterpolate4, ɵɵattributeInterpolate5, ɵɵattributeInterpolate6, ɵɵattributeInterpolate7, ɵɵattributeInterpolate8, ɵɵattributeInterpolateV, ɵɵclassMap, ɵɵclassMapInterpolate1, ɵɵclassMapInterpolate2, ɵɵclassMapInterpolate3, ɵɵclassMapInterpolate4, ɵɵclassMapInterpolate5, ɵɵclassMapInterpolate6, ɵɵclassMapInterpolate7, ɵɵclassMapInterpolate8, ɵɵclassMapInterpolateV, ɵɵclassProp, ɵɵcontentQuery, ɵɵdefineComponent, ɵɵdefineDirective, ɵɵdefineInjectable, ɵɵdefineInjector, ɵɵdefineNgModule, ɵɵdefinePipe, ɵɵdirectiveInject, ɵɵdisableBindings, ɵɵelement, ɵɵelementContainer, ɵɵelementContainerEnd, ɵɵelementContainerStart, ɵɵelementEnd, ɵɵelementStart, ɵɵenableBindings, ɵɵgetCurrentView, ɵɵgetFactoryOf, ɵɵgetInheritedFactory, ɵɵhostProperty, ɵɵi18n, ɵɵi18nApply, ɵɵi18nAttributes, ɵɵi18nEnd, ɵɵi18nExp, ɵɵi18nPostprocess, ɵɵi18nStart, ɵɵinject, ɵɵinjectAttribute, ɵɵinjectPipeChangeDetectorRef, ɵɵinvalidFactory, ɵɵinvalidFactoryDep, ɵɵlistener, ɵɵloadQuery, ɵɵnamespaceHTML, ɵɵnamespaceMathML, ɵɵnamespaceSVG, ɵɵnextContext, ɵɵpipe, ɵɵpipeBind1, ɵɵpipeBind2, ɵɵpipeBind3, ɵɵpipeBind4, ɵɵpipeBindV, ɵɵprojection, ɵɵprojectionDef, ɵɵproperty, ɵɵpropertyInterpolate, ɵɵpropertyInterpolate1, ɵɵpropertyInterpolate2, ɵɵpropertyInterpolate3, ɵɵpropertyInterpolate4, ɵɵpropertyInterpolate5, ɵɵpropertyInterpolate6, ɵɵpropertyInterpolate7, ɵɵpropertyInterpolate8, ɵɵpropertyInterpolateV, ɵɵpureFunction0, ɵɵpureFunction1, ɵɵpureFunction2, ɵɵpureFunction3, ɵɵpureFunction4, ɵɵpureFunction5, ɵɵpureFunction6, ɵɵpureFunction7, ɵɵpureFunction8, ɵɵpureFunctionV, ɵɵqueryRefresh, ɵɵreference, ɵɵresolveBody, ɵɵresolveDocument, ɵɵresolveWindow, ɵɵrestoreView, ɵɵsanitizeHtml, ɵɵsanitizeResourceUrl, ɵɵsanitizeScript, ɵɵsanitizeStyle, ɵɵsanitizeUrl, ɵɵsanitizeUrlOrResourceUrl, ɵɵselect, ɵɵsetComponentScope, ɵɵsetNgModuleScope, ɵɵstaticContentQuery, ɵɵstaticViewQuery, ɵɵstyleMap, ɵɵstyleMapInterpolate1, ɵɵstyleMapInterpolate2, ɵɵstyleMapInterpolate3, ɵɵstyleMapInterpolate4, ɵɵstyleMapInterpolate5, ɵɵstyleMapInterpolate6, ɵɵstyleMapInterpolate7, ɵɵstyleMapInterpolate8, ɵɵstyleMapInterpolateV, ɵɵstyleProp, ɵɵstylePropInterpolate1, ɵɵstylePropInterpolate2, ɵɵstylePropInterpolate3, ɵɵstylePropInterpolate4, ɵɵstylePropInterpolate5, ɵɵstylePropInterpolate6, ɵɵstylePropInterpolate7, ɵɵstylePropInterpolate8, ɵɵstylePropInterpolateV, ɵɵsyntheticHostListener, ɵɵsyntheticHostProperty, ɵɵtemplate, ɵɵtemplateRefExtractor, ɵɵtext, ɵɵtextInterpolate, ɵɵtextInterpolate1, ɵɵtextInterpolate2, ɵɵtextInterpolate3, ɵɵtextInterpolate4, ɵɵtextInterpolate5, ɵɵtextInterpolate6, ɵɵtextInterpolate7, ɵɵtextInterpolate8, ɵɵtextInterpolateV, ɵɵviewQuery */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13391,21 +8211,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵand", function() { return anchorDef; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_a", function() { return isForwardRef; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_b", function() { return injectInjectorOnly; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_ba", function() { return getLView; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_bb", function() { return getPreviousOrParentTNode; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_bc", function() { return getBindingRoot; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_bd", function() { return nextContextImpl; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_bf", function() { return pureFunction1Internal; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_bg", function() { return pureFunction2Internal; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_bh", function() { return pureFunction3Internal; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_bi", function() { return pureFunction4Internal; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_bj", function() { return pureFunctionVInternal; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_bk", function() { return getUrlSanitizer; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_bl", function() { return makeParamDecorator; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_bm", function() { return makePropDecorator; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_bn", function() { return getClosureSafeProperty; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_bp", function() { return noSideEffects; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_ba", function() { return instructionState; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_bb", function() { return getLView; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_bc", function() { return getPreviousOrParentTNode; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_bd", function() { return getBindingRoot; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_be", function() { return nextContextImpl; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_bg", function() { return pureFunction1Internal; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_bh", function() { return pureFunction2Internal; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_bi", function() { return pureFunction3Internal; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_bj", function() { return pureFunction4Internal; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_bk", function() { return pureFunctionVInternal; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_bl", function() { return getUrlSanitizer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_bm", function() { return makeParamDecorator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_bn", function() { return makePropDecorator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_bo", function() { return getClosureSafeProperty; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_bq", function() { return getRootContext; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_br", function() { return i18nPostprocess; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_c", function() { return NullInjector; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_d", function() { return ReflectiveInjector_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_e", function() { return ReflectiveDependency; });
@@ -13427,9 +8248,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_u", function() { return USD_CURRENCY_CODE; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_v", function() { return _def; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_w", function() { return DebugContext; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_x", function() { return SCHEDULER; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_y", function() { return injectAttributeImpl; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_z", function() { return instructionState; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_x", function() { return NgOnChangesFeatureImpl; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_y", function() { return SCHEDULER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵangular_packages_core_core_z", function() { return injectAttributeImpl; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵbypassSanitizationTrustHtml", function() { return bypassSanitizationTrustHtml; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵbypassSanitizationTrustResourceUrl", function() { return bypassSanitizationTrustResourceUrl; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵbypassSanitizationTrustScript", function() { return bypassSanitizationTrustScript; });
@@ -13481,6 +8302,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵmod", function() { return moduleDef; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵmpd", function() { return moduleProvideDef; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵncd", function() { return ngContentDef; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵnoSideEffects", function() { return noSideEffects; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵnov", function() { return nodeValue; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵoverrideComponentView", function() { return overrideComponentView; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵoverrideProvider", function() { return overrideProvider; });
@@ -13539,7 +8361,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵɵclassMapInterpolate8", function() { return ɵɵclassMapInterpolate8; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵɵclassMapInterpolateV", function() { return ɵɵclassMapInterpolateV; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵɵclassProp", function() { return ɵɵclassProp; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵɵcomponentHostSyntheticListener", function() { return ɵɵcomponentHostSyntheticListener; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵɵcontentQuery", function() { return ɵɵcontentQuery; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵɵdefineComponent", function() { return ɵɵdefineComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵɵdefineDirective", function() { return ɵɵdefineDirective; });
@@ -13644,6 +8465,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵɵstylePropInterpolate7", function() { return ɵɵstylePropInterpolate7; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵɵstylePropInterpolate8", function() { return ɵɵstylePropInterpolate8; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵɵstylePropInterpolateV", function() { return ɵɵstylePropInterpolateV; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵɵsyntheticHostListener", function() { return ɵɵsyntheticHostListener; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵɵsyntheticHostProperty", function() { return ɵɵsyntheticHostProperty; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵɵtemplate", function() { return ɵɵtemplate; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵɵtemplateRefExtractor", function() { return ɵɵtemplateRefExtractor; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵɵtext", function() { return ɵɵtext; });
@@ -13657,12 +8480,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵɵtextInterpolate7", function() { return ɵɵtextInterpolate7; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵɵtextInterpolate8", function() { return ɵɵtextInterpolate8; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵɵtextInterpolateV", function() { return ɵɵtextInterpolateV; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵɵupdateSyntheticHostBinding", function() { return ɵɵupdateSyntheticHostBinding; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵɵviewQuery", function() { return ɵɵviewQuery; });
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
 /**
- * @license Angular v10.0.1
+ * @license Angular v10.0.14
  * (c) 2010-2020 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -13840,7 +8662,7 @@ const Optional = makeParamDecorator('Optional');
  */
 const Self = makeParamDecorator('Self');
 /**
- * SkipSelf decorator and metadata.
+ * `SkipSelf` decorator and metadata.
  *
  * @Annotation
  * @publicApi
@@ -13943,6 +8765,7 @@ function fillProperties(target, source) {
  *   The factory can call `inject` to access the `Injector` and request injection of dependencies.
  *
  * @codeGenApi
+ * @publicApi This instruction has been emitted by ViewEngine for some time and is deployed to npm.
  */
 function ɵɵdefineInjectable(opts) {
     return {
@@ -13976,7 +8799,7 @@ const defineInjectable = ɵɵdefineInjectable;
  *   whose providers will also be added to the injector. Locally provided types will override
  *   providers from imports.
  *
- * @publicApi
+ * @codeGenApi
  */
 function ɵɵdefineInjector(options) {
     return {
@@ -14301,7 +9124,7 @@ function ngDevModeResetPerfCounters() {
  * (and thus Ivy instructions), so a single initialization there is sufficient to ensure ngDevMode
  * is defined for the entire instruction set.
  *
- * When using checking `ngDevMode` on toplevel, always init it before referencing it
+ * When checking `ngDevMode` on toplevel, always init it before referencing it
  * (e.g. `((typeof ngDevMode === 'undefined' || ngDevMode) && initNgDevMode())`), otherwise you can
  *  get a `ReferenceError` like in https://github.com/angular/angular/issues/31595.
  *
@@ -14652,10 +9475,8 @@ function getFactoryOf(type) {
  * found in the LICENSE file at https://angular.io/license
  */
 /**
- * Represents an instance of an NgModule created via a {@link NgModuleFactory}.
- *
- * `NgModuleRef` provides access to the NgModule Instance as well other objects related to this
- * NgModule Instance.
+ * Represents an instance of an `NgModule` created by an `NgModuleFactory`.
+ * Provides access to the `NgModule` instance and related objects.
  *
  * @publicApi
  */
@@ -14749,7 +9570,7 @@ function assertDomNode(node) {
         (typeof node === 'object' && node != null &&
             node.constructor.name === 'WebWorkerRenderNode'), true, `The provided value must be an instance of a DOM Node but got ${stringify(node)}`);
 }
-function assertDataInRange(arr, index) {
+function assertIndexInRange(arr, index) {
     const maxLen = arr ? arr.length : 0;
     assertLessThan(index, maxLen, `Index expected to be less than ${maxLen} but got ${index}`);
 }
@@ -15073,6 +9894,8 @@ function _arrayIndexOfSorted(array, value, shift) {
  * The strategy that the default change detector uses to detect changes.
  * When set, takes effect the next time change detection is triggered.
  *
+ * @see {@link ChangeDetectorRef#usage-notes Change detection usage}
+ *
  * @publicApi
  */
 var ChangeDetectionStrategy;
@@ -15266,14 +10089,6 @@ function ɵɵdefineComponent(componentDefinition) {
             inputs: null,
             outputs: null,
             exportAs: componentDefinition.exportAs || null,
-            onChanges: null,
-            onInit: typePrototype.ngOnInit || null,
-            doCheck: typePrototype.ngDoCheck || null,
-            afterContentInit: typePrototype.ngAfterContentInit || null,
-            afterContentChecked: typePrototype.ngAfterContentChecked || null,
-            afterViewInit: typePrototype.ngAfterViewInit || null,
-            afterViewChecked: typePrototype.ngAfterViewChecked || null,
-            onDestroy: typePrototype.ngOnDestroy || null,
             onPush: componentDefinition.changeDetection === ChangeDetectionStrategy.OnPush,
             directiveDefs: null,
             pipeDefs: null,
@@ -15281,8 +10096,8 @@ function ɵɵdefineComponent(componentDefinition) {
             viewQuery: componentDefinition.viewQuery || null,
             features: componentDefinition.features || null,
             data: componentDefinition.data || {},
-            // TODO(misko): convert ViewEncapsulation into const enum so that it can be used directly in
-            // the next line. Also `None` should be 0 not 2.
+            // TODO(misko): convert ViewEncapsulation into const enum so that it can be used
+            // directly in the next line. Also `None` should be 0 not 2.
             encapsulation: componentDefinition.encapsulation || ViewEncapsulation$1.Emulated,
             id: 'c',
             styles: componentDefinition.styles || EMPTY_ARRAY,
@@ -15706,6 +10521,126 @@ function assertDirectiveDef(obj) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
+/**
+ * Represents a basic change from a previous to a new value for a single
+ * property on a directive instance. Passed as a value in a
+ * {@link SimpleChanges} object to the `ngOnChanges` hook.
+ *
+ * @see `OnChanges`
+ *
+ * @publicApi
+ */
+class SimpleChange {
+    constructor(previousValue, currentValue, firstChange) {
+        this.previousValue = previousValue;
+        this.currentValue = currentValue;
+        this.firstChange = firstChange;
+    }
+    /**
+     * Check whether the new value is the first value assigned.
+     */
+    isFirstChange() {
+        return this.firstChange;
+    }
+}
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * The NgOnChangesFeature decorates a component with support for the ngOnChanges
+ * lifecycle hook, so it should be included in any component that implements
+ * that hook.
+ *
+ * If the component or directive uses inheritance, the NgOnChangesFeature MUST
+ * be included as a feature AFTER {@link InheritDefinitionFeature}, otherwise
+ * inherited properties will not be propagated to the ngOnChanges lifecycle
+ * hook.
+ *
+ * Example usage:
+ *
+ * ```
+ * static ɵcmp = defineComponent({
+ *   ...
+ *   inputs: {name: 'publicName'},
+ *   features: [NgOnChangesFeature]
+ * });
+ * ```
+ *
+ * @codeGenApi
+ */
+function ɵɵNgOnChangesFeature() {
+    return NgOnChangesFeatureImpl;
+}
+function NgOnChangesFeatureImpl(definition) {
+    if (definition.type.prototype.ngOnChanges) {
+        definition.setInput = ngOnChangesSetInput;
+    }
+    return rememberChangeHistoryAndInvokeOnChangesHook;
+}
+// This option ensures that the ngOnChanges lifecycle hook will be inherited
+// from superclasses (in InheritDefinitionFeature).
+/** @nocollapse */
+// tslint:disable-next-line:no-toplevel-property-access
+ɵɵNgOnChangesFeature.ngInherit = true;
+/**
+ * This is a synthetic lifecycle hook which gets inserted into `TView.preOrderHooks` to simulate
+ * `ngOnChanges`.
+ *
+ * The hook reads the `NgSimpleChangesStore` data from the component instance and if changes are
+ * found it invokes `ngOnChanges` on the component instance.
+ *
+ * @param this Component instance. Because this function gets inserted into `TView.preOrderHooks`,
+ *     it is guaranteed to be called with component instance.
+ */
+function rememberChangeHistoryAndInvokeOnChangesHook() {
+    const simpleChangesStore = getSimpleChangesStore(this);
+    const current = simpleChangesStore === null || simpleChangesStore === void 0 ? void 0 : simpleChangesStore.current;
+    if (current) {
+        const previous = simpleChangesStore.previous;
+        if (previous === EMPTY_OBJ) {
+            simpleChangesStore.previous = current;
+        }
+        else {
+            // New changes are copied to the previous store, so that we don't lose history for inputs
+            // which were not changed this time
+            for (let key in current) {
+                previous[key] = current[key];
+            }
+        }
+        simpleChangesStore.current = null;
+        this.ngOnChanges(current);
+    }
+}
+function ngOnChangesSetInput(instance, value, publicName, privateName) {
+    const simpleChangesStore = getSimpleChangesStore(instance) ||
+        setSimpleChangesStore(instance, { previous: EMPTY_OBJ, current: null });
+    const current = simpleChangesStore.current || (simpleChangesStore.current = {});
+    const previous = simpleChangesStore.previous;
+    const declaredName = this.declaredInputs[publicName];
+    const previousChange = previous[declaredName];
+    current[declaredName] = new SimpleChange(previousChange && previousChange.currentValue, value, previous === EMPTY_OBJ);
+    instance[privateName] = value;
+}
+const SIMPLE_CHANGES_STORE = '__ngSimpleChanges__';
+function getSimpleChangesStore(instance) {
+    return instance[SIMPLE_CHANGES_STORE] || null;
+}
+function setSimpleChangesStore(instance, store) {
+    return instance[SIMPLE_CHANGES_STORE] = store;
+}
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
 const SVG_NAMESPACE = 'http://www.w3.org/2000/svg';
 const MATH_ML_NAMESPACE = 'http://www.w3.org/1998/MathML/';
 
@@ -15881,7 +10816,7 @@ function getNativeByIndex(index, lView) {
  */
 function getNativeByTNode(tNode, lView) {
     ngDevMode && assertTNodeForLView(tNode, lView);
-    ngDevMode && assertDataInRange(lView, tNode.index);
+    ngDevMode && assertIndexInRange(lView, tNode.index);
     const node = unwrapRNode(lView[tNode.index]);
     ngDevMode && !isProceduralRenderer(lView[RENDERER]) && assertDomNode(node);
     return node;
@@ -15911,12 +10846,12 @@ function getTNode(tView, index) {
 }
 /** Retrieves a value from any `LView` or `TData`. */
 function load(view, index) {
-    ngDevMode && assertDataInRange(view, index + HEADER_OFFSET);
+    ngDevMode && assertIndexInRange(view, index + HEADER_OFFSET);
     return view[index + HEADER_OFFSET];
 }
 function getComponentLViewByIndex(nodeIndex, hostView) {
     // Could be an LView or an LContainer. If LContainer, unwrap to find LView.
-    ngDevMode && assertDataInRange(hostView, nodeIndex);
+    ngDevMode && assertIndexInRange(hostView, nodeIndex);
     const slotValue = hostView[nodeIndex];
     const lView = isLView(slotValue) ? slotValue : slotValue[HOST];
     return lView;
@@ -16394,17 +11329,19 @@ function getNamespace() {
  */
 function registerPreOrderHooks(directiveIndex, directiveDef, tView) {
     ngDevMode && assertFirstCreatePass(tView);
-    const { onChanges, onInit, doCheck } = directiveDef;
-    if (onChanges) {
-        (tView.preOrderHooks || (tView.preOrderHooks = [])).push(directiveIndex, onChanges);
-        (tView.preOrderCheckHooks || (tView.preOrderCheckHooks = [])).push(directiveIndex, onChanges);
+    const { ngOnChanges, ngOnInit, ngDoCheck } = directiveDef.type.prototype;
+    if (ngOnChanges) {
+        const wrappedOnChanges = NgOnChangesFeatureImpl(directiveDef);
+        (tView.preOrderHooks || (tView.preOrderHooks = [])).push(directiveIndex, wrappedOnChanges);
+        (tView.preOrderCheckHooks || (tView.preOrderCheckHooks = []))
+            .push(directiveIndex, wrappedOnChanges);
     }
-    if (onInit) {
-        (tView.preOrderHooks || (tView.preOrderHooks = [])).push(-directiveIndex, onInit);
+    if (ngOnInit) {
+        (tView.preOrderHooks || (tView.preOrderHooks = [])).push(0 - directiveIndex, ngOnInit);
     }
-    if (doCheck) {
-        (tView.preOrderHooks || (tView.preOrderHooks = [])).push(directiveIndex, doCheck);
-        (tView.preOrderCheckHooks || (tView.preOrderCheckHooks = [])).push(directiveIndex, doCheck);
+    if (ngDoCheck) {
+        (tView.preOrderHooks || (tView.preOrderHooks = [])).push(directiveIndex, ngDoCheck);
+        (tView.preOrderCheckHooks || (tView.preOrderCheckHooks = [])).push(directiveIndex, ngDoCheck);
     }
 }
 /**
@@ -16432,23 +11369,24 @@ function registerPostOrderHooks(tView, tNode) {
     // hooks for projected components and directives must be called *before* their hosts.
     for (let i = tNode.directiveStart, end = tNode.directiveEnd; i < end; i++) {
         const directiveDef = tView.data[i];
-        if (directiveDef.afterContentInit) {
-            (tView.contentHooks || (tView.contentHooks = [])).push(-i, directiveDef.afterContentInit);
+        const lifecycleHooks = directiveDef.type.prototype;
+        const { ngAfterContentInit, ngAfterContentChecked, ngAfterViewInit, ngAfterViewChecked, ngOnDestroy } = lifecycleHooks;
+        if (ngAfterContentInit) {
+            (tView.contentHooks || (tView.contentHooks = [])).push(-i, ngAfterContentInit);
         }
-        if (directiveDef.afterContentChecked) {
-            (tView.contentHooks || (tView.contentHooks = [])).push(i, directiveDef.afterContentChecked);
-            (tView.contentCheckHooks || (tView.contentCheckHooks = []))
-                .push(i, directiveDef.afterContentChecked);
+        if (ngAfterContentChecked) {
+            (tView.contentHooks || (tView.contentHooks = [])).push(i, ngAfterContentChecked);
+            (tView.contentCheckHooks || (tView.contentCheckHooks = [])).push(i, ngAfterContentChecked);
         }
-        if (directiveDef.afterViewInit) {
-            (tView.viewHooks || (tView.viewHooks = [])).push(-i, directiveDef.afterViewInit);
+        if (ngAfterViewInit) {
+            (tView.viewHooks || (tView.viewHooks = [])).push(-i, ngAfterViewInit);
         }
-        if (directiveDef.afterViewChecked) {
-            (tView.viewHooks || (tView.viewHooks = [])).push(i, directiveDef.afterViewChecked);
-            (tView.viewCheckHooks || (tView.viewCheckHooks = [])).push(i, directiveDef.afterViewChecked);
+        if (ngAfterViewChecked) {
+            (tView.viewHooks || (tView.viewHooks = [])).push(i, ngAfterViewChecked);
+            (tView.viewCheckHooks || (tView.viewCheckHooks = [])).push(i, ngAfterViewChecked);
         }
-        if (directiveDef.onDestroy != null) {
-            (tView.destroyHooks || (tView.destroyHooks = [])).push(i, directiveDef.onDestroy);
+        if (ngOnDestroy != null) {
+            (tView.destroyHooks || (tView.destroyHooks = [])).push(i, ngOnDestroy);
         }
     }
 }
@@ -17160,7 +12098,13 @@ let nextNgElementId = 0;
  */
 function bloomAdd(injectorIndex, tView, type) {
     ngDevMode && assertEqual(tView.firstCreatePass, true, 'expected firstCreatePass to be true');
-    let id = typeof type !== 'string' ? type[NG_ELEMENT_ID] : type.charCodeAt(0) || 0;
+    let id;
+    if (typeof type === 'string') {
+        id = type.charCodeAt(0) || 0;
+    }
+    else if (type.hasOwnProperty(NG_ELEMENT_ID)) {
+        id = type[NG_ELEMENT_ID];
+    }
     // Set a unique ID on the directive type, so if something tries to inject the directive,
     // we can easily retrieve the ID and hash it into the bloom bit that should be checked.
     if (id == null) {
@@ -17522,10 +12466,10 @@ function searchTokensOnInjector(injectorIndex, lView, token, previousTView, flag
 function locateDirectiveOrProvider(tNode, tView, token, canAccessViewProviders, isHostSpecialCase) {
     const nodeProviderIndexes = tNode.providerIndexes;
     const tInjectables = tView.data;
-    const injectablesStart = nodeProviderIndexes & 65535 /* ProvidersStartIndexMask */;
+    const injectablesStart = nodeProviderIndexes & 1048575 /* ProvidersStartIndexMask */;
     const directivesStart = tNode.directiveStart;
     const directiveEnd = tNode.directiveEnd;
-    const cptViewProvidersCount = nodeProviderIndexes >> 16 /* CptViewProvidersCountShift */;
+    const cptViewProvidersCount = nodeProviderIndexes >> 20 /* CptViewProvidersCountShift */;
     const startingIndex = canAccessViewProviders ? injectablesStart : injectablesStart + cptViewProvidersCount;
     // When the host special case applies, only the viewProviders and the component are visible
     const endIndex = isHostSpecialCase ? injectablesStart + cptViewProvidersCount : directiveEnd;
@@ -17606,7 +12550,9 @@ function bloomHashBitOrFactory(token) {
     if (typeof token === 'string') {
         return token.charCodeAt(0) || 0;
     }
-    const tokenId = token[NG_ELEMENT_ID];
+    const tokenId = 
+    // First check with `hasOwnProperty` so we don't get an inherited ID.
+    token.hasOwnProperty(NG_ELEMENT_ID) ? token[NG_ELEMENT_ID] : undefined;
     // Negative token IDs are used for special objects such as `Injector`
     return (typeof tokenId === 'number' && tokenId > 0) ? tokenId & BLOOM_MASK : tokenId;
 }
@@ -18005,81 +12951,26 @@ function enableProdMode() {
  * found in the LICENSE file at https://angular.io/license
  */
 /**
- * This helper class is used to get hold of an inert tree of DOM elements containing dirty HTML
+ * This helper is used to get hold of an inert tree of DOM elements containing dirty HTML
  * that needs sanitizing.
- * Depending upon browser support we must use one of three strategies for doing this.
- * Support: Safari 10.x -> XHR strategy
- * Support: Firefox -> DomParser strategy
- * Default: InertDocument strategy
+ * Depending upon browser support we use one of two strategies for doing this.
+ * Default: DOMParser strategy
+ * Fallback: InertDocument strategy
  */
-class InertBodyHelper {
-    constructor(defaultDoc) {
-        this.defaultDoc = defaultDoc;
-        this.inertDocument = this.defaultDoc.implementation.createHTMLDocument('sanitization-inert');
-        let inertBodyElement = this.inertDocument.body;
-        if (inertBodyElement == null) {
-            // usually there should be only one body element in the document, but IE doesn't have any, so
-            // we need to create one.
-            const inertHtml = this.inertDocument.createElement('html');
-            this.inertDocument.appendChild(inertHtml);
-            inertBodyElement = this.inertDocument.createElement('body');
-            inertHtml.appendChild(inertBodyElement);
-        }
-        inertBodyElement.innerHTML = '<svg><g onload="this.parentNode.remove()"></g></svg>';
-        if (inertBodyElement.querySelector && !inertBodyElement.querySelector('svg')) {
-            // We just hit the Safari 10.1 bug - which allows JS to run inside the SVG G element
-            // so use the XHR strategy.
-            this.getInertBodyElement = this.getInertBodyElement_XHR;
-            return;
-        }
-        inertBodyElement.innerHTML = '<svg><p><style><img src="</style><img src=x onerror=alert(1)//">';
-        if (inertBodyElement.querySelector && inertBodyElement.querySelector('svg img')) {
-            // We just hit the Firefox bug - which prevents the inner img JS from being sanitized
-            // so use the DOMParser strategy, if it is available.
-            // If the DOMParser is not available then we are not in Firefox (Server/WebWorker?) so we
-            // fall through to the default strategy below.
-            if (isDOMParserAvailable()) {
-                this.getInertBodyElement = this.getInertBodyElement_DOMParser;
-                return;
-            }
-        }
-        // None of the bugs were hit so it is safe for us to use the default InertDocument strategy
-        this.getInertBodyElement = this.getInertBodyElement_InertDocument;
-    }
-    /**
-     * Use XHR to create and fill an inert body element (on Safari 10.1)
-     * See
-     * https://github.com/cure53/DOMPurify/blob/a992d3a75031cb8bb032e5ea8399ba972bdf9a65/src/purify.js#L439-L449
-     */
-    getInertBodyElement_XHR(html) {
+function getInertBodyHelper(defaultDoc) {
+    return isDOMParserAvailable() ? new DOMParserHelper() : new InertDocumentHelper(defaultDoc);
+}
+/**
+ * Uses DOMParser to create and fill an inert body element.
+ * This is the default strategy used in browsers that support it.
+ */
+class DOMParserHelper {
+    getInertBodyElement(html) {
         // We add these extra elements to ensure that the rest of the content is parsed as expected
         // e.g. leading whitespace is maintained and tags like `<meta>` do not get hoisted to the
-        // `<head>` tag.
-        html = '<body><remove></remove>' + html + '</body>';
-        try {
-            html = encodeURI(html);
-        }
-        catch (_a) {
-            return null;
-        }
-        const xhr = new XMLHttpRequest();
-        xhr.responseType = 'document';
-        xhr.open('GET', 'data:text/html;charset=utf-8,' + html, false);
-        xhr.send(undefined);
-        const body = xhr.response.body;
-        body.removeChild(body.firstChild);
-        return body;
-    }
-    /**
-     * Use DOMParser to create and fill an inert body element (on Firefox)
-     * See https://github.com/cure53/DOMPurify/releases/tag/0.6.7
-     *
-     */
-    getInertBodyElement_DOMParser(html) {
-        // We add these extra elements to ensure that the rest of the content is parsed as expected
-        // e.g. leading whitespace is maintained and tags like `<meta>` do not get hoisted to the
-        // `<head>` tag.
-        html = '<body><remove></remove>' + html + '</body>';
+        // `<head>` tag. Note that the `<body>` tag is closed implicitly to prevent unclosed tags
+        // in `html` from consuming the otherwise explicit `</body>` tag.
+        html = '<body><remove></remove>' + html;
         try {
             const body = new window.DOMParser().parseFromString(html, 'text/html').body;
             body.removeChild(body.firstChild);
@@ -18089,13 +12980,26 @@ class InertBodyHelper {
             return null;
         }
     }
-    /**
-     * Use an HTML5 `template` element, if supported, or an inert body element created via
-     * `createHtmlDocument` to create and fill an inert DOM element.
-     * This is the default sane strategy to use if the browser does not require one of the specialised
-     * strategies above.
-     */
-    getInertBodyElement_InertDocument(html) {
+}
+/**
+ * Use an HTML5 `template` element, if supported, or an inert body element created via
+ * `createHtmlDocument` to create and fill an inert DOM element.
+ * This is the fallback strategy if the browser does not support DOMParser.
+ */
+class InertDocumentHelper {
+    constructor(defaultDoc) {
+        this.defaultDoc = defaultDoc;
+        this.inertDocument = this.defaultDoc.implementation.createHTMLDocument('sanitization-inert');
+        if (this.inertDocument.body == null) {
+            // usually there should be only one body element in the document, but IE doesn't have any, so
+            // we need to create one.
+            const inertHtml = this.inertDocument.createElement('html');
+            this.inertDocument.appendChild(inertHtml);
+            const inertBodyElement = this.inertDocument.createElement('body');
+            inertHtml.appendChild(inertBodyElement);
+        }
+    }
+    getInertBodyElement(html) {
         // Prefer using <template> element if supported.
         const templateEl = this.inertDocument.createElement('template');
         if ('content' in templateEl) {
@@ -18145,15 +13049,15 @@ class InertBodyHelper {
     }
 }
 /**
- * We need to determine whether the DOMParser exists in the global context.
- * The try-catch is because, on some browsers, trying to access this property
- * on window can actually throw an error.
+ * We need to determine whether the DOMParser exists in the global context and
+ * supports parsing HTML; HTML parsing support is not as wide as other formats, see
+ * https://developer.mozilla.org/en-US/docs/Web/API/DOMParser#Browser_compatibility.
  *
  * @suppress {uselessCode}
  */
 function isDOMParserAvailable() {
     try {
-        return !!window.DOMParser;
+        return !!new window.DOMParser().parseFromString('', 'text/html');
     }
     catch (_a) {
         return false;
@@ -18419,7 +13323,7 @@ let inertBodyHelper;
 function _sanitizeHtml(defaultDoc, unsafeHtmlInput) {
     let inertBodyElement = null;
     try {
-        inertBodyHelper = inertBodyHelper || new InertBodyHelper(defaultDoc);
+        inertBodyHelper = inertBodyHelper || getInertBodyHelper(defaultDoc);
         // Make sure unsafeHtml is actually a string (TypeScript types are not enforced at runtime).
         let unsafeHtml = unsafeHtmlInput ? String(unsafeHtmlInput) : '';
         inertBodyElement = inertBodyHelper.getInertBodyElement(unsafeHtml);
@@ -18508,7 +13412,7 @@ var SecurityContext;
  * @returns `html` string which is safe to display to user, because all of the dangerous javascript
  * and urls have been removed.
  *
- * @publicApi
+ * @codeGenApi
  */
 function ɵɵsanitizeHtml(unsafeHtml) {
     const sanitizer = getSanitizer();
@@ -18529,7 +13433,7 @@ function ɵɵsanitizeHtml(unsafeHtml) {
  * @param unsafeStyle untrusted `style`, typically from the user.
  * @returns `style` string which is safe to bind to the `style` properties.
  *
- * @publicApi
+ * @codeGenApi
  */
 function ɵɵsanitizeStyle(unsafeStyle) {
     const sanitizer = getSanitizer();
@@ -18555,7 +13459,7 @@ function ɵɵsanitizeStyle(unsafeStyle) {
  * @returns `url` string which is safe to bind to the `src` properties such as `<img src>`, because
  * all of the dangerous javascript has been removed.
  *
- * @publicApi
+ * @codeGenApi
  */
 function ɵɵsanitizeUrl(unsafeUrl) {
     const sanitizer = getSanitizer();
@@ -18576,7 +13480,7 @@ function ɵɵsanitizeUrl(unsafeUrl) {
  * @returns `url` string which is safe to bind to the `src` properties such as `<img src>`, because
  * only trusted `url`s have been allowed to pass.
  *
- * @publicApi
+ * @codeGenApi
  */
 function ɵɵsanitizeResourceUrl(unsafeResourceUrl) {
     const sanitizer = getSanitizer();
@@ -18598,7 +13502,7 @@ function ɵɵsanitizeResourceUrl(unsafeResourceUrl) {
  * @returns `url` string which is safe to bind to the `<script>` element such as `<img src>`,
  * because only trusted `scripts` have been allowed to pass.
  *
- * @publicApi
+ * @codeGenApi
  */
 function ɵɵsanitizeScript(unsafeScript) {
     const sanitizer = getSanitizer();
@@ -18639,7 +13543,7 @@ function getUrlSanitizer(tag, prop) {
  * @param prop name of the property that contains the value.
  * @returns `url` string which is safe to bind.
  *
- * @publicApi
+ * @codeGenApi
  */
 function ɵɵsanitizeUrlOrResourceUrl(unsafeUrl, tag, prop) {
     return getUrlSanitizer(tag, prop)(unsafeUrl);
@@ -19099,6 +14003,18 @@ function getExpressionChangedErrorDetails(lView, bindingIndex, oldValue, newValu
     return { propName: undefined, oldValue, newValue };
 }
 
+/**
+ * Converts `TNodeType` into human readable text.
+ * Make sure this matches with `TNodeType`
+ */
+const TNodeTypeAsString = [
+    'Container',
+    'Projection',
+    'View',
+    'Element',
+    'ElementContainer',
+    'IcuContainer' // 5
+];
 // Note: This hack is necessary so we don't erroneously get a circular dependency
 // failure based on types.
 const unusedValueExportToPlacateAjd$4 = 1;
@@ -19732,7 +14648,7 @@ function ɵɵselect(index) {
 }
 function selectIndexInternal(tView, lView, index, checkNoChangesMode) {
     ngDevMode && assertGreaterThan(index, -1, 'Invalid index');
-    ngDevMode && assertDataInRange(lView, index + HEADER_OFFSET);
+    ngDevMode && assertIndexInRange(lView, index + HEADER_OFFSET);
     // Flush the initial hooks for elements in the view that have been added up to this point.
     // PERF WARNING: do NOT extract this to a separate function without running benchmarks
     if (!checkNoChangesMode) {
@@ -19756,33 +14672,6 @@ function selectIndexInternal(tView, lView, index, checkNoChangesMode) {
     // will be altered by the time we leave the `ɵɵadvance` instruction.
     setSelectedIndex(index);
 }
-
-/**
- * @license
- * Copyright Google LLC All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * Marks that the next string is for element.
- *
- * See `I18nMutateOpCodes` documentation.
- */
-const ELEMENT_MARKER = {
-    marker: 'element'
-};
-/**
- * Marks that the next string is for comment.
- *
- * See `I18nMutateOpCodes` documentation.
- */
-const COMMENT_MARKER = {
-    marker: 'comment'
-};
-// Note: This hack is necessary so we don't erroneously get a circular dependency
-// failure based on types.
-const unusedValueExportToPlacateAjd$6 = 1;
 
 /**
  * @license
@@ -19847,8 +14736,37 @@ function getTStylingRangeTail(tStylingRange) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
+/**
+ * Patch a `debug` property on top of the existing object.
+ *
+ * NOTE: always call this method with `ngDevMode && attachDebugObject(...)`
+ *
+ * @param obj Object to patch
+ * @param debug Value to patch
+ */
 function attachDebugObject(obj, debug) {
-    Object.defineProperty(obj, 'debug', { value: debug, enumerable: false });
+    if (ngDevMode) {
+        Object.defineProperty(obj, 'debug', { value: debug, enumerable: false });
+    }
+    else {
+        throw new Error('This method should be guarded with `ngDevMode` so that it can be tree shaken in production!');
+    }
+}
+/**
+ * Patch a `debug` property getter on top of the existing object.
+ *
+ * NOTE: always call this method with `ngDevMode && attachDebugObject(...)`
+ *
+ * @param obj Object to patch
+ * @param debugGetter Getter returning a value to patch
+ */
+function attachDebugGetter(obj, debugGetter) {
+    if (ngDevMode) {
+        Object.defineProperty(obj, 'debug', { get: debugGetter, enumerable: false });
+    }
+    else {
+        throw new Error('This method should be guarded with `ngDevMode` so that it can be tree shaken in production!');
+    }
 }
 
 /**
@@ -19969,8 +14887,9 @@ const TViewConstructor = class TView {
     firstChild, //
     schemas, //
     consts, //
-    incompleteFirstPass //
-    ) {
+    incompleteFirstPass, //
+    _decls, //
+    _vars) {
         this.type = type;
         this.id = id;
         this.blueprint = blueprint;
@@ -20002,6 +14921,8 @@ const TViewConstructor = class TView {
         this.schemas = schemas;
         this.consts = consts;
         this.incompleteFirstPass = incompleteFirstPass;
+        this._decls = _decls;
+        this._vars = _vars;
     }
     get template_() {
         const buf = [];
@@ -20221,19 +15142,23 @@ function toDebug(obj) {
 function toHtml(value, includeChildren = false) {
     const node = unwrapRNode(value);
     if (node) {
-        const isTextNode = node.nodeType === Node.TEXT_NODE;
-        const outerHTML = (isTextNode ? node.textContent : node.outerHTML) || '';
-        if (includeChildren || isTextNode) {
-            return outerHTML;
-        }
-        else {
-            const innerHTML = '>' + node.innerHTML + '<';
-            return (outerHTML.split(innerHTML)[0]) + '>';
+        switch (node.nodeType) {
+            case Node.TEXT_NODE:
+                return node.textContent;
+            case Node.COMMENT_NODE:
+                return `<!--${node.textContent}-->`;
+            case Node.ELEMENT_NODE:
+                const outerHTML = node.outerHTML;
+                if (includeChildren) {
+                    return outerHTML;
+                }
+                else {
+                    const innerHTML = '>' + node.innerHTML + '<';
+                    return (outerHTML.split(innerHTML)[0]) + '>';
+                }
         }
     }
-    else {
-        return null;
-    }
+    return null;
 }
 class LViewDebug {
     constructor(_raw_lView) {
@@ -20260,7 +15185,7 @@ class LViewDebug {
     get parent() {
         return toDebug(this._raw_lView[PARENT]);
     }
-    get host() {
+    get hostHTML() {
         return toHtml(this._raw_lView[HOST], true);
     }
     get html() {
@@ -20271,8 +15196,7 @@ class LViewDebug {
     }
     /**
      * The tree of nodes associated with the current `LView`. The nodes have been normalized into
-     * a
-     * tree structure with relevant details pulled out for readability.
+     * a tree structure with relevant details pulled out for readability.
      */
     get nodes() {
         const lView = this._raw_lView;
@@ -20315,6 +15239,25 @@ class LViewDebug {
     get tHost() {
         return this._raw_lView[T_HOST];
     }
+    get decls() {
+        const tView = this.tView;
+        const start = HEADER_OFFSET;
+        return toLViewRange(this.tView, this._raw_lView, start, start + tView._decls);
+    }
+    get vars() {
+        const tView = this.tView;
+        const start = HEADER_OFFSET + tView._decls;
+        return toLViewRange(this.tView, this._raw_lView, start, start + tView._vars);
+    }
+    get i18n() {
+        const tView = this.tView;
+        const start = HEADER_OFFSET + tView._decls + tView._vars;
+        return toLViewRange(this.tView, this._raw_lView, start, this.tView.expandoStartIndex);
+    }
+    get expando() {
+        const tView = this.tView;
+        return toLViewRange(this.tView, this._raw_lView, this.tView.expandoStartIndex, this._raw_lView.length);
+    }
     /**
      * Normalized view of child views (and containers) attached at this location.
      */
@@ -20327,6 +15270,13 @@ class LViewDebug {
         }
         return childViews;
     }
+}
+function toLViewRange(tView, lView, start, end) {
+    let content = [];
+    for (let index = start; index < end; index++) {
+        content.push({ index: index, t: tView.data[index], l: lView[index] });
+    }
+    return { start: start, end: end, length: end - start, content: content };
 }
 /**
  * Turns a flat list of nodes into a tree by walking the associated `TNode` tree.
@@ -20345,18 +15295,17 @@ function toDebugNodes(tNode, lView) {
         return debugNodes;
     }
     else {
-        return null;
+        return [];
     }
 }
 function buildDebugNode(tNode, lView, nodeIndex) {
     const rawValue = lView[nodeIndex];
     const native = unwrapRNode(rawValue);
-    const componentLViewDebug = toDebug(readLViewValue(rawValue));
     return {
         html: toHtml(native),
+        type: TNodeTypeAsString[tNode.type],
         native: native,
-        nodes: toDebugNodes(tNode.child, lView),
-        component: componentLViewDebug,
+        children: toDebugNodes(tNode.child, lView),
     };
 }
 class LContainerDebug {
@@ -20400,196 +15349,6 @@ function readLViewValue(value) {
         value = value[HOST];
     }
     return null;
-}
-class I18NDebugItem {
-    constructor(__raw_opCode, _lView, nodeIndex, type) {
-        this.__raw_opCode = __raw_opCode;
-        this._lView = _lView;
-        this.nodeIndex = nodeIndex;
-        this.type = type;
-    }
-    get tNode() {
-        return getTNode(this._lView[TVIEW], this.nodeIndex);
-    }
-}
-/**
- * Turns a list of "Create" & "Update" OpCodes into a human-readable list of operations for
- * debugging purposes.
- * @param mutateOpCodes mutation opCodes to read
- * @param updateOpCodes update opCodes to read
- * @param icus list of ICU expressions
- * @param lView The view the opCodes are acting on
- */
-function attachI18nOpCodesDebug(mutateOpCodes, updateOpCodes, icus, lView) {
-    attachDebugObject(mutateOpCodes, new I18nMutateOpCodesDebug(mutateOpCodes, lView));
-    attachDebugObject(updateOpCodes, new I18nUpdateOpCodesDebug(updateOpCodes, icus, lView));
-    if (icus) {
-        icus.forEach(icu => {
-            icu.create.forEach(icuCase => {
-                attachDebugObject(icuCase, new I18nMutateOpCodesDebug(icuCase, lView));
-            });
-            icu.update.forEach(icuCase => {
-                attachDebugObject(icuCase, new I18nUpdateOpCodesDebug(icuCase, icus, lView));
-            });
-        });
-    }
-}
-class I18nMutateOpCodesDebug {
-    constructor(__raw_opCodes, __lView) {
-        this.__raw_opCodes = __raw_opCodes;
-        this.__lView = __lView;
-    }
-    /**
-     * A list of operation information about how the OpCodes will act on the view.
-     */
-    get operations() {
-        const { __lView, __raw_opCodes } = this;
-        const results = [];
-        for (let i = 0; i < __raw_opCodes.length; i++) {
-            const opCode = __raw_opCodes[i];
-            let result;
-            if (typeof opCode === 'string') {
-                result = {
-                    __raw_opCode: opCode,
-                    type: 'Create Text Node',
-                    nodeIndex: __raw_opCodes[++i],
-                    text: opCode,
-                };
-            }
-            if (typeof opCode === 'number') {
-                switch (opCode & 7 /* MASK_OPCODE */) {
-                    case 1 /* AppendChild */:
-                        const destinationNodeIndex = opCode >>> 17 /* SHIFT_PARENT */;
-                        result = new I18NDebugItem(opCode, __lView, destinationNodeIndex, 'AppendChild');
-                        break;
-                    case 0 /* Select */:
-                        const nodeIndex = opCode >>> 3 /* SHIFT_REF */;
-                        result = new I18NDebugItem(opCode, __lView, nodeIndex, 'Select');
-                        break;
-                    case 5 /* ElementEnd */:
-                        let elementIndex = opCode >>> 3 /* SHIFT_REF */;
-                        result = new I18NDebugItem(opCode, __lView, elementIndex, 'ElementEnd');
-                        break;
-                    case 4 /* Attr */:
-                        elementIndex = opCode >>> 3 /* SHIFT_REF */;
-                        result = new I18NDebugItem(opCode, __lView, elementIndex, 'Attr');
-                        result['attrName'] = __raw_opCodes[++i];
-                        result['attrValue'] = __raw_opCodes[++i];
-                        break;
-                }
-            }
-            if (!result) {
-                switch (opCode) {
-                    case COMMENT_MARKER:
-                        result = {
-                            __raw_opCode: opCode,
-                            type: 'COMMENT_MARKER',
-                            commentValue: __raw_opCodes[++i],
-                            nodeIndex: __raw_opCodes[++i],
-                        };
-                        break;
-                    case ELEMENT_MARKER:
-                        result = {
-                            __raw_opCode: opCode,
-                            type: 'ELEMENT_MARKER',
-                        };
-                        break;
-                }
-            }
-            if (!result) {
-                result = {
-                    __raw_opCode: opCode,
-                    type: 'Unknown Op Code',
-                    code: opCode,
-                };
-            }
-            results.push(result);
-        }
-        return results;
-    }
-}
-class I18nUpdateOpCodesDebug {
-    constructor(__raw_opCodes, icus, __lView) {
-        this.__raw_opCodes = __raw_opCodes;
-        this.icus = icus;
-        this.__lView = __lView;
-    }
-    /**
-     * A list of operation information about how the OpCodes will act on the view.
-     */
-    get operations() {
-        const { __lView, __raw_opCodes, icus } = this;
-        const results = [];
-        for (let i = 0; i < __raw_opCodes.length; i++) {
-            // bit code to check if we should apply the next update
-            const checkBit = __raw_opCodes[i];
-            // Number of opCodes to skip until next set of update codes
-            const skipCodes = __raw_opCodes[++i];
-            let value = '';
-            for (let j = i + 1; j <= (i + skipCodes); j++) {
-                const opCode = __raw_opCodes[j];
-                if (typeof opCode === 'string') {
-                    value += opCode;
-                }
-                else if (typeof opCode == 'number') {
-                    if (opCode < 0) {
-                        // It's a binding index whose value is negative
-                        // We cannot know the value of the binding so we only show the index
-                        value += `�${-opCode - 1}�`;
-                    }
-                    else {
-                        const nodeIndex = opCode >>> 2 /* SHIFT_REF */;
-                        let tIcuIndex;
-                        let tIcu;
-                        switch (opCode & 3 /* MASK_OPCODE */) {
-                            case 1 /* Attr */:
-                                const attrName = __raw_opCodes[++j];
-                                const sanitizeFn = __raw_opCodes[++j];
-                                results.push({
-                                    __raw_opCode: opCode,
-                                    checkBit,
-                                    type: 'Attr',
-                                    attrValue: value,
-                                    attrName,
-                                    sanitizeFn,
-                                });
-                                break;
-                            case 0 /* Text */:
-                                results.push({
-                                    __raw_opCode: opCode,
-                                    checkBit,
-                                    type: 'Text',
-                                    nodeIndex,
-                                    text: value,
-                                });
-                                break;
-                            case 2 /* IcuSwitch */:
-                                tIcuIndex = __raw_opCodes[++j];
-                                tIcu = icus[tIcuIndex];
-                                let result = new I18NDebugItem(opCode, __lView, nodeIndex, 'IcuSwitch');
-                                result['tIcuIndex'] = tIcuIndex;
-                                result['checkBit'] = checkBit;
-                                result['mainBinding'] = value;
-                                result['tIcu'] = tIcu;
-                                results.push(result);
-                                break;
-                            case 3 /* IcuUpdate */:
-                                tIcuIndex = __raw_opCodes[++j];
-                                tIcu = icus[tIcuIndex];
-                                result = new I18NDebugItem(opCode, __lView, nodeIndex, 'IcuUpdate');
-                                result['tIcuIndex'] = tIcuIndex;
-                                result['checkBit'] = checkBit;
-                                result['tIcu'] = tIcu;
-                                results.push(result);
-                                break;
-                        }
-                    }
-                }
-            }
-            i += skipCodes;
-        }
-        return results;
-    }
 }
 
 const ɵ0$4 = () => Promise.resolve(null);
@@ -20647,6 +15406,8 @@ function setHostBindingsByExecutingExpandoInstructions(tView, lView) {
                 else {
                     // If it's not a number, it's a host binding function that needs to be executed.
                     if (instruction !== null) {
+                        ngDevMode &&
+                            assertLessThan(currentDirectiveIndex, 1048576 /* CptViewProvidersCountShifter */, 'Reached the max number of host bindings');
                         setBindingRootForHostBindings(bindingRootIndex, currentDirectiveIndex);
                         const hostCtx = lView[currentDirectiveIndex];
                         instruction(2 /* Update */, hostCtx);
@@ -21109,7 +15870,7 @@ function createTView(type, viewIndex, templateFn, decls, vars, directives, pipes
     // that has a host binding, we will update the blueprint with that def's hostVars count.
     const initialViewLength = bindingStartIndex + vars;
     const blueprint = createViewBlueprint(bindingStartIndex, initialViewLength);
-    return blueprint[TVIEW] = ngDevMode ?
+    const tView = blueprint[TVIEW] = ngDevMode ?
         new TViewConstructor(type, viewIndex, // id: number,
         blueprint, // blueprint: LView,
         templateFn, // template: ComponentTemplate<{}>|null,
@@ -21141,8 +15902,9 @@ function createTView(type, viewIndex, templateFn, decls, vars, directives, pipes
         null, // firstChild: TNode|null,
         schemas, // schemas: SchemaMetadata[]|null,
         consts, // consts: TConstants|null
-        false // incompleteFirstPass: boolean
-        ) :
+        false, // incompleteFirstPass: boolean
+        decls, // ngDevMode only: decls
+        vars) :
         {
             type: type,
             id: viewIndex,
@@ -21176,6 +15938,13 @@ function createTView(type, viewIndex, templateFn, decls, vars, directives, pipes
             consts: consts,
             incompleteFirstPass: false
         };
+    if (ngDevMode) {
+        // For performance reasons it is important that the tView retains the same shape during runtime.
+        // (To make sure that all of the code is monomorphic.) For this reason we seal the object to
+        // prevent class transitions.
+        Object.seal(tView);
+    }
+    return tView;
 }
 function createViewBlueprint(bindingStartIndex, initialViewLength) {
     const blueprint = ngDevMode ? new LViewBlueprint() : [];
@@ -21236,20 +16005,6 @@ function storeCleanupWithContext(tView, lView, context, cleanupFn) {
     }
 }
 /**
- * Saves the cleanup function itself in LView.cleanupInstances.
- *
- * This is necessary for functions that are wrapped with their contexts, like in renderer2
- * listeners.
- *
- * On the first template pass, the index of the cleanup function is saved in TView.
- */
-function storeCleanupFn(tView, lView, cleanupFn) {
-    getLCleanup(lView).push(cleanupFn);
-    if (tView.firstCreatePass) {
-        getTViewCleanup(tView).push(lView[CLEANUP].length - 1, null);
-    }
-}
-/**
  * Constructs a TNode object from the arguments.
  *
  * @param tView `TView` to which this `TNode` belongs (used only in `ngDevMode`)
@@ -21263,37 +16018,38 @@ function storeCleanupFn(tView, lView, cleanupFn) {
 function createTNode(tView, tParent, type, adjustedIndex, tagName, attrs) {
     ngDevMode && ngDevMode.tNode++;
     let injectorIndex = tParent ? tParent.injectorIndex : -1;
-    return ngDevMode ? new TNodeDebug(tView, // tView_: TView
-    type, // type: TNodeType
-    adjustedIndex, // index: number
-    injectorIndex, // injectorIndex: number
-    -1, // directiveStart: number
-    -1, // directiveEnd: number
-    -1, // directiveStylingLast: number
-    null, // propertyBindings: number[]|null
-    0, // flags: TNodeFlags
-    0, // providerIndexes: TNodeProviderIndexes
-    tagName, // tagName: string|null
-    attrs, // attrs: (string|AttributeMarker|(string|SelectorFlags)[])[]|null
-    null, // mergedAttrs
-    null, // localNames: (string|number)[]|null
-    undefined, // initialInputs: (string[]|null)[]|null|undefined
-    null, // inputs: PropertyAliases|null
-    null, // outputs: PropertyAliases|null
-    null, // tViews: ITView|ITView[]|null
-    null, // next: ITNode|null
-    null, // projectionNext: ITNode|null
-    null, // child: ITNode|null
-    tParent, // parent: TElementNode|TContainerNode|null
-    null, // projection: number|(ITNode|RNode[])[]|null
-    null, // styles: string|null
-    null, // stylesWithoutHost: string|null
-    undefined, // residualStyles: string|null
-    null, // classes: string|null
-    null, // classesWithoutHost: string|null
-    undefined, // residualClasses: string|null
-    0, // classBindings: TStylingRange;
-    0) :
+    const tNode = ngDevMode ?
+        new TNodeDebug(tView, // tView_: TView
+        type, // type: TNodeType
+        adjustedIndex, // index: number
+        injectorIndex, // injectorIndex: number
+        -1, // directiveStart: number
+        -1, // directiveEnd: number
+        -1, // directiveStylingLast: number
+        null, // propertyBindings: number[]|null
+        0, // flags: TNodeFlags
+        0, // providerIndexes: TNodeProviderIndexes
+        tagName, // tagName: string|null
+        attrs, // attrs: (string|AttributeMarker|(string|SelectorFlags)[])[]|null
+        null, // mergedAttrs
+        null, // localNames: (string|number)[]|null
+        undefined, // initialInputs: (string[]|null)[]|null|undefined
+        null, // inputs: PropertyAliases|null
+        null, // outputs: PropertyAliases|null
+        null, // tViews: ITView|ITView[]|null
+        null, // next: ITNode|null
+        null, // projectionNext: ITNode|null
+        null, // child: ITNode|null
+        tParent, // parent: TElementNode|TContainerNode|null
+        null, // projection: number|(ITNode|RNode[])[]|null
+        null, // styles: string|null
+        null, // stylesWithoutHost: string|null
+        undefined, // residualStyles: string|null
+        null, // classes: string|null
+        null, // classesWithoutHost: string|null
+        undefined, // residualClasses: string|null
+        0, // classBindings: TStylingRange;
+        0) :
         {
             type: type,
             index: adjustedIndex,
@@ -21326,6 +16082,13 @@ function createTNode(tView, tParent, type, adjustedIndex, tagName, attrs) {
             classBindings: 0,
             styleBindings: 0,
         };
+    if (ngDevMode) {
+        // For performance reasons it is important that the tNode retains the same shape during runtime.
+        // (To make sure that all of the code is monomorphic.) For this reason we seal the object to
+        // prevent class transitions.
+        Object.seal(tNode);
+    }
+    return tNode;
 }
 function generatePropertyAliases(inputAliasMap, directiveDefIdx, propStore) {
     for (let publicName in inputAliasMap) {
@@ -21423,7 +16186,7 @@ function elementPropertyInternal(tView, tNode, lView, propName, value, renderer,
         propName = mapPropName(propName);
         if (ngDevMode) {
             validateAgainstEventProperties(propName);
-            if (!validateProperty(tView, lView, element, propName, tNode)) {
+            if (!validateProperty(tView, element, propName, tNode)) {
                 // Return here since we only log warnings for unknown properties.
                 logUnknownPropertyError(propName, tNode);
                 return;
@@ -21441,10 +16204,10 @@ function elementPropertyInternal(tView, tNode, lView, propName, value, renderer,
                 element[propName] = value;
         }
     }
-    else if (tNode.type === 0 /* Container */) {
+    else if (tNode.type === 0 /* Container */ || tNode.type === 4 /* ElementContainer */) {
         // If the node is a container and the property didn't
         // match any of the inputs or schemas we should throw.
-        if (ngDevMode && !matchingSchemas(tView, lView, tNode.tagName)) {
+        if (ngDevMode && !matchingSchemas(tView, tNode.tagName)) {
             logUnknownPropertyError(propName, tNode);
         }
     }
@@ -21497,7 +16260,7 @@ function setNgReflectProperties(lView, element, type, dataValue, value) {
         }
     }
 }
-function validateProperty(tView, lView, element, propName, tNode) {
+function validateProperty(tView, element, propName, tNode) {
     // If `schemas` is set to `null`, that's an indication that this Component was compiled in AOT
     // mode where this check happens at compile time. In JIT mode, `schemas` is always present and
     // defined as an array (as an empty array in case `schemas` field is not defined) and we should
@@ -21506,15 +16269,14 @@ function validateProperty(tView, lView, element, propName, tNode) {
         return true;
     // The property is considered valid if the element matches the schema, it exists on the element
     // or it is synthetic, and we are in a browser context (web worker nodes should be skipped).
-    if (matchingSchemas(tView, lView, tNode.tagName) || propName in element ||
-        isAnimationProp(propName)) {
+    if (matchingSchemas(tView, tNode.tagName) || propName in element || isAnimationProp(propName)) {
         return true;
     }
     // Note: `typeof Node` returns 'function' in most browsers, but on IE it is 'object' so we
     // need to account for both here, while being careful for `typeof null` also returning 'object'.
     return typeof Node === 'undefined' || Node === null || !(element instanceof Node);
 }
-function matchingSchemas(tView, lView, tagName) {
+function matchingSchemas(tView, tagName) {
     const schemas = tView.schemas;
     if (schemas !== null) {
         for (let i = 0; i < schemas.length; i++) {
@@ -21594,16 +16356,18 @@ function resolveDirectives(tView, lView, tNode, localRefs) {
                     tNode.flags |= 8 /* hasContentQuery */;
                 if (def.hostBindings !== null || def.hostAttrs !== null || def.hostVars !== 0)
                     tNode.flags |= 128 /* hasHostBindings */;
+                const lifeCycleHooks = def.type.prototype;
                 // Only push a node index into the preOrderHooks array if this is the first
                 // pre-order hook found on this node.
-                if (!preOrderHooksFound && (def.onChanges || def.onInit || def.doCheck)) {
+                if (!preOrderHooksFound &&
+                    (lifeCycleHooks.ngOnChanges || lifeCycleHooks.ngOnInit || lifeCycleHooks.ngDoCheck)) {
                     // We will push the actual hook function into this array later during dir instantiation.
                     // We cannot do it now because we must ensure hooks are registered in the same
                     // order that directives are created (i.e. injection order).
                     (tView.preOrderHooks || (tView.preOrderHooks = [])).push(tNode.index - HEADER_OFFSET);
                     preOrderHooksFound = true;
                 }
-                if (!preOrderCheckHooksFound && (def.onChanges || def.doCheck)) {
+                if (!preOrderCheckHooksFound && (lifeCycleHooks.ngOnChanges || lifeCycleHooks.ngDoCheck)) {
                     (tView.preOrderCheckHooks || (tView.preOrderCheckHooks = []))
                         .push(tNode.index - HEADER_OFFSET);
                     preOrderCheckHooksFound = true;
@@ -21743,7 +16507,7 @@ function generateExpandoInstructionBlock(tView, tNode, directiveCount) {
     // requires non standard math arithmetic and it can prevent VM optimizations.
     // `0-0` will always produce `0` and will not cause a potential deoptimization in VM.
     const elementIndex = HEADER_OFFSET - tNode.index;
-    const providerStartIndex = tNode.providerIndexes & 65535 /* ProvidersStartIndexMask */;
+    const providerStartIndex = tNode.providerIndexes & 1048575 /* ProvidersStartIndexMask */;
     const providerCount = tView.data.length - providerStartIndex;
     (tView.expandoInstructions || (tView.expandoInstructions = []))
         .push(elementIndex, providerCount, directiveCount);
@@ -22360,7 +17124,7 @@ function setInputsForProperty(tView, lView, inputs, publicName, value) {
         const index = inputs[i++];
         const privateName = inputs[i++];
         const instance = lView[index];
-        ngDevMode && assertDataInRange(lView, index);
+        ngDevMode && assertIndexInRange(lView, index);
         const def = tView.data[index];
         if (def.setInput !== null) {
             def.setInput(instance, value, publicName, privateName);
@@ -22375,7 +17139,7 @@ function setInputsForProperty(tView, lView, inputs, publicName, value) {
  */
 function textBindingInternal(lView, index, value) {
     ngDevMode && assertNotSame(value, NO_CHANGE, 'value should not be NO_CHANGE');
-    ngDevMode && assertDataInRange(lView, index + HEADER_OFFSET);
+    ngDevMode && assertIndexInRange(lView, index + HEADER_OFFSET);
     const element = getNativeByIndex(index, lView);
     ngDevMode && assertDefined(element, 'native element should exist');
     ngDevMode && ngDevMode.rendererSetText++;
@@ -22655,16 +17419,6 @@ function detachView(lContainer, removeIndex) {
         viewToDetach[FLAGS] &= ~128 /* Attached */;
     }
     return viewToDetach;
-}
-/**
- * Removes a view from a container, i.e. detaches it and then destroys the underlying LView.
- *
- * @param lContainer The container from which to remove a view
- * @param removeIndex The index of the view to remove
- */
-function removeView(lContainer, removeIndex) {
-    const detachedView = detachView(lContainer, removeIndex);
-    detachedView && destroyLView(detachedView[TVIEW], detachedView);
 }
 /**
  * A standalone function which destroys an LView,
@@ -23416,7 +18170,7 @@ class ViewRef {
         destroyLView(this._lView[TVIEW], this._lView);
     }
     onDestroy(callback) {
-        storeCleanupFn(this._lView[TVIEW], this._lView, callback);
+        storeCleanupWithContext(this._lView[TVIEW], this._lView, null, callback);
     }
     /**
      * Marks a view and all of its ancestors dirty.
@@ -23888,8 +18642,17 @@ function createContainerRef(ViewContainerRefToken, ElementRefToken, hostTNode, h
             remove(index) {
                 this.allocateContainerIfNeeded();
                 const adjustedIdx = this._adjustIndex(index, -1);
-                removeView(this._lContainer, adjustedIdx);
-                removeFromArray(this._lContainer[VIEW_REFS], adjustedIdx);
+                const detachedView = detachView(this._lContainer, adjustedIdx);
+                if (detachedView) {
+                    // Before destroying the view, remove it from the container's array of `ViewRef`s.
+                    // This ensures the view container length is updated before calling
+                    // `destroyLView`, which could recursively call view container methods that
+                    // rely on an accurate container length.
+                    // (e.g. a method on this view container being called by a child directive's OnDestroy
+                    // lifecycle hook)
+                    removeFromArray(this._lContainer[VIEW_REFS], adjustedIdx);
+                    destroyLView(detachedView[TVIEW], detachedView);
+                }
             }
             detach(index) {
                 this.allocateContainerIfNeeded();
@@ -24016,10 +18779,13 @@ function injectRenderer2() {
  * found in the LICENSE file at https://angular.io/license
  */
 /**
- * Base class for Angular Views, provides change detection functionality.
+ * Base class that provides change detection functionality.
  * A change-detection tree collects all views that are to be checked for changes.
  * Use the methods to add and remove views from the tree, initiate change-detection,
- * and explicitly mark views as _dirty_, meaning that they have changed and need to be rerendered.
+ * and explicitly mark views as _dirty_, meaning that they have changed and need to be re-rendered.
+ *
+ * @see [Using change detection hooks](guide/lifecycle-hooks#using-change-detection-hooks)
+ * @see [Defining custom change detection](guide/lifecycle-hooks#defining-custom-change-detection)
  *
  * @usageNotes
  *
@@ -24081,7 +18847,7 @@ const SWITCH_CHANGE_DETECTOR_REF_FACTORY = SWITCH_CHANGE_DETECTOR_REF_FACTORY__P
  *
  * Represents a type that a Component or other object is instances of.
  *
- * An example of a `Type` is `MyCustomComponent` class, which in JavaScript is be represented by
+ * An example of a `Type` is `MyCustomComponent` class, which in JavaScript is represented by
  * the `MyCustomComponent` constructor function.
  *
  * @publicApi
@@ -24098,13 +18864,42 @@ function isType(v) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-/**
- * Attention: These regex has to hold even if the code is minified!
+/*
+ * #########################
+ * Attention: These Regular expressions have to hold even if the code is minified!
+ * ##########################
  */
-const DELEGATE_CTOR = /^function\s+\S+\(\)\s*{[\s\S]+\.apply\(this,\s*arguments\)/;
-const INHERITED_CLASS = /^class\s+[A-Za-z\d$_]*\s*extends\s+[^{]+{/;
-const INHERITED_CLASS_WITH_CTOR = /^class\s+[A-Za-z\d$_]*\s*extends\s+[^{]+{[\s\S]*constructor\s*\(/;
-const INHERITED_CLASS_WITH_DELEGATE_CTOR = /^class\s+[A-Za-z\d$_]*\s*extends\s+[^{]+{[\s\S]*constructor\s*\(\)\s*{\s*super\(\.\.\.arguments\)/;
+/**
+ * Regular expression that detects pass-through constructors for ES5 output. This Regex
+ * intends to capture the common delegation pattern emitted by TypeScript and Babel. Also
+ * it intends to capture the pattern where existing constructors have been downleveled from
+ * ES2015 to ES5 using TypeScript w/ downlevel iteration. e.g.
+ *
+ * ```
+ *   function MyClass() {
+ *     var _this = _super.apply(this, arguments) || this;
+ * ```
+ *
+ * ```
+ *   function MyClass() {
+ *     var _this = _super.apply(this, __spread(arguments)) || this;
+ * ```
+ *
+ * More details can be found in: https://github.com/angular/angular/issues/38453.
+ */
+const ES5_DELEGATE_CTOR = /^function\s+\S+\(\)\s*{[\s\S]+\.apply\(this,\s*(arguments|[^()]+\(arguments\))\)/;
+/** Regular expression that detects ES2015 classes which extend from other classes. */
+const ES2015_INHERITED_CLASS = /^class\s+[A-Za-z\d$_]*\s*extends\s+[^{]+{/;
+/**
+ * Regular expression that detects ES2015 classes which extend from other classes and
+ * have an explicit constructor defined.
+ */
+const ES2015_INHERITED_CLASS_WITH_CTOR = /^class\s+[A-Za-z\d$_]*\s*extends\s+[^{]+{[\s\S]*constructor\s*\(/;
+/**
+ * Regular expression that detects ES2015 classes which extend from other classes
+ * and inherit a constructor.
+ */
+const ES2015_INHERITED_CLASS_WITH_DELEGATE_CTOR = /^class\s+[A-Za-z\d$_]*\s*extends\s+[^{]+{[\s\S]*constructor\s*\(\)\s*{\s*super\(\.\.\.arguments\)/;
 /**
  * Determine whether a stringified type is a class which delegates its constructor
  * to its parent.
@@ -24114,8 +18909,9 @@ const INHERITED_CLASS_WITH_DELEGATE_CTOR = /^class\s+[A-Za-z\d$_]*\s*extends\s+[
  * an initialized instance property.
  */
 function isDelegateCtor(typeStr) {
-    return DELEGATE_CTOR.test(typeStr) || INHERITED_CLASS_WITH_DELEGATE_CTOR.test(typeStr) ||
-        (INHERITED_CLASS.test(typeStr) && !INHERITED_CLASS_WITH_CTOR.test(typeStr));
+    return ES5_DELEGATE_CTOR.test(typeStr) ||
+        ES2015_INHERITED_CLASS_WITH_DELEGATE_CTOR.test(typeStr) ||
+        (ES2015_INHERITED_CLASS.test(typeStr) && !ES2015_INHERITED_CLASS_WITH_CTOR.test(typeStr));
 }
 class ReflectionCapabilities {
     constructor(reflect) {
@@ -26666,7 +21462,7 @@ function updateBinding(lView, bindingIndex, value) {
 }
 /** Gets the current binding value. */
 function getBinding(lView, bindingIndex) {
-    ngDevMode && assertDataInRange(lView, bindingIndex);
+    ngDevMode && assertIndexInRange(lView, bindingIndex);
     ngDevMode &&
         assertNotSame(lView[bindingIndex], NO_CHANGE, 'Stored value should never be NO_CHANGE.');
     return lView[bindingIndex];
@@ -27527,7 +22323,7 @@ function elementStartFirstCreatePass(index, tView, lView, native, name, attrsInd
     const attrs = getConstant(tViewConsts, attrsIndex);
     const tNode = getOrCreateTNode(tView, lView[T_HOST], index, 3 /* Element */, name, attrs);
     const hasDirectives = resolveDirectives(tView, lView, tNode, getConstant(tViewConsts, localRefsIndex));
-    ngDevMode && logUnknownElementError(tView, lView, native, tNode, hasDirectives);
+    ngDevMode && logUnknownElementError(tView, native, tNode, hasDirectives);
     if (tNode.attrs !== null) {
         computeStaticStyling(tNode, tNode.attrs, false);
     }
@@ -27560,7 +22356,7 @@ function ɵɵelementStart(index, name, attrsIndex, localRefsIndex) {
     ngDevMode &&
         assertEqual(getBindingIndex(), tView.bindingStartIndex, 'elements should be created before any bindings');
     ngDevMode && ngDevMode.rendererCreateElement++;
-    ngDevMode && assertDataInRange(lView, adjustedIndex);
+    ngDevMode && assertIndexInRange(lView, adjustedIndex);
     const renderer = lView[RENDERER];
     const native = lView[adjustedIndex] = elementCreate(name, renderer, getNamespace());
     const tNode = tView.firstCreatePass ?
@@ -27642,7 +22438,7 @@ function ɵɵelement(index, name, attrsIndex, localRefsIndex) {
     ɵɵelementStart(index, name, attrsIndex, localRefsIndex);
     ɵɵelementEnd();
 }
-function logUnknownElementError(tView, lView, element, tNode, hasDirectives) {
+function logUnknownElementError(tView, element, tNode, hasDirectives) {
     const schemas = tView.schemas;
     // If `schemas` is set to `null`, that's an indication that this Component was compiled in AOT
     // mode where this check happens at compile time. In JIT mode, `schemas` is always present and
@@ -27663,7 +22459,7 @@ function logUnknownElementError(tView, lView, element, tNode, hasDirectives) {
             element instanceof HTMLUnknownElement) ||
             (typeof customElements !== 'undefined' && tagName.indexOf('-') > -1 &&
                 !customElements.get(tagName));
-        if (isUnknown && !matchingSchemas(tView, lView, tagName)) {
+        if (isUnknown && !matchingSchemas(tView, tagName)) {
             let message = `'${tagName}' is not a known element:\n`;
             message += `1. If '${tagName}' is an Angular component, then verify that it is part of this module.\n`;
             if (tagName && tagName.indexOf('-') > -1) {
@@ -27720,7 +22516,7 @@ function ɵɵelementContainerStart(index, attrsIndex, localRefsIndex) {
     const lView = getLView();
     const tView = getTView();
     const adjustedIndex = index + HEADER_OFFSET;
-    ngDevMode && assertDataInRange(lView, adjustedIndex);
+    ngDevMode && assertIndexInRange(lView, adjustedIndex);
     ngDevMode &&
         assertEqual(getBindingIndex(), tView.bindingStartIndex, 'element containers should be created before any bindings');
     const tNode = tView.firstCreatePass ?
@@ -27865,14 +22661,14 @@ function ɵɵlistener(eventName, listenerFn, useCapture = false, eventTargetReso
  *
  * @codeGenApi
  */
-function ɵɵcomponentHostSyntheticListener(eventName, listenerFn, useCapture = false, eventTargetResolver) {
+function ɵɵsyntheticHostListener(eventName, listenerFn, useCapture = false, eventTargetResolver) {
     const tNode = getPreviousOrParentTNode();
     const lView = getLView();
     const tView = getTView();
     const currentDef = getCurrentDirectiveDef(tView.data);
     const renderer = loadComponentRenderer(currentDef, tNode, lView);
     listenerInternal(tView, lView, renderer, tNode, eventName, listenerFn, useCapture, eventTargetResolver);
-    return ɵɵcomponentHostSyntheticListener;
+    return ɵɵsyntheticHostListener;
 }
 /**
  * A utility function that checks if a given element has already an event handler registered for an
@@ -27984,7 +22780,7 @@ function listenerInternal(tView, lView, renderer, tNode, eventName, listenerFn, 
         if (propsLength) {
             for (let i = 0; i < propsLength; i += 2) {
                 const index = props[i];
-                ngDevMode && assertDataInRange(lView, index);
+                ngDevMode && assertIndexInRange(lView, index);
                 const minifiedName = props[i + 1];
                 const directiveInstance = lView[index];
                 const output = directiveInstance[minifiedName];
@@ -29042,7 +23838,7 @@ function markDuplicates(tData, tStylingKey, index, isPrevDir, isClassBinding) {
     // - we are a map in which case we have to continue searching even after we find what we were
     //   looking for since we are a wild card and everything needs to be flipped to duplicate.
     while (cursor !== 0 && (foundDuplicate === false || isMap)) {
-        ngDevMode && assertDataInRange(tData, cursor);
+        ngDevMode && assertIndexInRange(tData, cursor);
         const tStylingValueAtCursor = tData[cursor];
         const tStyleRangeAtCursor = tData[cursor + 1];
         if (isStylingMatch(tStylingValueAtCursor, tStylingKey)) {
@@ -29265,7 +24061,8 @@ function consumeStyleKey(text, startIndex, endIndex) {
     let ch;
     while (startIndex < endIndex &&
         ((ch = text.charCodeAt(startIndex)) === 45 /* DASH */ || ch === 95 /* UNDERSCORE */ ||
-            ((ch & -33 /* UPPER_CASE */) >= 65 /* A */ && (ch & -33 /* UPPER_CASE */) <= 90 /* Z */))) {
+            ((ch & -33 /* UPPER_CASE */) >= 65 /* A */ && (ch & -33 /* UPPER_CASE */) <= 90 /* Z */) ||
+            (ch >= 48 /* ZERO */ && ch <= 57 /* NINE */))) {
         startIndex++;
     }
     return startIndex;
@@ -30158,7 +24955,7 @@ function ɵɵtext(index, value = '') {
     const adjustedIndex = index + HEADER_OFFSET;
     ngDevMode &&
         assertEqual(getBindingIndex(), tView.bindingStartIndex, 'text nodes should be created before any bindings');
-    ngDevMode && assertDataInRange(lView, adjustedIndex);
+    ngDevMode && assertIndexInRange(lView, adjustedIndex);
     const tNode = tView.firstCreatePass ?
         getOrCreateTNode(tView, lView[T_HOST], index, 3 /* Element */, null, null) :
         tView.data[adjustedIndex];
@@ -31486,7 +26283,7 @@ function ɵɵhostProperty(propName, value, sanitizer) {
  *
  * @codeGenApi
  */
-function ɵɵupdateSyntheticHostBinding(propName, value, sanitizer) {
+function ɵɵsyntheticHostProperty(propName, value, sanitizer) {
     const lView = getLView();
     const bindingIndex = nextBindingIndex();
     if (bindingUpdated(lView, bindingIndex, value)) {
@@ -31497,7 +26294,7 @@ function ɵɵupdateSyntheticHostBinding(propName, value, sanitizer) {
         elementPropertyInternal(tView, tNode, lView, propName, value, renderer, sanitizer, true);
         ngDevMode && storePropertyBindingMetadata(tView.data, tNode, propName, bindingIndex);
     }
-    return ɵɵupdateSyntheticHostBinding;
+    return ɵɵsyntheticHostProperty;
 }
 
 /**
@@ -31639,7 +26436,7 @@ function getInjectionTokens(element) {
     const tView = lView[TVIEW];
     const tNode = tView.data[context.nodeIndex];
     const providerTokens = [];
-    const startIndex = tNode.providerIndexes & 65535 /* ProvidersStartIndexMask */;
+    const startIndex = tNode.providerIndexes & 1048575 /* ProvidersStartIndexMask */;
     const endIndex = tNode.directiveEnd;
     for (let i = startIndex; i < endIndex; i++) {
         let value = tView.data[i];
@@ -32026,7 +26823,7 @@ function renderComponent$1(componentType /* Type as workaround for: Microsoft/Ty
  */
 function createRootComponentView(rNode, def, rootView, rendererFactory, hostRenderer, sanitizer) {
     const tView = rootView[TVIEW];
-    ngDevMode && assertDataInRange(rootView, 0 + HEADER_OFFSET);
+    ngDevMode && assertIndexInRange(rootView, 0 + HEADER_OFFSET);
     rootView[0 + HEADER_OFFSET] = rNode;
     const tNode = getOrCreateTNode(tView, null, 0, 3 /* Element */, null, null);
     const mergedAttrs = tNode.mergedAttrs = def.hostAttrs;
@@ -32192,16 +26989,6 @@ function ɵɵInheritDefinitionFeature(definition) {
                     const defData = definition.data;
                     defData.animation = (defData.animation || []).concat(superDef.data.animation);
                 }
-                // Inherit hooks
-                // Assume super class inheritance feature has already run.
-                writeableDef.afterContentChecked =
-                    writeableDef.afterContentChecked || superDef.afterContentChecked;
-                writeableDef.afterContentInit = definition.afterContentInit || superDef.afterContentInit;
-                writeableDef.afterViewChecked = definition.afterViewChecked || superDef.afterViewChecked;
-                writeableDef.afterViewInit = definition.afterViewInit || superDef.afterViewInit;
-                writeableDef.doCheck = definition.doCheck || superDef.doCheck;
-                writeableDef.onDestroy = definition.onDestroy || superDef.onDestroy;
-                writeableDef.onInit = definition.onInit || superDef.onInit;
             }
             // Run parent features
             const features = superDef.features;
@@ -32382,116 +27169,6 @@ function ɵɵCopyDefinitionFeature(definition) {
  * found in the LICENSE file at https://angular.io/license
  */
 /**
- * Represents a basic change from a previous to a new value for a single
- * property on a directive instance. Passed as a value in a
- * {@link SimpleChanges} object to the `ngOnChanges` hook.
- *
- * @see `OnChanges`
- *
- * @publicApi
- */
-class SimpleChange {
-    constructor(previousValue, currentValue, firstChange) {
-        this.previousValue = previousValue;
-        this.currentValue = currentValue;
-        this.firstChange = firstChange;
-    }
-    /**
-     * Check whether the new value is the first value assigned.
-     */
-    isFirstChange() {
-        return this.firstChange;
-    }
-}
-
-/**
- * @license
- * Copyright Google LLC All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-const PRIVATE_PREFIX = '__ngOnChanges_';
-/**
- * The NgOnChangesFeature decorates a component with support for the ngOnChanges
- * lifecycle hook, so it should be included in any component that implements
- * that hook.
- *
- * If the component or directive uses inheritance, the NgOnChangesFeature MUST
- * be included as a feature AFTER {@link InheritDefinitionFeature}, otherwise
- * inherited properties will not be propagated to the ngOnChanges lifecycle
- * hook.
- *
- * Example usage:
- *
- * ```
- * static ɵcmp = defineComponent({
- *   ...
- *   inputs: {name: 'publicName'},
- *   features: [NgOnChangesFeature]
- * });
- * ```
- *
- * @codeGenApi
- */
-function ɵɵNgOnChangesFeature(definition) {
-    if (definition.type.prototype.ngOnChanges) {
-        definition.setInput = ngOnChangesSetInput;
-        definition.onChanges = wrapOnChanges();
-    }
-}
-// This option ensures that the ngOnChanges lifecycle hook will be inherited
-// from superclasses (in InheritDefinitionFeature).
-/** @nocollapse */
-// tslint:disable-next-line:no-toplevel-property-access
-ɵɵNgOnChangesFeature.ngInherit = true;
-function wrapOnChanges() {
-    return function wrapOnChangesHook_inPreviousChangesStorage() {
-        const simpleChangesStore = getSimpleChangesStore(this);
-        const current = simpleChangesStore && simpleChangesStore.current;
-        if (current) {
-            const previous = simpleChangesStore.previous;
-            if (previous === EMPTY_OBJ) {
-                simpleChangesStore.previous = current;
-            }
-            else {
-                // New changes are copied to the previous store, so that we don't lose history for inputs
-                // which were not changed this time
-                for (let key in current) {
-                    previous[key] = current[key];
-                }
-            }
-            simpleChangesStore.current = null;
-            this.ngOnChanges(current);
-        }
-    };
-}
-function ngOnChangesSetInput(instance, value, publicName, privateName) {
-    const simpleChangesStore = getSimpleChangesStore(instance) ||
-        setSimpleChangesStore(instance, { previous: EMPTY_OBJ, current: null });
-    const current = simpleChangesStore.current || (simpleChangesStore.current = {});
-    const previous = simpleChangesStore.previous;
-    const declaredName = this.declaredInputs[publicName];
-    const previousChange = previous[declaredName];
-    current[declaredName] = new SimpleChange(previousChange && previousChange.currentValue, value, previous === EMPTY_OBJ);
-    instance[privateName] = value;
-}
-const SIMPLE_CHANGES_STORE = '__ngSimpleChanges__';
-function getSimpleChangesStore(instance) {
-    return instance[SIMPLE_CHANGES_STORE] || null;
-}
-function setSimpleChangesStore(instance, store) {
-    return instance[SIMPLE_CHANGES_STORE] = store;
-}
-
-/**
- * @license
- * Copyright Google LLC All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
  * Resolves the providers which are defined in the DirectiveDef.
  *
  * When inserting the tokens and the factories in their respective arrays, we can assume that
@@ -32538,9 +27215,9 @@ function resolveProvider$1(provider, tInjectables, lInjectablesBlueprint, isComp
         let token = isTypeProvider(provider) ? provider : resolveForwardRef(provider.provide);
         let providerFactory = providerToFactory(provider);
         const tNode = getPreviousOrParentTNode();
-        const beginIndex = tNode.providerIndexes & 65535 /* ProvidersStartIndexMask */;
+        const beginIndex = tNode.providerIndexes & 1048575 /* ProvidersStartIndexMask */;
         const endIndex = tNode.directiveStart;
-        const cptViewProvidersCount = tNode.providerIndexes >> 16 /* CptViewProvidersCountShift */;
+        const cptViewProvidersCount = tNode.providerIndexes >> 20 /* CptViewProvidersCountShift */;
         if (isTypeProvider(provider) || !provider.multi) {
             // Single provider case: the factory is created and pushed immediately
             const factory = new NodeInjectorFactory(providerFactory, isViewProvider, ɵɵdirectiveInject);
@@ -32552,7 +27229,7 @@ function resolveProvider$1(provider, tInjectables, lInjectablesBlueprint, isComp
                 tNode.directiveStart++;
                 tNode.directiveEnd++;
                 if (isViewProvider) {
-                    tNode.providerIndexes += 65536 /* CptViewProvidersCountShifter */;
+                    tNode.providerIndexes += 1048576 /* CptViewProvidersCountShifter */;
                 }
                 lInjectablesBlueprint.push(factory);
                 lView.push(factory);
@@ -32602,7 +27279,7 @@ function resolveProvider$1(provider, tInjectables, lInjectablesBlueprint, isComp
                 tNode.directiveStart++;
                 tNode.directiveEnd++;
                 if (isViewProvider) {
-                    tNode.providerIndexes += 65536 /* CptViewProvidersCountShifter */;
+                    tNode.providerIndexes += 1048576 /* CptViewProvidersCountShifter */;
                 }
                 lInjectablesBlueprint.push(factory);
                 lView.push(factory);
@@ -33018,7 +27695,7 @@ class Version {
 /**
  * @publicApi
  */
-const VERSION = new Version('10.0.1');
+const VERSION = new Version('10.0.14');
 
 /**
  * @license
@@ -36064,30 +30741,6 @@ class ComponentRef$1 extends ComponentRef {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-/**
- * NOTE: changes to the `ngI18nClosureMode` name must be synced with `compiler-cli/src/tooling.ts`.
- */
-if (typeof ngI18nClosureMode === 'undefined') {
-    // These property accesses can be ignored because ngI18nClosureMode will be set to false
-    // when optimizing code and the whole if statement will be dropped.
-    // Make sure to refer to ngI18nClosureMode as ['ngI18nClosureMode'] for closure.
-    // NOTE: we need to have it in IIFE so that the tree-shaker is happy.
-    (function () {
-        // tslint:disable-next-line:no-toplevel-property-access
-        _global['ngI18nClosureMode'] =
-            // TODO(FW-1250): validate that this actually, you know, works.
-            // tslint:disable-next-line:no-toplevel-property-access
-            typeof goog !== 'undefined' && typeof goog.getMsg === 'function';
-    })();
-}
-
-/**
- * @license
- * Copyright Google LLC All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
 // THIS CODE IS GENERATED - DO NOT MODIFY
 // See angular/tools/gulp-tasks/cldr/extract.js
 const u = undefined;
@@ -36294,277 +30947,723 @@ const USD_CURRENCY_CODE = 'USD';
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-const MARKER = `�`;
-const ICU_BLOCK_REGEXP = /^\s*(�\d+:?\d*�)\s*,\s*(select|plural)\s*,/;
-const SUBTEMPLATE_REGEXP = /�\/?\*(\d+:\d+)�/gi;
-const PH_REGEXP = /�(\/?[#*!]\d+):?\d*�/gi;
-const BINDING_REGEXP = /�(\d+):?\d*�/gi;
-const ICU_REGEXP = /({\s*�\d+:?\d*�\s*,\s*\S{6}\s*,[\s\S]*})/gi;
-// i18nPostprocess consts
-const ROOT_TEMPLATE_ID = 0;
-const PP_MULTI_VALUE_PLACEHOLDERS_REGEXP = /\[(�.+?�?)\]/;
-const PP_PLACEHOLDERS_REGEXP = /\[(�.+?�?)\]|(�\/?\*\d+:\d+�)/g;
-const PP_ICU_VARS_REGEXP = /({\s*)(VAR_(PLURAL|SELECT)(_\d+)?)(\s*,)/g;
-const PP_ICU_PLACEHOLDERS_REGEXP = /{([A-Z0-9_]+)}/g;
-const PP_ICUS_REGEXP = /�I18N_EXP_(ICU(_\d+)?)�/g;
-const PP_CLOSE_TEMPLATE_REGEXP = /\/\*/;
-const PP_TEMPLATE_ID_REGEXP = /\d+\:(\d+)/;
 /**
- * Breaks pattern into strings and top level {...} blocks.
- * Can be used to break a message into text and ICU expressions, or to break an ICU expression into
- * keys and cases.
- * Original code from closure library, modified for Angular.
- *
- * @param pattern (sub)Pattern to be broken.
- *
+ * The locale id that the application is currently using (for translations and ICU expressions).
+ * This is the ivy version of `LOCALE_ID` that was defined as an injection token for the view engine
+ * but is now defined as a global value.
  */
-function extractParts(pattern) {
-    if (!pattern) {
-        return [];
-    }
-    let prevPos = 0;
-    const braceStack = [];
-    const results = [];
-    const braces = /[{}]/g;
-    // lastIndex doesn't get set to 0 so we have to.
-    braces.lastIndex = 0;
-    let match;
-    while (match = braces.exec(pattern)) {
-        const pos = match.index;
-        if (match[0] == '}') {
-            braceStack.pop();
-            if (braceStack.length == 0) {
-                // End of the block.
-                const block = pattern.substring(prevPos, pos);
-                if (ICU_BLOCK_REGEXP.test(block)) {
-                    results.push(parseICUBlock(block));
-                }
-                else {
-                    results.push(block);
-                }
-                prevPos = pos + 1;
-            }
-        }
-        else {
-            if (braceStack.length == 0) {
-                const substring = pattern.substring(prevPos, pos);
-                results.push(substring);
-                prevPos = pos + 1;
-            }
-            braceStack.push('{');
-        }
-    }
-    const substring = pattern.substring(prevPos);
-    results.push(substring);
-    return results;
-}
+let LOCALE_ID = DEFAULT_LOCALE_ID;
 /**
- * Parses text containing an ICU expression and produces a JSON object for it.
- * Original code from closure library, modified for Angular.
+ * Sets the locale id that will be used for translations and ICU expressions.
+ * This is the ivy version of `LOCALE_ID` that was defined as an injection token for the view engine
+ * but is now defined as a global value.
  *
- * @param pattern Text containing an ICU expression that needs to be parsed.
- *
+ * @param localeId
  */
-function parseICUBlock(pattern) {
-    const cases = [];
-    const values = [];
-    let icuType = 1 /* plural */;
-    let mainBinding = 0;
-    pattern = pattern.replace(ICU_BLOCK_REGEXP, function (str, binding, type) {
-        if (type === 'select') {
-            icuType = 0 /* select */;
-        }
-        else {
-            icuType = 1 /* plural */;
-        }
-        mainBinding = parseInt(binding.substr(1), 10);
-        return '';
-    });
-    const parts = extractParts(pattern);
-    // Looking for (key block)+ sequence. One of the keys has to be "other".
-    for (let pos = 0; pos < parts.length;) {
-        let key = parts[pos++].trim();
-        if (icuType === 1 /* plural */) {
-            // Key can be "=x", we just want "x"
-            key = key.replace(/\s*(?:=)?(\w+)\s*/, '$1');
-        }
-        if (key.length) {
-            cases.push(key);
-        }
-        const blocks = extractParts(parts[pos++]);
-        if (cases.length > values.length) {
-            values.push(blocks);
-        }
-    }
-    // TODO(ocombe): support ICU expressions in attributes, see #21615
-    return { type: icuType, mainBinding: mainBinding, cases, values };
-}
-/**
- * Removes everything inside the sub-templates of a message.
- */
-function removeInnerTemplateTranslation(message) {
-    let match;
-    let res = '';
-    let index = 0;
-    let inTemplate = false;
-    let tagMatched;
-    while ((match = SUBTEMPLATE_REGEXP.exec(message)) !== null) {
-        if (!inTemplate) {
-            res += message.substring(index, match.index + match[0].length);
-            tagMatched = match[1];
-            inTemplate = true;
-        }
-        else {
-            if (match[0] === `${MARKER}/*${tagMatched}${MARKER}`) {
-                index = match.index;
-                inTemplate = false;
-            }
-        }
-    }
-    ngDevMode &&
-        assertEqual(inTemplate, false, `Tag mismatch: unable to find the end of the sub-template in the translation "${message}"`);
-    res += message.substr(index);
-    return res;
-}
-/**
- * Extracts a part of a message and removes the rest.
- *
- * This method is used for extracting a part of the message associated with a template. A translated
- * message can span multiple templates.
- *
- * Example:
- * ```
- * <div i18n>Translate <span *ngIf>me</span>!</div>
- * ```
- *
- * @param message The message to crop
- * @param subTemplateIndex Index of the sub-template to extract. If undefined it returns the
- * external template and removes all sub-templates.
- */
-function getTranslationForTemplate(message, subTemplateIndex) {
-    if (isRootTemplateMessage(subTemplateIndex)) {
-        // We want the root template message, ignore all sub-templates
-        return removeInnerTemplateTranslation(message);
-    }
-    else {
-        // We want a specific sub-template
-        const start = message.indexOf(`:${subTemplateIndex}${MARKER}`) + 2 + subTemplateIndex.toString().length;
-        const end = message.search(new RegExp(`${MARKER}\\/\\*\\d+:${subTemplateIndex}${MARKER}`));
-        return removeInnerTemplateTranslation(message.substring(start, end));
+function setLocaleId(localeId) {
+    assertDefined(localeId, `Expected localeId to be defined`);
+    if (typeof localeId === 'string') {
+        LOCALE_ID = localeId.toLowerCase().replace(/_/g, '-');
     }
 }
 /**
- * Generate the OpCodes to update the bindings of a string.
- *
- * @param str The string containing the bindings.
- * @param destinationNode Index of the destination node which will receive the binding.
- * @param attrName Name of the attribute, if the string belongs to an attribute.
- * @param sanitizeFn Sanitization function used to sanitize the string after update, if necessary.
+ * Gets the locale id that will be used for translations and ICU expressions.
+ * This is the ivy version of `LOCALE_ID` that was defined as an injection token for the view engine
+ * but is now defined as a global value.
  */
-function generateBindingUpdateOpCodes(str, destinationNode, attrName, sanitizeFn = null) {
-    const updateOpCodes = [null, null]; // Alloc space for mask and size
-    const textParts = str.split(BINDING_REGEXP);
-    let mask = 0;
-    for (let j = 0; j < textParts.length; j++) {
-        const textValue = textParts[j];
-        if (j & 1) {
-            // Odd indexes are bindings
-            const bindingIndex = parseInt(textValue, 10);
-            updateOpCodes.push(-1 - bindingIndex);
-            mask = mask | toMaskBit(bindingIndex);
-        }
-        else if (textValue !== '') {
-            // Even indexes are text
-            updateOpCodes.push(textValue);
-        }
-    }
-    updateOpCodes.push(destinationNode << 2 /* SHIFT_REF */ |
-        (attrName ? 1 /* Attr */ : 0 /* Text */));
-    if (attrName) {
-        updateOpCodes.push(attrName, sanitizeFn);
-    }
-    updateOpCodes[0] = mask;
-    updateOpCodes[1] = updateOpCodes.length - 2;
-    return updateOpCodes;
+function getLocaleId() {
+    return LOCALE_ID;
 }
-function getBindingMask(icuExpression, mask = 0) {
-    mask = mask | toMaskBit(icuExpression.mainBinding);
-    let match;
-    for (let i = 0; i < icuExpression.values.length; i++) {
-        const valueArr = icuExpression.values[i];
-        for (let j = 0; j < valueArr.length; j++) {
-            const value = valueArr[j];
-            if (typeof value === 'string') {
-                while (match = BINDING_REGEXP.exec(value)) {
-                    mask = mask | toMaskBit(parseInt(match[1], 10));
-                }
-            }
-            else {
-                mask = getBindingMask(value, mask);
-            }
-        }
-    }
-    return mask;
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * NOTE: changes to the `ngI18nClosureMode` name must be synced with `compiler-cli/src/tooling.ts`.
+ */
+if (typeof ngI18nClosureMode === 'undefined') {
+    // These property accesses can be ignored because ngI18nClosureMode will be set to false
+    // when optimizing code and the whole if statement will be dropped.
+    // Make sure to refer to ngI18nClosureMode as ['ngI18nClosureMode'] for closure.
+    // NOTE: we need to have it in IIFE so that the tree-shaker is happy.
+    (function () {
+        // tslint:disable-next-line:no-toplevel-property-access
+        _global['ngI18nClosureMode'] =
+            // TODO(FW-1250): validate that this actually, you know, works.
+            // tslint:disable-next-line:no-toplevel-property-access
+            typeof goog !== 'undefined' && typeof goog.getMsg === 'function';
+    })();
 }
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+function getParentFromI18nMutateOpCode(mergedCode) {
+    return mergedCode >>> 17 /* SHIFT_PARENT */;
+}
+function getRefFromI18nMutateOpCode(mergedCode) {
+    return (mergedCode & 131064 /* MASK_REF */) >>> 3 /* SHIFT_REF */;
+}
+function getInstructionFromI18nMutateOpCode(mergedCode) {
+    return mergedCode & 7 /* MASK_INSTRUCTION */;
+}
+/**
+ * Marks that the next string is an element name.
+ *
+ * See `I18nMutateOpCodes` documentation.
+ */
+const ELEMENT_MARKER = {
+    marker: 'element'
+};
+/**
+ * Marks that the next string is comment text.
+ *
+ * See `I18nMutateOpCodes` documentation.
+ */
+const COMMENT_MARKER = {
+    marker: 'comment'
+};
+// Note: This hack is necessary so we don't erroneously get a circular dependency
+// failure based on types.
+const unusedValueExportToPlacateAjd$6 = 1;
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
 const i18nIndexStack = [];
 let i18nIndexStackPointer = -1;
-/**
- * Convert binding index to mask bit.
- *
- * Each index represents a single bit on the bit-mask. Because bit-mask only has 32 bits, we make
- * the 32nd bit share all masks for all bindings higher than 32. Since it is extremely rare to have
- * more than 32 bindings this will be hit very rarely. The downside of hitting this corner case is
- * that we will execute binding code more often than necessary. (penalty of performance)
- */
-function toMaskBit(bindingIndex) {
-    return 1 << Math.min(bindingIndex, 31);
+function popI18nIndex() {
+    return i18nIndexStack[i18nIndexStackPointer--];
 }
-const parentIndexStack = [];
-/**
- * Marks a block of text as translatable.
- *
- * The instructions `i18nStart` and `i18nEnd` mark the translation block in the template.
- * The translation `message` is the value which is locale specific. The translation string may
- * contain placeholders which associate inner elements and sub-templates within the translation.
- *
- * The translation `message` placeholders are:
- * - `�{index}(:{block})�`: *Binding Placeholder*: Marks a location where an expression will be
- *   interpolated into. The placeholder `index` points to the expression binding index. An optional
- *   `block` that matches the sub-template in which it was declared.
- * - `�#{index}(:{block})�`/`�/#{index}(:{block})�`: *Element Placeholder*:  Marks the beginning
- *   and end of DOM element that were embedded in the original translation block. The placeholder
- *   `index` points to the element index in the template instructions set. An optional `block` that
- *   matches the sub-template in which it was declared.
- * - `�!{index}(:{block})�`/`�/!{index}(:{block})�`: *Projection Placeholder*:  Marks the
- *   beginning and end of <ng-content> that was embedded in the original translation block.
- *   The placeholder `index` points to the element index in the template instructions set.
- *   An optional `block` that matches the sub-template in which it was declared.
- * - `�*{index}:{block}�`/`�/*{index}:{block}�`: *Sub-template Placeholder*: Sub-templates must be
- *   split up and translated separately in each angular template function. The `index` points to the
- *   `template` instruction index. A `block` that matches the sub-template in which it was declared.
- *
- * @param index A unique index of the translation in the static block.
- * @param message The translation message.
- * @param subTemplateIndex Optional sub-template index in the `message`.
- *
- * @codeGenApi
- */
-function ɵɵi18nStart(index, message, subTemplateIndex) {
-    const tView = getTView();
-    ngDevMode && assertDefined(tView, `tView should be defined`);
+function pushI18nIndex(index) {
     i18nIndexStack[++i18nIndexStackPointer] = index;
-    // We need to delay projections until `i18nEnd`
-    setDelayProjection(true);
-    if (tView.firstCreatePass && tView.data[index + HEADER_OFFSET] === null) {
-        i18nStartFirstPass(getLView(), tView, index, message, subTemplateIndex);
+}
+let changeMask = 0b0;
+let shiftsCounter = 0;
+function setMaskBit(bit) {
+    if (bit) {
+        changeMask = changeMask | (1 << shiftsCounter);
+    }
+    shiftsCounter++;
+}
+function applyI18n(tView, lView, index) {
+    if (shiftsCounter > 0) {
+        ngDevMode && assertDefined(tView, `tView should be defined`);
+        const tI18n = tView.data[index + HEADER_OFFSET];
+        let updateOpCodes;
+        let tIcus = null;
+        if (Array.isArray(tI18n)) {
+            updateOpCodes = tI18n;
+        }
+        else {
+            updateOpCodes = tI18n.update;
+            tIcus = tI18n.icus;
+        }
+        const bindingsStartIndex = getBindingIndex() - shiftsCounter - 1;
+        applyUpdateOpCodes(tView, tIcus, lView, updateOpCodes, bindingsStartIndex, changeMask);
+        // Reset changeMask & maskBit to default for the next update cycle
+        changeMask = 0b0;
+        shiftsCounter = 0;
     }
 }
+/**
+ * Apply `I18nMutateOpCodes` OpCodes.
+ *
+ * @param tView Current `TView`
+ * @param rootIndex Pointer to the root (parent) tNode for the i18n.
+ * @param createOpCodes OpCodes to process
+ * @param lView Current `LView`
+ */
+function applyCreateOpCodes(tView, rootindex, createOpCodes, lView) {
+    const renderer = lView[RENDERER];
+    let currentTNode = null;
+    let previousTNode = null;
+    const visitedNodes = [];
+    for (let i = 0; i < createOpCodes.length; i++) {
+        const opCode = createOpCodes[i];
+        if (typeof opCode == 'string') {
+            const textRNode = createTextNode(opCode, renderer);
+            const textNodeIndex = createOpCodes[++i];
+            ngDevMode && ngDevMode.rendererCreateTextNode++;
+            previousTNode = currentTNode;
+            currentTNode =
+                createDynamicNodeAtIndex(tView, lView, textNodeIndex, 3 /* Element */, textRNode, null);
+            visitedNodes.push(textNodeIndex);
+            setIsNotParent();
+        }
+        else if (typeof opCode == 'number') {
+            switch (opCode & 7 /* MASK_INSTRUCTION */) {
+                case 1 /* AppendChild */:
+                    const destinationNodeIndex = opCode >>> 17 /* SHIFT_PARENT */;
+                    let destinationTNode;
+                    if (destinationNodeIndex === rootindex) {
+                        // If the destination node is `i18nStart`, we don't have a
+                        // top-level node and we should use the host node instead
+                        destinationTNode = lView[T_HOST];
+                    }
+                    else {
+                        destinationTNode = getTNode(tView, destinationNodeIndex);
+                    }
+                    ngDevMode &&
+                        assertDefined(currentTNode, `You need to create or select a node before you can insert it into the DOM`);
+                    previousTNode =
+                        appendI18nNode(tView, currentTNode, destinationTNode, previousTNode, lView);
+                    break;
+                case 0 /* Select */:
+                    // Negative indices indicate that a given TNode is a sibling node, not a parent node
+                    // (see `i18nStartFirstPass` for additional information).
+                    const isParent = opCode >= 0;
+                    // FIXME(misko): This SHIFT_REF looks suspect as it does not have mask.
+                    const nodeIndex = (isParent ? opCode : ~opCode) >>> 3 /* SHIFT_REF */;
+                    visitedNodes.push(nodeIndex);
+                    previousTNode = currentTNode;
+                    currentTNode = getTNode(tView, nodeIndex);
+                    if (currentTNode) {
+                        setPreviousOrParentTNode(currentTNode, isParent);
+                    }
+                    break;
+                case 5 /* ElementEnd */:
+                    const elementIndex = opCode >>> 3 /* SHIFT_REF */;
+                    previousTNode = currentTNode = getTNode(tView, elementIndex);
+                    setPreviousOrParentTNode(currentTNode, false);
+                    break;
+                case 4 /* Attr */:
+                    const elementNodeIndex = opCode >>> 3 /* SHIFT_REF */;
+                    const attrName = createOpCodes[++i];
+                    const attrValue = createOpCodes[++i];
+                    // This code is used for ICU expressions only, since we don't support
+                    // directives/components in ICUs, we don't need to worry about inputs here
+                    elementAttributeInternal(getTNode(tView, elementNodeIndex), lView, attrName, attrValue, null, null);
+                    break;
+                default:
+                    throw new Error(`Unable to determine the type of mutate operation for "${opCode}"`);
+            }
+        }
+        else {
+            switch (opCode) {
+                case COMMENT_MARKER:
+                    const commentValue = createOpCodes[++i];
+                    const commentNodeIndex = createOpCodes[++i];
+                    ngDevMode &&
+                        assertEqual(typeof commentValue, 'string', `Expected "${commentValue}" to be a comment node value`);
+                    const commentRNode = renderer.createComment(commentValue);
+                    ngDevMode && ngDevMode.rendererCreateComment++;
+                    previousTNode = currentTNode;
+                    currentTNode = createDynamicNodeAtIndex(tView, lView, commentNodeIndex, 5 /* IcuContainer */, commentRNode, null);
+                    visitedNodes.push(commentNodeIndex);
+                    attachPatchData(commentRNode, lView);
+                    // We will add the case nodes later, during the update phase
+                    setIsNotParent();
+                    break;
+                case ELEMENT_MARKER:
+                    const tagNameValue = createOpCodes[++i];
+                    const elementNodeIndex = createOpCodes[++i];
+                    ngDevMode &&
+                        assertEqual(typeof tagNameValue, 'string', `Expected "${tagNameValue}" to be an element node tag name`);
+                    const elementRNode = renderer.createElement(tagNameValue);
+                    ngDevMode && ngDevMode.rendererCreateElement++;
+                    previousTNode = currentTNode;
+                    currentTNode = createDynamicNodeAtIndex(tView, lView, elementNodeIndex, 3 /* Element */, elementRNode, tagNameValue);
+                    visitedNodes.push(elementNodeIndex);
+                    break;
+                default:
+                    throw new Error(`Unable to determine the type of mutate operation for "${opCode}"`);
+            }
+        }
+    }
+    setIsNotParent();
+    return visitedNodes;
+}
+/**
+ * Apply `I18nUpdateOpCodes` OpCodes
+ *
+ * @param tView Current `TView`
+ * @param tIcus If ICUs present than this contains them.
+ * @param lView Current `LView`
+ * @param updateOpCodes OpCodes to process
+ * @param bindingsStartIndex Location of the first `ɵɵi18nApply`
+ * @param changeMask Each bit corresponds to a `ɵɵi18nExp` (Counting backwards from
+ *     `bindingsStartIndex`)
+ */
+function applyUpdateOpCodes(tView, tIcus, lView, updateOpCodes, bindingsStartIndex, changeMask) {
+    let caseCreated = false;
+    for (let i = 0; i < updateOpCodes.length; i++) {
+        // bit code to check if we should apply the next update
+        const checkBit = updateOpCodes[i];
+        // Number of opCodes to skip until next set of update codes
+        const skipCodes = updateOpCodes[++i];
+        if (checkBit & changeMask) {
+            // The value has been updated since last checked
+            let value = '';
+            for (let j = i + 1; j <= (i + skipCodes); j++) {
+                const opCode = updateOpCodes[j];
+                if (typeof opCode == 'string') {
+                    value += opCode;
+                }
+                else if (typeof opCode == 'number') {
+                    if (opCode < 0) {
+                        // Negative opCode represent `i18nExp` values offset.
+                        value += renderStringify(lView[bindingsStartIndex - opCode]);
+                    }
+                    else {
+                        const nodeIndex = opCode >>> 2 /* SHIFT_REF */;
+                        switch (opCode & 3 /* MASK_OPCODE */) {
+                            case 1 /* Attr */:
+                                const propName = updateOpCodes[++j];
+                                const sanitizeFn = updateOpCodes[++j];
+                                elementPropertyInternal(tView, getTNode(tView, nodeIndex), lView, propName, value, lView[RENDERER], sanitizeFn, false);
+                                break;
+                            case 0 /* Text */:
+                                textBindingInternal(lView, nodeIndex, value);
+                                break;
+                            case 2 /* IcuSwitch */:
+                                caseCreated =
+                                    applyIcuSwitchCase(tView, tIcus, updateOpCodes[++j], lView, value);
+                                break;
+                            case 3 /* IcuUpdate */:
+                                applyIcuUpdateCase(tView, tIcus, updateOpCodes[++j], bindingsStartIndex, lView, caseCreated);
+                                break;
+                        }
+                    }
+                }
+            }
+        }
+        i += skipCodes;
+    }
+}
+/**
+ * Apply OpCodes associated with updating an existing ICU.
+ *
+ * @param tView Current `TView`
+ * @param tIcus ICUs active at this location.
+ * @param tIcuIndex Index into `tIcus` to process.
+ * @param bindingsStartIndex Location of the first `ɵɵi18nApply`
+ * @param lView Current `LView`
+ * @param changeMask Each bit corresponds to a `ɵɵi18nExp` (Counting backwards from
+ *     `bindingsStartIndex`)
+ */
+function applyIcuUpdateCase(tView, tIcus, tIcuIndex, bindingsStartIndex, lView, caseCreated) {
+    ngDevMode && assertIndexInRange(tIcus, tIcuIndex);
+    const tIcu = tIcus[tIcuIndex];
+    ngDevMode && assertIndexInRange(lView, tIcu.currentCaseLViewIndex);
+    const activeCaseIndex = lView[tIcu.currentCaseLViewIndex];
+    if (activeCaseIndex !== null) {
+        const mask = caseCreated ?
+            -1 : // -1 is same as all bits on, which simulates creation since it marks all bits dirty
+            changeMask;
+        applyUpdateOpCodes(tView, tIcus, lView, tIcu.update[activeCaseIndex], bindingsStartIndex, mask);
+    }
+}
+/**
+ * Apply OpCodes associated with switching a case on ICU.
+ *
+ * This involves tearing down existing case and than building up a new case.
+ *
+ * @param tView Current `TView`
+ * @param tIcus ICUs active at this location.
+ * @param tICuIndex Index into `tIcus` to process.
+ * @param lView Current `LView`
+ * @param value Value of the case to update to.
+ * @returns true if a new case was created (needed so that the update executes regardless of the
+ *     bitmask)
+ */
+function applyIcuSwitchCase(tView, tIcus, tICuIndex, lView, value) {
+    applyIcuSwitchCaseRemove(tView, tIcus, tICuIndex, lView);
+    // Rebuild a new case for this ICU
+    let caseCreated = false;
+    const tIcu = tIcus[tICuIndex];
+    const caseIndex = getCaseIndex(tIcu, value);
+    lView[tIcu.currentCaseLViewIndex] = caseIndex !== -1 ? caseIndex : null;
+    if (caseIndex > -1) {
+        // Add the nodes for the new case
+        applyCreateOpCodes(tView, -1, // -1 means we don't have parent node
+        tIcu.create[caseIndex], lView);
+        caseCreated = true;
+    }
+    return caseCreated;
+}
+/**
+ * Apply OpCodes associated with tearing down of DOM.
+ *
+ * This involves tearing down existing case and than building up a new case.
+ *
+ * @param tView Current `TView`
+ * @param tIcus ICUs active at this location.
+ * @param tIcuIndex Index into `tIcus` to process.
+ * @param lView Current `LView`
+ * @returns true if a new case was created (needed so that the update executes regardless of the
+ *     bitmask)
+ */
+function applyIcuSwitchCaseRemove(tView, tIcus, tIcuIndex, lView) {
+    ngDevMode && assertIndexInRange(tIcus, tIcuIndex);
+    const tIcu = tIcus[tIcuIndex];
+    const activeCaseIndex = lView[tIcu.currentCaseLViewIndex];
+    if (activeCaseIndex !== null) {
+        const removeCodes = tIcu.remove[activeCaseIndex];
+        for (let k = 0; k < removeCodes.length; k++) {
+            const removeOpCode = removeCodes[k];
+            const nodeOrIcuIndex = removeOpCode >>> 3 /* SHIFT_REF */;
+            switch (removeOpCode & 7 /* MASK_INSTRUCTION */) {
+                case 3 /* Remove */:
+                    // FIXME(misko): this comment is wrong!
+                    // Remove DOM element, but do *not* mark TNode as detached, since we are
+                    // just switching ICU cases (while keeping the same TNode), so a DOM element
+                    // representing a new ICU case will be re-created.
+                    removeNode(tView, lView, nodeOrIcuIndex, /* markAsDetached */ false);
+                    break;
+                case 6 /* RemoveNestedIcu */:
+                    applyIcuSwitchCaseRemove(tView, tIcus, nodeOrIcuIndex, lView);
+                    break;
+            }
+        }
+    }
+}
+function appendI18nNode(tView, tNode, parentTNode, previousTNode, lView) {
+    ngDevMode && ngDevMode.rendererMoveNode++;
+    const nextNode = tNode.next;
+    if (!previousTNode) {
+        previousTNode = parentTNode;
+    }
+    // Re-organize node tree to put this node in the correct position.
+    if (previousTNode === parentTNode && tNode !== parentTNode.child) {
+        tNode.next = parentTNode.child;
+        parentTNode.child = tNode;
+    }
+    else if (previousTNode !== parentTNode && tNode !== previousTNode.next) {
+        tNode.next = previousTNode.next;
+        previousTNode.next = tNode;
+    }
+    else {
+        tNode.next = null;
+    }
+    if (parentTNode !== lView[T_HOST]) {
+        tNode.parent = parentTNode;
+    }
+    // If tNode was moved around, we might need to fix a broken link.
+    let cursor = tNode.next;
+    while (cursor) {
+        if (cursor.next === tNode) {
+            cursor.next = nextNode;
+        }
+        cursor = cursor.next;
+    }
+    // If the placeholder to append is a projection, we need to move the projected nodes instead
+    if (tNode.type === 1 /* Projection */) {
+        applyProjection(tView, lView, tNode);
+        return tNode;
+    }
+    appendChild(tView, lView, getNativeByTNode(tNode, lView), tNode);
+    const slotValue = lView[tNode.index];
+    if (tNode.type !== 0 /* Container */ && isLContainer(slotValue)) {
+        // Nodes that inject ViewContainerRef also have a comment node that should be moved
+        appendChild(tView, lView, slotValue[NATIVE], tNode);
+    }
+    return tNode;
+}
+/**
+ * See `i18nEnd` above.
+ */
+function i18nEndFirstPass(tView, lView) {
+    ngDevMode &&
+        assertEqual(getBindingIndex(), tView.bindingStartIndex, 'i18nEnd should be called before any binding');
+    const rootIndex = popI18nIndex();
+    const tI18n = tView.data[rootIndex + HEADER_OFFSET];
+    ngDevMode && assertDefined(tI18n, `You should call i18nStart before i18nEnd`);
+    // Find the last node that was added before `i18nEnd`
+    const lastCreatedNode = getPreviousOrParentTNode();
+    // Read the instructions to insert/move/remove DOM elements
+    const visitedNodes = applyCreateOpCodes(tView, rootIndex, tI18n.create, lView);
+    // Remove deleted nodes
+    let index = rootIndex + 1;
+    while (index <= lastCreatedNode.index - HEADER_OFFSET) {
+        if (visitedNodes.indexOf(index) === -1) {
+            removeNode(tView, lView, index, /* markAsDetached */ true);
+        }
+        // Check if an element has any local refs and skip them
+        const tNode = getTNode(tView, index);
+        if (tNode &&
+            (tNode.type === 0 /* Container */ || tNode.type === 3 /* Element */ ||
+                tNode.type === 4 /* ElementContainer */) &&
+            tNode.localNames !== null) {
+            // Divide by 2 to get the number of local refs,
+            // since they are stored as an array that also includes directive indexes,
+            // i.e. ["localRef", directiveIndex, ...]
+            index += tNode.localNames.length >> 1;
+        }
+        index++;
+    }
+}
+function removeNode(tView, lView, index, markAsDetached) {
+    const removedPhTNode = getTNode(tView, index);
+    const removedPhRNode = getNativeByIndex(index, lView);
+    if (removedPhRNode) {
+        nativeRemoveNode(lView[RENDERER], removedPhRNode);
+    }
+    const slotValue = load(lView, index);
+    if (isLContainer(slotValue)) {
+        const lContainer = slotValue;
+        if (removedPhTNode.type !== 0 /* Container */) {
+            nativeRemoveNode(lView[RENDERER], lContainer[NATIVE]);
+        }
+    }
+    if (markAsDetached) {
+        // Define this node as detached to avoid projecting it later
+        removedPhTNode.flags |= 64 /* isDetached */;
+    }
+    ngDevMode && ngDevMode.rendererRemoveNode++;
+}
+/**
+ * Creates and stores the dynamic TNode, and unhooks it from the tree for now.
+ */
+function createDynamicNodeAtIndex(tView, lView, index, type, native, name) {
+    const previousOrParentTNode = getPreviousOrParentTNode();
+    ngDevMode && assertIndexInRange(lView, index + HEADER_OFFSET);
+    lView[index + HEADER_OFFSET] = native;
+    // FIXME(misko): Why does this create A TNode??? I would not expect this to be here.
+    const tNode = getOrCreateTNode(tView, lView[T_HOST], index, type, name, null);
+    // We are creating a dynamic node, the previous tNode might not be pointing at this node.
+    // We will link ourselves into the tree later with `appendI18nNode`.
+    if (previousOrParentTNode && previousOrParentTNode.next === tNode) {
+        previousOrParentTNode.next = null;
+    }
+    return tNode;
+}
+/**
+ * Returns the index of the current case of an ICU expression depending on the main binding value
+ *
+ * @param icuExpression
+ * @param bindingValue The value of the main binding used by this ICU expression
+ */
+function getCaseIndex(icuExpression, bindingValue) {
+    let index = icuExpression.cases.indexOf(bindingValue);
+    if (index === -1) {
+        switch (icuExpression.type) {
+            case 1 /* plural */: {
+                const resolvedCase = getPluralCase(bindingValue, getLocaleId());
+                index = icuExpression.cases.indexOf(resolvedCase);
+                if (index === -1 && resolvedCase !== 'other') {
+                    index = icuExpression.cases.indexOf('other');
+                }
+                break;
+            }
+            case 0 /* select */: {
+                index = icuExpression.cases.indexOf('other');
+                break;
+            }
+        }
+    }
+    return index;
+}
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * Converts `I18nUpdateOpCodes` array into a human readable format.
+ *
+ * This function is attached to the `I18nUpdateOpCodes.debug` property if `ngDevMode` is enabled.
+ * This function provides a human readable view of the opcodes. This is useful when debugging the
+ * application as well as writing more readable tests.
+ *
+ * @param this `I18nUpdateOpCodes` if attached as a method.
+ * @param opcodes `I18nUpdateOpCodes` if invoked as a function.
+ */
+function i18nUpdateOpCodesToString(opcodes) {
+    const parser = new OpCodeParser(opcodes || (Array.isArray(this) ? this : []));
+    let lines = [];
+    function consumeOpCode(value) {
+        const ref = value >>> 2 /* SHIFT_REF */;
+        const opCode = value & 3 /* MASK_OPCODE */;
+        switch (opCode) {
+            case 0 /* Text */:
+                return `(lView[${ref}] as Text).textContent = $$$`;
+            case 1 /* Attr */:
+                const attrName = parser.consumeString();
+                const sanitizationFn = parser.consumeFunction();
+                const value = sanitizationFn ? `(${sanitizationFn})($$$)` : '$$$';
+                return `(lView[${ref}] as Element).setAttribute('${attrName}', ${value})`;
+            case 2 /* IcuSwitch */:
+                return `icuSwitchCase(lView[${ref}] as Comment, ${parser.consumeNumber()}, $$$)`;
+            case 3 /* IcuUpdate */:
+                return `icuUpdateCase(lView[${ref}] as Comment, ${parser.consumeNumber()})`;
+        }
+        throw new Error('unexpected OpCode');
+    }
+    while (parser.hasMore()) {
+        let mask = parser.consumeNumber();
+        let size = parser.consumeNumber();
+        const end = parser.i + size;
+        const statements = [];
+        let statement = '';
+        while (parser.i < end) {
+            let value = parser.consumeNumberOrString();
+            if (typeof value === 'string') {
+                statement += value;
+            }
+            else if (value < 0) {
+                // Negative numbers are ref indexes
+                statement += '${lView[' + (0 - value) + ']}';
+            }
+            else {
+                // Positive numbers are operations.
+                const opCodeText = consumeOpCode(value);
+                statements.push(opCodeText.replace('$$$', '`' + statement + '`') + ';');
+                statement = '';
+            }
+        }
+        lines.push(`if (mask & 0b${mask.toString(2)}) { ${statements.join(' ')} }`);
+    }
+    return lines;
+}
+/**
+ * Converts `I18nMutableOpCodes` array into a human readable format.
+ *
+ * This function is attached to the `I18nMutableOpCodes.debug` if `ngDevMode` is enabled. This
+ * function provides a human readable view of the opcodes. This is useful when debugging the
+ * application as well as writing more readable tests.
+ *
+ * @param this `I18nMutableOpCodes` if attached as a method.
+ * @param opcodes `I18nMutableOpCodes` if invoked as a function.
+ */
+function i18nMutateOpCodesToString(opcodes) {
+    const parser = new OpCodeParser(opcodes || (Array.isArray(this) ? this : []));
+    let lines = [];
+    function consumeOpCode(opCode) {
+        const parent = getParentFromI18nMutateOpCode(opCode);
+        const ref = getRefFromI18nMutateOpCode(opCode);
+        switch (getInstructionFromI18nMutateOpCode(opCode)) {
+            case 0 /* Select */:
+                lastRef = ref;
+                return '';
+            case 1 /* AppendChild */:
+                return `(lView[${parent}] as Element).appendChild(lView[${lastRef}])`;
+            case 3 /* Remove */:
+                return `(lView[${parent}] as Element).remove(lView[${ref}])`;
+            case 4 /* Attr */:
+                return `(lView[${ref}] as Element).setAttribute("${parser.consumeString()}", "${parser.consumeString()}")`;
+            case 5 /* ElementEnd */:
+                return `setPreviousOrParentTNode(tView.data[${ref}] as TNode)`;
+            case 6 /* RemoveNestedIcu */:
+                return `removeNestedICU(${ref})`;
+        }
+        throw new Error('Unexpected OpCode');
+    }
+    let lastRef = -1;
+    while (parser.hasMore()) {
+        let value = parser.consumeNumberStringOrMarker();
+        if (value === COMMENT_MARKER) {
+            const text = parser.consumeString();
+            lastRef = parser.consumeNumber();
+            lines.push(`lView[${lastRef}] = document.createComment("${text}")`);
+        }
+        else if (value === ELEMENT_MARKER) {
+            const text = parser.consumeString();
+            lastRef = parser.consumeNumber();
+            lines.push(`lView[${lastRef}] = document.createElement("${text}")`);
+        }
+        else if (typeof value === 'string') {
+            lastRef = parser.consumeNumber();
+            lines.push(`lView[${lastRef}] = document.createTextNode("${value}")`);
+        }
+        else if (typeof value === 'number') {
+            const line = consumeOpCode(value);
+            line && lines.push(line);
+        }
+        else {
+            throw new Error('Unexpected value');
+        }
+    }
+    return lines;
+}
+class OpCodeParser {
+    constructor(codes) {
+        this.i = 0;
+        this.codes = codes;
+    }
+    hasMore() {
+        return this.i < this.codes.length;
+    }
+    consumeNumber() {
+        let value = this.codes[this.i++];
+        assertNumber(value, 'expecting number in OpCode');
+        return value;
+    }
+    consumeString() {
+        let value = this.codes[this.i++];
+        assertString(value, 'expecting string in OpCode');
+        return value;
+    }
+    consumeFunction() {
+        let value = this.codes[this.i++];
+        if (value === null || typeof value === 'function') {
+            return value;
+        }
+        throw new Error('expecting function in OpCode');
+    }
+    consumeNumberOrString() {
+        let value = this.codes[this.i++];
+        if (typeof value === 'string') {
+            return value;
+        }
+        assertNumber(value, 'expecting number or string in OpCode');
+        return value;
+    }
+    consumeNumberStringOrMarker() {
+        let value = this.codes[this.i++];
+        if (typeof value === 'string' || typeof value === 'number' || value == COMMENT_MARKER ||
+            value == ELEMENT_MARKER) {
+            return value;
+        }
+        assertNumber(value, 'expecting number, string, COMMENT_MARKER or ELEMENT_MARKER in OpCode');
+        return value;
+    }
+}
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+const BINDING_REGEXP = /�(\d+):?\d*�/gi;
+const ICU_REGEXP = /({\s*�\d+:?\d*�\s*,\s*\S{6}\s*,[\s\S]*})/gi;
+const NESTED_ICU = /�(\d+)�/;
+const ICU_BLOCK_REGEXP = /^\s*(�\d+:?\d*�)\s*,\s*(select|plural)\s*,/;
 // Count for the number of vars that will be allocated for each i18n block.
 // It is global because this is used in multiple functions that include loops and recursive calls.
 // This is reset to 0 when `i18nStartFirstPass` is called.
 let i18nVarsCount;
-function allocNodeIndex(startIndex) {
-    return startIndex + i18nVarsCount++;
+const parentIndexStack = [];
+const MARKER = `�`;
+const SUBTEMPLATE_REGEXP = /�\/?\*(\d+:\d+)�/gi;
+const PH_REGEXP = /�(\/?[#*!]\d+):?\d*�/gi;
+/**
+ * Angular Dart introduced &ngsp; as a placeholder for non-removable space, see:
+ * https://github.com/dart-lang/angular/blob/0bb611387d29d65b5af7f9d2515ab571fd3fbee4/_tests/test/compiler/preserve_whitespace_test.dart#L25-L32
+ * In Angular Dart &ngsp; is converted to the 0xE500 PUA (Private Use Areas) unicode character
+ * and later on replaced by a space. We are re-implementing the same idea here, since translations
+ * might contain this special character.
+ */
+const NGSP_UNICODE_REGEXP = /\uE500/g;
+function replaceNgsp(value) {
+    return value.replace(NGSP_UNICODE_REGEXP, ' ');
 }
 /**
  * See `i18nStart` above.
@@ -36578,6 +31677,9 @@ function i18nStartFirstPass(lView, tView, index, message, subTemplateIndex) {
     let parentIndexPointer = 0;
     parentIndexStack[parentIndexPointer] = parentIndex;
     const createOpCodes = [];
+    if (ngDevMode) {
+        attachDebugGetter(createOpCodes, i18nMutateOpCodesToString);
+    }
     // If the previous node wasn't the direct parent then we have a translation without top level
     // element and we need to keep a reference of the previous element if there is one. We should also
     // keep track whether an element was a parent node or not, so that the logic that consumes
@@ -36594,6 +31696,9 @@ function i18nStartFirstPass(lView, tView, index, message, subTemplateIndex) {
         createOpCodes.push(previousTNodeIndex << 3 /* SHIFT_REF */ | 0 /* Select */);
     }
     const updateOpCodes = [];
+    if (ngDevMode) {
+        attachDebugGetter(updateOpCodes, i18nUpdateOpCodesToString);
+    }
     const icuExpressions = [];
     if (message === '' && isRootTemplateMessage(subTemplateIndex)) {
         // If top level translation is an empty string, do not invoke additional processing
@@ -36675,8 +31780,6 @@ function i18nStartFirstPass(lView, tView, index, message, subTemplateIndex) {
     if (i18nVarsCount > 0) {
         allocExpando(tView, lView, i18nVarsCount);
     }
-    ngDevMode &&
-        attachI18nOpCodesDebug(createOpCodes, updateOpCodes, icuExpressions.length ? icuExpressions : null, lView);
     // NOTE: local var needed to properly assert the type of `TI18n`.
     const tI18n = {
         vars: i18nVarsCount,
@@ -36686,469 +31789,6 @@ function i18nStartFirstPass(lView, tView, index, message, subTemplateIndex) {
     };
     tView.data[index + HEADER_OFFSET] = tI18n;
 }
-function appendI18nNode(tView, tNode, parentTNode, previousTNode, lView) {
-    ngDevMode && ngDevMode.rendererMoveNode++;
-    const nextNode = tNode.next;
-    if (!previousTNode) {
-        previousTNode = parentTNode;
-    }
-    // Re-organize node tree to put this node in the correct position.
-    if (previousTNode === parentTNode && tNode !== parentTNode.child) {
-        tNode.next = parentTNode.child;
-        parentTNode.child = tNode;
-    }
-    else if (previousTNode !== parentTNode && tNode !== previousTNode.next) {
-        tNode.next = previousTNode.next;
-        previousTNode.next = tNode;
-    }
-    else {
-        tNode.next = null;
-    }
-    if (parentTNode !== lView[T_HOST]) {
-        tNode.parent = parentTNode;
-    }
-    // If tNode was moved around, we might need to fix a broken link.
-    let cursor = tNode.next;
-    while (cursor) {
-        if (cursor.next === tNode) {
-            cursor.next = nextNode;
-        }
-        cursor = cursor.next;
-    }
-    // If the placeholder to append is a projection, we need to move the projected nodes instead
-    if (tNode.type === 1 /* Projection */) {
-        applyProjection(tView, lView, tNode);
-        return tNode;
-    }
-    appendChild(tView, lView, getNativeByTNode(tNode, lView), tNode);
-    const slotValue = lView[tNode.index];
-    if (tNode.type !== 0 /* Container */ && isLContainer(slotValue)) {
-        // Nodes that inject ViewContainerRef also have a comment node that should be moved
-        appendChild(tView, lView, slotValue[NATIVE], tNode);
-    }
-    return tNode;
-}
-function isRootTemplateMessage(subTemplateIndex) {
-    return subTemplateIndex === undefined;
-}
-/**
- * Handles message string post-processing for internationalization.
- *
- * Handles message string post-processing by transforming it from intermediate
- * format (that might contain some markers that we need to replace) to the final
- * form, consumable by i18nStart instruction. Post processing steps include:
- *
- * 1. Resolve all multi-value cases (like [�*1:1��#2:1�|�#4:1�|�5�])
- * 2. Replace all ICU vars (like "VAR_PLURAL")
- * 3. Replace all placeholders used inside ICUs in a form of {PLACEHOLDER}
- * 4. Replace all ICU references with corresponding values (like �ICU_EXP_ICU_1�)
- *    in case multiple ICUs have the same placeholder name
- *
- * @param message Raw translation string for post processing
- * @param replacements Set of replacements that should be applied
- *
- * @returns Transformed string that can be consumed by i18nStart instruction
- *
- * @codeGenApi
- */
-function ɵɵi18nPostprocess(message, replacements = {}) {
-    /**
-     * Step 1: resolve all multi-value placeholders like [�#5�|�*1:1��#2:1�|�#4:1�]
-     *
-     * Note: due to the way we process nested templates (BFS), multi-value placeholders are typically
-     * grouped by templates, for example: [�#5�|�#6�|�#1:1�|�#3:2�] where �#5� and �#6� belong to root
-     * template, �#1:1� belong to nested template with index 1 and �#1:2� - nested template with index
-     * 3. However in real templates the order might be different: i.e. �#1:1� and/or �#3:2� may go in
-     * front of �#6�. The post processing step restores the right order by keeping track of the
-     * template id stack and looks for placeholders that belong to the currently active template.
-     */
-    let result = message;
-    if (PP_MULTI_VALUE_PLACEHOLDERS_REGEXP.test(message)) {
-        const matches = {};
-        const templateIdsStack = [ROOT_TEMPLATE_ID];
-        result = result.replace(PP_PLACEHOLDERS_REGEXP, (m, phs, tmpl) => {
-            const content = phs || tmpl;
-            const placeholders = matches[content] || [];
-            if (!placeholders.length) {
-                content.split('|').forEach((placeholder) => {
-                    const match = placeholder.match(PP_TEMPLATE_ID_REGEXP);
-                    const templateId = match ? parseInt(match[1], 10) : ROOT_TEMPLATE_ID;
-                    const isCloseTemplateTag = PP_CLOSE_TEMPLATE_REGEXP.test(placeholder);
-                    placeholders.push([templateId, isCloseTemplateTag, placeholder]);
-                });
-                matches[content] = placeholders;
-            }
-            if (!placeholders.length) {
-                throw new Error(`i18n postprocess: unmatched placeholder - ${content}`);
-            }
-            const currentTemplateId = templateIdsStack[templateIdsStack.length - 1];
-            let idx = 0;
-            // find placeholder index that matches current template id
-            for (let i = 0; i < placeholders.length; i++) {
-                if (placeholders[i][0] === currentTemplateId) {
-                    idx = i;
-                    break;
-                }
-            }
-            // update template id stack based on the current tag extracted
-            const [templateId, isCloseTemplateTag, placeholder] = placeholders[idx];
-            if (isCloseTemplateTag) {
-                templateIdsStack.pop();
-            }
-            else if (currentTemplateId !== templateId) {
-                templateIdsStack.push(templateId);
-            }
-            // remove processed tag from the list
-            placeholders.splice(idx, 1);
-            return placeholder;
-        });
-    }
-    // return current result if no replacements specified
-    if (!Object.keys(replacements).length) {
-        return result;
-    }
-    /**
-     * Step 2: replace all ICU vars (like "VAR_PLURAL")
-     */
-    result = result.replace(PP_ICU_VARS_REGEXP, (match, start, key, _type, _idx, end) => {
-        return replacements.hasOwnProperty(key) ? `${start}${replacements[key]}${end}` : match;
-    });
-    /**
-     * Step 3: replace all placeholders used inside ICUs in a form of {PLACEHOLDER}
-     */
-    result = result.replace(PP_ICU_PLACEHOLDERS_REGEXP, (match, key) => {
-        return replacements.hasOwnProperty(key) ? replacements[key] : match;
-    });
-    /**
-     * Step 4: replace all ICU references with corresponding values (like �ICU_EXP_ICU_1�) in case
-     * multiple ICUs have the same placeholder name
-     */
-    result = result.replace(PP_ICUS_REGEXP, (match, key) => {
-        if (replacements.hasOwnProperty(key)) {
-            const list = replacements[key];
-            if (!list.length) {
-                throw new Error(`i18n postprocess: unmatched ICU - ${match} with key: ${key}`);
-            }
-            return list.shift();
-        }
-        return match;
-    });
-    return result;
-}
-/**
- * Translates a translation block marked by `i18nStart` and `i18nEnd`. It inserts the text/ICU nodes
- * into the render tree, moves the placeholder nodes and removes the deleted nodes.
- *
- * @codeGenApi
- */
-function ɵɵi18nEnd() {
-    const lView = getLView();
-    const tView = getTView();
-    ngDevMode && assertDefined(tView, `tView should be defined`);
-    i18nEndFirstPass(tView, lView);
-    // Stop delaying projections
-    setDelayProjection(false);
-}
-/**
- * See `i18nEnd` above.
- */
-function i18nEndFirstPass(tView, lView) {
-    ngDevMode &&
-        assertEqual(getBindingIndex(), tView.bindingStartIndex, 'i18nEnd should be called before any binding');
-    const rootIndex = i18nIndexStack[i18nIndexStackPointer--];
-    const tI18n = tView.data[rootIndex + HEADER_OFFSET];
-    ngDevMode && assertDefined(tI18n, `You should call i18nStart before i18nEnd`);
-    // Find the last node that was added before `i18nEnd`
-    const lastCreatedNode = getPreviousOrParentTNode();
-    // Read the instructions to insert/move/remove DOM elements
-    const visitedNodes = readCreateOpCodes(rootIndex, tI18n.create, tView, lView);
-    // Remove deleted nodes
-    let index = rootIndex + 1;
-    while (index <= lastCreatedNode.index - HEADER_OFFSET) {
-        if (visitedNodes.indexOf(index) === -1) {
-            removeNode(tView, lView, index, /* markAsDetached */ true);
-        }
-        // Check if an element has any local refs and skip them
-        const tNode = getTNode(tView, index);
-        if (tNode &&
-            (tNode.type === 0 /* Container */ || tNode.type === 3 /* Element */ ||
-                tNode.type === 4 /* ElementContainer */) &&
-            tNode.localNames !== null) {
-            // Divide by 2 to get the number of local refs,
-            // since they are stored as an array that also includes directive indexes,
-            // i.e. ["localRef", directiveIndex, ...]
-            index += tNode.localNames.length >> 1;
-        }
-        index++;
-    }
-}
-/**
- * Creates and stores the dynamic TNode, and unhooks it from the tree for now.
- */
-function createDynamicNodeAtIndex(tView, lView, index, type, native, name) {
-    const previousOrParentTNode = getPreviousOrParentTNode();
-    ngDevMode && assertDataInRange(lView, index + HEADER_OFFSET);
-    lView[index + HEADER_OFFSET] = native;
-    const tNode = getOrCreateTNode(tView, lView[T_HOST], index, type, name, null);
-    // We are creating a dynamic node, the previous tNode might not be pointing at this node.
-    // We will link ourselves into the tree later with `appendI18nNode`.
-    if (previousOrParentTNode && previousOrParentTNode.next === tNode) {
-        previousOrParentTNode.next = null;
-    }
-    return tNode;
-}
-function readCreateOpCodes(index, createOpCodes, tView, lView) {
-    const renderer = lView[RENDERER];
-    let currentTNode = null;
-    let previousTNode = null;
-    const visitedNodes = [];
-    for (let i = 0; i < createOpCodes.length; i++) {
-        const opCode = createOpCodes[i];
-        if (typeof opCode == 'string') {
-            const textRNode = createTextNode(opCode, renderer);
-            const textNodeIndex = createOpCodes[++i];
-            ngDevMode && ngDevMode.rendererCreateTextNode++;
-            previousTNode = currentTNode;
-            currentTNode =
-                createDynamicNodeAtIndex(tView, lView, textNodeIndex, 3 /* Element */, textRNode, null);
-            visitedNodes.push(textNodeIndex);
-            setIsNotParent();
-        }
-        else if (typeof opCode == 'number') {
-            switch (opCode & 7 /* MASK_OPCODE */) {
-                case 1 /* AppendChild */:
-                    const destinationNodeIndex = opCode >>> 17 /* SHIFT_PARENT */;
-                    let destinationTNode;
-                    if (destinationNodeIndex === index) {
-                        // If the destination node is `i18nStart`, we don't have a
-                        // top-level node and we should use the host node instead
-                        destinationTNode = lView[T_HOST];
-                    }
-                    else {
-                        destinationTNode = getTNode(tView, destinationNodeIndex);
-                    }
-                    ngDevMode &&
-                        assertDefined(currentTNode, `You need to create or select a node before you can insert it into the DOM`);
-                    previousTNode =
-                        appendI18nNode(tView, currentTNode, destinationTNode, previousTNode, lView);
-                    break;
-                case 0 /* Select */:
-                    // Negative indicies indicate that a given TNode is a sibling node, not a parent node
-                    // (see `i18nStartFirstPass` for additional information).
-                    const isParent = opCode >= 0;
-                    const nodeIndex = (isParent ? opCode : ~opCode) >>> 3 /* SHIFT_REF */;
-                    visitedNodes.push(nodeIndex);
-                    previousTNode = currentTNode;
-                    currentTNode = getTNode(tView, nodeIndex);
-                    if (currentTNode) {
-                        setPreviousOrParentTNode(currentTNode, isParent);
-                    }
-                    break;
-                case 5 /* ElementEnd */:
-                    const elementIndex = opCode >>> 3 /* SHIFT_REF */;
-                    previousTNode = currentTNode = getTNode(tView, elementIndex);
-                    setPreviousOrParentTNode(currentTNode, false);
-                    break;
-                case 4 /* Attr */:
-                    const elementNodeIndex = opCode >>> 3 /* SHIFT_REF */;
-                    const attrName = createOpCodes[++i];
-                    const attrValue = createOpCodes[++i];
-                    // This code is used for ICU expressions only, since we don't support
-                    // directives/components in ICUs, we don't need to worry about inputs here
-                    elementAttributeInternal(getTNode(tView, elementNodeIndex), lView, attrName, attrValue, null, null);
-                    break;
-                default:
-                    throw new Error(`Unable to determine the type of mutate operation for "${opCode}"`);
-            }
-        }
-        else {
-            switch (opCode) {
-                case COMMENT_MARKER:
-                    const commentValue = createOpCodes[++i];
-                    const commentNodeIndex = createOpCodes[++i];
-                    ngDevMode &&
-                        assertEqual(typeof commentValue, 'string', `Expected "${commentValue}" to be a comment node value`);
-                    const commentRNode = renderer.createComment(commentValue);
-                    ngDevMode && ngDevMode.rendererCreateComment++;
-                    previousTNode = currentTNode;
-                    currentTNode = createDynamicNodeAtIndex(tView, lView, commentNodeIndex, 5 /* IcuContainer */, commentRNode, null);
-                    visitedNodes.push(commentNodeIndex);
-                    attachPatchData(commentRNode, lView);
-                    currentTNode.activeCaseIndex = null;
-                    // We will add the case nodes later, during the update phase
-                    setIsNotParent();
-                    break;
-                case ELEMENT_MARKER:
-                    const tagNameValue = createOpCodes[++i];
-                    const elementNodeIndex = createOpCodes[++i];
-                    ngDevMode &&
-                        assertEqual(typeof tagNameValue, 'string', `Expected "${tagNameValue}" to be an element node tag name`);
-                    const elementRNode = renderer.createElement(tagNameValue);
-                    ngDevMode && ngDevMode.rendererCreateElement++;
-                    previousTNode = currentTNode;
-                    currentTNode = createDynamicNodeAtIndex(tView, lView, elementNodeIndex, 3 /* Element */, elementRNode, tagNameValue);
-                    visitedNodes.push(elementNodeIndex);
-                    break;
-                default:
-                    throw new Error(`Unable to determine the type of mutate operation for "${opCode}"`);
-            }
-        }
-    }
-    setIsNotParent();
-    return visitedNodes;
-}
-function readUpdateOpCodes(updateOpCodes, icus, bindingsStartIndex, changeMask, tView, lView, bypassCheckBit = false) {
-    let caseCreated = false;
-    for (let i = 0; i < updateOpCodes.length; i++) {
-        // bit code to check if we should apply the next update
-        const checkBit = updateOpCodes[i];
-        // Number of opCodes to skip until next set of update codes
-        const skipCodes = updateOpCodes[++i];
-        if (bypassCheckBit || (checkBit & changeMask)) {
-            // The value has been updated since last checked
-            let value = '';
-            for (let j = i + 1; j <= (i + skipCodes); j++) {
-                const opCode = updateOpCodes[j];
-                if (typeof opCode == 'string') {
-                    value += opCode;
-                }
-                else if (typeof opCode == 'number') {
-                    if (opCode < 0) {
-                        // It's a binding index whose value is negative
-                        value += renderStringify(lView[bindingsStartIndex - opCode]);
-                    }
-                    else {
-                        const nodeIndex = opCode >>> 2 /* SHIFT_REF */;
-                        let tIcuIndex;
-                        let tIcu;
-                        let icuTNode;
-                        switch (opCode & 3 /* MASK_OPCODE */) {
-                            case 1 /* Attr */:
-                                const propName = updateOpCodes[++j];
-                                const sanitizeFn = updateOpCodes[++j];
-                                elementPropertyInternal(tView, getTNode(tView, nodeIndex), lView, propName, value, lView[RENDERER], sanitizeFn, false);
-                                break;
-                            case 0 /* Text */:
-                                textBindingInternal(lView, nodeIndex, value);
-                                break;
-                            case 2 /* IcuSwitch */:
-                                tIcuIndex = updateOpCodes[++j];
-                                tIcu = icus[tIcuIndex];
-                                icuTNode = getTNode(tView, nodeIndex);
-                                // If there is an active case, delete the old nodes
-                                if (icuTNode.activeCaseIndex !== null) {
-                                    const removeCodes = tIcu.remove[icuTNode.activeCaseIndex];
-                                    for (let k = 0; k < removeCodes.length; k++) {
-                                        const removeOpCode = removeCodes[k];
-                                        switch (removeOpCode & 7 /* MASK_OPCODE */) {
-                                            case 3 /* Remove */:
-                                                const nodeIndex = removeOpCode >>> 3 /* SHIFT_REF */;
-                                                // Remove DOM element, but do *not* mark TNode as detached, since we are
-                                                // just switching ICU cases (while keeping the same TNode), so a DOM element
-                                                // representing a new ICU case will be re-created.
-                                                removeNode(tView, lView, nodeIndex, /* markAsDetached */ false);
-                                                break;
-                                            case 6 /* RemoveNestedIcu */:
-                                                const nestedIcuNodeIndex = removeCodes[k + 1] >>> 3 /* SHIFT_REF */;
-                                                const nestedIcuTNode = getTNode(tView, nestedIcuNodeIndex);
-                                                const activeIndex = nestedIcuTNode.activeCaseIndex;
-                                                if (activeIndex !== null) {
-                                                    const nestedIcuTIndex = removeOpCode >>> 3 /* SHIFT_REF */;
-                                                    const nestedTIcu = icus[nestedIcuTIndex];
-                                                    addAllToArray(nestedTIcu.remove[activeIndex], removeCodes);
-                                                }
-                                                break;
-                                        }
-                                    }
-                                }
-                                // Update the active caseIndex
-                                const caseIndex = getCaseIndex(tIcu, value);
-                                icuTNode.activeCaseIndex = caseIndex !== -1 ? caseIndex : null;
-                                if (caseIndex > -1) {
-                                    // Add the nodes for the new case
-                                    readCreateOpCodes(-1, tIcu.create[caseIndex], tView, lView);
-                                    caseCreated = true;
-                                }
-                                break;
-                            case 3 /* IcuUpdate */:
-                                tIcuIndex = updateOpCodes[++j];
-                                tIcu = icus[tIcuIndex];
-                                icuTNode = getTNode(tView, nodeIndex);
-                                if (icuTNode.activeCaseIndex !== null) {
-                                    readUpdateOpCodes(tIcu.update[icuTNode.activeCaseIndex], icus, bindingsStartIndex, changeMask, tView, lView, caseCreated);
-                                }
-                                break;
-                        }
-                    }
-                }
-            }
-        }
-        i += skipCodes;
-    }
-}
-function removeNode(tView, lView, index, markAsDetached) {
-    const removedPhTNode = getTNode(tView, index);
-    const removedPhRNode = getNativeByIndex(index, lView);
-    if (removedPhRNode) {
-        nativeRemoveNode(lView[RENDERER], removedPhRNode);
-    }
-    const slotValue = load(lView, index);
-    if (isLContainer(slotValue)) {
-        const lContainer = slotValue;
-        if (removedPhTNode.type !== 0 /* Container */) {
-            nativeRemoveNode(lView[RENDERER], lContainer[NATIVE]);
-        }
-    }
-    if (markAsDetached) {
-        // Define this node as detached to avoid projecting it later
-        removedPhTNode.flags |= 64 /* isDetached */;
-    }
-    ngDevMode && ngDevMode.rendererRemoveNode++;
-}
-/**
- *
- * Use this instruction to create a translation block that doesn't contain any placeholder.
- * It calls both {@link i18nStart} and {@link i18nEnd} in one instruction.
- *
- * The translation `message` is the value which is locale specific. The translation string may
- * contain placeholders which associate inner elements and sub-templates within the translation.
- *
- * The translation `message` placeholders are:
- * - `�{index}(:{block})�`: *Binding Placeholder*: Marks a location where an expression will be
- *   interpolated into. The placeholder `index` points to the expression binding index. An optional
- *   `block` that matches the sub-template in which it was declared.
- * - `�#{index}(:{block})�`/`�/#{index}(:{block})�`: *Element Placeholder*:  Marks the beginning
- *   and end of DOM element that were embedded in the original translation block. The placeholder
- *   `index` points to the element index in the template instructions set. An optional `block` that
- *   matches the sub-template in which it was declared.
- * - `�*{index}:{block}�`/`�/*{index}:{block}�`: *Sub-template Placeholder*: Sub-templates must be
- *   split up and translated separately in each angular template function. The `index` points to the
- *   `template` instruction index. A `block` that matches the sub-template in which it was declared.
- *
- * @param index A unique index of the translation in the static block.
- * @param message The translation message.
- * @param subTemplateIndex Optional sub-template index in the `message`.
- *
- * @codeGenApi
- */
-function ɵɵi18n(index, message, subTemplateIndex) {
-    ɵɵi18nStart(index, message, subTemplateIndex);
-    ɵɵi18nEnd();
-}
-/**
- * Marks a list of attributes as translatable.
- *
- * @param index A unique index in the static block
- * @param values
- *
- * @codeGenApi
- */
-function ɵɵi18nAttributes(index, values) {
-    const lView = getLView();
-    const tView = getTView();
-    ngDevMode && assertDefined(tView, `tView should be defined`);
-    i18nAttributesFirstPass(lView, tView, index, values);
-}
 /**
  * See `i18nAttributes` above.
  */
@@ -37156,6 +31796,9 @@ function i18nAttributesFirstPass(lView, tView, index, values) {
     const previousElement = getPreviousOrParentTNode();
     const previousElementIndex = previousElement.index - HEADER_OFFSET;
     const updateOpCodes = [];
+    if (ngDevMode) {
+        attachDebugGetter(updateOpCodes, i18nUpdateOpCodesToString);
+    }
     for (let i = 0; i < values.length; i += 2) {
         const attrName = values[i];
         const message = values[i + 1];
@@ -37199,81 +31842,132 @@ function i18nAttributesFirstPass(lView, tView, index, values) {
         tView.data[index + HEADER_OFFSET] = updateOpCodes;
     }
 }
-let changeMask = 0b0;
-let shiftsCounter = 0;
 /**
- * Stores the values of the bindings during each update cycle in order to determine if we need to
- * update the translated nodes.
+ * Generate the OpCodes to update the bindings of a string.
  *
- * @param value The binding's value
- * @returns This function returns itself so that it may be chained
- * (e.g. `i18nExp(ctx.name)(ctx.title)`)
- *
- * @codeGenApi
+ * @param str The string containing the bindings.
+ * @param destinationNode Index of the destination node which will receive the binding.
+ * @param attrName Name of the attribute, if the string belongs to an attribute.
+ * @param sanitizeFn Sanitization function used to sanitize the string after update, if necessary.
  */
-function ɵɵi18nExp(value) {
-    const lView = getLView();
-    if (bindingUpdated(lView, nextBindingIndex(), value)) {
-        changeMask = changeMask | (1 << shiftsCounter);
+function generateBindingUpdateOpCodes(str, destinationNode, attrName, sanitizeFn = null) {
+    const updateOpCodes = [null, null]; // Alloc space for mask and size
+    if (ngDevMode) {
+        attachDebugGetter(updateOpCodes, i18nUpdateOpCodesToString);
     }
-    shiftsCounter++;
-    return ɵɵi18nExp;
+    const textParts = str.split(BINDING_REGEXP);
+    let mask = 0;
+    for (let j = 0; j < textParts.length; j++) {
+        const textValue = textParts[j];
+        if (j & 1) {
+            // Odd indexes are bindings
+            const bindingIndex = parseInt(textValue, 10);
+            updateOpCodes.push(-1 - bindingIndex);
+            mask = mask | toMaskBit(bindingIndex);
+        }
+        else if (textValue !== '') {
+            // Even indexes are text
+            updateOpCodes.push(textValue);
+        }
+    }
+    updateOpCodes.push(destinationNode << 2 /* SHIFT_REF */ |
+        (attrName ? 1 /* Attr */ : 0 /* Text */));
+    if (attrName) {
+        updateOpCodes.push(attrName, sanitizeFn);
+    }
+    updateOpCodes[0] = mask;
+    updateOpCodes[1] = updateOpCodes.length - 2;
+    return updateOpCodes;
+}
+function getBindingMask(icuExpression, mask = 0) {
+    mask = mask | toMaskBit(icuExpression.mainBinding);
+    let match;
+    for (let i = 0; i < icuExpression.values.length; i++) {
+        const valueArr = icuExpression.values[i];
+        for (let j = 0; j < valueArr.length; j++) {
+            const value = valueArr[j];
+            if (typeof value === 'string') {
+                while (match = BINDING_REGEXP.exec(value)) {
+                    mask = mask | toMaskBit(parseInt(match[1], 10));
+                }
+            }
+            else {
+                mask = getBindingMask(value, mask);
+            }
+        }
+    }
+    return mask;
+}
+function allocNodeIndex(startIndex) {
+    return startIndex + i18nVarsCount++;
 }
 /**
- * Updates a translation block or an i18n attribute when the bindings have changed.
+ * Convert binding index to mask bit.
  *
- * @param index Index of either {@link i18nStart} (translation block) or {@link i18nAttributes}
- * (i18n attribute) on which it should update the content.
- *
- * @codeGenApi
+ * Each index represents a single bit on the bit-mask. Because bit-mask only has 32 bits, we make
+ * the 32nd bit share all masks for all bindings higher than 32. Since it is extremely rare to have
+ * more than 32 bindings this will be hit very rarely. The downside of hitting this corner case is
+ * that we will execute binding code more often than necessary. (penalty of performance)
  */
-function ɵɵi18nApply(index) {
-    if (shiftsCounter) {
-        const tView = getTView();
-        ngDevMode && assertDefined(tView, `tView should be defined`);
-        const tI18n = tView.data[index + HEADER_OFFSET];
-        let updateOpCodes;
-        let icus = null;
-        if (Array.isArray(tI18n)) {
-            updateOpCodes = tI18n;
+function toMaskBit(bindingIndex) {
+    return 1 << Math.min(bindingIndex, 31);
+}
+function isRootTemplateMessage(subTemplateIndex) {
+    return subTemplateIndex === undefined;
+}
+/**
+ * Removes everything inside the sub-templates of a message.
+ */
+function removeInnerTemplateTranslation(message) {
+    let match;
+    let res = '';
+    let index = 0;
+    let inTemplate = false;
+    let tagMatched;
+    while ((match = SUBTEMPLATE_REGEXP.exec(message)) !== null) {
+        if (!inTemplate) {
+            res += message.substring(index, match.index + match[0].length);
+            tagMatched = match[1];
+            inTemplate = true;
         }
         else {
-            updateOpCodes = tI18n.update;
-            icus = tI18n.icus;
+            if (match[0] === `${MARKER}/*${tagMatched}${MARKER}`) {
+                index = match.index;
+                inTemplate = false;
+            }
         }
-        const bindingsStartIndex = getBindingIndex() - shiftsCounter - 1;
-        const lView = getLView();
-        readUpdateOpCodes(updateOpCodes, icus, bindingsStartIndex, changeMask, tView, lView);
-        // Reset changeMask & maskBit to default for the next update cycle
-        changeMask = 0b0;
-        shiftsCounter = 0;
     }
+    ngDevMode &&
+        assertEqual(inTemplate, false, `Tag mismatch: unable to find the end of the sub-template in the translation "${message}"`);
+    res += message.substr(index);
+    return res;
 }
 /**
- * Returns the index of the current case of an ICU expression depending on the main binding value
+ * Extracts a part of a message and removes the rest.
  *
- * @param icuExpression
- * @param bindingValue The value of the main binding used by this ICU expression
+ * This method is used for extracting a part of the message associated with a template. A translated
+ * message can span multiple templates.
+ *
+ * Example:
+ * ```
+ * <div i18n>Translate <span *ngIf>me</span>!</div>
+ * ```
+ *
+ * @param message The message to crop
+ * @param subTemplateIndex Index of the sub-template to extract. If undefined it returns the
+ * external template and removes all sub-templates.
  */
-function getCaseIndex(icuExpression, bindingValue) {
-    let index = icuExpression.cases.indexOf(bindingValue);
-    if (index === -1) {
-        switch (icuExpression.type) {
-            case 1 /* plural */: {
-                const resolvedCase = getPluralCase(bindingValue, getLocaleId());
-                index = icuExpression.cases.indexOf(resolvedCase);
-                if (index === -1 && resolvedCase !== 'other') {
-                    index = icuExpression.cases.indexOf('other');
-                }
-                break;
-            }
-            case 0 /* select */: {
-                index = icuExpression.cases.indexOf('other');
-                break;
-            }
-        }
+function getTranslationForTemplate(message, subTemplateIndex) {
+    if (isRootTemplateMessage(subTemplateIndex)) {
+        // We want the root template message, ignore all sub-templates
+        return removeInnerTemplateTranslation(message);
     }
-    return index;
+    else {
+        // We want a specific sub-template
+        const start = message.indexOf(`:${subTemplateIndex}${MARKER}`) + 2 + subTemplateIndex.toString().length;
+        const end = message.search(new RegExp(`${MARKER}\\/\\*\\d+:${subTemplateIndex}${MARKER}`));
+        return removeInnerTemplateTranslation(message.substring(start, end));
+    }
 }
 /**
  * Generate the OpCodes for ICU expressions.
@@ -37289,9 +31983,10 @@ function icuStart(tIcus, icuExpression, startIndex, expandoStartIndex) {
     const updateCodes = [];
     const vars = [];
     const childIcus = [];
-    for (let i = 0; i < icuExpression.values.length; i++) {
+    const values = icuExpression.values;
+    for (let i = 0; i < values.length; i++) {
         // Each value is an array of strings & other ICU expressions
-        const valueArr = icuExpression.values[i];
+        const valueArr = values[i];
         const nestedIcus = [];
         for (let j = 0; j < valueArr.length; j++) {
             const value = valueArr[j];
@@ -37312,6 +32007,9 @@ function icuStart(tIcus, icuExpression, startIndex, expandoStartIndex) {
     const tIcu = {
         type: icuExpression.type,
         vars,
+        currentCaseLViewIndex: HEADER_OFFSET +
+            expandoStartIndex // expandoStartIndex does not include the header so add it.
+            + 1,
         childIcus,
         cases: icuExpression.cases,
         create: createCodes,
@@ -37321,6 +32019,47 @@ function icuStart(tIcus, icuExpression, startIndex, expandoStartIndex) {
     tIcus.push(tIcu);
     // Adding the maximum possible of vars needed (based on the cases with the most vars)
     i18nVarsCount += Math.max(...vars);
+}
+/**
+ * Parses text containing an ICU expression and produces a JSON object for it.
+ * Original code from closure library, modified for Angular.
+ *
+ * @param pattern Text containing an ICU expression that needs to be parsed.
+ *
+ */
+function parseICUBlock(pattern) {
+    const cases = [];
+    const values = [];
+    let icuType = 1 /* plural */;
+    let mainBinding = 0;
+    pattern = pattern.replace(ICU_BLOCK_REGEXP, function (str, binding, type) {
+        if (type === 'select') {
+            icuType = 0 /* select */;
+        }
+        else {
+            icuType = 1 /* plural */;
+        }
+        mainBinding = parseInt(binding.substr(1), 10);
+        return '';
+    });
+    const parts = extractParts(pattern);
+    // Looking for (key block)+ sequence. One of the keys has to be "other".
+    for (let pos = 0; pos < parts.length;) {
+        let key = parts[pos++].trim();
+        if (icuType === 1 /* plural */) {
+            // Key can be "=x", we just want "x"
+            key = key.replace(/\s*(?:=)?(\w+)\s*/, '$1');
+        }
+        if (key.length) {
+            cases.push(key);
+        }
+        const blocks = extractParts(parts[pos++]);
+        if (cases.length > values.length) {
+            values.push(blocks);
+        }
+    }
+    // TODO(ocombe): support ICU expressions in attributes, see #21615
+    return { type: icuType, mainBinding: mainBinding, cases, values };
 }
 /**
  * Transforms a string template into an HTML template and a list of instructions used to update
@@ -37333,17 +32072,76 @@ function icuStart(tIcus, icuExpression, startIndex, expandoStartIndex) {
  * @param expandoStartIndex
  */
 function parseIcuCase(unsafeHtml, parentIndex, nestedIcus, tIcus, expandoStartIndex) {
-    const inertBodyHelper = new InertBodyHelper(getDocument());
+    const inertBodyHelper = getInertBodyHelper(getDocument());
     const inertBodyElement = inertBodyHelper.getInertBodyElement(unsafeHtml);
     if (!inertBodyElement) {
         throw new Error('Unable to generate inert body element');
     }
     const wrapper = getTemplateContent(inertBodyElement) || inertBodyElement;
-    const opCodes = { vars: 0, childIcus: [], create: [], remove: [], update: [] };
+    const opCodes = {
+        vars: 1,
+        childIcus: [],
+        create: [],
+        remove: [],
+        update: []
+    };
+    if (ngDevMode) {
+        attachDebugGetter(opCodes.create, i18nMutateOpCodesToString);
+        attachDebugGetter(opCodes.remove, i18nMutateOpCodesToString);
+        attachDebugGetter(opCodes.update, i18nUpdateOpCodesToString);
+    }
     parseNodes(wrapper.firstChild, opCodes, parentIndex, nestedIcus, tIcus, expandoStartIndex);
     return opCodes;
 }
-const NESTED_ICU = /�(\d+)�/;
+/**
+ * Breaks pattern into strings and top level {...} blocks.
+ * Can be used to break a message into text and ICU expressions, or to break an ICU expression into
+ * keys and cases.
+ * Original code from closure library, modified for Angular.
+ *
+ * @param pattern (sub)Pattern to be broken.
+ *
+ */
+function extractParts(pattern) {
+    if (!pattern) {
+        return [];
+    }
+    let prevPos = 0;
+    const braceStack = [];
+    const results = [];
+    const braces = /[{}]/g;
+    // lastIndex doesn't get set to 0 so we have to.
+    braces.lastIndex = 0;
+    let match;
+    while (match = braces.exec(pattern)) {
+        const pos = match.index;
+        if (match[0] == '}') {
+            braceStack.pop();
+            if (braceStack.length == 0) {
+                // End of the block.
+                const block = pattern.substring(prevPos, pos);
+                if (ICU_BLOCK_REGEXP.test(block)) {
+                    results.push(parseICUBlock(block));
+                }
+                else {
+                    results.push(block);
+                }
+                prevPos = pos + 1;
+            }
+        }
+        else {
+            if (braceStack.length == 0) {
+                const substring = pattern.substring(prevPos, pos);
+                results.push(substring);
+                prevPos = pos + 1;
+            }
+            braceStack.push('{');
+        }
+    }
+    const substring = pattern.substring(prevPos);
+    results.push(substring);
+    return results;
+}
 /**
  * Parses a node, its children and its siblings, and generates the mutate & update OpCodes.
  *
@@ -37445,50 +32243,291 @@ function parseNodes(currentNode, icuCase, parentIndex, nestedIcus, tIcus, expand
             const mask = getBindingMask(nestedIcu);
             icuCase.update.push(toMaskBit(nestedIcu.mainBinding), // mask of the main binding
             3, // skip 3 opCodes if not changed
-            -1 - nestedIcu.mainBinding, nestedIcuNodeIndex << 2 /* SHIFT_REF */ | 2 /* IcuSwitch */, nestTIcuIndex, mask, // mask of all the bindings of this ICU expression
+            -1 - nestedIcu.mainBinding, nestedIcuNodeIndex << 2 /* SHIFT_REF */ | 2 /* IcuSwitch */, 
+            // FIXME(misko): Index should be part of the opcode
+            nestTIcuIndex, mask, // mask of all the bindings of this ICU expression
             2, // skip 2 opCodes if not changed
             nestedIcuNodeIndex << 2 /* SHIFT_REF */ | 3 /* IcuUpdate */, nestTIcuIndex);
-            icuCase.remove.push(nestTIcuIndex << 3 /* SHIFT_REF */ | 6 /* RemoveNestedIcu */, nestedIcuNodeIndex << 3 /* SHIFT_REF */ | 3 /* Remove */);
+            icuCase.remove.push(nestTIcuIndex << 3 /* SHIFT_REF */ | 6 /* RemoveNestedIcu */, 
+            // FIXME(misko): Index should be part of the opcode
+            nestedIcuNodeIndex << 3 /* SHIFT_REF */ | 3 /* Remove */);
         }
     }
 }
+
 /**
- * Angular Dart introduced &ngsp; as a placeholder for non-removable space, see:
- * https://github.com/dart-lang/angular/blob/0bb611387d29d65b5af7f9d2515ab571fd3fbee4/_tests/test/compiler/preserve_whitespace_test.dart#L25-L32
- * In Angular Dart &ngsp; is converted to the 0xE500 PUA (Private Use Areas) unicode character
- * and later on replaced by a space. We are re-implementing the same idea here, since translations
- * might contain this special character.
- */
-const NGSP_UNICODE_REGEXP = /\uE500/g;
-function replaceNgsp(value) {
-    return value.replace(NGSP_UNICODE_REGEXP, ' ');
-}
-/**
- * The locale id that the application is currently using (for translations and ICU expressions).
- * This is the ivy version of `LOCALE_ID` that was defined as an injection token for the view engine
- * but is now defined as a global value.
- */
-let LOCALE_ID = DEFAULT_LOCALE_ID;
-/**
- * Sets the locale id that will be used for translations and ICU expressions.
- * This is the ivy version of `LOCALE_ID` that was defined as an injection token for the view engine
- * but is now defined as a global value.
+ * @license
+ * Copyright Google LLC All Rights Reserved.
  *
- * @param localeId
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
  */
-function setLocaleId(localeId) {
-    assertDefined(localeId, `Expected localeId to be defined`);
-    if (typeof localeId === 'string') {
-        LOCALE_ID = localeId.toLowerCase().replace(/_/g, '-');
+// i18nPostprocess consts
+const ROOT_TEMPLATE_ID = 0;
+const PP_MULTI_VALUE_PLACEHOLDERS_REGEXP = /\[(�.+?�?)\]/;
+const PP_PLACEHOLDERS_REGEXP = /\[(�.+?�?)\]|(�\/?\*\d+:\d+�)/g;
+const PP_ICU_VARS_REGEXP = /({\s*)(VAR_(PLURAL|SELECT)(_\d+)?)(\s*,)/g;
+const PP_ICU_PLACEHOLDERS_REGEXP = /{([A-Z0-9_]+)}/g;
+const PP_ICUS_REGEXP = /�I18N_EXP_(ICU(_\d+)?)�/g;
+const PP_CLOSE_TEMPLATE_REGEXP = /\/\*/;
+const PP_TEMPLATE_ID_REGEXP = /\d+\:(\d+)/;
+/**
+ * Handles message string post-processing for internationalization.
+ *
+ * Handles message string post-processing by transforming it from intermediate
+ * format (that might contain some markers that we need to replace) to the final
+ * form, consumable by i18nStart instruction. Post processing steps include:
+ *
+ * 1. Resolve all multi-value cases (like [�*1:1��#2:1�|�#4:1�|�5�])
+ * 2. Replace all ICU vars (like "VAR_PLURAL")
+ * 3. Replace all placeholders used inside ICUs in a form of {PLACEHOLDER}
+ * 4. Replace all ICU references with corresponding values (like �ICU_EXP_ICU_1�)
+ *    in case multiple ICUs have the same placeholder name
+ *
+ * @param message Raw translation string for post processing
+ * @param replacements Set of replacements that should be applied
+ *
+ * @returns Transformed string that can be consumed by i18nStart instruction
+ *
+ * @codeGenApi
+ */
+function i18nPostprocess(message, replacements = {}) {
+    /**
+     * Step 1: resolve all multi-value placeholders like [�#5�|�*1:1��#2:1�|�#4:1�]
+     *
+     * Note: due to the way we process nested templates (BFS), multi-value placeholders are typically
+     * grouped by templates, for example: [�#5�|�#6�|�#1:1�|�#3:2�] where �#5� and �#6� belong to root
+     * template, �#1:1� belong to nested template with index 1 and �#1:2� - nested template with index
+     * 3. However in real templates the order might be different: i.e. �#1:1� and/or �#3:2� may go in
+     * front of �#6�. The post processing step restores the right order by keeping track of the
+     * template id stack and looks for placeholders that belong to the currently active template.
+     */
+    let result = message;
+    if (PP_MULTI_VALUE_PLACEHOLDERS_REGEXP.test(message)) {
+        const matches = {};
+        const templateIdsStack = [ROOT_TEMPLATE_ID];
+        result = result.replace(PP_PLACEHOLDERS_REGEXP, (m, phs, tmpl) => {
+            const content = phs || tmpl;
+            const placeholders = matches[content] || [];
+            if (!placeholders.length) {
+                content.split('|').forEach((placeholder) => {
+                    const match = placeholder.match(PP_TEMPLATE_ID_REGEXP);
+                    const templateId = match ? parseInt(match[1], 10) : ROOT_TEMPLATE_ID;
+                    const isCloseTemplateTag = PP_CLOSE_TEMPLATE_REGEXP.test(placeholder);
+                    placeholders.push([templateId, isCloseTemplateTag, placeholder]);
+                });
+                matches[content] = placeholders;
+            }
+            if (!placeholders.length) {
+                throw new Error(`i18n postprocess: unmatched placeholder - ${content}`);
+            }
+            const currentTemplateId = templateIdsStack[templateIdsStack.length - 1];
+            let idx = 0;
+            // find placeholder index that matches current template id
+            for (let i = 0; i < placeholders.length; i++) {
+                if (placeholders[i][0] === currentTemplateId) {
+                    idx = i;
+                    break;
+                }
+            }
+            // update template id stack based on the current tag extracted
+            const [templateId, isCloseTemplateTag, placeholder] = placeholders[idx];
+            if (isCloseTemplateTag) {
+                templateIdsStack.pop();
+            }
+            else if (currentTemplateId !== templateId) {
+                templateIdsStack.push(templateId);
+            }
+            // remove processed tag from the list
+            placeholders.splice(idx, 1);
+            return placeholder;
+        });
+    }
+    // return current result if no replacements specified
+    if (!Object.keys(replacements).length) {
+        return result;
+    }
+    /**
+     * Step 2: replace all ICU vars (like "VAR_PLURAL")
+     */
+    result = result.replace(PP_ICU_VARS_REGEXP, (match, start, key, _type, _idx, end) => {
+        return replacements.hasOwnProperty(key) ? `${start}${replacements[key]}${end}` : match;
+    });
+    /**
+     * Step 3: replace all placeholders used inside ICUs in a form of {PLACEHOLDER}
+     */
+    result = result.replace(PP_ICU_PLACEHOLDERS_REGEXP, (match, key) => {
+        return replacements.hasOwnProperty(key) ? replacements[key] : match;
+    });
+    /**
+     * Step 4: replace all ICU references with corresponding values (like �ICU_EXP_ICU_1�) in case
+     * multiple ICUs have the same placeholder name
+     */
+    result = result.replace(PP_ICUS_REGEXP, (match, key) => {
+        if (replacements.hasOwnProperty(key)) {
+            const list = replacements[key];
+            if (!list.length) {
+                throw new Error(`i18n postprocess: unmatched ICU - ${match} with key: ${key}`);
+            }
+            return list.shift();
+        }
+        return match;
+    });
+    return result;
+}
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * Marks a block of text as translatable.
+ *
+ * The instructions `i18nStart` and `i18nEnd` mark the translation block in the template.
+ * The translation `message` is the value which is locale specific. The translation string may
+ * contain placeholders which associate inner elements and sub-templates within the translation.
+ *
+ * The translation `message` placeholders are:
+ * - `�{index}(:{block})�`: *Binding Placeholder*: Marks a location where an expression will be
+ *   interpolated into. The placeholder `index` points to the expression binding index. An optional
+ *   `block` that matches the sub-template in which it was declared.
+ * - `�#{index}(:{block})�`/`�/#{index}(:{block})�`: *Element Placeholder*:  Marks the beginning
+ *   and end of DOM element that were embedded in the original translation block. The placeholder
+ *   `index` points to the element index in the template instructions set. An optional `block` that
+ *   matches the sub-template in which it was declared.
+ * - `�!{index}(:{block})�`/`�/!{index}(:{block})�`: *Projection Placeholder*:  Marks the
+ *   beginning and end of <ng-content> that was embedded in the original translation block.
+ *   The placeholder `index` points to the element index in the template instructions set.
+ *   An optional `block` that matches the sub-template in which it was declared.
+ * - `�*{index}:{block}�`/`�/*{index}:{block}�`: *Sub-template Placeholder*: Sub-templates must be
+ *   split up and translated separately in each angular template function. The `index` points to the
+ *   `template` instruction index. A `block` that matches the sub-template in which it was declared.
+ *
+ * @param index A unique index of the translation in the static block.
+ * @param message The translation message.
+ * @param subTemplateIndex Optional sub-template index in the `message`.
+ *
+ * @codeGenApi
+ */
+function ɵɵi18nStart(index, message, subTemplateIndex) {
+    const tView = getTView();
+    ngDevMode && assertDefined(tView, `tView should be defined`);
+    pushI18nIndex(index);
+    // We need to delay projections until `i18nEnd`
+    setDelayProjection(true);
+    if (tView.firstCreatePass && tView.data[index + HEADER_OFFSET] === null) {
+        i18nStartFirstPass(getLView(), tView, index, message, subTemplateIndex);
     }
 }
 /**
- * Gets the locale id that will be used for translations and ICU expressions.
- * This is the ivy version of `LOCALE_ID` that was defined as an injection token for the view engine
- * but is now defined as a global value.
+ * Translates a translation block marked by `i18nStart` and `i18nEnd`. It inserts the text/ICU nodes
+ * into the render tree, moves the placeholder nodes and removes the deleted nodes.
+ *
+ * @codeGenApi
  */
-function getLocaleId() {
-    return LOCALE_ID;
+function ɵɵi18nEnd() {
+    const lView = getLView();
+    const tView = getTView();
+    ngDevMode && assertDefined(tView, `tView should be defined`);
+    i18nEndFirstPass(tView, lView);
+    // Stop delaying projections
+    setDelayProjection(false);
+}
+/**
+ *
+ * Use this instruction to create a translation block that doesn't contain any placeholder.
+ * It calls both {@link i18nStart} and {@link i18nEnd} in one instruction.
+ *
+ * The translation `message` is the value which is locale specific. The translation string may
+ * contain placeholders which associate inner elements and sub-templates within the translation.
+ *
+ * The translation `message` placeholders are:
+ * - `�{index}(:{block})�`: *Binding Placeholder*: Marks a location where an expression will be
+ *   interpolated into. The placeholder `index` points to the expression binding index. An optional
+ *   `block` that matches the sub-template in which it was declared.
+ * - `�#{index}(:{block})�`/`�/#{index}(:{block})�`: *Element Placeholder*:  Marks the beginning
+ *   and end of DOM element that were embedded in the original translation block. The placeholder
+ *   `index` points to the element index in the template instructions set. An optional `block` that
+ *   matches the sub-template in which it was declared.
+ * - `�*{index}:{block}�`/`�/*{index}:{block}�`: *Sub-template Placeholder*: Sub-templates must be
+ *   split up and translated separately in each angular template function. The `index` points to the
+ *   `template` instruction index. A `block` that matches the sub-template in which it was declared.
+ *
+ * @param index A unique index of the translation in the static block.
+ * @param message The translation message.
+ * @param subTemplateIndex Optional sub-template index in the `message`.
+ *
+ * @codeGenApi
+ */
+function ɵɵi18n(index, message, subTemplateIndex) {
+    ɵɵi18nStart(index, message, subTemplateIndex);
+    ɵɵi18nEnd();
+}
+/**
+ * Marks a list of attributes as translatable.
+ *
+ * @param index A unique index in the static block
+ * @param values
+ *
+ * @codeGenApi
+ */
+function ɵɵi18nAttributes(index, values) {
+    const lView = getLView();
+    const tView = getTView();
+    ngDevMode && assertDefined(tView, `tView should be defined`);
+    i18nAttributesFirstPass(lView, tView, index, values);
+}
+/**
+ * Stores the values of the bindings during each update cycle in order to determine if we need to
+ * update the translated nodes.
+ *
+ * @param value The binding's value
+ * @returns This function returns itself so that it may be chained
+ * (e.g. `i18nExp(ctx.name)(ctx.title)`)
+ *
+ * @codeGenApi
+ */
+function ɵɵi18nExp(value) {
+    const lView = getLView();
+    setMaskBit(bindingUpdated(lView, nextBindingIndex(), value));
+    return ɵɵi18nExp;
+}
+/**
+ * Updates a translation block or an i18n attribute when the bindings have changed.
+ *
+ * @param index Index of either {@link i18nStart} (translation block) or {@link i18nAttributes}
+ * (i18n attribute) on which it should update the content.
+ *
+ * @codeGenApi
+ */
+function ɵɵi18nApply(index) {
+    applyI18n(getTView(), getLView(), index);
+}
+/**
+ * Handles message string post-processing for internationalization.
+ *
+ * Handles message string post-processing by transforming it from intermediate
+ * format (that might contain some markers that we need to replace) to the final
+ * form, consumable by i18nStart instruction. Post processing steps include:
+ *
+ * 1. Resolve all multi-value cases (like [�*1:1��#2:1�|�#4:1�|�5�])
+ * 2. Replace all ICU vars (like "VAR_PLURAL")
+ * 3. Replace all placeholders used inside ICUs in a form of {PLACEHOLDER}
+ * 4. Replace all ICU references with corresponding values (like �ICU_EXP_ICU_1�)
+ *    in case multiple ICUs have the same placeholder name
+ *
+ * @param message Raw translation string for post processing
+ * @param replacements Set of replacements that should be applied
+ *
+ * @returns Transformed string that can be consumed by i18nStart instruction
+ *
+ * @codeGenApi
+ */
+function ɵɵi18nPostprocess(message, replacements = {}) {
+    return i18nPostprocess(message, replacements);
 }
 
 /**
@@ -37933,7 +32972,7 @@ function ɵɵpureFunctionV(slotOffset, pureFn, exps, thisArg) {
  * it to `undefined`.
  */
 function getPureFunctionReturnValue(lView, returnValueIndex) {
-    ngDevMode && assertDataInRange(lView, returnValueIndex);
+    ngDevMode && assertIndexInRange(lView, returnValueIndex);
     const lastReturnValue = lView[returnValueIndex];
     return lastReturnValue === NO_CHANGE ? undefined : lastReturnValue;
 }
@@ -38554,7 +33593,7 @@ class TQueries_ {
         }
     }
     getByIndex(index) {
-        ngDevMode && assertDataInRange(this.queries, index);
+        ngDevMode && assertIndexInRange(this.queries, index);
         return this.queries[index];
     }
     get length() {
@@ -38624,21 +33663,23 @@ class TQuery_ {
         return this._appliesToNextNode;
     }
     matchTNode(tView, tNode) {
-        if (Array.isArray(this.metadata.predicate)) {
-            const localNames = this.metadata.predicate;
-            for (let i = 0; i < localNames.length; i++) {
-                this.matchTNodeWithReadOption(tView, tNode, getIdxOfMatchingSelector(tNode, localNames[i]));
+        const predicate = this.metadata.predicate;
+        if (Array.isArray(predicate)) {
+            for (let i = 0; i < predicate.length; i++) {
+                const name = predicate[i];
+                this.matchTNodeWithReadOption(tView, tNode, getIdxOfMatchingSelector(tNode, name));
+                // Also try matching the name to a provider since strings can be used as DI tokens too.
+                this.matchTNodeWithReadOption(tView, tNode, locateDirectiveOrProvider(tNode, tView, name, false, false));
             }
         }
         else {
-            const typePredicate = this.metadata.predicate;
-            if (typePredicate === TemplateRef) {
+            if (predicate === TemplateRef) {
                 if (tNode.type === 0 /* Container */) {
                     this.matchTNodeWithReadOption(tView, tNode, -1);
                 }
             }
             else {
-                this.matchTNodeWithReadOption(tView, tNode, locateDirectiveOrProvider(tNode, tView, typePredicate, false, false));
+                this.matchTNodeWithReadOption(tView, tNode, locateDirectiveOrProvider(tNode, tView, predicate, false, false));
             }
         }
     }
@@ -38750,7 +33791,7 @@ function materializeViewResults(tView, lView, tQuery, queryIndex) {
                 result.push(null);
             }
             else {
-                ngDevMode && assertDataInRange(tViewData, matchedNodeIdx);
+                ngDevMode && assertIndexInRange(tViewData, matchedNodeIdx);
                 const tNode = tViewData[matchedNodeIdx];
                 result.push(createResultForNode(lView, tNode, tQueryMatches[i + 1], tQuery.metadata.read));
             }
@@ -38912,7 +33953,7 @@ function ɵɵloadQuery() {
 function loadQueryInternal(lView, queryIndex) {
     ngDevMode &&
         assertDefined(lView[QUERIES], 'LQueries should be defined when trying to load a query');
-    ngDevMode && assertDataInRange(lView[QUERIES].queries, queryIndex);
+    ngDevMode && assertIndexInRange(lView[QUERIES].queries, queryIndex);
     return lView[QUERIES].queries[queryIndex].queryList;
 }
 function createLQuery(tView, lView) {
@@ -39041,8 +34082,8 @@ const ɵ0$d = () => ({
     'ɵɵrestoreView': ɵɵrestoreView,
     'ɵɵlistener': ɵɵlistener,
     'ɵɵprojection': ɵɵprojection,
-    'ɵɵupdateSyntheticHostBinding': ɵɵupdateSyntheticHostBinding,
-    'ɵɵcomponentHostSyntheticListener': ɵɵcomponentHostSyntheticListener,
+    'ɵɵsyntheticHostProperty': ɵɵsyntheticHostProperty,
+    'ɵɵsyntheticHostListener': ɵɵsyntheticHostListener,
     'ɵɵpipeBind1': ɵɵpipeBind1,
     'ɵɵpipeBind2': ɵɵpipeBind2,
     'ɵɵpipeBind3': ɵɵpipeBind3,
@@ -39617,6 +34658,20 @@ function isNgModule(value) {
  * found in the LICENSE file at https://angular.io/license
  */
 /**
+ * Keep track of the compilation depth to avoid reentrancy issues during JIT compilation. This
+ * matters in the following scenario:
+ *
+ * Consider a component 'A' that extends component 'B', both declared in module 'M'. During
+ * the compilation of 'A' the definition of 'B' is requested to capture the inheritance chain,
+ * potentially triggering compilation of 'B'. If this nested compilation were to trigger
+ * `flushModuleScopingQueueAsMuchAsPossible` it may happen that module 'M' is still pending in the
+ * queue, resulting in 'A' and 'B' to be patched with the NgModule scope. As the compilation of
+ * 'A' is still in progress, this would introduce a circular dependency on its compilation. To avoid
+ * this issue, the module scope queue is only flushed for compilations at the depth 0, to ensure
+ * all compilations have finished.
+ */
+let compilationDepth = 0;
+/**
  * Compile an Angular component according to its decorator metadata, and patch the resulting
  * component def (ɵcmp) onto the component type.
  *
@@ -39676,16 +34731,25 @@ function compileComponent(type, metadata) {
                 }
                 const templateUrl = metadata.templateUrl || `ng:///${type.name}/template.html`;
                 const meta = Object.assign(Object.assign({}, directiveMetadata(type, metadata)), { typeSourceSpan: compiler.createParseSourceSpan('Component', type.name, templateUrl), template: metadata.template || '', preserveWhitespaces, styles: metadata.styles || EMPTY_ARRAY, animations: metadata.animations, directives: [], changeDetection: metadata.changeDetection, pipes: new Map(), encapsulation, interpolation: metadata.interpolation, viewProviders: metadata.viewProviders || null });
-                if (meta.usesInheritance) {
-                    addDirectiveDefToUndecoratedParents(type);
+                compilationDepth++;
+                try {
+                    if (meta.usesInheritance) {
+                        addDirectiveDefToUndecoratedParents(type);
+                    }
+                    ngComponentDef = compiler.compileComponent(angularCoreEnv, templateUrl, meta);
                 }
-                ngComponentDef = compiler.compileComponent(angularCoreEnv, templateUrl, meta);
-                // When NgModule decorator executed, we enqueued the module definition such that
-                // it would only dequeue and add itself as module scope to all of its declarations,
-                // but only if  if all of its declarations had resolved. This call runs the check
-                // to see if any modules that are in the queue can be dequeued and add scope to
-                // their declarations.
-                flushModuleScopingQueueAsMuchAsPossible();
+                finally {
+                    // Ensure that the compilation depth is decremented even when the compilation failed.
+                    compilationDepth--;
+                }
+                if (compilationDepth === 0) {
+                    // When NgModule decorator executed, we enqueued the module definition such that
+                    // it would only dequeue and add itself as module scope to all of its declarations,
+                    // but only if  if all of its declarations had resolved. This call runs the check
+                    // to see if any modules that are in the queue can be dequeued and add scope to
+                    // their declarations.
+                    flushModuleScopingQueueAsMuchAsPossible();
+                }
                 // If component compilation is async, then the @NgModule annotation which declares the
                 // component may execute and set an ngSelectorScope property on the component type. This
                 // allows the component to patch itself with directiveDefs from the module after it
@@ -40102,21 +35166,25 @@ const SWITCH_COMPILE_NGMODULE = SWITCH_COMPILE_NGMODULE__POST_R3__;
  * found in the LICENSE file at https://angular.io/license
  */
 /**
- * An injection token that allows you to provide one or more initialization functions.
- * These function are injected at application startup and executed during
+ * A [DI token](guide/glossary#di-token "DI token definition") that you can use to provide
+ * one or more initialization functions.
+ *
+ * The provided functions are injected at application startup and executed during
  * app initialization. If any of these functions returns a Promise, initialization
  * does not complete until the Promise is resolved.
  *
  * You can, for example, create a factory function that loads language data
  * or an external configuration, and provide that function to the `APP_INITIALIZER` token.
- * That way, the function is executed during the application bootstrap process,
+ * The function is executed during the application bootstrap process,
  * and the needed data is available on startup.
+ *
+ * @see `ApplicationInitStatus`
  *
  * @publicApi
  */
 const APP_INITIALIZER = new InjectionToken('Application Initializer');
 /**
- * A class that reflects the state of running {@link APP_INITIALIZER}s.
+ * A class that reflects the state of running {@link APP_INITIALIZER} functions.
  *
  * @publicApi
  */
@@ -40183,13 +35251,14 @@ ApplicationInitStatus.ctorParameters = () => [
  * found in the LICENSE file at https://angular.io/license
  */
 /**
- * A DI Token representing a unique string id assigned to the application by Angular and used
+ * A [DI token](guide/glossary#di-token "DI token definition") representing a unique string ID, used
  * primarily for prefixing application attributes and CSS styles when
  * {@link ViewEncapsulation#Emulated ViewEncapsulation.Emulated} is being used.
  *
- * If you need to avoid randomly generated value to be used as an application id, you can provide
- * a custom value via a DI provider <!-- TODO: provider --> configuring the root {@link Injector}
- * using this token.
+ * BY default, the value is randomly generated and assigned to the application by Angular.
+ * To provide a custom ID value, use a DI provider <!-- TODO: provider --> to configure
+ * the root {@link Injector} that uses this token.
+ *
  * @publicApi
  */
 const APP_ID = new InjectionToken('AppId');
@@ -40197,7 +35266,7 @@ function _appIdRandomProviderFactory() {
     return `${_randomChar()}${_randomChar()}${_randomChar()}`;
 }
 /**
- * Providers that will generate a random APP_ID_TOKEN.
+ * Providers that generate a random `APP_ID_TOKEN`.
  * @publicApi
  */
 const APP_ID_RANDOM_PROVIDER = {
@@ -40209,26 +35278,29 @@ function _randomChar() {
     return String.fromCharCode(97 + Math.floor(Math.random() * 25));
 }
 /**
- * A function that will be executed when a platform is initialized.
+ * A function that is executed when a platform is initialized.
  * @publicApi
  */
 const PLATFORM_INITIALIZER = new InjectionToken('Platform Initializer');
 /**
- * A token that indicates an opaque platform id.
+ * A token that indicates an opaque platform ID.
  * @publicApi
  */
 const PLATFORM_ID = new InjectionToken('Platform ID');
 /**
- * All callbacks provided via this token will be called for every component that is bootstrapped.
- * Signature of the callback:
+ * A [DI token](guide/glossary#di-token "DI token definition") that provides a set of callbacks to
+ * be called for every component that is bootstrapped.
  *
- * `(componentRef: ComponentRef) => void`.
+ * Each callback must take a `ComponentRef` instance and return nothing.
+ *
+ * `(componentRef: ComponentRef) => void`
  *
  * @publicApi
  */
 const APP_BOOTSTRAP_LISTENER = new InjectionToken('appBootstrapListener');
 /**
- * A token which indicates the root directory of the application
+ * A [DI token](guide/glossary#di-token "DI token definition") that indicates the root directory of
+ * the application
  * @publicApi
  */
 const PACKAGE_ROOT_URL = new InjectionToken('Application Packages Root URL');
@@ -41993,12 +37065,9 @@ function checkNotEmpty(value, modulePath, exportName) {
  * found in the LICENSE file at https://angular.io/license
  */
 /**
- * Represents an Angular [view](guide/glossary#view),
- * specifically the [host view](guide/glossary#view-tree) that is defined by a component.
- * Also serves as the base class
- * that adds destroy methods for [embedded views](guide/glossary#view-tree).
+ * Represents an Angular [view](guide/glossary#view "Definition").
  *
- * @see `EmbeddedViewRef`
+ * @see {@link ChangeDetectorRef#usage-notes Change detection usage}
  *
  * @publicApi
  */
@@ -45277,7 +40346,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
 /**
- * @license Angular v10.0.1
+ * @license Angular v10.0.14
  * (c) 2010-2020 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -45808,7 +40877,7 @@ class ControlContainer extends AbstractControlDirective {
 }
 ControlContainer.ɵfac = function ControlContainer_Factory(t) { return ɵControlContainer_BaseFactory(t || ControlContainer); };
 ControlContainer.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({ type: ControlContainer, features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵInheritDefinitionFeature"]] });
-const ɵControlContainer_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](ControlContainer);
+const ɵControlContainer_BaseFactory = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](ControlContainer);
 
 /**
  * @license
@@ -45822,7 +40891,7 @@ function unimplemented() {
 }
 /**
  * @description
- * A base class that all control `FormControl`-based directives extend. It binds a `FormControl`
+ * A base class that all `FormControl`-based directives extend. It binds a `FormControl`
  * object to a DOM element.
  *
  * @publicApi
@@ -46398,7 +41467,7 @@ class Validators {
         if (presentValidators.length == 0)
             return null;
         return function (control) {
-            return _mergeErrors(_executeValidators(control, presentValidators));
+            return mergeErrors(executeValidators(control, presentValidators));
         };
     }
     /**
@@ -46419,8 +41488,8 @@ class Validators {
         if (presentValidators.length == 0)
             return null;
         return function (control) {
-            const observables = _executeAsyncValidators(control, presentValidators).map(toObservable);
-            return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["forkJoin"])(observables).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(_mergeErrors));
+            const observables = executeValidators(control, presentValidators).map(toObservable);
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["forkJoin"])(observables).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(mergeErrors));
         };
     }
 }
@@ -46434,13 +41503,7 @@ function toObservable(r) {
     }
     return obs;
 }
-function _executeValidators(control, validators) {
-    return validators.map(v => v(control));
-}
-function _executeAsyncValidators(control, validators) {
-    return validators.map(v => v(control));
-}
-function _mergeErrors(arrayOfErrors) {
+function mergeErrors(arrayOfErrors) {
     let res = {};
     // Not using Array.reduce here due to a Chrome 80 bug
     // https://bugs.chromium.org/p/chromium/issues/detail?id=1049982
@@ -46449,29 +41512,26 @@ function _mergeErrors(arrayOfErrors) {
     });
     return Object.keys(res).length === 0 ? null : res;
 }
-
-/**
- * @license
- * Copyright Google LLC All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-function normalizeValidator(validator) {
-    if (!!validator.validate) {
-        return (c) => validator.validate(c);
-    }
-    else {
-        return validator;
-    }
+function executeValidators(control, validators) {
+    return validators.map(validator => validator(control));
 }
-function normalizeAsyncValidator(validator) {
-    if (!!validator.validate) {
-        return (c) => validator.validate(c);
-    }
-    else {
-        return validator;
-    }
+function isValidatorFn(validator) {
+    return !validator.validate;
+}
+/**
+ * Given the list of validators that may contain both functions as well as classes, return the list
+ * of validator functions (convert validator classes into validator functions). This is needed to
+ * have consistent structure in validators list before composing them.
+ *
+ * @param validators The set of validators that may contain validators both in plain function form
+ *     as well as represented as a validator class.
+ */
+function normalizeValidators(validators) {
+    return validators.map(validator => {
+        return isValidatorFn(validator) ?
+            validator :
+            ((c) => validator.validate(c));
+    });
 }
 
 /**
@@ -47718,10 +42778,12 @@ function _throwError(dir, message) {
     throw new Error(`${message} ${messageEnd}`);
 }
 function composeValidators(validators) {
-    return validators != null ? Validators.compose(validators.map(normalizeValidator)) : null;
+    return validators != null ? Validators.compose(normalizeValidators(validators)) :
+        null;
 }
 function composeAsyncValidators(validators) {
-    return validators != null ? Validators.composeAsync(validators.map(normalizeAsyncValidator)) :
+    return validators != null ?
+        Validators.composeAsync(normalizeValidators(validators)) :
         null;
 }
 function isPropertyUpdated(changes, viewModel) {
@@ -49959,7 +45021,7 @@ class AbstractFormGroupDirective extends ControlContainer {
 }
 AbstractFormGroupDirective.ɵfac = function AbstractFormGroupDirective_Factory(t) { return ɵAbstractFormGroupDirective_BaseFactory(t || AbstractFormGroupDirective); };
 AbstractFormGroupDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({ type: AbstractFormGroupDirective, features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵInheritDefinitionFeature"]] });
-const ɵAbstractFormGroupDirective_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](AbstractFormGroupDirective);
+const ɵAbstractFormGroupDirective_BaseFactory = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](AbstractFormGroupDirective);
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AbstractFormGroupDirective, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Directive"]
     }], null, null); })();
@@ -51463,6 +46525,9 @@ const CHECKBOX_REQUIRED_VALIDATOR = {
  * @publicApi
  */
 class RequiredValidator {
+    constructor() {
+        this._required = false;
+    }
     /**
      * @description
      * Tracks changes to the required attribute bound to this directive.
@@ -51507,7 +46572,7 @@ RequiredValidator.propDecorators = {
                 providers: [REQUIRED_VALIDATOR],
                 host: { '[attr.required]': 'required ? "" : null' }
             }]
-    }], null, { required: [{
+    }], function () { return []; }, { required: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }] }); })();
 /**
@@ -51545,7 +46610,7 @@ CheckboxRequiredValidator.ɵfac = function CheckboxRequiredValidator_Factory(t) 
 CheckboxRequiredValidator.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({ type: CheckboxRequiredValidator, selectors: [["input", "type", "checkbox", "required", "", "formControlName", ""], ["input", "type", "checkbox", "required", "", "formControl", ""], ["input", "type", "checkbox", "required", "", "ngModel", ""]], hostVars: 1, hostBindings: function CheckboxRequiredValidator_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("required", ctx.required ? "" : null);
     } }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([CHECKBOX_REQUIRED_VALIDATOR]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵInheritDefinitionFeature"]] });
-const ɵCheckboxRequiredValidator_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](CheckboxRequiredValidator);
+const ɵCheckboxRequiredValidator_BaseFactory = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](CheckboxRequiredValidator);
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](CheckboxRequiredValidator, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Directive"],
         args: [{
@@ -51587,6 +46652,9 @@ const EMAIL_VALIDATOR = {
  * @ngModule ReactiveFormsModule
  */
 class EmailValidator {
+    constructor() {
+        this._enabled = false;
+    }
     /**
      * @description
      * Tracks changes to the email attribute bound to this directive.
@@ -51625,7 +46693,7 @@ EmailValidator.propDecorators = {
                 selector: '[email][formControlName],[email][formControl],[email][ngModel]',
                 providers: [EMAIL_VALIDATOR]
             }]
-    }], null, { email: [{
+    }], function () { return []; }, { email: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }] }); })();
 /**
@@ -51659,6 +46727,9 @@ const MIN_LENGTH_VALIDATOR = {
  * @publicApi
  */
 class MinLengthValidator {
+    constructor() {
+        this._validator = Validators.nullValidator;
+    }
     /**
      * @description
      * A lifecycle method called when the directive's inputs change. For internal use
@@ -51708,7 +46779,7 @@ MinLengthValidator.propDecorators = {
                 providers: [MIN_LENGTH_VALIDATOR],
                 host: { '[attr.minlength]': 'minlength ? minlength : null' }
             }]
-    }], null, { minlength: [{
+    }], function () { return []; }, { minlength: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }] }); })();
 /**
@@ -51742,6 +46813,9 @@ const MAX_LENGTH_VALIDATOR = {
  * @publicApi
  */
 class MaxLengthValidator {
+    constructor() {
+        this._validator = Validators.nullValidator;
+    }
     /**
      * @description
      * A lifecycle method called when the directive's inputs change. For internal use
@@ -51791,7 +46865,7 @@ MaxLengthValidator.propDecorators = {
                 providers: [MAX_LENGTH_VALIDATOR],
                 host: { '[attr.maxlength]': 'maxlength ? maxlength : null' }
             }]
-    }], null, { maxlength: [{
+    }], function () { return []; }, { maxlength: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }] }); })();
 /**
@@ -51827,6 +46901,9 @@ const PATTERN_VALIDATOR = {
  * @publicApi
  */
 class PatternValidator {
+    constructor() {
+        this._validator = Validators.nullValidator;
+    }
     /**
      * @description
      * A lifecycle method called when the directive's inputs change. For internal use
@@ -51876,7 +46953,7 @@ PatternValidator.propDecorators = {
                 providers: [PATTERN_VALIDATOR],
                 host: { '[attr.pattern]': 'pattern ? pattern : null' }
             }]
-    }], null, { pattern: [{
+    }], function () { return []; }, { pattern: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }] }); })();
 
@@ -52076,7 +47153,7 @@ FormBuilder.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjec
 /**
  * @publicApi
  */
-const VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["Version"]('10.0.1');
+const VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["Version"]('10.0.14');
 
 /**
  * @license
@@ -52250,7 +47327,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ɵgetDOM", function() { return _angular_common__WEBPACK_IMPORTED_MODULE_0__["ɵgetDOM"]; });
 
 /**
- * @license Angular v10.0.1
+ * @license Angular v10.0.14
  * (c) 2010-2020 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -53490,6 +48567,9 @@ class KeyEventsPlugin extends EventManagerPlugin {
             // returning null instead of throwing to let another plugin process the event
             return null;
         }
+        // NOTE: Please don't rewrite this as so, as it will break JSCompiler property renaming.
+        //       The code must remain in the `result['domEventName']` form.
+        // return {domEventName, fullKey};
         const result = {};
         result['domEventName'] = domEventName;
         result['fullKey'] = fullKey;
@@ -54378,7 +49458,7 @@ function elementMatches(n, selector) {
 /**
  * @publicApi
  */
-const VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["Version"]('10.0.1');
+const VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["Version"]('10.0.14');
 
 /**
  * @license
@@ -54494,7 +49574,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
 /**
- * @license Angular v10.0.1
+ * @license Angular v10.0.14
  * (c) 2010-2020 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -54515,7 +49595,7 @@ __webpack_require__.r(__webpack_exports__);
  * Base for events the router goes through, as opposed to events tied to a specific
  * route. Fired one time for any given navigation.
  *
- * @usageNotes
+ * The following code shows how a class subscribes to router events.
  *
  * ```ts
  * class MyService {
@@ -54530,6 +49610,7 @@ __webpack_require__.r(__webpack_exports__);
  * ```
  *
  * @see `Event`
+ * @see [Router events summary](guide/router#router-events)
  * @publicApi
  */
 
@@ -54571,6 +49652,10 @@ class NavigationStart extends RouterEvent {
 /**
  * An event triggered when a navigation ends successfully.
  *
+ * @see `NavigationStart`
+ * @see `NavigationCancel`
+ * @see `NavigationError`
+ *
  * @publicApi
  */
 class NavigationEnd extends RouterEvent {
@@ -54591,9 +49676,12 @@ class NavigationEnd extends RouterEvent {
 }
 /**
  * An event triggered when a navigation is canceled, directly or indirectly.
- *
- * This can happen when a [route guard](guide/router#milestone-5-route-guards)
+ * This can happen when a route guard
  * returns `false` or initiates a redirect by returning a `UrlTree`.
+ *
+ * @see `NavigationStart`
+ * @see `NavigationEnd`
+ * @see `NavigationError`
  *
  * @publicApi
  */
@@ -54616,6 +49704,10 @@ class NavigationCancel extends RouterEvent {
 /**
  * An event triggered when a navigation fails due to an unexpected error.
  *
+ * @see `NavigationStart`
+ * @see `NavigationEnd`
+ * @see `NavigationCancel`
+ *
  * @publicApi
  */
 class NavigationError extends RouterEvent {
@@ -54635,7 +49727,7 @@ class NavigationError extends RouterEvent {
     }
 }
 /**
- *An event triggered when routes are recognized.
+ * An event triggered when routes are recognized.
  *
  * @publicApi
  */
@@ -54661,6 +49753,8 @@ class RoutesRecognized extends RouterEvent {
 /**
  * An event triggered at the start of the Guard phase of routing.
  *
+ * @see `GuardsCheckEnd`
+ *
  * @publicApi
  */
 class GuardsCheckStart extends RouterEvent {
@@ -54683,6 +49777,8 @@ class GuardsCheckStart extends RouterEvent {
 }
 /**
  * An event triggered at the end of the Guard phase of routing.
+ *
+ * @see `GuardsCheckStart`
  *
  * @publicApi
  */
@@ -54712,6 +49808,8 @@ class GuardsCheckEnd extends RouterEvent {
  *
  * Runs in the "resolve" phase whether or not there is anything to resolve.
  * In future, may change to only run when there are things to be resolved.
+ *
+ * @see `ResolveEnd`
  *
  * @publicApi
  */
@@ -54760,6 +49858,8 @@ class ResolveEnd extends RouterEvent {
 /**
  * An event triggered before lazy loading a route configuration.
  *
+ * @see `RouteConfigLoadEnd`
+ *
  * @publicApi
  */
 class RouteConfigLoadStart {
@@ -54774,6 +49874,8 @@ class RouteConfigLoadStart {
 }
 /**
  * An event triggered when a route has been lazy loaded.
+ *
+ * @see `RouteConfigLoadStart`
  *
  * @publicApi
  */
@@ -54810,7 +49912,7 @@ class ChildActivationStart {
  * An event triggered at the end of the child-activation part
  * of the Resolve phase of routing.
  * @see `ChildActivationStart`
- * @see `ResolveStart` *
+ * @see `ResolveStart`
  * @publicApi
  */
 class ChildActivationEnd {
@@ -54827,7 +49929,7 @@ class ChildActivationEnd {
 /**
  * An event triggered at the start of the activation part
  * of the Resolve phase of routing.
- * @see ActivationEnd`
+ * @see `ActivationEnd`
  * @see `ResolveStart`
  *
  * @publicApi
@@ -54884,33 +49986,6 @@ class Scroll {
         return `Scroll(anchor: '${this.anchor}', position: '${pos}')`;
     }
 }
-
-/**
- * @license
- * Copyright Google LLC All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * This component is used internally within the router to be a placeholder when an empty
- * router-outlet is needed. For example, with a config such as:
- *
- * `{path: 'parent', outlet: 'nav', children: [...]}`
- *
- * In order to render, there needs to be a component on this config, which will default
- * to this `EmptyOutletComponent`.
- */
-class ɵEmptyOutletComponent {
-}
-ɵEmptyOutletComponent.ɵfac = function ɵEmptyOutletComponent_Factory(t) { return new (t || ɵEmptyOutletComponent)(); };
-ɵEmptyOutletComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: ɵEmptyOutletComponent, selectors: [["ng-component"]], decls: 1, vars: 0, template: function ɵEmptyOutletComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "router-outlet");
-    } }, directives: function () { return [RouterOutlet]; }, encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](ɵEmptyOutletComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"],
-        args: [{ template: `<router-outlet></router-outlet>` }]
-    }], null, null); })();
 
 /**
  * @license
@@ -54996,112 +50071,6 @@ function defaultUrlMatcher(segments, segmentGroup, route) {
         }
     }
     return { consumed: segments.slice(0, parts.length), posParams };
-}
-
-/**
- * @license
- * Copyright Google LLC All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-class LoadedRouterConfig {
-    constructor(routes, module) {
-        this.routes = routes;
-        this.module = module;
-    }
-}
-function validateConfig(config, parentPath = '') {
-    // forEach doesn't iterate undefined values
-    for (let i = 0; i < config.length; i++) {
-        const route = config[i];
-        const fullPath = getFullPath(parentPath, route);
-        validateNode(route, fullPath);
-    }
-}
-function validateNode(route, fullPath) {
-    if (!route) {
-        throw new Error(`
-      Invalid configuration of route '${fullPath}': Encountered undefined route.
-      The reason might be an extra comma.
-
-      Example:
-      const routes: Routes = [
-        { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-        { path: 'dashboard',  component: DashboardComponent },, << two commas
-        { path: 'detail/:id', component: HeroDetailComponent }
-      ];
-    `);
-    }
-    if (Array.isArray(route)) {
-        throw new Error(`Invalid configuration of route '${fullPath}': Array cannot be specified`);
-    }
-    if (!route.component && !route.children && !route.loadChildren &&
-        (route.outlet && route.outlet !== PRIMARY_OUTLET)) {
-        throw new Error(`Invalid configuration of route '${fullPath}': a componentless route without children or loadChildren cannot have a named outlet set`);
-    }
-    if (route.redirectTo && route.children) {
-        throw new Error(`Invalid configuration of route '${fullPath}': redirectTo and children cannot be used together`);
-    }
-    if (route.redirectTo && route.loadChildren) {
-        throw new Error(`Invalid configuration of route '${fullPath}': redirectTo and loadChildren cannot be used together`);
-    }
-    if (route.children && route.loadChildren) {
-        throw new Error(`Invalid configuration of route '${fullPath}': children and loadChildren cannot be used together`);
-    }
-    if (route.redirectTo && route.component) {
-        throw new Error(`Invalid configuration of route '${fullPath}': redirectTo and component cannot be used together`);
-    }
-    if (route.path && route.matcher) {
-        throw new Error(`Invalid configuration of route '${fullPath}': path and matcher cannot be used together`);
-    }
-    if (route.redirectTo === void 0 && !route.component && !route.children && !route.loadChildren) {
-        throw new Error(`Invalid configuration of route '${fullPath}'. One of the following must be provided: component, redirectTo, children or loadChildren`);
-    }
-    if (route.path === void 0 && route.matcher === void 0) {
-        throw new Error(`Invalid configuration of route '${fullPath}': routes must have either a path or a matcher specified`);
-    }
-    if (typeof route.path === 'string' && route.path.charAt(0) === '/') {
-        throw new Error(`Invalid configuration of route '${fullPath}': path cannot start with a slash`);
-    }
-    if (route.path === '' && route.redirectTo !== void 0 && route.pathMatch === void 0) {
-        const exp = `The default value of 'pathMatch' is 'prefix', but often the intent is to use 'full'.`;
-        throw new Error(`Invalid configuration of route '{path: "${fullPath}", redirectTo: "${route.redirectTo}"}': please provide 'pathMatch'. ${exp}`);
-    }
-    if (route.pathMatch !== void 0 && route.pathMatch !== 'full' && route.pathMatch !== 'prefix') {
-        throw new Error(`Invalid configuration of route '${fullPath}': pathMatch can only be set to 'prefix' or 'full'`);
-    }
-    if (route.children) {
-        validateConfig(route.children, fullPath);
-    }
-}
-function getFullPath(parentPath, currentRoute) {
-    if (!currentRoute) {
-        return parentPath;
-    }
-    if (!parentPath && !currentRoute.path) {
-        return '';
-    }
-    else if (parentPath && !currentRoute.path) {
-        return `${parentPath}/`;
-    }
-    else if (!parentPath && currentRoute.path) {
-        return currentRoute.path;
-    }
-    else {
-        return `${parentPath}/${currentRoute.path}`;
-    }
-}
-/**
- * Makes a copy of the config and adds any default required properties.
- */
-function standardizeConfig(r) {
-    const children = r.children && r.children.map(standardizeConfig);
-    const c = children ? Object.assign(Object.assign({}, r), { children }) : Object.assign({}, r);
-    if (!c.component && (children || c.loadChildren) && (c.outlet && c.outlet !== PRIMARY_OUTLET)) {
-        c.component = ɵEmptyOutletComponent;
-    }
-    return c;
 }
 
 /**
@@ -55873,7 +50842,8 @@ function nodeChildrenAsMap(node) {
  * and the resolved data.
  * Use the `ActivatedRoute` properties to traverse the tree from any node.
  *
- * ### Example
+ * The following fragment shows how a component gets the root node
+ * of the current state to establish its own route tree:
  *
  * ```
  * @Component({templateUrl:'template.html'})
@@ -55889,6 +50859,7 @@ function nodeChildrenAsMap(node) {
  * ```
  *
  * @see `ActivatedRoute`
+ * @see [Getting route information](guide/router#getting-route-information)
  *
  * @publicApi
  */
@@ -55929,8 +50900,13 @@ function createEmptyStateSnapshot(urlTree, rootComponent) {
  * that is loaded in an outlet.
  * Use to traverse the `RouterState` tree and extract information from nodes.
  *
+ * The following example shows how to construct a component using information from a
+ * currently activated route.
+ *
  * {@example router/activated-route/module.ts region="activated-route"
  *     header="activated-route.component.ts"}
+ *
+ * @see [Getting route information](guide/router#getting-route-information)
  *
  * @publicApi
  */
@@ -56055,6 +51031,9 @@ function flattenInherited(pathFromRoot) {
  * outlet at a particular moment in time. ActivatedRouteSnapshot can also be used to
  * traverse the router state tree.
  *
+ * The following example initializes a component with route information extracted
+ * from the snapshot of the root node at the time of creation.
+ *
  * ```
  * @Component({templateUrl:'./my-component.html'})
  * class MyComponent {
@@ -56143,8 +51122,8 @@ class ActivatedRouteSnapshot {
  * This is a tree of activated route snapshots. Every node in this tree knows about
  * the "consumed" URL segments, the extracted parameters, and the resolved data.
  *
- * @usageNotes
- * ### Example
+ * The following example shows how a component is initialized with information
+ * from the snapshot of the root node's state at the time of creation.
  *
  * ```
  * @Component({templateUrl:'template.html'})
@@ -56732,6 +51711,20 @@ function parentLoadedConfig(snapshot) {
             return null;
     }
     return null;
+}
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+class LoadedRouterConfig {
+    constructor(routes, module) {
+        this.routes = routes;
+        this.module = module;
+    }
 }
 
 /**
@@ -57880,6 +52873,133 @@ class DefaultRouteReuseStrategy {
  * found in the LICENSE file at https://angular.io/license
  */
 /**
+ * This component is used internally within the router to be a placeholder when an empty
+ * router-outlet is needed. For example, with a config such as:
+ *
+ * `{path: 'parent', outlet: 'nav', children: [...]}`
+ *
+ * In order to render, there needs to be a component on this config, which will default
+ * to this `EmptyOutletComponent`.
+ */
+class ɵEmptyOutletComponent {
+}
+ɵEmptyOutletComponent.ɵfac = function ɵEmptyOutletComponent_Factory(t) { return new (t || ɵEmptyOutletComponent)(); };
+ɵEmptyOutletComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: ɵEmptyOutletComponent, selectors: [["ng-component"]], decls: 1, vars: 0, template: function ɵEmptyOutletComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "router-outlet");
+    } }, directives: function () { return [RouterOutlet]; }, encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](ɵEmptyOutletComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"],
+        args: [{ template: `<router-outlet></router-outlet>` }]
+    }], null, null); })();
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+function validateConfig(config, parentPath = '') {
+    // forEach doesn't iterate undefined values
+    for (let i = 0; i < config.length; i++) {
+        const route = config[i];
+        const fullPath = getFullPath(parentPath, route);
+        validateNode(route, fullPath);
+    }
+}
+function validateNode(route, fullPath) {
+    if (!route) {
+        throw new Error(`
+      Invalid configuration of route '${fullPath}': Encountered undefined route.
+      The reason might be an extra comma.
+
+      Example:
+      const routes: Routes = [
+        { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+        { path: 'dashboard',  component: DashboardComponent },, << two commas
+        { path: 'detail/:id', component: HeroDetailComponent }
+      ];
+    `);
+    }
+    if (Array.isArray(route)) {
+        throw new Error(`Invalid configuration of route '${fullPath}': Array cannot be specified`);
+    }
+    if (!route.component && !route.children && !route.loadChildren &&
+        (route.outlet && route.outlet !== PRIMARY_OUTLET)) {
+        throw new Error(`Invalid configuration of route '${fullPath}': a componentless route without children or loadChildren cannot have a named outlet set`);
+    }
+    if (route.redirectTo && route.children) {
+        throw new Error(`Invalid configuration of route '${fullPath}': redirectTo and children cannot be used together`);
+    }
+    if (route.redirectTo && route.loadChildren) {
+        throw new Error(`Invalid configuration of route '${fullPath}': redirectTo and loadChildren cannot be used together`);
+    }
+    if (route.children && route.loadChildren) {
+        throw new Error(`Invalid configuration of route '${fullPath}': children and loadChildren cannot be used together`);
+    }
+    if (route.redirectTo && route.component) {
+        throw new Error(`Invalid configuration of route '${fullPath}': redirectTo and component cannot be used together`);
+    }
+    if (route.path && route.matcher) {
+        throw new Error(`Invalid configuration of route '${fullPath}': path and matcher cannot be used together`);
+    }
+    if (route.redirectTo === void 0 && !route.component && !route.children && !route.loadChildren) {
+        throw new Error(`Invalid configuration of route '${fullPath}'. One of the following must be provided: component, redirectTo, children or loadChildren`);
+    }
+    if (route.path === void 0 && route.matcher === void 0) {
+        throw new Error(`Invalid configuration of route '${fullPath}': routes must have either a path or a matcher specified`);
+    }
+    if (typeof route.path === 'string' && route.path.charAt(0) === '/') {
+        throw new Error(`Invalid configuration of route '${fullPath}': path cannot start with a slash`);
+    }
+    if (route.path === '' && route.redirectTo !== void 0 && route.pathMatch === void 0) {
+        const exp = `The default value of 'pathMatch' is 'prefix', but often the intent is to use 'full'.`;
+        throw new Error(`Invalid configuration of route '{path: "${fullPath}", redirectTo: "${route.redirectTo}"}': please provide 'pathMatch'. ${exp}`);
+    }
+    if (route.pathMatch !== void 0 && route.pathMatch !== 'full' && route.pathMatch !== 'prefix') {
+        throw new Error(`Invalid configuration of route '${fullPath}': pathMatch can only be set to 'prefix' or 'full'`);
+    }
+    if (route.children) {
+        validateConfig(route.children, fullPath);
+    }
+}
+function getFullPath(parentPath, currentRoute) {
+    if (!currentRoute) {
+        return parentPath;
+    }
+    if (!parentPath && !currentRoute.path) {
+        return '';
+    }
+    else if (parentPath && !currentRoute.path) {
+        return `${parentPath}/`;
+    }
+    else if (!parentPath && currentRoute.path) {
+        return currentRoute.path;
+    }
+    else {
+        return `${parentPath}/${currentRoute.path}`;
+    }
+}
+/**
+ * Makes a copy of the config and adds any default required properties.
+ */
+function standardizeConfig(r) {
+    const children = r.children && r.children.map(standardizeConfig);
+    const c = children ? Object.assign(Object.assign({}, r), { children }) : Object.assign({}, r);
+    if (!c.component && (children || c.loadChildren) && (c.outlet && c.outlet !== PRIMARY_OUTLET)) {
+        c.component = ɵEmptyOutletComponent;
+    }
+    return c;
+}
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
  * The [DI token](guide/glossary/#di-token) for a router configuration.
  * @see `ROUTES`
  * @publicApi
@@ -58048,7 +53168,7 @@ function defaultRouterHook(snapshot, runExtras) {
 /**
  * @description
  *
- * A service that provides navigation and URL manipulation capabilities.
+ * A service that provides navigation among views and URL manipulation capabilities.
  *
  * @see `Route`.
  * @see [Routing and Navigation Guide](guide/router).
@@ -58502,7 +53622,7 @@ class Router {
         this.events.next(event);
     }
     /**
-     * Resets the configuration used for navigation and generating links.
+     * Resets the route configuration used for navigation and generating links.
      *
      * @param config The route array for the new configuration.
      *
@@ -58523,7 +53643,7 @@ class Router {
         this.navigated = false;
         this.lastSuccessfulId = -1;
     }
-    /** @docsNotRequired */
+    /** @nodoc */
     ngOnDestroy() {
         this.dispose();
     }
@@ -58535,14 +53655,15 @@ class Router {
         }
     }
     /**
-     * Applies an array of commands to the current URL tree and creates a new URL tree.
+     * Appends URL segments to the current URL tree to create a new URL tree.
      *
-     * When given an activated route, applies the given commands starting from the route.
-     * Otherwise, applies the given command starting from the root.
-     *
-     * @param commands An array of commands to apply.
+     * @param commands An array of URL fragments with which to construct the new URL tree.
+     * If the path is static, can be the literal URL string. For a dynamic path, pass an array of path
+     * segments, followed by the parameters for each segment.
+     * The fragments are applied to the current URL tree or the one provided  in the `relativeTo`
+     * property of the options object, if supplied.
      * @param navigationExtras Options that control the navigation strategy. This function
-     * only utilizes properties in `NavigationExtras` that would change the provided URL.
+     * only uses properties in `NavigationExtras` that would change the provided URL.
      * @returns The new URL tree.
      *
      * @usageNotes
@@ -58608,9 +53729,10 @@ class Router {
         return createUrlTree(a, this.currentUrlTree, commands, q, f);
     }
     /**
-     * Navigate based on the provided URL, which must be absolute.
+     * Navigates to a view using an absolute route path.
      *
-     * @param url An absolute URL. The function does not apply any delta to the current URL.
+     * @param url An absolute path for a defined route. The function does not apply any delta to the
+     *     current URL.
      * @param extras An object containing properties that modify the navigation strategy.
      * The function ignores any properties in the `NavigationExtras` that would change the
      * provided URL.
@@ -58620,12 +53742,16 @@ class Router {
      *
      * @usageNotes
      *
+     * The following calls request navigation to an absolute path.
+     *
      * ```
      * router.navigateByUrl("/team/33/user/11");
      *
      * // Navigate without updating the URL
      * router.navigateByUrl("/team/33/user/11", { skipLocationChange: true });
      * ```
+     *
+     * @see [Routing and Navigation guide](guide/router)
      *
      */
     navigateByUrl(url, extras = { skipLocationChange: false }) {
@@ -58640,28 +53766,31 @@ class Router {
      * Navigate based on the provided array of commands and a starting point.
      * If no starting route is provided, the navigation is absolute.
      *
-     * Returns a promise that:
-     * - resolves to 'true' when navigation succeeds,
-     * - resolves to 'false' when navigation fails,
-     * - is rejected when an error happens.
+     * @param commands An array of URL fragments with which to construct the target URL.
+     * If the path is static, can be the literal URL string. For a dynamic path, pass an array of path
+     * segments, followed by the parameters for each segment.
+     * The fragments are applied to the current URL or the one provided  in the `relativeTo` property
+     * of the options object, if supplied.
+     * @param extras An options object that determines how the URL should be constructed or
+     *     interpreted.
+     *
+     * @returns A Promise that resolves to `true` when navigation succeeds, to `false` when navigation
+     *     fails,
+     * or is rejected on error.
      *
      * @usageNotes
+     *
+     * The following calls request navigation to a dynamic route path relative to the current URL.
      *
      * ```
      * router.navigate(['team', 33, 'user', 11], {relativeTo: route});
      *
-     * // Navigate without updating the URL
+     * // Navigate without updating the URL, overriding the default behavior
      * router.navigate(['team', 33, 'user', 11], {relativeTo: route, skipLocationChange: true});
      * ```
      *
-     * The first parameter of `navigate()` is a delta to be applied to the current URL
-     * or the one provided in the `relativeTo` property of the second parameter (the
-     * `NavigationExtras`).
+     * @see [Routing and Navigation guide](guide/router)
      *
-     * In order to affect this browser's `history.state` entry, the `state`
-     * parameter can be passed. This must be an object because the router
-     * will add the `navigationId` property to this object before creating
-     * the new history item.
      */
     navigate(commands, extras = { skipLocationChange: false }) {
         validateCommands(commands);
@@ -58825,56 +53954,63 @@ function validateCommands(commands) {
 /**
  * @description
  *
- * Lets you link to specific routes in your app.
+ * When applied to an element in a template, makes that element a link
+ * that initiates navigation to a route. Navigation opens one or more routed components
+ * in one or more `<router-outlet>` locations on the page.
  *
- * Consider the following route configuration:
- * `[{ path: 'user/:name', component: UserCmp }]`.
- * When linking to this `user/:name` route, you use the `RouterLink` directive.
- *
- * If the link is static, you can use the directive as follows:
+ * Given a route configuration `[{ path: 'user/:name', component: UserCmp }]`,
+ * the following creates a static link to the route:
  * `<a routerLink="/user/bob">link to user component</a>`
  *
- * If you use dynamic values to generate the link, you can pass an array of path
- * segments, followed by the params for each segment.
+ * You can use dynamic values to generate the link.
+ * For a dynamic link, pass an array of path segments,
+ * followed by the params for each segment.
+ * For example, `['/team', teamId, 'user', userName, {details: true}]`
+ * generates a link to `/team/11/user/bob;details=true`.
  *
- * For instance `['/team', teamId, 'user', userName, {details: true}]`
- * means that we want to generate a link to `/team/11/user/bob;details=true`.
+ * Multiple static segments can be merged into one term and combined with dynamic segements.
+ * For example, `['/team/11/user', userName, {details: true}]`
  *
- * Multiple static segments can be merged into one
- * (e.g., `['/team/11/user', userName, {details: true}]`).
+ * The input that you provide to the link is treated as a delta to the current URL.
+ * For instance, suppose the current URL is `/user/(box//aux:team)`.
+ * The link `<a [routerLink]="['/user/jim']">Jim</a>` creates the URL
+ * `/user/(jim//aux:team)`.
+ * See {@link Router#createUrlTree createUrlTree} for more information.
  *
- * The first segment name can be prepended with `/`, `./`, or `../`:
- * * If the first segment begins with `/`, the router will look up the route from the root of the
+ * @usageNotes
+ *
+ * You can use absolute or relative paths in a link, set query parameters,
+ * control how parameters are handled, and keep a history of navigation states.
+ *
+ * ### Relative link paths
+ *
+ * The first segment name can be prepended with `/`, `./`, or `../`.
+ * * If the first segment begins with `/`, the router looks up the route from the root of the
  *   app.
- * * If the first segment begins with `./`, or doesn't begin with a slash, the router will
- *   instead look in the children of the current activated route.
- * * And if the first segment begins with `../`, the router will go up one level.
+ * * If the first segment begins with `./`, or doesn't begin with a slash, the router
+ *   looks in the children of the current activated route.
+ * * If the first segment begins with `../`, the router goes up one level in the route tree.
  *
- * You can set query params and fragment as follows:
+ * ### Setting and handling query params and fragments
+ *
+ * The following link adds a query parameter and a fragment to the generated URL:
  *
  * ```
  * <a [routerLink]="['/user/bob']" [queryParams]="{debug: true}" fragment="education">
  *   link to user component
  * </a>
  * ```
- * RouterLink will use these to generate this link: `/user/bob?debug=true#education`.
+ * By default, the directive constructs the new URL using the given query parameters.
+ * The example generates the link: `/user/bob?debug=true#education`.
  *
- * (Deprecated in v4.0.0 use `queryParamsHandling` instead) You can also tell the
- * directive to preserve the current query params and fragment:
+ * You can instruct the directive to handle query parameters differently
+ * by specifying the `queryParamsHandling` option in the link.
+ * Allowed values are:
  *
- * ```
- * <a [routerLink]="['/user/bob']" preserveQueryParams preserveFragment>
- *   link to user component
- * </a>
- * ```
+ *  - `'merge'`: Merge the given `queryParams` into the current query params.
+ *  - `'preserve'`: Preserve the current query params.
  *
- * You can tell the directive how to handle queryParams. Available options are:
- *  - `'merge'`: merge the queryParams into the current queryParams
- *  - `'preserve'`: preserve the current queryParams
- *  - default/`''`: use the queryParams only
- *
- * Same options for {@link NavigationExtras#queryParamsHandling
- * NavigationExtras#queryParamsHandling}.
+ * For example:
  *
  * ```
  * <a [routerLink]="['/user/bob']" [queryParams]="{debug: true}" queryParamsHandling="merge">
@@ -58882,9 +54018,13 @@ function validateCommands(commands) {
  * </a>
  * ```
  *
- * You can provide a `state` value to be persisted to the browser's History.state
- * property (See https://developer.mozilla.org/en-US/docs/Web/API/History#Properties). It's
- * used as follows:
+ * See {@link NavigationExtras.queryParamsHandling NavigationExtras#queryParamsHandling}.
+ *
+ * ### Preserving navigation history
+ *
+ * You can provide a `state` value to be persisted to the browser's
+ * [`History.state` property](https://developer.mozilla.org/en-US/docs/Web/API/History#Properties).
+ * For example:
  *
  * ```
  * <a [routerLink]="['/user/bob']" [state]="{tracingId: 123}">
@@ -58892,8 +54032,9 @@ function validateCommands(commands) {
  * </a>
  * ```
  *
- * And later the value can be read from the router through `router.getCurrentNavigation`.
- * For example, to capture the `tracingId` above during the `NavigationStart` event:
+ * Use {@link Router.getCurrentNavigation() Router#getCurrentNavigation} to retrieve a saved
+ * navigation-state value. For example, to capture the `tracingId` during the `NavigationStart`
+ * event:
  *
  * ```
  * // Get NavigationStart events
@@ -58902,15 +54043,6 @@ function validateCommands(commands) {
  *   tracingService.trace({id: navigation.extras.state.tracingId});
  * });
  * ```
- *
- * The router link directive always treats the provided input as a delta to the current url.
- *
- * For instance, if the current url is `/user/(box//aux:team)`.
- *
- * Then the following link `<a [routerLink]="['/user/jim']">Jim</a>` will generate the link
- * `/user/(jim//aux:team)`.
- *
- * See {@link Router#createUrlTree createUrlTree} for more information.
  *
  * @ngModule RouterModule
  *
@@ -58921,13 +54053,20 @@ class RouterLink {
         this.router = router;
         this.route = route;
         this.commands = [];
+        /** @internal */
+        this.onChanges = new rxjs__WEBPACK_IMPORTED_MODULE_2__["Subject"]();
         if (tabIndex == null) {
             renderer.setAttribute(el.nativeElement, 'tabindex', '0');
         }
     }
+    /** @nodoc */
+    ngOnChanges(changes) {
+        // This is subscribed to by `RouterLinkActive` so that it knows to update when there are changes
+        // to the RouterLinks it's tracking.
+        this.onChanges.next(this);
+    }
     /**
-     * @param commands An array of commands to pass to {@link Router#createUrlTree
-     *     Router#createUrlTree}.
+     * Commands to pass to {@link Router#createUrlTree Router#createUrlTree}.
      *   - **array**: commands to pass to {@link Router#createUrlTree Router#createUrlTree}.
      *   - **string**: shorthand for array of commands with just the string, i.e. `['/route']`
      *   - **null|undefined**: shorthand for an empty array of commands, i.e. `[]`
@@ -58950,6 +54089,7 @@ class RouterLink {
         }
         this.preserve = value;
     }
+    /** @nodoc */
     onClick() {
         const extras = {
             skipLocationChange: attrBoolValue(this.skipLocationChange),
@@ -58973,7 +54113,7 @@ class RouterLink {
 RouterLink.ɵfac = function RouterLink_Factory(t) { return new (t || RouterLink)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](Router), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](ActivatedRoute), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinjectAttribute"]('tabindex'), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"])); };
 RouterLink.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({ type: RouterLink, selectors: [["", "routerLink", "", 5, "a", 5, "area"]], hostBindings: function RouterLink_HostBindings(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function RouterLink_click_HostBindingHandler() { return ctx.onClick(); });
-    } }, inputs: { routerLink: "routerLink", preserveQueryParams: "preserveQueryParams", queryParams: "queryParams", fragment: "fragment", queryParamsHandling: "queryParamsHandling", preserveFragment: "preserveFragment", skipLocationChange: "skipLocationChange", replaceUrl: "replaceUrl", state: "state" } });
+    } }, inputs: { routerLink: "routerLink", preserveQueryParams: "preserveQueryParams", queryParams: "queryParams", fragment: "fragment", queryParamsHandling: "queryParamsHandling", preserveFragment: "preserveFragment", skipLocationChange: "skipLocationChange", replaceUrl: "replaceUrl", state: "state" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]] });
 RouterLink.ctorParameters = () => [
     { type: Router },
     { type: ActivatedRoute },
@@ -59003,7 +54143,9 @@ RouterLink.propDecorators = {
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], preserveQueryParams: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], onClick: [{
+        }], 
+    /** @nodoc */
+    onClick: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["HostListener"],
             args: ['click']
         }], queryParams: [{
@@ -59038,6 +54180,8 @@ class RouterLinkWithHref {
         this.route = route;
         this.locationStrategy = locationStrategy;
         this.commands = [];
+        /** @internal */
+        this.onChanges = new rxjs__WEBPACK_IMPORTED_MODULE_2__["Subject"]();
         this.subscription = router.events.subscribe((s) => {
             if (s instanceof NavigationEnd) {
                 this.updateTargetUrlAndHref();
@@ -59045,8 +54189,7 @@ class RouterLinkWithHref {
         });
     }
     /**
-     * @param commands An array of commands to pass to {@link Router#createUrlTree
-     *     Router#createUrlTree}.
+     * Commands to pass to {@link Router#createUrlTree Router#createUrlTree}.
      *   - **array**: commands to pass to {@link Router#createUrlTree Router#createUrlTree}.
      *   - **string**: shorthand for array of commands with just the string, i.e. `['/route']`
      *   - **null|undefined**: shorthand for an empty array of commands, i.e. `[]`
@@ -59069,12 +54212,16 @@ class RouterLinkWithHref {
         }
         this.preserve = value;
     }
+    /** @nodoc */
     ngOnChanges(changes) {
         this.updateTargetUrlAndHref();
+        this.onChanges.next(this);
     }
+    /** @nodoc */
     ngOnDestroy() {
         this.subscription.unsubscribe();
     }
+    /** @nodoc */
     onClick(button, ctrlKey, metaKey, shiftKey) {
         if (button !== 0 || ctrlKey || metaKey || shiftKey) {
             return true;
@@ -59137,7 +54284,9 @@ RouterLinkWithHref.propDecorators = {
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], preserveQueryParams: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], onClick: [{
+        }], 
+    /** @nodoc */
+    onClick: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["HostListener"],
             args: ['click', ['$event.button', '$event.ctrlKey', '$event.metaKey', '$event.shiftKey']]
         }], href: [{
@@ -59177,44 +54326,49 @@ function attrBoolValue(s) {
  *
  * @description
  *
- * Lets you add a CSS class to an element when the link's route becomes active.
+ * Tracks whether the linked route of an element is currently active, and allows you
+ * to specify one or more CSS classes to add to the element when the linked route
+ * is active.
  *
- * This directive lets you add a CSS class to an element when the link's route
- * becomes active.
- *
- * Consider the following example:
+ * Use this directive to create a visual distinction for elements associated with an active route.
+ * For example, the following code highlights the word "Bob" when the the router
+ * activates the associated route:
  *
  * ```
  * <a routerLink="/user/bob" routerLinkActive="active-link">Bob</a>
  * ```
  *
- * When the url is either '/user' or '/user/bob', the active-link class will
- * be added to the `a` tag. If the url changes, the class will be removed.
+ * Whenever the URL is either '/user' or '/user/bob', the "active-link" class is
+ * added to the anchor tag. If the URL changes, the class is removed.
  *
- * You can set more than one class, as follows:
+ * You can set more than one class using a space-separated string or an array.
+ * For example:
  *
  * ```
  * <a routerLink="/user/bob" routerLinkActive="class1 class2">Bob</a>
  * <a routerLink="/user/bob" [routerLinkActive]="['class1', 'class2']">Bob</a>
  * ```
  *
- * You can configure RouterLinkActive by passing `exact: true`. This will add the classes
- * only when the url matches the link exactly.
+ * To add the classes only when the URL matches the link exactly, add the option `exact: true`:
  *
  * ```
  * <a routerLink="/user/bob" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
  * true}">Bob</a>
  * ```
  *
- * You can assign the RouterLinkActive instance to a template variable and directly check
- * the `isActive` status.
+ * To directly check the `isActive` status of the link, assign the `RouterLinkActive`
+ * instance to a template variable.
+ * For example, the following checks the status without assigning any CSS classes:
+ *
  * ```
  * <a routerLink="/user/bob" routerLinkActive #rla="routerLinkActive">
  *   Bob {{ rla.isActive ? '(already open)' : ''}}
  * </a>
  * ```
  *
- * Finally, you can apply the RouterLinkActive directive to an ancestor of a RouterLink.
+ * You can apply the `RouterLinkActive` directive to an ancestor of linked elements.
+ * For example, the following sets the active-link class on the `<div>`  parent tag
+ * when the URL is either '/user/jim' or '/user/bob'.
  *
  * ```
  * <div routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
@@ -59222,9 +54376,6 @@ function attrBoolValue(s) {
  *   <a routerLink="/user/bob">Bob</a>
  * </div>
  * ```
- *
- * This will set the active-link class on the div tag if the url is either '/user/jim' or
- * '/user/bob'.
  *
  * @ngModule RouterModule
  *
@@ -59241,26 +54392,47 @@ class RouterLinkActive {
         this.classes = [];
         this.isActive = false;
         this.routerLinkActiveOptions = { exact: false };
-        this.subscription = router.events.subscribe((s) => {
+        this.routerEventsSubscription = router.events.subscribe((s) => {
             if (s instanceof NavigationEnd) {
                 this.update();
             }
         });
     }
+    /** @nodoc */
     ngAfterContentInit() {
-        this.links.changes.subscribe(_ => this.update());
-        this.linksWithHrefs.changes.subscribe(_ => this.update());
-        this.update();
+        // `of(null)` is used to force subscribe body to execute once immediately (like `startWith`).
+        Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["from"])([this.links.changes, this.linksWithHrefs.changes, Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(null)])
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["mergeAll"])())
+            .subscribe(_ => {
+            this.update();
+            this.subscribeToEachLinkOnChanges();
+        });
+    }
+    subscribeToEachLinkOnChanges() {
+        var _a;
+        (_a = this.linkInputChangesSubscription) === null || _a === void 0 ? void 0 : _a.unsubscribe();
+        const allLinkChanges = [...this.links.toArray(), ...this.linksWithHrefs.toArray(), this.link, this.linkWithHref]
+            .filter((link) => !!link)
+            .map(link => link.onChanges);
+        this.linkInputChangesSubscription = Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["from"])(allLinkChanges).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["mergeAll"])()).subscribe(link => {
+            if (this.isActive !== this.isLinkActive(this.router)(link)) {
+                this.update();
+            }
+        });
     }
     set routerLinkActive(data) {
         const classes = Array.isArray(data) ? data : data.split(' ');
         this.classes = classes.filter(c => !!c);
     }
+    /** @nodoc */
     ngOnChanges(changes) {
         this.update();
     }
+    /** @nodoc */
     ngOnDestroy() {
-        this.subscription.unsubscribe();
+        var _a;
+        this.routerEventsSubscription.unsubscribe();
+        (_a = this.linkInputChangesSubscription) === null || _a === void 0 ? void 0 : _a.unsubscribe();
     }
     update() {
         if (!this.links || !this.linksWithHrefs || !this.router.navigated)
@@ -59357,6 +54529,21 @@ RouterLinkActive.propDecorators = {
  * <router-outlet name='right'></router-outlet>
  * ```
  *
+ * Named outlets can be the targets of secondary routes.
+ * The `Route` object for a secondary route has an `outlet` property to identify the target outlet:
+ *
+ * `{path: <base-path>, component: <component>, outlet: <target_outlet_name>}`
+ *
+ * Using named outlets and secondary routes, you can target multiple outlets in
+ * the same `RouterLink` directive.
+ *
+ * The router keeps track of separate branches in a navigation tree for each named outlet and
+ * generates a representation of that tree in the URL.
+ * The URL for a secondary route uses the following syntax to specify both the primary and secondary
+ * routes at the same time:
+ *
+ * `http://base-path/primary-route-path(outlet-name:route-path)`
+ *
  * A router outlet emits an activate event when a new component is instantiated,
  * and a deactivate event when a component is destroyed.
  *
@@ -59365,6 +54552,11 @@ RouterLinkActive.propDecorators = {
  *   (activate)='onActivate($event)'
  *   (deactivate)='onDeactivate($event)'></router-outlet>
  * ```
+ *
+ * @see [Routing tutorial](guide/router-tutorial-toh#named-outlets "Example of a named
+ * outlet and secondary route configuration").
+ * @see `RouterLink`
+ * @see `Route`
  * @ngModule RouterModule
  *
  * @publicApi
@@ -59382,9 +54574,11 @@ class RouterOutlet {
         this.name = name || PRIMARY_OUTLET;
         parentContexts.onChildOutletCreated(this.name, this);
     }
+    /** @nodoc */
     ngOnDestroy() {
         this.parentContexts.onChildOutletDestroyed(this.name);
     }
+    /** @nodoc */
     ngOnInit() {
         if (!this.activated) {
             // If the outlet was not instantiated at the time the route got activated we need to populate
@@ -59588,11 +54782,11 @@ class RouterPreloader {
         const ngModule = this.injector.get(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModuleRef"]);
         return this.processRoutes(ngModule, this.router.config);
     }
-    // TODO(jasonaden): This class relies on code external to the class to call setUpPreloading. If
-    // this hasn't been done, ngOnDestroy will fail as this.subscription will be undefined. This
-    // should be refactored.
+    /** @nodoc */
     ngOnDestroy() {
-        this.subscription.unsubscribe();
+        if (this.subscription) {
+            this.subscription.unsubscribe();
+        }
     }
     processRoutes(ngModule, routes) {
         const res = [];
@@ -59708,6 +54902,7 @@ class RouterScroller {
     scheduleScrollEvent(routerEvent, anchor) {
         this.router.triggerEvent(new Scroll(routerEvent, this.lastSource === 'popstate' ? this.store[this.restoredId] : null, anchor));
     }
+    /** @nodoc */
     ngOnDestroy() {
         if (this.routerEventsSubscription) {
             this.routerEventsSubscription.unsubscribe();
@@ -59774,53 +54969,23 @@ function routerNgProbeToken() {
     return new _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgProbeToken"]('Router', Router);
 }
 /**
- * @usageNotes
- *
- * RouterModule can be imported multiple times: once per lazily-loaded bundle.
- * Since the router deals with a global shared resource--location, we cannot have
- * more than one router service active.
- *
- * That is why there are two ways to create the module: `RouterModule.forRoot` and
- * `RouterModule.forChild`.
- *
- * * `forRoot` creates a module that contains all the directives, the given routes, and the router
- *   service itself.
- * * `forChild` creates a module that contains all the directives and the given routes, but does not
- *   include the router service.
- *
- * When registered at the root, the module should be used as follows
- *
- * ```
- * @NgModule({
- *   imports: [RouterModule.forRoot(ROUTES)]
- * })
- * class MyNgModule {}
- * ```
- *
- * For submodules and lazy loaded submodules the module should be used as follows:
- *
- * ```
- * @NgModule({
- *   imports: [RouterModule.forChild(ROUTES)]
- * })
- * class MyNgModule {}
- * ```
- *
  * @description
  *
- * Adds router directives and providers.
+ * Adds directives and providers for in-app navigation among views defined in an application.
+ * Use the Angular `Router` service to declaratively specify application states and manage state
+ * transitions.
  *
- * Managing state transitions is one of the hardest parts of building applications. This is
- * especially true on the web, where you also need to ensure that the state is reflected in the URL.
- * In addition, we often want to split applications into multiple bundles and load them on demand.
- * Doing this transparently is not trivial.
+ * You can import this NgModule multiple times, once for each lazy-loaded bundle.
+ * However, only one `Router` service can be active.
+ * To ensure this, there are two ways to register routes when importing this module:
  *
- * The Angular router service solves these problems. Using the router, you can declaratively specify
- * application states, manage state transitions while taking care of the URL, and load bundles on
- * demand.
+ * * The `forRoot()` method creates an `NgModule` that contains all the directives, the given
+ * routes, and the `Router` service itself.
+ * * The `forChild()` method creates an `NgModule` that contains all the directives and the given
+ * routes, but does not include the `Router` service.
  *
- * @see [Routing and Navigation](guide/router.html) for an
- * overview of how the router service should be used.
+ * @see [Routing and Navigation guide](guide/router) for an
+ * overview of how the `Router` service should be used.
  *
  * @publicApi
  */
@@ -59831,9 +54996,19 @@ class RouterModule {
      * Creates and configures a module with all the router providers and directives.
      * Optionally sets up an application listener to perform an initial navigation.
      *
+     * When registering the NgModule at the root, import as follows:
+     *
+     * ```
+     * @NgModule({
+     *   imports: [RouterModule.forRoot(ROUTES)]
+     * })
+     * class MyNgModule {}
+     * ```
+     *
      * @param routes An array of `Route` objects that define the navigation paths for the application.
      * @param config An `ExtraOptions` configuration object that controls how navigation is performed.
-     * @return The new router module.
+     * @return The new `NgModule`.
+     *
      */
     static forRoot(routes, config) {
         return {
@@ -59868,7 +55043,20 @@ class RouterModule {
         };
     }
     /**
-     * Creates a module with all the router directives and a provider registering routes.
+     * Creates a module with all the router directives and a provider registering routes,
+     * without creating a new Router service.
+     * When registering for submodules and lazy-loaded submodules, create the NgModule as follows:
+     *
+     * ```
+     * @NgModule({
+     *   imports: [RouterModule.forChild(ROUTES)]
+     * })
+     * class MyNgModule {}
+     * ```
+     *
+     * @param routes An array of `Route` objects that define the navigation paths for the submodule.
+     * @return The new NgModule.
+     *
      */
     static forChild(routes) {
         return { ngModule: RouterModule, providers: [provideRoutes(routes)] };
@@ -60100,7 +55288,7 @@ function provideRouterInitializer() {
 /**
  * @publicApi
  */
-const VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["Version"]('10.0.1');
+const VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["Version"]('10.0.14');
 
 /**
  * @license
