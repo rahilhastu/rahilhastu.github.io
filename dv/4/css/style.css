@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: cursive ;
+}
+body{
+}
+.navigation-bar{
+    width: 100vw;
+    border-bottom: 1px solid grey;
+    /* background-color: aqua; */
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    padding: 0 5%;
+    position: fixed;
+    z-index: 3;
+}
+.container{
+    /* width: 100vw; */
+    display: flex;
+    visibility: hidden;
+    height: 100vh;
+    /* padding: 0 5%; */
+    justify-content: space-between;
+}
+
+.svg-div{
+    /* background-color: yellow; */
+    width: 67vw;
+    height: 92vh;
+    z-index: 1;
+    position: relative;
+    left: 33%;
+    top: 7vh;
+    transition: 0.5s;
+}
+
+.dino-info{
+    position: fixed;
+    width: 33%;
+    top: 7vh;
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    place-content: center;
+    z-index: 4;
+    /* background-image:url("../images/white.jpg"); */
+    background-color: white;
+    box-shadow: 27px 0px 25px -34px rgba(0,0,0,0.75);
+    font-size: 18px;
+}
+
+.svgArea{
+    width: 463%;
+    height: 70%;
+    z-index: 1;
+    position: relative;
+    transition: 1.4s;
+
+}
+
+.lineDiet{
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+.line{
+    cursor: pointer;
+}
+
+.diet{
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+}
+.diet_omni{
+    width: 16px;
+    height: 13px;
+    cursor: pointer;
+}
+
+.dino-image{
+    width: 70%;
+    height: 30%;
+    text-align: center;
+    line-height: 15;
+    margin-bottom: 25%;
+}
+
+.tooltip{
+    position: absolute;
+    font-family: "Noteworthy", sans-serif;
+    background-color : #000000ab;;
+    border : 2px solid #000000ab;;
+    border-radius : 5px;
+    padding : 5px;
+    color: white;
+    z-index: 4;
+    /* width: 12%; */
+}
+
+.landingPage{
+    display: flex;
+    margin-top: 20vh;
+    justify-content: space-around;
+    /* place-content: center;
+    place-items: center; */
+    height: 80vh;
+    width: 100vw;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.cont-btn{
+    margin-top: 1%;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.video{
+    margin-top: 5%;
+    height: 22%;
+    width: 100%;
+}
+
+.web-button,
+.web-info{
+    display: flex;
+    place-content: center;
+    place-items: center;
+    flex-direction: column;
+}
+
+.footer{
+    background-color: grey;
+    position: fixed;
+    bottom: 0;
+    padding-right: 5px;
+}
+
+.legend{
+    position: fixed;
+    left: 34%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    z-index: 1;
+    width: 65%;
+    border-radius: 10px;
+    bottom: 2.5%;
+}
+
+.legend >div >p{
+    font-size: 20px;
+    margin-left: 3.5%;
+    text-decoration: underline;
+}
+
+.legend-split{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.countries-legend{
+    width: 65%;
+}
+.images-legend{
+    width: 25%;
+}
+
+#country-legend-data{
+    display: inline-block;
+}
+
+.country-color{
+    width: 25px;
+    height: 15px;
+    border-radius: 8px;
+    margin-right: 2px;
+}
+
+.image-legend-data img{ 
+    width: 20px;
+    height: 20px;
+}
+
+.right, 
+.left{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    z-index: 4;
+    align-content: center;
+    font-size: 35px;
+    color: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    border: 1px solid grey;
+    background-color: rgba(128, 128, 128, 0.568);
+    text-align: center;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.right:hover, 
+.left:hover{
+    background-color: rgb(128, 128, 128);
+}
+
+
+@media only screen   
+and (min-device-width : 768px)   
+and (max-device-width : 1369px) {
+.right{
+    right: -2%;
+}
+
+.left{
+    left: 31.15%;
+}
+}
+
+@media only screen   
+and (min-width: 1370px)  {
+    .right{
+        right: -1%;
+    }
+    
+    .left{
+        left: 32.15%;
+    }
+}

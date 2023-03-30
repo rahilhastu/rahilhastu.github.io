@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Homework #4: Innovative Visualization Design - CSE 578 - Spring 2023</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-color@3"></script>
+    <script src="https://kit.fontawesome.com/03a7167a46.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  </head>
+  <body>
+      <div class="navigation-bar">
+          <h3 class="heading text-center">Homework #4: Innovative Visualization Design</h3>
+          <h5 class="heading text-center">Rahil Hastu - rhastu@asu.edu</h5>
+      </div>
+      <div id="landing-page" class="landingPage">
+        <div class="web-info">
+          <h1>Welcome to Dinosaur Museum Catalog</h1>
+          <p>I have organized the countries into rectangular boxes where the width of each box indicates the number of dinosaurs present in that country.</p>
+          <p>Each dinosaur is represented by a line, with the length of the line indicating the dinosaur's height in meters.</p>
+          <p>At the end of the line, an image is displayed indicating whether the dinosaur was Herbivorous, Carnivorous, or Omnivorous.</p>
+          <p>You can <b>click</b> on a line (dinosaur) to know more about it.</p>
+          <b>Marks: Line</b>
+          <b>Channels: Length of the line, Area of rectangle, Color hue, Shape</b>
+          <b>Interactions: Hover, Click</b>
+        </div>
+        <div class="web-button">
+          <p class="continueButton">Click the button below to continue</p>
+          <button class="cont-btn" id="continue-button">Continue</button>
+          <video class="video" autoplay="true" loop >
+            <source src="./images/dinoVideo.mov"/>
+          </video>
+        </div>
+      </div>
+      <div id = "content" class="container">
+        <i class="right fa fa-chevron-right" onclick="right()"></i>
+        <!-- <div class="chevron-right" onclick="right()"></div> -->
+        <i class="left fa fa-chevron-left" onclick="left()"></i>
+        <!-- <div class="chevron-left" onclick="left()"></div> -->
+        <div class="dino-info">
+          <img id = "dino-image" class="dino-image" src="https://www.nhm.ac.uk/resources/nature-online/life/dinosaurs/dinosaur-directory/images/reconstruction/small/Melanorosaurus.jpg" />
+          <div class="dino-details">
+            <p class="dino-name">
+              <b>Name : </b><span id="dino-name-text">Melanorosaurus</span>
+            </p>
+            <p class="dino-diet">
+              <b>Diet : </b><span id="dino-diet-text">Omnivorous</span>
+            </p>
+            <p class = "dino-era">
+              <b>When it lived : </b><span id="dino-era-text"> Late Triassic 227-221 million years ago</span>
+            </p>
+            <p class = "dino-place">
+              <b>Found in : </b><span id="dino-place-text">South Africa</span>
+            </p>
+            <p class = "dino-type">
+              <b>Type of dinosaur : </b><span id="dino-type-text">Sauropod</span>
+            </p>
+            <p class = "dino-length">
+              <b>Length : </b><span id="dino-length-text">12.0m</span>
+            </p>
+          </div>
+        </div>
+        <div class="svg-div" >
+            <svg id="svgArea" class="svgArea" style="right: 0px;"></svg>
+            <div class="legend">
+              <div>
+                <p>Legend</p>
+              </div>
+              <div class="legend-split">
+                <div class="countries-legend">
+                  <h4>Countries</h4>
+                  <div id="country-legend-data">
+
+                  </div>
+                </div>
+                <div class="images-legend">
+                  <h4>Images</h4>
+                  <div class="image-legend-data">
+                    <img src="./css/svg/leaf.svg">
+                    <span>Herbivores</span><br>
+                    <img src="./css/svg/chicken.svg">
+                    <span>Carnivores</span><br>
+                    <img src="./css/svg/omni.png">
+                    <span>Omnivores</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div id="div_template"></div>
+      <footer>
+        <div id="footer" class="footer">
+          <p>All images of Dinosaurs are taken from <a href="https://www.nhm.ac.uk/discover/dino-directory.html" target="_blank">https://www.nhm.ac.uk/discover/dino-directory.html</a></p>
+        </div>
+      </footer>
+  </body>
+  <script src="js/app.js"></script>
+</html>
