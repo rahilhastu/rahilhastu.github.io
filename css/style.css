@@ -1,0 +1,336 @@
+.main{
+    font-family: "Noteworthy", sans-serif;
+    display: flex;
+    background: linear-gradient(to right bottom, #bfded8, #9ce4ef);
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.heading{
+    color: #426696;
+    opacity: 0.8;
+}
+.info{
+    margin-bottom: 3%;
+}
+.dashboard{
+    display: flex;
+    flex-direction: column;
+}
+.drawingArea{
+    display: flex;
+    flex-direction: row;
+    /* max-height: 100vh; */
+    /* min-height: 100vh; */
+    padding: 1rem;
+}
+.controls{
+    padding: 1em;
+    margin-right: 1em;
+    background: linear-gradient(to right bottom,rgba(255, 255, 255, 0.237), rgba(255, 255, 255, 0.3));
+    border-radius: 3em;
+    overflow: auto;
+    max-height: 100vh;
+}   
+.controls::-webkit-scrollbar,
+.controls::-moz-scrollbar{
+    display: none;
+}
+.glass{
+    width: 90%; 
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.selectCountry{
+    margin-top: 3%;
+}
+.accordion-button{
+    background: linear-gradient(to right top, #ffffff, #dfe7e6);
+    margin: 2px;
+    border-radius: 2em;
+}
+.countryControls .accordion-item{
+    background: linear-gradient(to right top, #ffffff, #dfe7e6);
+    border-radius: 2em;
+}
+.accordion-item:last-of-type .accordion-button,
+.accordion-item:last-of-type .accordion-button.collapsed,
+.accordion-item:first-of-type .accordion-button,
+.accordion-item:first-of-type .accordion-button.collapsed{
+    border-radius: 2em;
+    border-bottom-left-radius: 2em
+
+}
+.circle1, .circle2, .circle3 {
+    position: absolute;
+    height: 15rem; 
+    width: 15rem;
+    border-radius: 8rem;
+    background: linear-gradient(to right bottom,rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+}
+
+.circle1{
+    bottom: -2vh;
+    left:0vw;
+}
+
+.circle2{
+    right: 0vw;
+    top: 6vh;
+}
+.circle3{
+    height: 11rem; 
+    width: 11rem;
+    right: 15vw;
+    bottom: -10vh;
+}
+
+.inputkind{
+    background: linear-gradient(to right bottom,rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.3));
+    border: none;
+    width: 70%;
+    padding: 0.3rem;
+    border-radius: 2rem;
+    margin-bottom: 4%;
+}
+
+.accordion-body{
+    display: flex;
+    justify-content: space-between;
+}
+.inputLabel{
+    display: flex;
+}
+.inputLabel .label{
+    margin-right: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -webkit-line-clamp: 1;
+}
+
+.checkbox {
+    width: 0.8rem;
+    height: 1.8rem;
+    border: 1px solid red;
+    margin-right: 0.4em;
+  }
+.selectAllbtn{
+    border: 1px solid black;
+    float: right;
+}
+.selectAllbtn:hover{
+    border: 1px solid rgba(0, 0, 0, 0.285);
+    background-color: rgba(0, 0, 0, 0.443);
+}
+
+#attributeList{
+    width: -webkit-fill-available;
+    width: -moz-available;
+    background: linear-gradient(to right top, #ffffff, #dfe7e6);
+}
+#attributelist option{
+    font-family: "Noteworthy", sans-serif;
+}
+.controlPanel{
+    display: flex;
+    flex-direction: column;
+}
+.opacitySlider{
+    display: flex;
+    place-content: space-between;
+}
+#opacityRange{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+input[type=range] {
+    width: 40%;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    cursor: pointer;
+    background: linear-gradient(to right bottom, #8ea5a1, #85b4ba);
+    height: 5px;
+}
+input[type=range]::-webkit-slider-thumb {
+    margin-top: -7px;
+}
+.svgArea{
+    width: 95%;
+    height: 70vh;
+    overflow: visible;
+    margin: 3% 0 3% 0;
+}
+#plot_svg{
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.selectedNoCountry{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.line{
+    stroke-width: 2.5px;
+    fill: none;
+    z-index: 3;
+    position: relative;
+}
+
+.circle{
+    position: relative;
+    z-index: 1;
+}
+
+.tooltip{
+    position: absolute;
+    font-family: "Noteworthy", sans-serif;
+    background-color : #000000ab;;
+    border : 2px solid #000000ab;;
+    border-radius : 5px;
+    padding : 5px;
+    color: white;
+}
+
+.yy-label{
+    position: relative;
+    top: 50%;
+    /* left: 30%; */
+    transform : translate(50%, 50%) rotate(-90deg);
+}
+
+.playButton{
+    display: flex;
+    justify-content: space-around;
+    place-items: center
+}
+
+.play-div{
+    display: flex;
+    place-items: center;
+}
+
+.playButton button{
+    background: transparent;
+    border: none;
+    font-size: 1.8em;
+    color: cadetblue;
+}
+
+.playButton button:hover{
+    color: #5a838a7d;
+}
+
+.yearSelection{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+}
+
+.range-inputs{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    place-content: space-around;
+}
+
+.startYear-div,
+.endYear-div{
+    display: flex;
+    flex-direction: column;
+}
+
+#startYear, #endYear{
+    border: none;
+}
+
+
+
+
+.switch {
+    position: relative;
+    width: 80px;
+    height: 27px;
+  }
+  
+.switch input[type="checkbox"] {
+    display:none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 2px;
+    right: 0;
+    bottom: 0;
+    background-color: #22cac7;
+    transition: .8s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    bottom: 4px;
+    background-color: #74aeae;
+    transition: .8s;
+}
+  
+input:checked + .slider {
+    background-color: #549392;
+}
+  
+input:checked + .slider:before {
+    transform: translateX(58px);
+}
+
+.name{
+    display: none;
+}
+  
+.name, .flagg{
+    color: white;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    font-size: 10px;
+    font-family: Verdana, sans-serif;
+}
+  
+input:checked+ .slider .name{
+    display: block;
+}
+  
+input:checked + .slider .flagg{
+    display: none;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+    border: 1px solid #c2ebeb;
+}
+
+.selectAllRegions{
+    margin-bottom: 10px;
+}
+.selectAllRegions input{
+    margin-right: 10px;
+}

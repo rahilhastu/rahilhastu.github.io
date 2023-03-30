@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Homework #3: Global Developments - CSE 578 - Spring 2023</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>    
+        <script src="https://cdn.jsdelivr.net/npm/d3-color@3"></script>
+    </head>
+    <body class="main">
+      <div class="info">
+        <h1 class="heading text-center">Homework #3: Global Developments</h1>
+        <h3 class="heading text-center">Rahil Hastu - rhastu@asu.edu</h3>
+      </div>
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+      <div class="circle3"></div>
+      <div class="dashboard glass">
+          <div class="drawingArea">
+              <div class="col-4 controls">
+                <div class="selectAttribute">
+                  <h3>Select Attribute</h3>
+                  <select id="attributeList" onchange="selectedAttribute(event)">
+                  </select>
+                </div>
+                <div class="selectCountry">
+                  <h3>Select Country(s)/Region</h3>
+                  <div class="inputkind"></div>
+                  <div class="selectAllRegions">
+                    <label><input id="selectAllRegions" onclick="selectAllRegions()" type="checkbox">Select All Regions</label>
+                  </div>
+                  <div class="countryControls">
+                      <div class="accordion" id="regions"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-8 graph">
+                  <h3>Animation</h3>
+                  <div class="inputkind"></div>
+                  <div class="controlPanel">
+                    <div class="opacitySlider">
+                      <div class="col-10">
+                        <label for="opacityRange">Select Opacity for Lines: </label>
+                        <input onmousemove="opacityValue(event)" onchange="opacityValue(event)" type='range' id="opacityRange" min="0.1" max="1" step="0.01" value="0.7">
+                        <span id="opacityValue">Opacity : 70.0%</span>
+                      </div>
+                      <div class="col-2">
+                        <label  class="switch">
+                          <input type="checkbox">
+                          <div class="slider round">
+                           <span class="name">Name</span>
+                           <span class="flagg">Flag</span>
+                          </div>
+                         </label>
+                      </div>
+                    </div>
+                    <div id="svgArea" class="svgArea controls">
+                      <!-- <p id="selectedNoCountry" class="selectedNoCountry">Please select a Country from the Regions Accordion</p> -->
+                      <svg id="plot_svg">
+                      </svg>
+                    </div>
+                    <div class="playButton">
+                      <div class="play-div">
+                        <span>Want to watch the animation again?</span>
+                        <button onclick="animateAgain()"><span class="bi bi-play-circle"></span></button>
+                      </div>
+                      <div class="yearSelection">
+                        <div class="range-text">
+                          Select a range between 1990 - 2013 to analyze the data
+                        </div>
+                        <div class="range-inputs">
+                          <div class="startYear-div">
+                            <input id="startYear" onchange="yearSelection()" type="number" min="1990" max="2013" value="1990">
+                            <label>Start year</label>
+                          </div>
+                          <span>&lt;</span>
+                          <div class="endYear-div">
+                            <input id="endYear" onchange="yearSelection()" type="number" min="1990" max="2013" value="2013">
+                            <label>End year</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div id="div_template"></div>
+
+    </body>
+    <script src="js/app.js"></script>
+</html>
