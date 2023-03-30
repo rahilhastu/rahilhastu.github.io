@@ -280,12 +280,12 @@ const groupCountry = rect.selectAll(".rect")
       })
       .attr("xlink:href", (data) => {
         if (data["diet"]== "herbivorous")
-          return "../css/svg/leaf.svg"
+          return "./css/svg/leaf.svg"
         else if (data["diet"]== "carnivorous"){
-          return "../css/svg/chicken.svg"
+          return "./css/svg/chicken.svg"
         }
         else{
-          return "../css/svg/omni.png"
+          return "./css/svg/omni.png"
         }
       })
       .attr("x",(data,i)=>{
