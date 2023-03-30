@@ -1,0 +1,28 @@
+.myContainer {
+    margin:auto;
+    width:1210px;
+}
+#bar_div, #pie_div {
+    float:left;
+    width:600px;
+    padding:10px;
+}
+#bar_div {
+    float:right;
+}
+svg {
+    width: 580px;
+    height:400px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+.tooltip{
+    position: absolute;
+    font-family: monaco,Consolas,Lucida Console,monospace; 
+    background-color : white;
+    border : 2px solid #000000;
+    border-radius : 5px;
+    padding : 5px;
+}
