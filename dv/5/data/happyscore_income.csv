@@ -1,0 +1,79 @@
+﻿country,adjusted_satisfaction,avg_satisfaction,std_satisfaction,avg_income,median_income,income_inequality,region,happyScore,GDP,country,dup_avg_income_
+Brazil,56,6.9,2.19,5567.235,3294.18,54.33375,'Latin America and Caribbean',6.983,0.98124,Brazil,0.5567235
+Luxembourg,66,7.7,1.76,26182.275,22240.23,31.95,'Western Europe',6.946,1.56391,Luxembourg,2.6182275
+Ireland,64,7.5,1.85,16657.77,13823.16,32.41875,'Western Europe',6.94,1.33596,Ireland,1.665777
+Belgium,63,7.2,1.72,17168.505,15166.455,28.745,'Western Europe',6.937,1.30782,Belgium,1.7168505
+United Kingdom,60,7.1,1.98,17099.55,14172.735,34.4325,'Western Europe',6.867,1.26637,United Kingdom,1.709955
+Panama,65,7.8,2.02,6250.36,3814.213333,52.66444444,'Latin America and Caribbean',6.786,1.06353,Panama,0.625036
+Germany,61,7.2,1.99,19285.96,16291.26,31.54166667,'Western Europe',6.75,1.32792,Germany,1.928596
+Chile,55,6.8,2.13,7557.99,4448.01,51.27,'Latin America and Caribbean',6.67,1.10715,Chile,0.755799
+France,52,6.4,2.15,18096.78857,14971.25143,32.25571429,'Western Europe',6.575,1.27778,France,1.809678857
+Argentina,60,7.1,1.91,7101.12,5109.4,45.47555556,'Latin America and Caribbean',6.574,1.05351,Argentina,0.710112
+Czech Republic,54,6.6,2.13,9430.905,8363.37,26.41375,'Central and Eastern Europe',6.505,1.17898,Czech Republic,0.9430905
+Uruguay,58,7,2.13,7544.4,5269.226667,45.01444444,'Latin America and Caribbean',6.485,1.06166,Uruguay,0.75444
+Colombia,65,7.9,2.09,4618.062857,2618.674286,54.81571429,'Latin America and Caribbean',6.477,0.91861,Colombia,0.461806286
+Thailand,58,6.8,1.93,4792.5,3523.545,39.44875,'Southeastern Asia',6.455,0.9669,Thailand,0.47925
+Spain,60,7,1.85,13842.99,11782.395,34.625,'Western Europe',6.329,1.23011,Spain,1.384299
+El Salvador,56,6.7,2.03,3410.893333,2366.28,44.82333333,'Latin America and Caribbean',6.13,0.76454,El Salvador,0.341089333
+Slovakia,51,6.3,2.21,7986.396923,7180.301538,27.05615385,'Central and Eastern Europe',5.995,1.16891,Slovakia,0.798639692
+Japan,54,6.4,2.04,14542.8,12541.08,32.11,'Eastern Asia',5.987,1.27074,Japan,1.45428
+Ecuador,57,6.8,1.99,3835.653333,2435.266667,50.09555556,'Latin America and Caribbean',5.975,0.86402,Ecuador,0.383565333
+Italy,57,6.6,1.81,15437.595,13163.07,34.12625,'Western Europe',5.948,1.25114,Italy,1.5437595
+Bolivia,53,6.3,1.9,3985.71,2584.47,51.61,'Latin America and Caribbean',5.89,0.68133,Bolivia,0.398571
+Moldova,42,5.3,2.25,3077.28,2547.413333,32.67444444,'Central and Eastern Europe',5.889,0.59448,Moldova,0.307728
+Paraguay,56,6.8,2.04,4938.52,3136.04,50.96666667,'Latin America and Caribbean',5.878,0.75985,Paraguay,0.493852
+Kazakhstan,54,6.5,2.12,3555.093333,3025.48,28.42222222,'Central and Eastern Europe',5.855,1.12254,Kazakhstan,0.355509333
+Slovenia,57,7,2.14,12174.765,11071.995,24.67875,'Central and Eastern Europe',5.848,1.18498,Slovenia,1.2174765
+Lithuania,48,5.8,2.15,6789.16,5598.36,35.12,'Central and Eastern Europe',5.833,1.14723,Lithuania,0.678916
+Nicaragua,55,7.1,2.5,2419.2,1632.88,45.79666667,'Latin America and Caribbean',5.828,0.59325,Nicaragua,0.24192
+Peru,52,6.5,2.28,4312.666667,2951.133333,48.1,'Latin America and Caribbean',5.824,0.90019,Peru,0.431266667
+Belarus,47,5.5,1.99,5453.933333,4814.453333,27.75444444,'Central and Eastern Europe',5.813,1.03192,Belarus,0.545393333
+Poland,55,6.8,2.23,6582.465882,5451.247059,33.58882353,'Central and Eastern Europe',5.791,1.12555,Poland,0.658246588
+Malaysia,56,6.6,1.9,7286.82,4930.68,46.155,'Southeastern Asia',5.77,1.12486,Malaysia,0.728682
+Croatia,47,6,2.48,7828.08,6622.114286,32.00857143,'Central and Eastern Europe',5.759,1.08254,Croatia,0.782808
+Russia,43,5.6,2.43,7647.195,5520.975,41.24,'Central and Eastern Europe',5.716,1.13764,Russia,0.7647195
+Cyprus,58,7.1,2.07,10493.955,8624.295,31.84,'Western Europe',5.689,1.20813,Cyprus,1.0493955
+Kosovo,46,5.7,2.23,2627.005714,2224.68,30.07571429,'Central and Eastern Europe',5.589,0.80148,Kosovo,0.262700571
+Mauritius,48,5.9,2.19,4120.5,3222.78,35.745,'Sub-Saharan Africa',5.477,1.00761,Mauritius,0.41205
+Estonia,50,6.2,2.19,7906.725,6540.135,32.5275,'Central and Eastern Europe',5.429,1.15174,Estonia,0.7906725
+Indonesia,50,6.1,2.14,1541.747368,1161.066667,34.90842105,'Southeastern Asia',5.399,0.82827,Indonesia,0.154174737
+Vietnam,53,6.1,1.77,2231.4,1643.58,39.2425,'Southeastern Asia',5.36,0.63216,Vietnam,0.22314
+Turkey,47,6,2.33,5242.666667,4018.68,39.76333333,'Middle East and Northern Africa',5.332,1.06098,Turkey,0.524266667
+Kyrgyzstan,48,5.8,2.09,1852.64,1530.133333,31.03555556,'Central and Eastern Europe',5.286,0.47428,Kyrgyzstan,0.185264
+Nigeria,43,5.3,2.19,910.32,649.2,42.97,'Sub-Saharan Africa',5.268,0.65435,Nigeria,0.091032
+Azerbaijan,46,5.8,2.27,3381.6,2931.48,24.215,'Central and Eastern Europe',5.212,1.02389,Azerbaijan,0.33816
+Pakistan,45,6,2.72,1463.856,1174.368,31.196,'Southern Asia',5.194,0.59543,Pakistan,0.1463856
+China,48,6.2,2.43,2673.642857,2108.13,37.57928571,'Eastern Asia',5.14,0.89012,China,0.267364286
+Zambia,37,5,2.61,956.76,510.06,55.12,'Sub-Saharan Africa',5.129,0.47038,Zambia,0.095676
+Romania,46,6,2.49,3174.15,2741.37,32.054375,'Central and Eastern Europe',5.124,1.04345,Romania,0.317415
+Serbia,44,5.6,2.32,4629.908571,3992.502857,29.72714286,'Central and Eastern Europe',5.123,0.92053,Serbia,0.462990857
+Portugal,47,5.8,2.16,9982.875,7800.645,36.63,'Western Europe',5.102,1.15991,Portugal,0.9982875
+Latvia,45,5.5,2.11,6722.901818,5438.214545,36.33454545,'Central and Eastern Europe',5.098,1.11312,Latvia,0.672290182
+Philippines,53,7,2.66,2224.464,1472.4,44.768,'Southeastern Asia',5.073,0.70532,Philippines,0.2224464
+Morocco,43,5.3,2.19,2864.88,2064.48,40.72,'Middle East and Northern Africa',5.013,0.73479,Morocco,0.286488
+Lesotho,40,5.2,2.49,908.64,532.92,54.18,'Sub-Saharan Africa',4.898,0.37545,Lesotho,0.090864
+Dominican Republic,60,7.5,2.33,4430.76,2836.453333,48.41777778,'Latin America and Caribbean',4.885,0.89537,Dominican Republic,0.443076
+Laos,55,6.2,1.72,1491.72,1118.94,37.265,'Southeastern Asia',4.876,0.59066,Laos,0.149172
+Mongolia,44,5.7,2.37,3181.8,2565.72,34.1325,'Eastern Asia',4.874,0.82819,Mongolia,0.31818
+Greece,54,6.5,2.07,11507.565,9776.475,35.00125,'Western Europe',4.857,1.15406,Greece,1.1507565
+Hungary,42,5.5,2.48,6903.883636,6056.716364,29.55545455,'Central and Eastern Europe',4.8,1.12094,Hungary,0.690388364
+Honduras,55,7,2.46,3080.44,1757.84,55.80555556,'Latin America and Caribbean',4.788,0.59532,Honduras,0.308044
+Tajikistan,46,5.1,1.68,1497.03,1260.69,30.9725,'Central and Eastern Europe',4.786,0.39047,Tajikistan,0.149703
+Tunisia,43,5.5,2.37,3251.28,2572.56,36.77,'Middle East and Northern Africa',4.739,0.88113,Tunisia,0.325128
+Bangladesh,43,5.3,2.1,1265.34,994.14,32.665,'Southern Asia',4.694,0.39753,Bangladesh,0.126534
+Iran,45,5.8,2.49,5215.04,3961,39.24,'Middle East and Northern Africa',4.686,1.0088,Iran,0.521504
+Ukraine,39,5.1,2.44,4129.68,3643.52,26.27111111,'Central and Eastern Europe',4.681,0.79907,Ukraine,0.412968
+South Africa,49,6.3,2.47,3889.32,1506.4,63.72666667,'Sub-Saharan Africa',4.642,0.92049,South Africa,0.388932
+Ghana,41,5.4,2.45,1577.04,1148.28,42.77,'Sub-Saharan Africa',4.633,0.54558,Ghana,0.157704
+India,45,5.5,2.13,1357.848,1042.2,34.918,'Southern Asia',4.565,0.64499,India,0.1357848
+Nepal,48,5.3,1.65,1428.12,1155,32.84,'Southern Asia',4.514,0.35997,Nepal,0.142812
+Mauritania,36,4.9,2.62,1922.64,1567.2,35.69,'Sub-Saharan Africa',4.436,0.45407,Mauritania,0.192264
+Kenya,30,3.7,2.14,1492.68,949.08,48.51,'Sub-Saharan Africa',4.419,0.36471,Kenya,0.149268
+Djibouti,43,5.7,2.54,1875.24,1348.74,44.63,'Sub-Saharan Africa',4.369,0.44025,Djibouti,0.187524
+Armenia,37,4.9,2.42,2096.76,1731.506667,31.44555556,'Central and Eastern Europe',4.35,0.76821,Armenia,0.209676
+Botswana,36,4.7,2.42,3484.68,1632.6,60.46,'Sub-Saharan Africa',4.332,0.99355,Botswana,0.348468
+Georgia,37,4.3,1.91,1957.266667,1483.773333,40.89444444,'Central and Eastern Europe',4.297,0.7419,Georgia,0.195726667
+Sri Lanka,42,5.1,2.07,2558.28,1862.36,38.6,'Southern Asia',4.271,0.83524,Sri Lanka,0.255828
+Cameroon,36,3.9,1.69,1490.52,1030.08,42.82,'Sub-Saharan Africa',4.252,0.4225,Cameroon,0.149052
+Bulgaria,34,4.6,2.57,5354.82,4523.565,34.1625,'Central and Eastern Europe',4.218,1.01216,Bulgaria,0.535482
+Angola,26,4.3,3.19,1448.88,1044.24,42.72,'Sub-Saharan Africa',4.033,0.75778,Angola,0.144888

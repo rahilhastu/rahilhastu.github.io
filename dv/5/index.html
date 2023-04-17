@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Homework #5: Argumentative Vis - CSE 578 - Spring 2023</title>
+        <base href="https://rahilhastu.github.io/dv/5/">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+        <script src="https://unpkg.com/d3-regression@1.3.10/dist/d3-regression.min.js"></script>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/d3-color@3"></script>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="mainPage myContainer">
+            <div class="header-info">
+                <h3 class="text-center">Homework #5: Argumentative Vis</h3>
+                <h5 class="text-center">Rahil Hastu - rhastu@asu.edu</h5>
+            </div>
+            <hr>
+            <div id="div_template"></div>
+            <div class="argumentative-map-section">
+                <div class="leftSide">
+                    <p>Happiness Score &#8595; : Irrespective of GDP &#x7e;</p>
+                    <div class="svg_container glass">
+                        <svg id="left__svg" class="left__svg">
+                            <!-- <line id="gdp_happy_line__"></line> -->
+                        </svg>
+                    </div>
+                </div>
+                <div class="rightSide">
+                    <p>Happiness Score &#8593; : Directly Related to GDP &#8593;</p>
+                    <div class="svg_container glass">
+                        <svg id="right__svg" class="right__svg"></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="infoPage" class="infoPage ">
+              <div class="intro">
+                <h2>Introduction</h2>
+                <h5 class="why">Is GDP a good measure of happiness?</h5>
+                <p>The topic of whether a country's happiness is solely determined by its GDP is a subject of ongoing debate. While some argue that GDP is the sole determinant of a country's happiness, others hold the opinion that there are multifarious factors that contribute to a nation's well-being. For this assignment, I have chosen to examine the dataset of the World Happiness Report, which sheds light on this contentious issue.
+                  <p>I have taken the data from the following website:  <a target="_blank" href="https://www.kaggle.com/datasets/unsdsn/world-happiness">Kaggle - World Happiness Report</a></p>
+                </p>
+              </div>
+              <div class="left_intro">
+                <h5 class="heading_center">Left Graph</h5>
+                <div class="left_intro_desc">
+                    <img class="image" src="./images/left.png"/>
+                    <div>
+                        <ul>
+                            <li>The graph indicates a consistent decline in happiness levels across countries, irrespective of their GDP values.</li>
+                            <li>The x-axis represents several countries</li>
+                            <li>Along the y-axis, the graph shows two lines, one for Happiness Score (shown in blue) and one for GDP (shown in orange).</li>
+                        </ul>
+                        <p class="p_info">This intriguing observation shows that variables other than GDP may be impacting the drop in happiness levels.</p>
+                    </div>
+                    
+                </div>
+              </div>
+              <div class="right_info">
+                <h5 class="heading_center">Right Graph</h5>
+                <div class="right_intro_desc">
+                    <div>
+                        <ul>
+                            <li>The graph shows a clear positive correlation, indicating that countries with higher GDP tend to have higher happiness levels.</li>
+                            <li>x-axis represents Happiness Score.</li>
+                            <li> y-axis represents GDP values for various countries.</li>
+                        </ul>
+                        <p class="p_info">This suggests that countries with superior economic performance, as measured by GDP, have higher levels of happiness.</p>
+                    </div>
+                    <img class="image" src="./images/right.png"/>
+                </div>
+              </div>
+              <div class="rhetorics">
+                <h5 class="heading_center">Rhetorics</h5>
+                <ul>
+                    <li>Information Rhetoric - <b>Omission</b> :  </li>
+                    <li>Information Rhetoric - <b>Filtering</b>: </li>
+                    <li>Information Rhetoric - <b>Scaling</b>: </li>
+                    <li><b>Provenance Rhetoric</b>: </li>
+                </ul>
+              </div>
+              <div class="personalOpinion">
+                  <h5 class="heading_center">Personal Opinion</h5>
+                  <p>Aside from GDP, a variety of other factors influence happiness. Environmental quality, health and education levels, technological improvements, and other factors can all influence a country's happiness rating. Happiness is a complex phenomena that economic statistics alone cannot fully convey.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </body>
+    <script src="app.js" ></script>
+    <!-- <script async src="https://unpkg.com/d3-regression@1.3.10/dist/d3-regression.min.js"></script> -->
+</html> 
