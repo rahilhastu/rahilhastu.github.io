@@ -192,6 +192,8 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     { path: '', component: _home_home_component__WEBPACK_IMPORTED_MODULE_2__["HomeComponent"] },
     { path: 'home', redirectTo: '', pathMatch: 'full' },
+    { path: 'rahil', redirectTo: '', pathMatch: 'full' },
+    { path: 'rahil/home', redirectTo: '', pathMatch: 'full' },
     { path: 'aboutme', component: _aboutme_aboutme_component__WEBPACK_IMPORTED_MODULE_3__["AboutmeComponent"] },
     { path: 'skills', component: _skills_skills_component__WEBPACK_IMPORTED_MODULE_4__["SkillsComponent"] },
     { path: 'contactme', component: _contactme_contactme_component__WEBPACK_IMPORTED_MODULE_5__["ContactmeComponent"] },
