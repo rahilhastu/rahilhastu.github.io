@@ -1309,62 +1309,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WorkComponent", function() { return WorkComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
 /* harmony import */ var _assets_js_particles_properties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/js/particles-properties */ "./src/assets/js/particles-properties.ts");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
 
 
 
-
-function WorkComponent_section_15_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "section", 12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 13);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 14);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 15);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "p", 16);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const work_r1 = ctx.$implicit;
-    const i_r2 = ctx.index;
-    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("active", i_r2 === ctx_r0.activeIndex);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("id", work_r1.id);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](work_r1.title);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("active", i_r2 === ctx_r0.activeIndex);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](work_r1.description);
-} }
 class WorkComponent {
-    constructor() {
-        this.portfolio = [
-            {
-                id: 'intro',
-                title: 'Intro',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit...',
-                image: 'intro-image.jpg',
-            },
-            {
-                id: 'first',
-                title: 'Diagnostic ECG',
-                description: 'I contribute to the team, at GE Healthcare...',
-                image: 'diagnostic-ecg-image.jpg',
-            },
-        ];
-        this.activeIndex = 0;
-    }
-    scrollToWork(index) {
-        this.activeIndex = index;
-        const element = document.getElementById(this.portfolio[index].id);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
-    }
+    constructor() { }
     ngOnInit() {
         console.log('reloadss');
         let body = document.querySelector('body');
@@ -1388,31 +1337,147 @@ class WorkComponent {
         particlesJS('particles-js', props, function () {
             console.log('callback');
         });
-        let wh = window.innerHeight;
-        let projectSection = document.querySelectorAll('.proj-section');
-        let timeline = new TimelineMax();
-        let controller = new ScrollMagic.Controller();
-        projectSection.forEach((projs, index) => {
-            let circle = projs.querySelector('.circle');
-            let title = projs.querySelector('.title-proj');
-            timeline
-                .fromTo(circle, 1, { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, ease: Power4.easeInOut })
-                .fromTo(title, 1, { opacity: 0, y: -20 }, { opacity: 1, y: 0, ease: Power4.easeInOut }, '-=0.8');
+        let wh = window.innerHeight, intro = document.querySelector('#intro'), first = document.querySelector('#first'), second = document.querySelector('#second'), third = document.querySelector('#third'), fourth = document.querySelector('#fourth'), circle = document.querySelector('.circle'), introCircle = document.querySelector('#intro .circle'), firstCircle = document.querySelector('#first .circle'), secondCircle = document.querySelector('#second .circle'), thirdCircle = document.querySelector('#third .circle'), fourthCircle = document.querySelector('#fourth .circle'), projectSection = document.querySelectorAll('.proj-section'), ropeCircleIntro = document.querySelector('.interval-0-intro div'), ropeCircle1 = document.querySelector('.interval-1-proj div'), ropeCircle2 = document.querySelector('.interval-2-proj div'), ropeCircle3 = document.querySelector('.interval-3-proj div'), ropeCircle4 = document.querySelector('.interval-4-proj div'), introTitle = document.querySelector('.intro-title'), firstTitle = document.querySelector('.first-title'), secondTitle = document.querySelector('.second-title'), thirdTitle = document.querySelector('.third-title'), fourthTitle = document.querySelector('.fourth-title'), man = document.querySelector('.man');
+        // init
+        var ctrl = new ScrollMagic.Controller({
+            globalSceneOptions: {
+                triggerHook: 'onLeave',
+            },
+        });
+        // Create scene
+        projectSection.forEach((projs) => {
             new ScrollMagic.Scene({
                 triggerElement: projs,
-                triggerHook: 0.7,
-                duration: '100%'
+                duration: '20%',
             })
-                .setTween(timeline)
-                .addTo(controller)
-                .on('enter', (e) => {
-                e.target.triggerElement().classList.add('active');
-            })
-                .on('leave', (e) => {
-                e.target.triggerElement().classList.remove('active');
-            });
-            timeline = new TimelineMax();
+                .setPin(projs)
+                .addTo(ctrl);
         });
+        //Intro fade out, Proj 1 fade in
+        var introToproj1 = new TimelineMax();
+        introToproj1
+            .to(introCircle, 5, {
+            xPercent: -20,
+            position: 'fixed',
+            autoAlpha: 0,
+            ease: Power4.easeInOut,
+        })
+            .to(introTitle, 2, {
+            yPercent: -20,
+            autoAlpha: 0,
+            ease: Power4.easeInOut,
+        }, 0)
+            .to(man, 1, { left: '27.5%' }, 0)
+            .to(ropeCircleIntro, 1, { className: '-=innerCircle' }, 0)
+            .fromTo(firstCircle, 5, { scale: '0', autoAlpha: 0 }, {
+            position: 'fixed',
+            autoAlpha: 1,
+            ease: Power4.easeInOut,
+            scale: '1',
+        }, 3)
+            .fromTo(firstTitle, 5, { left: '40%', yPercent: +20, autoAlpha: 0 }, {
+            yPercent: 0,
+            position: 'fixed',
+            autoAlpha: 1,
+            ease: Power4.easeInOut,
+        }, 3)
+            .to(ropeCircle1, 1, { className: '+=innerCircle' }, 2);
+        new ScrollMagic.Scene({
+            triggerElement: intro[0],
+            duration: '100%',
+        })
+            .setTween(introToproj1)
+            .addTo(ctrl);
+        //Proj 1 fade out, Proj 2 fade in
+        var introToproj2 = new TimelineMax();
+        introToproj2
+            .to(firstCircle, 5, {
+            autoAlpha: 0,
+            yPercent: -20,
+            ease: Power4.easeInOut,
+        })
+            .to(firstTitle, 2, {
+            yPercent: -20,
+            autoAlpha: 0,
+            ease: Power4.easeInOut,
+        }, 0)
+            .to(man, 1, { left: '47.5%' }, 0)
+            .to(ropeCircle1, 1, { className: '-=innerCircle' }, 0)
+            .fromTo(secondCircle, 5, { autoAlpha: 0, scale: '0' }, { position: 'fixed', autoAlpha: 1, ease: Power4.easeInOut, scale: '1' }, 3)
+            .fromTo(secondTitle, 5, { left: '60%', yPercent: +20, autoAlpha: 0 }, {
+            yPercent: 0,
+            position: 'fixed',
+            autoAlpha: 1,
+            ease: Power4.easeInOut,
+        }, 3)
+            .to(ropeCircle2, 1, { className: '+=innerCircle' }, 2);
+        new ScrollMagic.Scene({
+            triggerElement: first,
+            duration: '100%',
+        })
+            .setTween(introToproj2)
+            .addTo(ctrl);
+        //Proj 2 fade out, Proj 3 fade in
+        var introToproj3 = new TimelineMax();
+        introToproj3
+            .to(secondCircle, 5, {
+            // yPercent: -10,
+            xPercent: 20,
+            autoAlpha: 0,
+            ease: Power4.easeInOut,
+        })
+            .to(secondTitle, 2, {
+            yPercent: -20,
+            autoAlpha: 0,
+            ease: Power4.easeInOut,
+        }, 0)
+            .to(man, 1, { left: '67.5%' }, 0)
+            .to(ropeCircle2, 1, { className: '-=innerCircle' }, 0)
+            .fromTo(thirdCircle, 5, { autoAlpha: 0, scale: '0' }, { position: 'fixed', autoAlpha: 1, ease: Power4.easeInOut, scale: '1' }, 3)
+            .fromTo(thirdTitle, 5, { left: '50%', yPercent: +20, autoAlpha: 0 }, {
+            yPercent: 0,
+            position: 'fixed',
+            autoAlpha: 1,
+            ease: Power4.easeInOut,
+        }, 3)
+            .to(ropeCircle3, 1, { className: '+=innerCircle' }, 2);
+        new ScrollMagic.Scene({
+            triggerElement: second,
+            duration: '100%',
+        })
+            .setTween(introToproj3)
+            .addTo(ctrl);
+        //Proj 3 fade out, Proj 4 fade in
+        var introToproj4 = new TimelineMax();
+        introToproj4
+            .to(thirdCircle, 5, {
+            autoAlpha: 0,
+            // yPercent: -10,
+            yPercent: 20,
+            ease: Power4.easeInOut,
+        })
+            .to(thirdTitle, 2, {
+            yPercent: -20,
+            autoAlpha: 0,
+            ease: Power4.easeInOut,
+        }, 0)
+            .to(man, 1, { left: '87.5%' }, 0)
+            .to(ropeCircle3, 1, { className: '-=innerCircle' }, 0)
+            .fromTo(fourthCircle, 5, { autoAlpha: 0, scale: '0' }, { position: 'fixed', autoAlpha: 1, ease: Power4.easeInOut, scale: '1' }, 3)
+            .fromTo(fourthTitle, 5, { left: '70%', yPercent: +20, autoAlpha: 0 }, {
+            yPercent: 0,
+            position: 'fixed',
+            autoAlpha: 1,
+            ease: Power4.easeInOut,
+        }, 3)
+            .to(ropeCircle4, 1, { className: '+=innerCircle' }, 2);
+        new ScrollMagic.Scene({
+            triggerElement: third,
+            duration: '100%',
+        })
+            .setTween(introToproj4)
+            .addTo(ctrl);
+        // window.event
     }
     sectionChange(projNum) {
         document.getElementById(projNum).scrollIntoView(true);
@@ -1426,7 +1491,7 @@ class WorkComponent {
     }
 }
 WorkComponent.ɵfac = function WorkComponent_Factory(t) { return new (t || WorkComponent)(); };
-WorkComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: WorkComponent, selectors: [["app-work"]], decls: 16, vars: 1, consts: [["id", "particles-js"], [1, "climbingman"], [1, "rope"], [1, "proj-circle-interval"], ["data-proj", "0", 1, "interval-0-intro", 3, "click"], [1, "innerCircle"], ["data-proj", "1", 1, "interval-1-proj", 3, "click"], ["data-proj", "2", 1, "interval-2-proj", 3, "click"], ["data-proj", "3", 1, "interval-3-proj", 3, "click"], ["data-proj", "4", 1, "interval-4-proj", 3, "click"], [1, "man"], [3, "id", "active", 4, "ngFor", "ngForOf"], [3, "id"], [1, "title-proj"], [1, "proj-section", "proj"], [1, "circle"], [1, "proj-desc"]], template: function WorkComponent_Template(rf, ctx) { if (rf & 1) {
+WorkComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: WorkComponent, selectors: [["app-work"]], decls: 77, vars: 0, consts: [["id", "particles-js"], [1, "climbingman"], [1, "rope"], [1, "proj-circle-interval"], ["data-proj", "0", 1, "interval-0-intro", 3, "click"], [1, "innerCircle"], ["data-proj", "1", 1, "interval-1-proj", 3, "click"], ["data-proj", "2", 1, "interval-2-proj", 3, "click"], ["data-proj", "3", 1, "interval-3-proj", 3, "click"], ["data-proj", "4", 1, "interval-4-proj", 3, "click"], [1, "man"], ["id", "intro"], [1, "title-proj", "intro-title"], ["id", "intro-1", 1, "proj", "proj-section"], [1, "circle", "activeCircle", 2, "display", "none"], [1, "proj-desc"], [1, "proj-image"], ["id", "first"], [1, "title-proj", "first-title"], ["data-index", "first", "id", "first-1", 1, "proj-section", "proj", "first"], [1, "circle"], ["id", "second"], [1, "title-proj", "second-title"], ["data-index", "second", "id", "second-1", 1, "proj-section", "proj", "second"], ["id", "third"], [1, "title-proj", "third-title"], ["data-index", "third", "id", "third-1", 1, "proj-section", "proj", "third"], ["id", "fourth"], [1, "title-proj", "fourth-title"], ["data-index", "fourth", "id", "fourth-1", 1, "proj-section", "proj", "fourth"]], template: function WorkComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -1455,11 +1520,97 @@ WorkComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](15, WorkComponent_section_15_Template, 7, 7, "section", 11);
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](15);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.portfolio);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"]], styles: ["#particles-js[_ngcontent-%COMP%] {\n  margin-left: -10%;\n  position: fixed;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n}\n\n.addParticles[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 0%;\n  bottom: 5%;\n  height: 8vh;\n  display: grid;\n  place-items: center;\n  background: #1d1b1b7e;\n}\n\n.addParticles[_ngcontent-%COMP%]::after {\n  content: \"Click anywhere to add particles \";\n  color: #fc766a79;\n  padding: 0px 15px;\n}\n\n.fadeBar[_ngcontent-%COMP%] {\n  transform: translateY(-15px);\n  \n  transition: all 0.5s ease-out;\n}\n\n.work-nav[_ngcontent-%COMP%] {\n  position: fixed;\n}\n\n.climbingman[_ngcontent-%COMP%] {\n  position: fixed;\n  left: 0%;\n  top: 14%;\n  z-index: 2;\n}\n\n.rope[_ngcontent-%COMP%] {\n  width: 100vw;\n  height: 0px;\n  border: 2px solid #000000;\n}\n\n.proj-circle-interval[_ngcontent-%COMP%] {\n  position: relative;\n  top: -10px;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-around;\n}\n\n.interval-0-intro[_ngcontent-%COMP%], .interval-1-proj[_ngcontent-%COMP%], .interval-2-proj[_ngcontent-%COMP%], .interval-3-proj[_ngcontent-%COMP%], .interval-4-proj[_ngcontent-%COMP%] {\n  position: relative;\n  width: 20px;\n  height: 20px;\n  border-radius: 10px;\n  background: #282626;\n  border: 2px solid tomato;\n  z-index: 3;\n  display: grid;\n  place-items: center;\n}\n\n.innerCircle[_ngcontent-%COMP%] {\n  height: 6px;\n  width: 6px;\n  border-radius: 3px;\n  background: #5b84b1;\n}\n\n.man[_ngcontent-%COMP%] {\n  position: fixed;\n  left: 7.5%;\n  margin-top: 12px;\n  width: 6%;\n  height: 20%;\n  background: url('zipline.png');\n  background-size: contain;\n  background-repeat: no-repeat;\n  transition: all 1s ease;\n}\n\nsection#intro[_ngcontent-%COMP%], section#first[_ngcontent-%COMP%], section#second[_ngcontent-%COMP%], section#third[_ngcontent-%COMP%], section#fourth[_ngcontent-%COMP%] {\n  height: 100%;\n  width: 100%;\n  position: relative;\n  z-index: 1;\n}\n\n.circle[_ngcontent-%COMP%] {\n  position: absolute;\n  top: 55%;\n  left: 48%;\n  transform: translate(-50%, -50%);\n  height: 60vh;\n  width: 30%;\n  border-radius: 50%;\n  background: #fc766a31;\n  box-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);\n  \n  display: flex;\n  place-items: center;\n  z-index: 2;\n  flex-direction: row;\n  flex-grow: 1;\n}\n\n.activeCircle[_ngcontent-%COMP%] {\n  position: fixed;\n  \n  visibility: visible;\n  top: 61%;\n  left: 50%;\n}\n\n.proj-desc[_ngcontent-%COMP%] {\n  z-index: 3;\n  width: 70%;\n  margin: 0 auto;\n  color: white;\n  text-align: left;\n  \n  text-align: center;\n  font-size: 0.9vw;\n  font-family: \"Chilanka\", cursive;\n}\n\n.title-proj[_ngcontent-%COMP%] {\n  position: fixed;\n  color: #fc766a;\n  font-size: 4vw;\n  \n  top: 20%;\n  z-index: 1;\n}\n\n.intro-title[_ngcontent-%COMP%] {\n  \n  left: 15%;\n}\n\n@media (max-width: 1024px) {\n  .circle[_ngcontent-%COMP%] {\n    width: 70%;\n  }\n  .proj-desc[_ngcontent-%COMP%] {\n    font-size: 11px;\n  }\n  #particles-js[_ngcontent-%COMP%] {\n    width: 110%;\n  }\n  .addParticles[_ngcontent-%COMP%] {\n    right: 9%;\n    height: 6vh;\n    font-size: 12px;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvd29yay93b3JrLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxpQkFBaUI7RUFDakIsZUFBZTtFQUNmLFdBQVc7RUFDWCxZQUFZO0VBQ1osVUFBVTtBQUNaOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLFNBQVM7RUFDVCxVQUFVO0VBQ1YsV0FBVztFQUNYLGFBQWE7RUFDYixtQkFBbUI7RUFDbkIscUJBQXFCO0FBQ3ZCOztBQUVBO0VBQ0UsMkNBQTJDO0VBQzNDLGdCQUFnQjtFQUNoQixpQkFBaUI7QUFDbkI7O0FBRUE7RUFDRSw0QkFBNEI7RUFDNUIsZ0JBQWdCO0VBQ2hCLDZCQUE2QjtBQUMvQjs7QUFFQTtFQUNFLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxlQUFlO0VBQ2YsUUFBUTtFQUNSLFFBQVE7RUFDUixVQUFVO0FBQ1o7O0FBRUE7RUFDRSxZQUFZO0VBQ1osV0FBVztFQUNYLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixVQUFVO0VBQ1YsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQiw2QkFBNkI7QUFDL0I7O0FBRUE7Ozs7O0VBS0Usa0JBQWtCO0VBQ2xCLFdBQVc7RUFDWCxZQUFZO0VBQ1osbUJBQW1CO0VBQ25CLG1CQUFtQjtFQUNuQix3QkFBd0I7RUFDeEIsVUFBVTtFQUNWLGFBQWE7RUFDYixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsVUFBVTtFQUNWLGtCQUFrQjtFQUNsQixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxlQUFlO0VBQ2YsVUFBVTtFQUNWLGdCQUFnQjtFQUNoQixTQUFTO0VBQ1QsV0FBVztFQUNYLDhCQUFrRDtFQUNsRCx3QkFBd0I7RUFDeEIsNEJBQTRCO0VBQzVCLHVCQUF1QjtBQUN6Qjs7QUFFQTs7Ozs7RUFLRSxZQUFZO0VBQ1osV0FBVztFQUNYLGtCQUFrQjtFQUNsQixVQUFVO0FBQ1o7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsUUFBUTtFQUNSLFNBQVM7RUFDVCxnQ0FBZ0M7RUFDaEMsWUFBWTtFQUNaLFVBQVU7RUFDVixrQkFBa0I7RUFDbEIscUJBQXFCO0VBQ3JCLDRDQUE0QztFQUM1QyxnQkFBZ0I7RUFDaEIsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQixVQUFVO0VBQ1YsbUJBQW1CO0VBQ25CLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGVBQWU7RUFDZixnQkFBZ0I7RUFDaEIsbUJBQW1CO0VBQ25CLFFBQVE7RUFDUixTQUFTO0FBQ1g7O0FBRUE7RUFDRSxVQUFVO0VBQ1YsVUFBVTtFQUNWLGNBQWM7RUFDZCxZQUFZO0VBQ1osZ0JBQWdCO0VBQ2hCLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsZ0JBQWdCO0VBQ2hCLGdDQUFnQztBQUNsQzs7QUFFQTtFQUNFLGVBQWU7RUFDZixjQUFjO0VBQ2QsY0FBYztFQUNkLGdCQUFnQjtFQUNoQixRQUFRO0VBQ1IsVUFBVTtBQUNaOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLFNBQVM7QUFDWDs7QUFFQTtFQUNFO0lBQ0UsVUFBVTtFQUNaO0VBQ0E7SUFDRSxlQUFlO0VBQ2pCO0VBQ0E7SUFDRSxXQUFXO0VBQ2I7RUFDQTtJQUNFLFNBQVM7SUFDVCxXQUFXO0lBQ1gsZUFBZTtFQUNqQjtBQUNGIiwiZmlsZSI6InNyYy9hcHAvd29yay93b3JrLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIjcGFydGljbGVzLWpzIHtcbiAgbWFyZ2luLWxlZnQ6IC0xMCU7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMTAwJTtcbiAgei1pbmRleDogMTtcbn1cblxuLmFkZFBhcnRpY2xlcyB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgcmlnaHQ6IDAlO1xuICBib3R0b206IDUlO1xuICBoZWlnaHQ6IDh2aDtcbiAgZGlzcGxheTogZ3JpZDtcbiAgcGxhY2UtaXRlbXM6IGNlbnRlcjtcbiAgYmFja2dyb3VuZDogIzFkMWIxYjdlO1xufVxuXG4uYWRkUGFydGljbGVzOjphZnRlciB7XG4gIGNvbnRlbnQ6IFwiQ2xpY2sgYW55d2hlcmUgdG8gYWRkIHBhcnRpY2xlcyBcIjtcbiAgY29sb3I6ICNmYzc2NmE3OTtcbiAgcGFkZGluZzogMHB4IDE1cHg7XG59XG5cbi5mYWRlQmFyIHtcbiAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC0xNXB4KTtcbiAgLyogb3BhY2l0eTogMDsgKi9cbiAgdHJhbnNpdGlvbjogYWxsIDAuNXMgZWFzZS1vdXQ7XG59XG5cbi53b3JrLW5hdiB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbn1cblxuLmNsaW1iaW5nbWFuIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBsZWZ0OiAwJTtcbiAgdG9wOiAxNCU7XG4gIHotaW5kZXg6IDI7XG59XG5cbi5yb3BlIHtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDBweDtcbiAgYm9yZGVyOiAycHggc29saWQgIzAwMDAwMDtcbn1cblxuLnByb2otY2lyY2xlLWludGVydmFsIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB0b3A6IC0xMHB4O1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbn1cblxuLmludGVydmFsLTAtaW50cm8sXG4uaW50ZXJ2YWwtMS1wcm9qLFxuLmludGVydmFsLTItcHJvaixcbi5pbnRlcnZhbC0zLXByb2osXG4uaW50ZXJ2YWwtNC1wcm9qIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB3aWR0aDogMjBweDtcbiAgaGVpZ2h0OiAyMHB4O1xuICBib3JkZXItcmFkaXVzOiAxMHB4O1xuICBiYWNrZ3JvdW5kOiAjMjgyNjI2O1xuICBib3JkZXI6IDJweCBzb2xpZCB0b21hdG87XG4gIHotaW5kZXg6IDM7XG4gIGRpc3BsYXk6IGdyaWQ7XG4gIHBsYWNlLWl0ZW1zOiBjZW50ZXI7XG59XG5cbi5pbm5lckNpcmNsZSB7XG4gIGhlaWdodDogNnB4O1xuICB3aWR0aDogNnB4O1xuICBib3JkZXItcmFkaXVzOiAzcHg7XG4gIGJhY2tncm91bmQ6ICM1Yjg0YjE7XG59XG5cbi5tYW4ge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGxlZnQ6IDcuNSU7XG4gIG1hcmdpbi10b3A6IDEycHg7XG4gIHdpZHRoOiA2JTtcbiAgaGVpZ2h0OiAyMCU7XG4gIGJhY2tncm91bmQ6IHVybChcIi4uLy4uL2Fzc2V0cy9pbWFnZXMvemlwbGluZS5wbmdcIik7XG4gIGJhY2tncm91bmQtc2l6ZTogY29udGFpbjtcbiAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgdHJhbnNpdGlvbjogYWxsIDFzIGVhc2U7XG59XG5cbnNlY3Rpb24jaW50cm8sXG5zZWN0aW9uI2ZpcnN0LFxuc2VjdGlvbiNzZWNvbmQsXG5zZWN0aW9uI3RoaXJkLFxuc2VjdGlvbiNmb3VydGgge1xuICBoZWlnaHQ6IDEwMCU7XG4gIHdpZHRoOiAxMDAlO1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIHotaW5kZXg6IDE7XG59XG5cbi5jaXJjbGUge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogNTUlO1xuICBsZWZ0OiA0OCU7XG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICBoZWlnaHQ6IDYwdmg7XG4gIHdpZHRoOiAzMCU7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgYmFja2dyb3VuZDogI2ZjNzY2YTMxO1xuICBib3gtc2hhZG93OiAwcHggMTRweCAxMHB4IHJnYmEoMCwgMCwgMCwgMC40KTtcbiAgLyogb3BhY2l0eTogMDsgKi9cbiAgZGlzcGxheTogZmxleDtcbiAgcGxhY2UtaXRlbXM6IGNlbnRlcjtcbiAgei1pbmRleDogMjtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgZmxleC1ncm93OiAxO1xufVxuXG4uYWN0aXZlQ2lyY2xlIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICAvKiBvcGFjaXR5OiAxOyAqL1xuICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xuICB0b3A6IDYxJTtcbiAgbGVmdDogNTAlO1xufVxuXG4ucHJvai1kZXNjIHtcbiAgei1pbmRleDogMztcbiAgd2lkdGg6IDcwJTtcbiAgbWFyZ2luOiAwIGF1dG87XG4gIGNvbG9yOiB3aGl0ZTtcbiAgdGV4dC1hbGlnbjogbGVmdDtcbiAgLyogb3BhY2l0eTogMTsgKi9cbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBmb250LXNpemU6IDAuOXZ3O1xuICBmb250LWZhbWlseTogXCJDaGlsYW5rYVwiLCBjdXJzaXZlO1xufVxuXG4udGl0bGUtcHJvaiB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgY29sb3I6ICNmYzc2NmE7XG4gIGZvbnQtc2l6ZTogNHZ3O1xuICAvKiBvcGFjaXR5OiAwOyAqL1xuICB0b3A6IDIwJTtcbiAgei1pbmRleDogMTtcbn1cblxuLmludHJvLXRpdGxlIHtcbiAgLyogb3BhY2l0eTogMTsgKi9cbiAgbGVmdDogMTUlO1xufVxuXG5AbWVkaWEgKG1heC13aWR0aDogMTAyNHB4KSB7XG4gIC5jaXJjbGUge1xuICAgIHdpZHRoOiA3MCU7XG4gIH1cbiAgLnByb2otZGVzYyB7XG4gICAgZm9udC1zaXplOiAxMXB4O1xuICB9XG4gICNwYXJ0aWNsZXMtanMge1xuICAgIHdpZHRoOiAxMTAlO1xuICB9XG4gIC5hZGRQYXJ0aWNsZXMge1xuICAgIHJpZ2h0OiA5JTtcbiAgICBoZWlnaHQ6IDZ2aDtcbiAgICBmb250LXNpemU6IDEycHg7XG4gIH1cbn1cbiJdfQ== */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "section", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "div", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "Scroll to Zipline through my works");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "div", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "div", 14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "p", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, " Intro Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos excepturi laboriosam nam adipisci aspernatur, voluptatem vel, amet sit nulla iusto ipsam. Vero, molestias, praesentium dolor ducimus officiis sunt veniam doloribus eius excepturi nisi explicabo sed neque aperiam. Sed, autem quos ea doloremque laborum voluptates fugit dolorem blanditiis. Inventore, error temporibus! ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](22, "div", 16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "section", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "div", 18);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, "Diagnostic ECG");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "div", 19);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "div", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "p", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "\nI contribute to the team, at GE Healthcare, as a full stack developer and work towards the development of different backend features of their ECG diagnostic device, MAC VU 360. I am also involved in writing automation scripts to test, debug and ensure smooth functioning of the device\u2019s various workflows. I also work on improving the existing user interface of the device and help tackle various issues and bugs that the device might face.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](30, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](31, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, " Techstack: C++, Angular JS, HTML, CSS, Javascript, Python ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "section", 21);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "div", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, "Real Check");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "div", 23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "div", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "p", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](39, " The traditional method of correcting answer sheets in a school/college involves teachers correcting answer sheets using an answer key or an answer bank.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](40, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](41, " RealCheck is a subjective answer evaluation system which uses Natural language processing coupled with cosine similarity to find the similarity of a student\u2019s answer to correct answers given in the answer bank and consequently assign a score to each of a student\u2019s answers.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](42, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](43, "\nVarious concepts like stop word removal, tokenization, Parts of speech(POS) tagging, Term frequency and document frequency, Pydictionary( for synonyms) and cosine similarity are used to achieve the same.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](44, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](45, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](46, "strong");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](47, "Techstack: Python, Django, HTML, SQLite3, CSS");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](48, "section", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](49, "div", 25);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](50, "EkkPahel");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](51, "div", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](52, "div", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](53, "p", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](54, " Contributed to the making of an online portal of the NGO EkkPahel, to help conquer the issue of lodging complaints in the district. ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](55, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](56, "The people of Araria would hesitate to approach the authorities face to face regarding complaints or concerns, lest they receive backlash from fellow local communities. Our portal allowed such people in the district to communicate their complaints and concerns to the local authorities in a confidential manner to help bring civil, social issues to light.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](57, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](58, " The portal went live on their main website and was also showcased in TedX GD Goenka in the year 2018.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](59, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](60, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](61, "strong");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](62, "Techstack: HTML, CSS, Javascript");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](63, "section", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](64, "div", 28);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](65, "Call A Mail");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](66, "div", 29);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](67, "div", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](68, "p", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](69, " Missing important mails isn\u2019t a mistake many would appreciate. CallAMail can be used to ensure you never miss an important email again. It gives you the ability to set up email ids, mails from which are important for you. In case a mail arrives from any of these senders and is sitting unread in your inbox, you receive a call on your mobile with an automated message, urging you to check your emails. It was scheduled using cron and installed on the Amazon web server on an ec2 instance. ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](70, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](71, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](72, "strong");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](73, "Techstack: Python, CRON");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](74, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](75, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](76, "\nTools Used: AWS, Twilio, Google Cloud Platform");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, styles: ["#particles-js[_ngcontent-%COMP%] {\n  margin-left: -10%;\n  position: fixed;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n}\n\n.addParticles[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 0%;\n  bottom: 5%;\n  height: 8vh;\n  display: grid;\n  place-items: center;\n  background: #1d1b1b7e;\n}\n\n.addParticles[_ngcontent-%COMP%]::after {\n  content: \"Click anywhere to add particles \";\n  color: #fc766a79;\n  padding: 0px 15px;\n}\n\n.fadeBar[_ngcontent-%COMP%] {\n  transform: translateY(-15px);\n  opacity: 0;\n  transition: all 0.5s ease-out;\n}\n\n.work-nav[_ngcontent-%COMP%] {\n  position: fixed;\n}\n\n.climbingman[_ngcontent-%COMP%] {\n  position: fixed;\n  left: 0%;\n  top: 14%;\n  z-index: 2;\n}\n\n.rope[_ngcontent-%COMP%] {\n  width: 100vw;\n  height: 0px;\n  border: 2px solid #000000;\n}\n\n.proj-circle-interval[_ngcontent-%COMP%] {\n  position: relative;\n  top: -10px;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-around;\n}\n\n.interval-0-intro[_ngcontent-%COMP%], .interval-1-proj[_ngcontent-%COMP%], .interval-2-proj[_ngcontent-%COMP%], .interval-3-proj[_ngcontent-%COMP%], .interval-4-proj[_ngcontent-%COMP%] {\n  position: relative;\n  width: 20px;\n  height: 20px;\n  border-radius: 10px;\n  background: #282626;\n  border: 2px solid tomato;\n  z-index: 3;\n  display: grid;\n  place-items: center;\n}\n\n.innerCircle[_ngcontent-%COMP%] {\n  height: 6px;\n  width: 6px;\n  border-radius: 3px;\n  background: #5b84b1;\n}\n\n.man[_ngcontent-%COMP%] {\n  position: fixed;\n  left: 7.5%;\n  margin-top: 12px;\n  width: 6%;\n  height: 20%;\n  background: url('zipline.png');\n  background-size: contain;\n  background-repeat: no-repeat;\n  transition: all 1s ease;\n}\n\nsection#intro[_ngcontent-%COMP%], section#first[_ngcontent-%COMP%], section#second[_ngcontent-%COMP%], section#third[_ngcontent-%COMP%], section#fourth[_ngcontent-%COMP%] {\n  height: 100%;\n  width: 100%;\n  position: relative;\n  z-index: 1;\n}\n\n.circle[_ngcontent-%COMP%] {\n  position: absolute;\n  top: 55%;\n  left: 48%;\n  transform: translate(-50%, -50%);\n  height: 60vh;\n  width: 30%;\n  border-radius: 50%;\n  background: #fc766a31;\n  box-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);\n  opacity: 0;\n  display: flex;\n  place-items: center;\n  z-index: 2;\n  flex-direction: row;\n  flex-grow: 1;\n}\n\n.activeCircle[_ngcontent-%COMP%] {\n  position: fixed;\n  opacity: 1;\n  visibility: visible;\n  top: 61%;\n  left: 50%;\n}\n\n.proj-desc[_ngcontent-%COMP%] {\n  z-index: 3;\n  width: 70%;\n  margin: 0 auto;\n  color: white;\n  text-align: left;\n  opacity: 1;\n  text-align: center;\n  font-size: 0.9vw;\n  font-family: \"Chilanka\", cursive;\n}\n\n.title-proj[_ngcontent-%COMP%] {\n  position: fixed;\n  color: #fc766a;\n  font-size: 4vw;\n  opacity: 0;\n  top: 20%;\n  z-index: 1;\n}\n\n.intro-title[_ngcontent-%COMP%] {\n  opacity: 1;\n  left: 15%;\n}\n\n@media (max-width: 1024px) {\n  .circle[_ngcontent-%COMP%] {\n    width: 70%;\n  }\n  .proj-desc[_ngcontent-%COMP%] {\n    font-size: 11px;\n  }\n  #particles-js[_ngcontent-%COMP%] {\n    width: 110%;\n  }\n  .addParticles[_ngcontent-%COMP%] {\n    right: 9%;\n    height: 6vh;\n    font-size: 12px;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvd29yay93b3JrLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxpQkFBaUI7RUFDakIsZUFBZTtFQUNmLFdBQVc7RUFDWCxZQUFZO0VBQ1osVUFBVTtBQUNaOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLFNBQVM7RUFDVCxVQUFVO0VBQ1YsV0FBVztFQUNYLGFBQWE7RUFDYixtQkFBbUI7RUFDbkIscUJBQXFCO0FBQ3ZCOztBQUVBO0VBQ0UsMkNBQTJDO0VBQzNDLGdCQUFnQjtFQUNoQixpQkFBaUI7QUFDbkI7O0FBRUE7RUFDRSw0QkFBNEI7RUFDNUIsVUFBVTtFQUNWLDZCQUE2QjtBQUMvQjs7QUFFQTtFQUNFLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxlQUFlO0VBQ2YsUUFBUTtFQUNSLFFBQVE7RUFDUixVQUFVO0FBQ1o7O0FBRUE7RUFDRSxZQUFZO0VBQ1osV0FBVztFQUNYLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixVQUFVO0VBQ1YsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQiw2QkFBNkI7QUFDL0I7O0FBRUE7Ozs7O0VBS0Usa0JBQWtCO0VBQ2xCLFdBQVc7RUFDWCxZQUFZO0VBQ1osbUJBQW1CO0VBQ25CLG1CQUFtQjtFQUNuQix3QkFBd0I7RUFDeEIsVUFBVTtFQUNWLGFBQWE7RUFDYixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsVUFBVTtFQUNWLGtCQUFrQjtFQUNsQixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxlQUFlO0VBQ2YsVUFBVTtFQUNWLGdCQUFnQjtFQUNoQixTQUFTO0VBQ1QsV0FBVztFQUNYLDhCQUFrRDtFQUNsRCx3QkFBd0I7RUFDeEIsNEJBQTRCO0VBQzVCLHVCQUF1QjtBQUN6Qjs7QUFFQTs7Ozs7RUFLRSxZQUFZO0VBQ1osV0FBVztFQUNYLGtCQUFrQjtFQUNsQixVQUFVO0FBQ1o7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsUUFBUTtFQUNSLFNBQVM7RUFDVCxnQ0FBZ0M7RUFDaEMsWUFBWTtFQUNaLFVBQVU7RUFDVixrQkFBa0I7RUFDbEIscUJBQXFCO0VBQ3JCLDRDQUE0QztFQUM1QyxVQUFVO0VBQ1YsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQixVQUFVO0VBQ1YsbUJBQW1CO0VBQ25CLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGVBQWU7RUFDZixVQUFVO0VBQ1YsbUJBQW1CO0VBQ25CLFFBQVE7RUFDUixTQUFTO0FBQ1g7O0FBRUE7RUFDRSxVQUFVO0VBQ1YsVUFBVTtFQUNWLGNBQWM7RUFDZCxZQUFZO0VBQ1osZ0JBQWdCO0VBQ2hCLFVBQVU7RUFDVixrQkFBa0I7RUFDbEIsZ0JBQWdCO0VBQ2hCLGdDQUFnQztBQUNsQzs7QUFFQTtFQUNFLGVBQWU7RUFDZixjQUFjO0VBQ2QsY0FBYztFQUNkLFVBQVU7RUFDVixRQUFRO0VBQ1IsVUFBVTtBQUNaOztBQUVBO0VBQ0UsVUFBVTtFQUNWLFNBQVM7QUFDWDs7QUFFQTtFQUNFO0lBQ0UsVUFBVTtFQUNaO0VBQ0E7SUFDRSxlQUFlO0VBQ2pCO0VBQ0E7SUFDRSxXQUFXO0VBQ2I7RUFDQTtJQUNFLFNBQVM7SUFDVCxXQUFXO0lBQ1gsZUFBZTtFQUNqQjtBQUNGIiwiZmlsZSI6InNyYy9hcHAvd29yay93b3JrLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIjcGFydGljbGVzLWpzIHtcbiAgbWFyZ2luLWxlZnQ6IC0xMCU7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMTAwJTtcbiAgei1pbmRleDogMTtcbn1cblxuLmFkZFBhcnRpY2xlcyB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgcmlnaHQ6IDAlO1xuICBib3R0b206IDUlO1xuICBoZWlnaHQ6IDh2aDtcbiAgZGlzcGxheTogZ3JpZDtcbiAgcGxhY2UtaXRlbXM6IGNlbnRlcjtcbiAgYmFja2dyb3VuZDogIzFkMWIxYjdlO1xufVxuXG4uYWRkUGFydGljbGVzOjphZnRlciB7XG4gIGNvbnRlbnQ6IFwiQ2xpY2sgYW55d2hlcmUgdG8gYWRkIHBhcnRpY2xlcyBcIjtcbiAgY29sb3I6ICNmYzc2NmE3OTtcbiAgcGFkZGluZzogMHB4IDE1cHg7XG59XG5cbi5mYWRlQmFyIHtcbiAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC0xNXB4KTtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogYWxsIDAuNXMgZWFzZS1vdXQ7XG59XG5cbi53b3JrLW5hdiB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbn1cblxuLmNsaW1iaW5nbWFuIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBsZWZ0OiAwJTtcbiAgdG9wOiAxNCU7XG4gIHotaW5kZXg6IDI7XG59XG5cbi5yb3BlIHtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDBweDtcbiAgYm9yZGVyOiAycHggc29saWQgIzAwMDAwMDtcbn1cblxuLnByb2otY2lyY2xlLWludGVydmFsIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB0b3A6IC0xMHB4O1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbn1cblxuLmludGVydmFsLTAtaW50cm8sXG4uaW50ZXJ2YWwtMS1wcm9qLFxuLmludGVydmFsLTItcHJvaixcbi5pbnRlcnZhbC0zLXByb2osXG4uaW50ZXJ2YWwtNC1wcm9qIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB3aWR0aDogMjBweDtcbiAgaGVpZ2h0OiAyMHB4O1xuICBib3JkZXItcmFkaXVzOiAxMHB4O1xuICBiYWNrZ3JvdW5kOiAjMjgyNjI2O1xuICBib3JkZXI6IDJweCBzb2xpZCB0b21hdG87XG4gIHotaW5kZXg6IDM7XG4gIGRpc3BsYXk6IGdyaWQ7XG4gIHBsYWNlLWl0ZW1zOiBjZW50ZXI7XG59XG5cbi5pbm5lckNpcmNsZSB7XG4gIGhlaWdodDogNnB4O1xuICB3aWR0aDogNnB4O1xuICBib3JkZXItcmFkaXVzOiAzcHg7XG4gIGJhY2tncm91bmQ6ICM1Yjg0YjE7XG59XG5cbi5tYW4ge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGxlZnQ6IDcuNSU7XG4gIG1hcmdpbi10b3A6IDEycHg7XG4gIHdpZHRoOiA2JTtcbiAgaGVpZ2h0OiAyMCU7XG4gIGJhY2tncm91bmQ6IHVybChcIi4uLy4uL2Fzc2V0cy9pbWFnZXMvemlwbGluZS5wbmdcIik7XG4gIGJhY2tncm91bmQtc2l6ZTogY29udGFpbjtcbiAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgdHJhbnNpdGlvbjogYWxsIDFzIGVhc2U7XG59XG5cbnNlY3Rpb24jaW50cm8sXG5zZWN0aW9uI2ZpcnN0LFxuc2VjdGlvbiNzZWNvbmQsXG5zZWN0aW9uI3RoaXJkLFxuc2VjdGlvbiNmb3VydGgge1xuICBoZWlnaHQ6IDEwMCU7XG4gIHdpZHRoOiAxMDAlO1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIHotaW5kZXg6IDE7XG59XG5cbi5jaXJjbGUge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogNTUlO1xuICBsZWZ0OiA0OCU7XG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICBoZWlnaHQ6IDYwdmg7XG4gIHdpZHRoOiAzMCU7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgYmFja2dyb3VuZDogI2ZjNzY2YTMxO1xuICBib3gtc2hhZG93OiAwcHggMTRweCAxMHB4IHJnYmEoMCwgMCwgMCwgMC40KTtcbiAgb3BhY2l0eTogMDtcbiAgZGlzcGxheTogZmxleDtcbiAgcGxhY2UtaXRlbXM6IGNlbnRlcjtcbiAgei1pbmRleDogMjtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgZmxleC1ncm93OiAxO1xufVxuXG4uYWN0aXZlQ2lyY2xlIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBvcGFjaXR5OiAxO1xuICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xuICB0b3A6IDYxJTtcbiAgbGVmdDogNTAlO1xufVxuXG4ucHJvai1kZXNjIHtcbiAgei1pbmRleDogMztcbiAgd2lkdGg6IDcwJTtcbiAgbWFyZ2luOiAwIGF1dG87XG4gIGNvbG9yOiB3aGl0ZTtcbiAgdGV4dC1hbGlnbjogbGVmdDtcbiAgb3BhY2l0eTogMTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBmb250LXNpemU6IDAuOXZ3O1xuICBmb250LWZhbWlseTogXCJDaGlsYW5rYVwiLCBjdXJzaXZlO1xufVxuXG4udGl0bGUtcHJvaiB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgY29sb3I6ICNmYzc2NmE7XG4gIGZvbnQtc2l6ZTogNHZ3O1xuICBvcGFjaXR5OiAwO1xuICB0b3A6IDIwJTtcbiAgei1pbmRleDogMTtcbn1cblxuLmludHJvLXRpdGxlIHtcbiAgb3BhY2l0eTogMTtcbiAgbGVmdDogMTUlO1xufVxuXG5AbWVkaWEgKG1heC13aWR0aDogMTAyNHB4KSB7XG4gIC5jaXJjbGUge1xuICAgIHdpZHRoOiA3MCU7XG4gIH1cbiAgLnByb2otZGVzYyB7XG4gICAgZm9udC1zaXplOiAxMXB4O1xuICB9XG4gICNwYXJ0aWNsZXMtanMge1xuICAgIHdpZHRoOiAxMTAlO1xuICB9XG4gIC5hZGRQYXJ0aWNsZXMge1xuICAgIHJpZ2h0OiA5JTtcbiAgICBoZWlnaHQ6IDZ2aDtcbiAgICBmb250LXNpemU6IDEycHg7XG4gIH1cbn1cbiJdfQ== */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](WorkComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
