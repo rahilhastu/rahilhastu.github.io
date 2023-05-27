@@ -516,7 +516,11 @@ class ContactService {
         this.https = https;
     }
     sendEmail(obj) {
-        return this.https.post(' https://limitless-citadel-69513.herokuapp.com/sendmail', obj);
+        // return this.https.post(
+        //   ' https://limitless-citadel-69513.herokuapp.com/sendmail',
+        //   obj
+        // ); Old Deployment
+        return this.https.post('https://vercel-mail-xi.vercel.app/sendmail', obj);
     }
 }
 ContactService.ɵfac = function ContactService_Factory(t) { return new (t || ContactService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"])); };
