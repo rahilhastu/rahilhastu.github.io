@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://rahilhastu.github.io/sitemap.xml
