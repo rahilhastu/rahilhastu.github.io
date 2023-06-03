@@ -569,7 +569,7 @@ class ContactmeComponent {
             name: 'Required',
             email: 'Enter valid Email Address',
             subject: 'Required',
-            comment: 'Min 3 characters',
+            comment: 'Min 3 Characters',
         };
     }
     ngOnInit() {
@@ -591,7 +591,7 @@ class ContactmeComponent {
             zoom: 5,
             minZoom: 3,
             maxZoom: 15,
-            // draggable: false,
+            // draggable: false ,
             // scrollwheel: false,
             // panControl: false,
             center: uluru,
