@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css?family=Caveat+Brush");
+
+/* *,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+} */
+
+/* body {
+  background: #dae0c6;
+  overflow-x: hidden;
+} */
+
+.container {
+  height: 60vh;
+  margin: 2% auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.column {
+  width: 33%;
+  height: 100%;
+  position: relative;
+  background: #3d504b;
+  border-radius: 16px;
+  margin: 1%;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Caveat Brush", cursive;
+  margin: 1.5% 0;
+  font-size: 2vw;
+}
+
+.cookie {
+  height: 20vh;
+  width: 20vh;
+  margin: 0 auto;
+  position: relative;
+  /*   transition: filter 0.5s ease; */
+}
+
+/* .cookie:hover {
+filter: drop-shadow(0 -5px 10px rgba(0,0,0,0.5));
+} */
+.jar {
+  pointer-events: none;
+  position: relative;
+  height: 100%;
+  /*     width: fit-content; */
+  max-width: 31%;
+  width: auto;
+  border: none;
+  background: none;
+}
+
+.jar img {
+  position: relative;
+  z-index: 1100;
+  display: block;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 25%,
+    rgba(139, 165, 198, 0.5) 10%,
+    transparent 50%,
+    rgba(164, 196, 214, 0.5) 90%,
+    transparent 89%
+  );
+  background-size: 98% 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.jar:after {
+  content: "";
+  position: absolute;
+  bottom: 6%;
+  left: 1%;
+  width: 98%;
+  background: radial-gradient(80% 54% at center, #616161 48%, #8f928c 50%);
+  height: 21%;
+  z-index: -1;
+  border-radius: 44% 30% / 50% 50%;
+}
+
+.input-memory {
+  height: 20vh;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-memory textarea {
+  width: 55%;
+  height: 60%;
+  font-size: 1.5vw;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  margin-top: 1%;
+}
+
+.random-generate {
+  height: 20%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 1% 2%;
+  margin-left: 5%;
+}
+.submit-memory {
+  height: 50%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 1% 2%;
+  margin-left: 5%;
+}
+
+.submit-memory:hover,
+.random-generate:hover {
+  background-color: #8b89896d;
+}
+
+.card {
+  margin-left: 5%;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+  animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.right-side-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mem-text {
+  font-size: 1.5vw;
+  margin: 1% 0;
+  font-family: "Caveat Brush", cursive;
+  text-align: center;
+  width: 80%;
+  height: 50%;
+  overflow: auto;
+  padding: 1%;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  border: none;
+  resize: none;
+  cursor: default;
+  pointer-events: none;
+}
+
+.mem-img {
+}
+
+.top-nav {
+  height: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 3%;
+  background-color: #3d504b;
+  color: white;
+  font-size: 1.5vw;
+  font-family: "Caveat Brush", cursive;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <base href="https://rahilhastu.github.io/personal/N6SJ3W3e6Rh22vo8le1T9rxshE2CHq/">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="envelope.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
+</head>
+  <body>
+    <div class="top-nav">
+      <h1 class="title">Fill the Memory Jar</h1>
+      <span class="total-memories"></span>
+    </div>
+    
+    <div class="container">
+      <div class="drop-area jar column">
+        <img src="./assets/images/jar.png" />
+      </div>
+      <button id="random-generate" class="button random-generate" onclick="handleRandomGenerate()">Pick Memory</button>
+      <div class="right-side-area column">
+        
+      </div>
+    </div>
+    <div class="input-memory">
+      <textarea id="message-input"  placeholder="Write your memory here... eg. Humne ye kiya tha ~ R/C"></textarea>
+      <button id="submit-memory" class="button submit-memory" onclick="handleAddMessage()">Submit</button>
+      <div id="submit-card-container"></div>
+      <!-- <div id="submit-card" class="card">
+        <div class="heart"></div>
+      </div> -->
+    </div>
+  </body>
+  <script src="app.js"></script>
+
+</html>
