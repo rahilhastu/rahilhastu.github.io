@@ -267,20 +267,27 @@ function handleRandomGenerate() {
       if (data && data.length > 0) {
         const memory = data[0];
         const memText = memory.mem_text;
-        const memImg = memory.mem_img;
+        // const memImg = memory.mem_img;
+        // console.log(memImg);
 
         // Display memText
         const memTextElement = document.createElement("div");
-
-        memTextElement.textContent = memText;
         memTextElement.classList.add("mem-text");
+
+        const textPara = document.createElement("p");
+        textPara.classList.add("text-para");
+        textPara.textContent = memText;
+        memTextElement.appendChild(textPara);
+
+        // memTextElement.textContent = memText;
+        // memTextElement.classList.add("mem-text");
         document.querySelector(".right-side-area").appendChild(memTextElement);
 
         // Display memImg
-        const memImgElement = document.createElement("img");
-        memImgElement.src = memImg;
-        memImgElement.classList.add("mem-img");
-        document.querySelector(".right-side-area").appendChild(memImgElement);
+        // const memImgElement = document.createElement("img");
+        // memImgElement.src = memImg;
+        // memImgElement.classList.add("mem-img");
+        // document.querySelector(".right-side-area").appendChild(memImgElement);
       } else {
         console.error("No memory found in the response");
       }
