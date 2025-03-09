@@ -1,7 +1,7 @@
 let container = document.querySelector(".container");
 let jar = document.querySelector(".jar img");
 var totalMemories = 0;
-const URL = "https://memory-jar-production.up.railway.app/";
+const URL = "https://memory-jar.onrender.com/";
 const LOCALHOST = "http://localhost:8000/";
 
 document.addEventListener("DOMContentLoaded", function () {
